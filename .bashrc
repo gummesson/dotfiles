@@ -1,4 +1,9 @@
+###############
+# BASH SCRIPTS
+###############
+
 # Add to existing .bashrc file
+
 source ~/.bash/path.sh
 source ~/.bash/env.sh
 source ~/.bash/aliases.sh

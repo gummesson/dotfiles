@@ -1,10 +1,8 @@
-#!/bin/bash
-
 ###############
 # BASH PROFILE
 ###############
 
-# Source .bashrc if it exists
+# Source .bashrc
 if [ -f "${HOME}/.bashrc" ] ; then
   source "${HOME}/.bashrc"
 fi
