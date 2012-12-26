@@ -3,4 +3,4 @@
 ##############
 
 # Default editor
-export editor="geany"
+export EDITOR="geany"
