@@ -1,0 +1,11 @@
+#!/bin/bash
+
+##########
+# EXPORTS
+##########
+
+# Add local bins to path
+export PATH="$PATH:/usr/local/bin"
+
+# Default editor
+export EDITOR="geany"

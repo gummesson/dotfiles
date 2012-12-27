@@ -1,0 +1,11 @@
+#!/bin/bash
+
+###############
+# BASH SCRIPTS
+###############
+
+# Source files in .bash
+source ~/.bash/.paths
+source ~/.bash/.exports
+source ~/.bash/.aliases
+source ~/.bash/.functions

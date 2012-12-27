@@ -1,10 +1,4 @@
-###############
-# BASH SCRIPTS
-###############
-
-# Add to existing .bashrc file
-
-source ~/.bash/path.sh
-source ~/.bash/env.sh
-source ~/.bash/aliases.sh
-source ~/.bash/functions.sh
+# Add to existing .bashrc/.bash_profile file
+if [ -f ~/.bash_scripts ]; then
+    source ~/.bash_scripts
+fi
