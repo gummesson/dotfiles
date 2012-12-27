@@ -33,14 +33,14 @@ function td() {
 echo $@ >> ~/Dropbox/Dokument/Anteckningar/todo.txt
 }
 
-# Find a todo
+# Find a todo (and/or context)
 function tdf() {
 cat ~/Dropbox/Dokument/Anteckningar/todo.txt | grep --color=always $1
 }
 
 # THE SPARK FILE
 
-# Add an item
+# Add an item (TaskPaper formatting)
 function add() {
 echo -e "\t- $@" >> ~/Dropbox/Dokument/Anteckningar/spark-file.txt
 }
