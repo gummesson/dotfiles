@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="tab_size" mtime="1356626766" type="int" value="2"/>
+	<entry name="edit_command_type" mtime="1356616465" type="string">
+		<stringvalue>gnome</stringvalue>
+	</entry>
+	<entry name="use_syntax_highlighting" mtime="1356616453" type="bool" value="true"/>
+	<entry name="show_line_numbers" mtime="1356616450" type="bool" value="true"/>
+	<entry name="spaces_instead_of_tabs" mtime="1356616444" type="bool" value="true"/>
+	<entry name="toolbar_visible" mtime="1356626731" type="bool" value="false"/>
+	<entry name="statusbar_visible" mtime="1356626727" type="bool" value="false"/>
+	<entry name="custom_font" mtime="1356616353" type="string">
+		<stringvalue>Liberation Mono 10</stringvalue>
+	</entry>
+	<entry name="use_custom_font" mtime="1356616343" type="bool" value="true"/>
+	<entry name="window_size_x" mtime="1356616405" type="int" value="974"/>
+	<entry name="window_size_y" mtime="1356616405" type="int" value="572"/>
+</gconf>

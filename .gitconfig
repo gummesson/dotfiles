@@ -3,10 +3,11 @@
   email = ellengummesson@gmail.com
 [color]
   ui = true
-[credential]
-  helper = cache --timeout=3600
 [alias]
+  comm = commit -m
   psom = push origin master
   plom = pull origin master
 [diff]
   tool = meld
+[credential]
+  helper = cache --timeout=3600
