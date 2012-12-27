@@ -1,5 +1,7 @@
 [user]
-	name = Ellen Gummesson
-	email = ellengummesson@gmail.com
+  name = Ellen Gummesson
+  email = ellengummesson@gmail.com
 [color]
-	ui = true
+  ui = true
+[credential]
+  helper = cache --timeout=1800
