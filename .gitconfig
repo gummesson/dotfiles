@@ -8,6 +8,6 @@
   psom = push origin master
   plom = pull origin master
 [diff]
-  tool = meld
+  tool = gvimdiff
 [credential]
   helper = cache --timeout=3600

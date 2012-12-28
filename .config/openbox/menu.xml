@@ -67,6 +67,11 @@
 					</command>
 				</action>
 			</item>
+			<item label="gVim">
+				<action name="Execute">
+					<command>gvim</command>
+				</action>
+			</item>
 			<item label="Task Manager (htop)">
 				<action name="Execute">
 					<command>terminator --command=&quot;htop&quot;</command>
@@ -91,11 +96,6 @@
 					<command>
 						gksudo thunar
 					</command>
-				</action>
-			</item>
-			<item label="Meld Diff Tool">
-				<action name="Execute">
-					<command>meld</command>
 				</action>
 			</item>
 		</menu>
