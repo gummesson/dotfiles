@@ -1,12 +1,11 @@
+" gVim settings
+
 set nocompatible    " No compatibility
 filetype plugin on  " Detect filetype
 syntax enable       " Enable syntax highighting
 
-filetype plugin indent on  " Enable indent plugin
-set autoindent             " Enable auto indent
-set smartindent            " Enable context-sensitive indentation
-
-set backspace=indent,eol,start  " Make backspaces work
+set background=dark    " Set dark background
+colorscheme solarized  " Solarized theme
 
 " Set window size
 if has("gui_running")
@@ -24,7 +23,6 @@ if exists("+colorcolumn")
   set colorcolumn=81
 endif
 
-
 " Set font for GUI
 if has("gui_running")
   if has ("gui_gtk2")
@@ -34,23 +32,19 @@ if has("gui_running")
   end
 endif
 
-set background=dark    " Set dark background
-colorscheme solarized  " Solarized theme
-
-set number             " Line numbering
+set nowrap             " No word wrap
+set number             " Show line numbering
 set cursorline         " Highlight current line
 set foldmethod=manual  " Enable code folding
 set laststatus=2       " Display status line
+
+filetype plugin indent on  " Enable indent plugin
+set autoindent             " Enable auto indent
+set smartindent            " Enable context-sensitive indentation
 
 " Set two spaces as default
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
 
-" Word wrap without line breaks
-set wrap           
-set linebreak
-set nolist
-set textwidth=0
-set wrapmargin=0
-set formatoptions+=l
+set backspace=indent,eol,start  " Make backspaces work
