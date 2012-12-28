@@ -1,4 +1,9 @@
-# Add to existing .bashrc/.bash_profile file
-if [ -f ~/.bash_scripts ]; then
-    source ~/.bash_scripts
-fi
+###############
+# BASH SCRIPTS
+###############
+
+# Source files in .bash (add to existing .bashrc file)
+source ~/.bash/.paths
+source ~/.bash/.exports
+source ~/.bash/.aliases
+source ~/.bash/.functions
