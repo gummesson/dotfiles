@@ -6,6 +6,11 @@ call pathogen#infect()  " Enable the Pathogen plugin for easier plugin managemen
 filetype plugin on      " Detect filetype
 syntax on               " Enable syntax highighting
 
+set noerrorbells visualbell t_vb=          " Remove sound and visual error
+if has("autocmd")
+  autocmd GUIEnter * set visualbell t_vb=
+endif
+
 " Color scheme settings
 let g:solarized_menu=0  " Remove menu
 colorscheme solarized   " Solarized theme
@@ -61,8 +66,8 @@ nmap <leader>f9 :set foldlevel=9<CR>
 filetype plugin indent on  " Enable indent plugin
 set autoindent             " Enable auto indent
 set smartindent            " Enable context-sensitive indentation
-set smarttab               " insert tabs on the start of a line according to shiftwidth, not tabstop
-set expandtab              " Replace tab with spaces
+set smarttab               " insert tabs on the start of a line according to shiftwidth
+set expandtab              " Replace tabs with spaces
 set shiftwidth=2           " Set two spaces as default
 set tabstop=2
 set softtabstop=2
@@ -81,9 +86,6 @@ set undolevels=1000  " Enable many, many undos
 set nobackup    " No backups
 set noswapfile  " No swap file
 
-" Sound settings
-set visualbell " Remove annoying ding! sound
-
 " Keys specific settings and keybindings
 set backspace=indent,eol,start  " Enable backspacing over everything in insert mode
 set pastetoggle=<F2>            " Enable pasting without indentation 
@@ -94,4 +96,3 @@ map <C-H> <C-W>h<C-W>_
 map <C-s> :w<cr>                 " Map Ctrl+S to :w
 inoremap <C-space> <esc>         " Map Ctrl+Space to Esc
 nmap <leader>nt :NERDTree %<cr>  " Map :NERDTree to \nt
-
