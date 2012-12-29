@@ -6,3 +6,9 @@ set textwidth=0
 set wrapmargin=0
 set formatoptions+=l
 
+" Remove color column
+if exists("+colorcolumn")
+  set colorcolumn=0
+endif
+
+set nocursorline  " Remove line highlight

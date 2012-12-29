@@ -1,77 +1,97 @@
-" gVim settings
+" (g)Vim settings
 
+" General settings
 set nocompatible        " No compatibility with Vi
 call pathogen#infect()  " Enable the Pathogen plugin for easier plugin management
 filetype plugin on      " Detect filetype
 syntax on               " Enable syntax highighting
 
-" Enable NERDTree
-autocmd vimenter * NERDTree
+" Color scheme settings
+let g:solarized_menu=0  " Remove menu
+colorscheme solarized   " Solarized theme
+set background=dark     " Set dark background
 
-set background=dark    " Set dark background
-colorscheme solarized  " Solarized theme
-
-" Set window size
+" Platform specific settings
 if has("gui_running")
-  if has ("gui_gtk2")
-    set lines=30       " Linux (smaller screen)
-    set columns=90
-  else
-    set lines=40       " Windows (bigger screen)
-    set columns=120
+  if has ("gui_gtk2")                         " Linux (for a smaller screen)
+    set lines=35                              " Height
+    set columns=100                           " Width
+    set guifont=Liberation\ Mono\ 10          " Set font for GUI
+    set clipboard=unnamedplus                 " Use + register for copy-paste
+  else                                        " Windows (for a bigger screen)
+    set lines=45                              " Height      
+    set columns=140                           " Width
+    set guifont=Liberation_Mono:h10:cDEFAULT  " Set font for GUI
+    set clipboard=unnamed                     " Use * register for copy-paste
   end
 endif
 
-" Set a visual line-length limit to 80 columns by highlighting column 81
-if exists("+colorcolumn")
+" Visual settings
+set guioptions-=T  " Hide toolbar
+set number         " Show line numbering
+set laststatus=2   " Display status line
+set showcmd        " Show command in bottom right of the screen
+set showmode       " Display the current mode
+set autowrite      " Write file while switching
+set cursorline     " Highlight current line
+set showmatch      " Show matching parenthesis
+
+if exists("+colorcolumn")  " Set color column
   set colorcolumn=81
 endif
 
-" Set font for GUI
-if has("gui_running")
-  if has ("gui_gtk2")
-    set guifont=Liberation\ Mono\ 10          " Linux
-  else
-    set guifont=Liberation_Mono:h10:cDEFAULT  " Windows
-  end
-endif
+set nowrap      " No word wrap
+set mouse=a     " Enable mouse usage
+set mousehide   " Hide the mouse cursor while typing
+set foldenable  " Enable code folding
 
-set nowrap             " No word wrap
-set number             " Show line numbering
-set cursorline         " Highlight current line
-set showmatch          " Show matching parenthesis
-set foldmethod=manual  " Enable code folding
-set laststatus=2       " Display status line
+" Code folding settings
+nmap <leader>f0 :set foldlevel=0<CR>
+nmap <leader>f1 :set foldlevel=1<CR>
+nmap <leader>f2 :set foldlevel=2<CR>
+nmap <leader>f3 :set foldlevel=3<CR>
+nmap <leader>f4 :set foldlevel=4<CR>
+nmap <leader>f5 :set foldlevel=5<CR>
+nmap <leader>f6 :set foldlevel=6<CR>
+nmap <leader>f7 :set foldlevel=7<CR>
+nmap <leader>f8 :set foldlevel=8<CR>
+nmap <leader>f9 :set foldlevel=9<CR>
 
+" Indentation settings
 filetype plugin indent on  " Enable indent plugin
 set autoindent             " Enable auto indent
 set smartindent            " Enable context-sensitive indentation
 set smarttab               " insert tabs on the start of a line according to shiftwidth, not tabstop
-
-" Set two spaces as default
-set shiftwidth=2
+set expandtab              " Replace tab with spaces
+set shiftwidth=2           " Set two spaces as default
 set tabstop=2
 set softtabstop=2
 
-set backspace=indent,eol,start  " Enable backspacing over everything in insert mode
-set pastetoggle=<F2>            " Enable pasting without indentation
-
+" Search specific settings
 set hlsearch    " Highlight search terms
 set incsearch   " Show search matches as you type
 set ignorecase  " Ignore case when searching
 set smartcase   " Ignore case if search pattern is all lowercase, case-sensitive otherwise
 
+" History settings
 set history=1000     " Remember more commands and search history
 set undolevels=1000  " Enable many, many undos
 
-" Disable backups
-set nobackup
-set noswapfile
+" Backups settings
+set nobackup    " No backups
+set noswapfile  " No swap file
 
-" Keybindings
-inoremap <C-space> <esc>  " Map Esc to Ctrl+Space
-map <C-s> :w<cr>          " Map :w to Ctrl+S
+" Sound settings
+set novisualbell
 
-" Map YankRing
-nnoremap <silent> <F3> :YRShow<cr>
-inoremap <silent> <F3> <esc>:YRShow<cr>
+" Keys specific settings and keybindings
+set backspace=indent,eol,start  " Enable backspacing over everything in insert mode
+set pastetoggle=<F2>            " Enable pasting without indentation 
+map <C-J> <C-W>j<C-W>_          " Easier window/tabs navigation
+map <C-K> <C-W>k<C-W>_
+map <C-L> <C-W>l<C-W>_
+map <C-H> <C-W>h<C-W>_
+map <C-s> :w<cr>                " Map Ctrl+S to :w
+inoremap <C-space> <esc>        " Map Ctrl+Space to Esc
+nmap <leader>nt :NERDTree<cr>   " Map :NERDTree to \nt
+
