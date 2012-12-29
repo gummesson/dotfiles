@@ -82,7 +82,7 @@ set nobackup    " No backups
 set noswapfile  " No swap file
 
 " Sound settings
-set novisualbell
+set visualbell " Remove annoying ding! sound
 
 " Keys specific settings and keybindings
 set backspace=indent,eol,start  " Enable backspacing over everything in insert mode
@@ -91,7 +91,7 @@ map <C-J> <C-W>j<C-W>_          " Easier window/tabs navigation
 map <C-K> <C-W>k<C-W>_
 map <C-L> <C-W>l<C-W>_
 map <C-H> <C-W>h<C-W>_
-map <C-s> :w<cr>                " Map Ctrl+S to :w
-inoremap <C-space> <esc>        " Map Ctrl+Space to Esc
-nmap <leader>nt :NERDTree<cr>   " Map :NERDTree to \nt
+map <C-s> :w<cr>                 " Map Ctrl+S to :w
+inoremap <C-space> <esc>         " Map Ctrl+Space to Esc
+nmap <leader>nt :NERDTree %<cr>  " Map :NERDTree to \nt
 

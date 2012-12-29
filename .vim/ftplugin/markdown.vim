@@ -11,4 +11,5 @@ if exists("+colorcolumn")
   set colorcolumn=0
 endif
 
-set nocursorline  " Remove line highlight
+" Remove line highlight
+set nocursorline
