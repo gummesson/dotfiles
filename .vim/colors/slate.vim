@@ -39,6 +39,11 @@ set bg=dark
 hi clear
 let colors_name = 'slate'
 
+" Color column (custom setting)
+hi ColorColumn				    guibg=#0F2130		    	ctermfg=darkblue
+
+hi LineNr		guifg=#B0B3B9					gui=bold	ctermfg=darkgray						cterm=bold
+
 " General colors
 hi Normal		guifg=#F8F8F8	guibg=#12384B	gui=NONE
 hi NonText		guifg=#A3FEFE					gui=NONE	ctermfg=blue

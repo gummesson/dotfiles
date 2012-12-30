@@ -20,14 +20,18 @@
 "-----------
 
 set nocompatible        " No compatibility with Vi
-call pathogen#infect()  " Enable the Pathogen plugin for easier plugin management
+call pathogen#infect()  " Enable the Pathogen plugin for easier management
 syntax on               " Enable syntax highighting
+set encoding=utf-8      " Set encoding to UTF-8
 filetype plugin on      " Detect filetype
 
 set noerrorbells visualbell t_vb=          " Remove sound and visual error
 if has("autocmd")
   autocmd GUIEnter * set visualbell t_vb=
 endif
+
+set wildmenu   " Show options for file/command completion
+set autowrite  " Write file while switching
 
 "----------------
 "  Color scheme
@@ -62,11 +66,12 @@ endif
 
 set guioptions-=T  " Hide toolbar
 set number         " Show line numbering
+set cursorline     " Highlight current line
 set laststatus=2   " Display status line
 set showcmd        " Show command in bottom right of the screen
 set showmode       " Display the current mode
-set autowrite      " Write file while switching
-set cursorline     " Highlight current line
+set ruler          " Show line, columns and percentage in status line
+set scrolloff=5    " Enable more context around cursor
 set showmatch      " Show matching parenthesis
 
 " Set color column
@@ -80,16 +85,16 @@ set mousehide   " Hide the mouse cursor while typing
 set foldenable  " Enable code folding
 
 " Code folding settings
-nmap <leader>f0 :set foldlevel=0<CR>
-nmap <leader>f1 :set foldlevel=1<CR>
-nmap <leader>f2 :set foldlevel=2<CR>
-nmap <leader>f3 :set foldlevel=3<CR>
-nmap <leader>f4 :set foldlevel=4<CR>
-nmap <leader>f5 :set foldlevel=5<CR>
-nmap <leader>f6 :set foldlevel=6<CR>
-nmap <leader>f7 :set foldlevel=7<CR>
-nmap <leader>f8 :set foldlevel=8<CR>
-nmap <leader>f9 :set foldlevel=9<CR>
+nmap <leader>f0 :set foldlevel=0<cr>
+nmap <leader>f1 :set foldlevel=1<cr>
+nmap <leader>f2 :set foldlevel=2<cr>
+nmap <leader>f3 :set foldlevel=3<cr>
+nmap <leader>f4 :set foldlevel=4<cr>
+nmap <leader>f5 :set foldlevel=5<cr>
+nmap <leader>f6 :set foldlevel=6<cr>
+nmap <leader>f7 :set foldlevel=7<cr>
+nmap <leader>f8 :set foldlevel=8<cr>
+nmap <leader>f9 :set foldlevel=9<cr>
 
 "---------------
 "  Indentation
@@ -98,7 +103,7 @@ nmap <leader>f9 :set foldlevel=9<CR>
 filetype plugin indent on  " Enable indent plugin
 set autoindent             " Enable auto indent
 set smartindent            " Enable context-sensitive indentation
-set smarttab               " insert tabs on the start of a line according to shiftwidth
+set smarttab               " Insert tabs on the start of a line according to shiftwidth
 set expandtab              " Replace tabs with spaces
 
 " Set two spaces as default
@@ -138,7 +143,6 @@ set pastetoggle=<F2>            " Enable pasting without indentation
 au InsertLeave * set nopaste    " Diable paste mode when leaving insert mode
 
 let mapleader = ","  " Map leader to ,
-nmap <C-s> :w<cr>    " Map Ctrl+S to :w
 
 " Easier windows/tabs navigation
 map <C-J> <C-W>j<C-W>_ 
@@ -156,5 +160,8 @@ nmap j gj  " Down
 
 " NERDTree(Tabs)
 let g:NERDTreeWinSize = 30                   " Set size
-nmap <leader>nt :NERDTree %<cr>              " Map :NERDTree to ,nt (file directory as root)
+nmap <leader>nt :NERDTree %<cr>              " Map to ,nt (file directory as root)
 let g:nerdtree_tabs_open_on_gui_startup = 0  " Prevent from opening on startup
+
+" Numbers.vim
+nmap <f3> :NumbersToggle<cr>  " Map to F3
