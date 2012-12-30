@@ -149,6 +149,10 @@ map <C-K> <C-W>k<C-W>_
 map <C-L> <C-W>l<C-W>_
 map <C-H> <C-W>h<C-W>_
 
+" Move row by row instead of line by line
+nmap k gk  " Up
+nmap j gj  " Down
+
 "-----------
 "  Plugins
 "-----------
@@ -157,4 +161,3 @@ map <C-H> <C-W>h<C-W>_
 let g:NERDTreeWinSize = 30                   " Set size
 nmap <leader>nt :NERDTree %<cr>              " Map :NERDTree to ,nt (file directory as root)
 let g:nerdtree_tabs_open_on_gui_startup = 0  " Prevent from opening on startup
-
