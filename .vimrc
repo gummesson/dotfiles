@@ -156,4 +156,4 @@ map <C-H> <C-W>h<C-W>_
 " NERDTree(Tabs)
 let g:NERDTreeWinSize = 30                   " Set size
 nmap <leader>nt :NERDTree %<cr>              " Map :NERDTree to ,nt (file directory as root)
-let g:nerdtree_tabs_open_on_gui_startup = 0  " Bla
+let g:nerdtree_tabs_open_on_gui_startup = 0  " Prevent from opening on startup
