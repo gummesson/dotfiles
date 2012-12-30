@@ -30,6 +30,12 @@ if has("autocmd")
   autocmd GUIEnter * set visualbell t_vb=
 endif
 
+" Autoreload Vim settings
+augroup reload_vimrc " {
+  autocmd!
+  autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END " }
+
 set wildmenu   " Show options for file/command completion
 set autowrite  " Write file while switching
 
@@ -47,7 +53,7 @@ set background=dark     " Set dark background
 "------------
 
 if has("gui_running")
-  if has ("gui_gtk2")                         " Linux (for a smaller screen)
+  if has("gui_gtk2")                          " Linux (for a smaller screen)
     set lines=35                              " Height
     set columns=100                           " Width
     set guifont=Liberation\ Mono\ 10          " Set font for GUI
@@ -143,6 +149,7 @@ set pastetoggle=<F2>            " Enable pasting without indentation
 au InsertLeave * set nopaste    " Diable paste mode when leaving insert mode
 
 let mapleader = ","  " Map leader to ,
+set timeoutlen=500   " Faster leader execution
 
 " Easier windows/tabs navigation
 map <C-J> <C-W>j<C-W>_ 
@@ -159,9 +166,16 @@ nmap j gj  " Down
 "-----------
 
 " NERDTree(Tabs)
-let g:NERDTreeWinSize = 30                   " Set size
 nmap <leader>nt :NERDTree %<cr>              " Map to ,nt (file directory as root)
 let g:nerdtree_tabs_open_on_gui_startup = 0  " Prevent from opening on startup
+
+if has("gui_running")
+  if has("gui_gtk2")
+    let g:NERDTreeWinSize = 25  " Set size (Linux)
+  else
+    let g:NERDTreeWinSize = 30  " Set size (Windows)
+  end
+endif
 
 " Numbers.vim
 nmap <f3> :NumbersToggle<cr>  " Map to F3
