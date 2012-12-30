@@ -38,6 +38,9 @@ let g:solarized_menu=0  " Remove menu
 colorscheme solarized   " Solarized theme
 set background=dark     " Set dark background
 
+"colorscheme hemisu 
+"set background=light
+
 "------------
 "  Platform
 "------------
@@ -137,10 +140,10 @@ set backspace=indent,eol,start  " Enable backspacing over everything in insert m
 set pastetoggle=<F2>            " Enable pasting without indentation
 au InsertLeave * set nopaste    " Diable paste mode when leaving insert mode
 
-let mapleader = ","    " Map leader to ,
-nnoremap <C-s> :w<cr>  " Map Ctrl+S to :w
+let mapleader = ","  " Map leader to ,
+nmap <C-s> :w<cr>    " Map Ctrl+S to :w
 
-" Easier window/tabs navigation
+" Easier windows/tabs navigation
 map <C-J> <C-W>j<C-W>_ 
 map <C-K> <C-W>k<C-W>_
 map <C-L> <C-W>l<C-W>_
@@ -154,3 +157,4 @@ map <C-H> <C-W>h<C-W>_
 let g:NERDTreeWinSize = 30                   " Set size
 nmap <leader>nt :NERDTree %<cr>              " Map :NERDTree to ,nt (file directory as root)
 let g:nerdtree_tabs_open_on_gui_startup = 0  " Prevent from opening on startup
+
