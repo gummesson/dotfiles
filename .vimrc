@@ -1,22 +1,50 @@
-" (g)Vim settings
+"===================
+"  (g)Vim settings
+"===================
+"
+"  + General
+"  + Color scheme
+"  + Platform
+"  + Visual
+"  + Indentation
+"  + Search
+"  + History
+"  + Backups
+"  + Keys
+"  + Plugins
+"
+"===================
 
-" General settings
+"-----------
+"  General
+"-----------
+
 set nocompatible        " No compatibility with Vi
 call pathogen#infect()  " Enable the Pathogen plugin for easier plugin management
-filetype plugin on      " Detect filetype
 syntax on               " Enable syntax highighting
+filetype plugin on      " Detect filetype
 
 set noerrorbells visualbell t_vb=          " Remove sound and visual error
 if has("autocmd")
   autocmd GUIEnter * set visualbell t_vb=
 endif
 
-" Color scheme settings
+"----------------
+"  Color scheme
+"----------------
+
+" Solarized
 let g:solarized_menu=0  " Remove menu
 colorscheme solarized   " Solarized theme
 set background=dark     " Set dark background
 
-" Platform specific settings
+"colorscheme hemisu 
+"set background=light
+
+"------------
+"  Platform
+"------------
+
 if has("gui_running")
   if has ("gui_gtk2")                         " Linux (for a smaller screen)
     set lines=35                              " Height
@@ -31,7 +59,10 @@ if has("gui_running")
   end
 endif
 
-" Visual settings
+"----------
+"  Visual
+"----------
+
 set guioptions-=T  " Hide toolbar
 set number         " Show line numbering
 set laststatus=2   " Display status line
@@ -41,7 +72,8 @@ set autowrite      " Write file while switching
 set cursorline     " Highlight current line
 set showmatch      " Show matching parenthesis
 
-if exists("+colorcolumn")  " Set color column
+" Set color column
+if exists("+colorcolumn")
   set colorcolumn=81
 endif
 
@@ -62,37 +94,66 @@ nmap <leader>f7 :set foldlevel=7<CR>
 nmap <leader>f8 :set foldlevel=8<CR>
 nmap <leader>f9 :set foldlevel=9<CR>
 
-" Indentation settings
+"---------------
+"  Indentation
+"---------------
+
 filetype plugin indent on  " Enable indent plugin
 set autoindent             " Enable auto indent
 set smartindent            " Enable context-sensitive indentation
 set smarttab               " insert tabs on the start of a line according to shiftwidth
 set expandtab              " Replace tabs with spaces
-set shiftwidth=2           " Set two spaces as default
+
+" Set two spaces as default
+set shiftwidth=2
 set tabstop=2
 set softtabstop=2
 
-" Search specific settings
+"----------
+"  Search
+"----------
+
 set hlsearch    " Highlight search terms
 set incsearch   " Show search matches as you type
 set ignorecase  " Ignore case when searching
 set smartcase   " Ignore case if search pattern is all lowercase, case-sensitive otherwise
 
-" History settings
+"-----------
+"  History
+"-----------
+
 set history=1000     " Remember more commands and search history
 set undolevels=1000  " Enable many, many undos
 
-" Backups settings
+"-----------
+"  Backups
+"-----------
+
 set nobackup    " No backups
 set noswapfile  " No swap file
 
-" Keys specific settings and keybindings
+"--------
+"  Keys
+"--------
+
 set backspace=indent,eol,start  " Enable backspacing over everything in insert mode
-set pastetoggle=<F2>            " Enable pasting without indentation 
-map <C-J> <C-W>j<C-W>_          " Easier window/tabs navigation
+set pastetoggle=<F2>            " Enable pasting without indentation
+au InsertLeave * set nopaste    " Diable paste mode when leaving insert mode
+
+let mapleader = ","    " Map leader to ,
+nnoremap <C-s> :w<cr>  " Map Ctrl+S to :w
+
+" Easier window/tabs navigation
+map <C-J> <C-W>j<C-W>_ 
 map <C-K> <C-W>k<C-W>_
 map <C-L> <C-W>l<C-W>_
 map <C-H> <C-W>h<C-W>_
-map <C-s> :w<cr>                 " Map Ctrl+S to :w
-inoremap <C-space> <esc>         " Map Ctrl+Space to Esc
-nmap <leader>nt :NERDTree %<cr>  " Map :NERDTree to \nt
+
+"-----------
+"  Plugins
+"-----------
+
+" NERDTree(Tabs)
+let g:NERDTreeWinSize = 30                   " Set size
+nmap <leader>nt :NERDTree %<cr>              " Map :NERDTree to ,nt (file directory as root)
+let g:nerdtree_tabs_open_on_gui_startup = 0  " Bla
