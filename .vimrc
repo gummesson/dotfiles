@@ -38,9 +38,6 @@ let g:solarized_menu=0  " Remove menu
 colorscheme solarized   " Solarized theme
 set background=dark     " Set dark background
 
-"colorscheme hemisu 
-"set background=light
-
 "------------
 "  Platform
 "------------
