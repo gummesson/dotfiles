@@ -1,4 +1,4 @@
-# dotfiles
+# Dotfiles
 
 A collection of assorted dotfiles from my [Crunchbang Linux Waldorf](http://www.crunchbang.org/ "Crunchbang Linux") powered system.
 
@@ -17,6 +17,7 @@ A collection of assorted dotfiles from my [Crunchbang Linux Waldorf](http://www.
 
 - Pathogen
 - NERDTree *(with NERDTreeTabs)*
+- Numbers
 - Autoclose
 - Tabular
 - Fugitive
