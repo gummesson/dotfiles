@@ -3,16 +3,16 @@
 "===================
 "
 "  + General
-"  + Color scheme
+"  + Color Scheme
 "  + Platform
 "  + Visual
 "  + Indentation
 "  + Search
 "  + History
 "  + Backups
-"  + Keys
 "  + Plugins
-"
+"  + Keys
+"  
 "===================
 
 "-----------
@@ -36,11 +36,12 @@ augroup reload_vimrc " {
   autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END " }
 
+set hidden     " Hide the buffers instead of closing them
 set wildmenu   " Show options for file/command completion
 set autowrite  " Write file while switching
 
 "----------------
-"  Color scheme
+"  Color Scheme
 "----------------
 
 " Solarized
@@ -90,18 +91,6 @@ set mouse=a     " Enable mouse usage
 set mousehide   " Hide the mouse cursor while typing
 set foldenable  " Enable code folding
 
-" Code folding settings
-nmap <leader>f0 :set foldlevel=0<cr>
-nmap <leader>f1 :set foldlevel=1<cr>
-nmap <leader>f2 :set foldlevel=2<cr>
-nmap <leader>f3 :set foldlevel=3<cr>
-nmap <leader>f4 :set foldlevel=4<cr>
-nmap <leader>f5 :set foldlevel=5<cr>
-nmap <leader>f6 :set foldlevel=6<cr>
-nmap <leader>f7 :set foldlevel=7<cr>
-nmap <leader>f8 :set foldlevel=8<cr>
-nmap <leader>f9 :set foldlevel=9<cr>
-
 "---------------
 "  Indentation
 "---------------
@@ -140,33 +129,11 @@ set undolevels=1000  " Enable many, many undos
 set nobackup    " No backups
 set noswapfile  " No swap file
 
-"--------
-"  Keys
-"--------
-
-set backspace=indent,eol,start  " Enable backspacing over everything in insert mode
-set pastetoggle=<F2>            " Enable pasting without indentation
-au InsertLeave * set nopaste    " Diable paste mode when leaving insert mode
-
-let mapleader = ","  " Map leader to ,
-set timeoutlen=500   " Faster leader execution
-
-" Easier windows/tabs navigation
-map <C-J> <C-W>j<C-W>_ 
-map <C-K> <C-W>k<C-W>_
-map <C-L> <C-W>l<C-W>_
-map <C-H> <C-W>h<C-W>_
-
-" Move row by row instead of line by line
-nmap k gk  " Up
-nmap j gj  " Down
-
 "-----------
 "  Plugins
 "-----------
 
-" NERDTree(Tabs)
-nmap <leader>nt :NERDTree %<cr>              " Map to ,nt (file directory as root)
+" NERDTreeTabs
 let g:nerdtree_tabs_open_on_gui_startup = 0  " Prevent from opening on startup
 
 if has("gui_running")
@@ -177,5 +144,36 @@ if has("gui_running")
   end
 endif
 
-" Numbers.vim
-nmap <f3> :NumbersToggle<cr>  " Map to F3
+"--------
+"  Keys
+"--------
+
+" Remove help toggling from F1
+imap <F1> <nop>
+nmap <F1> <nop>
+vmap <F1> <nop>
+
+nmap <F1> :NERDTreeTabsToggle<cr>  " Map NERDTree to F1 (file directory as root)
+
+set pastetoggle=<F2>            " Enable pasting without indentation
+au InsertLeave * set nopaste    " Diable paste mode when leaving insert mode
+set backspace=indent,eol,start  " Enable backspacing over everything in insert mode
+nmap <F3> :nohl<cr>             " Redraws the screen and removes any search highlighting
+
+let mapleader = ","  " Map leader to ,
+set timeoutlen=500   " Faster leader execution
+
+" Move row by row instead of line by line
+nmap k gk  " Up
+nmap j gj  " Down
+
+" Tab navigation
+map <S-Left> :tabprevious<cr>  " Shift+Left goes to previous tab
+map <S-Right> :tabnext<cr>     " Shift+Right goes to next tab
+
+" Window navigation
+map <C-Down> <C-W>j<C-W>_   " Ctrl+Down goes to the bottom window
+map <C-Up> <C-W>k<C-W>_     " Ctrl+Up goes to the top window
+map <C-Right> <C-W>l<C-W>_  " Ctrl+Right goes to the right window
+map <C-Left> <C-W>h<C-W>_   " Ctrl+Left goes to the left window
+
