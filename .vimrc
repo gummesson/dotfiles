@@ -25,9 +25,10 @@ syntax on               " Enable syntax highighting
 set encoding=utf-8      " Set encoding to UTF-8
 filetype plugin on      " Detect filetype
 
-set noerrorbells visualbell t_vb=          " Remove sound and visual error
+" Remove sound and visual error
+set noerrorbells visualbell t_vb=
 if has("autocmd")
-  autocmd GUIEnter * set visualbell t_vb=
+  autocmd GUIEnter * set visualbell t_vb=      
 endif
 
 " Autoreload Vim settings
@@ -35,7 +36,7 @@ augroup reload_vimrc " {
   autocmd!
   autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END " }
-
+  
 set hidden     " Hide the buffers instead of closing them
 set wildmenu   " Show options for file/command completion
 set autowrite  " Write file while switching
@@ -78,6 +79,7 @@ set laststatus=2   " Display status line
 set showcmd        " Show command in bottom right of the screen
 set showmode       " Display the current mode
 set ruler          " Show line, columns and percentage in status line
+set nowrap         " No word wrap
 set scrolloff=5    " Enable more context around cursor
 set showmatch      " Show matching parenthesis
 
@@ -86,10 +88,13 @@ if exists("+colorcolumn")
   set colorcolumn=81
 endif
 
-set nowrap      " No word wrap
-set mouse=a     " Enable mouse usage
-set mousehide   " Hide the mouse cursor while typing
-set foldenable  " Enable code folding
+" Mouse
+set mouse=a    " Enable mouse usage
+set mousehide  " Hide the mouse cursor while typing
+
+" Code folding
+set foldenable         " Enable code folding
+set foldmethod=manual  " Use manual code folding
 
 "---------------
 "  Indentation
