@@ -147,13 +147,31 @@ endif
 "--------
 "  Keys
 "--------
+"
+" F1: Toogle NERDTreeTabs
+" F2: Toogle paste mode
+" F3: Remove search highlightning
+"
+" ,cd: Set current directory as root
+"
+" j: Move down row by row
+" k: Move up row by row
+"
+"  Shift+Left: Go to previous tab
+" Shift+Right: Go to next tab
+"
+"    Ctrl+Up: Go to top window
+"  Ctrl+Down: Go to bottom window
+"  Ctrl+Left: Go to left window
+" Ctrl+Right: Go to right window
+"
 
 " Remove help toggling from F1
 imap <F1> <nop>
 nmap <F1> <nop>
 vmap <F1> <nop>
 
-nmap <F1> :NERDTreeTabsToggle<cr>  " Map NERDTree to F1 (file directory as root)
+nmap <F1> :NERDTreeTabsToggle<cr>  " Map NERDTreeTabs to F1
 
 set pastetoggle=<F2>            " Enable pasting without indentation
 au InsertLeave * set nopaste    " Diable paste mode when leaving insert mode
@@ -162,6 +180,8 @@ nmap <F3> :nohl<cr>             " Redraws the screen and removes any search high
 
 let mapleader = ","  " Map leader to ,
 set timeoutlen=500   " Faster leader execution
+
+nmap <leader>cd :cd %:p:h<cr>:pwd<cr>  " Set current directory as root
 
 " Move row by row instead of line by line
 nmap k gk  " Up
@@ -172,8 +192,7 @@ map <S-Left> :tabprevious<cr>  " Shift+Left goes to previous tab
 map <S-Right> :tabnext<cr>     " Shift+Right goes to next tab
 
 " Window navigation
-map <C-Down> <C-W>j<C-W>_   " Ctrl+Down goes to the bottom window
-map <C-Up> <C-W>k<C-W>_     " Ctrl+Up goes to the top window
-map <C-Right> <C-W>l<C-W>_  " Ctrl+Right goes to the right window
-map <C-Left> <C-W>h<C-W>_   " Ctrl+Left goes to the left window
-
+map <C-Up> <C-W>k<C-W>_<cr>     " Ctrl+Up goes to the top window
+map <C-Down> <C-W>j<C-W>_<cr>   " Ctrl+Down goes to the bottom window
+map <C-Left> <C-W>h<C-W>_<cr>   " Ctrl+Left goes to the left window
+map <C-Right> <C-W>l<C-W>_<cr>  " Ctrl+Right goes to the right window
