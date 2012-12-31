@@ -38,8 +38,8 @@ augroup reload_vimrc " {
 augroup END " }
   
 set hidden     " Hide the buffers instead of closing them
-set wildmenu   " Show options for file/command completion
 set autowrite  " Write file while switching
+set autoread   " Reload files that has been changed outside of Vim
 
 "----------------
 "  Color Scheme
@@ -79,9 +79,11 @@ set laststatus=2   " Display status line
 set showcmd        " Show command in bottom right of the screen
 set showmode       " Display the current mode
 set ruler          " Show line, columns and percentage in status line
+
 set nowrap         " No word wrap
-set scrolloff=5    " Enable more context around cursor
+set scrolloff=10   " Enable more context around cursor
 set showmatch      " Show matching parenthesis
+set wildmenu       " Show options for file/command completion
 
 " Set color column
 if exists("+colorcolumn")
@@ -92,9 +94,14 @@ endif
 set mouse=a    " Enable mouse usage
 set mousehide  " Hide the mouse cursor while typing
 
+
 " Code folding
 set foldenable         " Enable code folding
 set foldmethod=manual  " Use manual code folding
+                       " zf: Create fold
+                       " za: Open fold
+                       " zi: Toogle folding on/off
+                       " zd: Remove fold
 
 "---------------
 "  Indentation
@@ -139,7 +146,7 @@ set noswapfile  " No swap file
 "-----------
 
 " NERDTreeTabs
-let g:nerdtree_tabs_open_on_gui_startup = 0  " Prevent from opening on startup
+let g:nerdtree_tabs_open_on_gui_startup = 0  " Prevent from opening up on startup
 
 if has("gui_running")
   if has("gui_gtk2")
@@ -154,8 +161,9 @@ endif
 "--------
 "
 " F1: Toogle NERDTreeTabs
-" F2: Toogle paste mode
-" F3: Remove search highlightning
+" F2: Toogle (relative) Numbers.vim
+" F3: Toogle paste mode
+" F4: Remove search highlightning
 "
 " ,cd: Set current directory as root
 "
@@ -169,6 +177,7 @@ endif
 "  Ctrl+Down: Go to bottom window
 "  Ctrl+Left: Go to left window
 " Ctrl+Right: Go to right window
+"        ,eq: Make all windows equal in size
 "
 
 " Remove help toggling from F1
@@ -176,17 +185,18 @@ imap <F1> <nop>
 nmap <F1> <nop>
 vmap <F1> <nop>
 
-nmap <F1> :NERDTreeTabsToggle<cr>  " Map NERDTreeTabs to F1
+map <F1> :NERDTreeTabsToggle<cr>  " Map NERDTreeTabs to F1
+map <F2> :NumbersToggle<cr>       " Map Numbers to F4
 
-set pastetoggle=<F2>            " Enable pasting without indentation
+set pastetoggle=<F3>            " Enable pasting without indentation
 au InsertLeave * set nopaste    " Diable paste mode when leaving insert mode
 set backspace=indent,eol,start  " Enable backspacing over everything in insert mode
-nmap <F3> :nohl<cr>             " Redraws the screen and removes any search highlighting
+nmap <F4> :nohl<cr>             " Redraws the screen and removes any search highlighting
 
 let mapleader = ","  " Map leader to ,
 set timeoutlen=500   " Faster leader execution
 
-nmap <leader>cd :cd %:p:h<cr>:pwd<cr>  " Set current directory as root
+map <leader>cd :cd %:p:h<cr>:pwd<cr>  " Set current directory as root
 
 " Move row by row instead of line by line
 nmap k gk  " Up
@@ -197,7 +207,10 @@ map <S-Left> :tabprevious<cr>  " Shift+Left goes to previous tab
 map <S-Right> :tabnext<cr>     " Shift+Right goes to next tab
 
 " Window navigation
-map <C-Up> <C-W>k<C-W>_<cr>     " Ctrl+Up goes to the top window
-map <C-Down> <C-W>j<C-W>_<cr>   " Ctrl+Down goes to the bottom window
-map <C-Left> <C-W>h<C-W>_<cr>   " Ctrl+Left goes to the left window
-map <C-Right> <C-W>l<C-W>_<cr>  " Ctrl+Right goes to the right window
+map <C-Up> <C-W>k     " Ctrl+Up goes to the top window
+map <C-Down> <C-W>j   " Ctrl+Down goes to the bottom window
+map <C-Left> <C-W>h   " Ctrl+Left goes to the left window
+map <C-Right> <C-W>l  " Ctrl+Right goes to the right window
+
+" Window size
+map <leader>eq <C-W>=  " Make all windows equal in size
