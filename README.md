@@ -11,28 +11,7 @@ A collection of assorted dotfiles from my [Crunchbang Linux Waldorf](http://www.
 	- Paths
 - Bash profile
 
-## Vim
-
-### Plugins
-
-- Pathogen
-- NERDTree *(with NERDTreeTabs)*
-- Numbers
-- Autoclose
-- Tabular
-- Fugitive
-
-### Syntax
-
-- SCSS
-- Markdown "tweaks" (custom made settings)
-
-### Color schemes
-
-- Solarized
-- Base16 *(Eighties, Monokai and Railscasts)*
-
-## Others
+## Configs
 
 - Openbox
 - tint2
