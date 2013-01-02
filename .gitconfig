@@ -6,9 +6,7 @@
 [diff]
   tool = gvimdiff
 [core]
-
   editor = gvim
-
 [alias]
     st = status
     cm = commit
