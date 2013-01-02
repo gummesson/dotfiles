@@ -10,6 +10,8 @@ A collection of assorted dotfiles from my [Crunchbang Linux Waldorf](http://www.
 	- Functions
 	- Paths
 - Bash profile
+- Gitconfig
+- Gitignore *(currently empty)*
 
 ## Configs
 
