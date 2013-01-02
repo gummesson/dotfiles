@@ -1,8 +1,8 @@
-###############
-# BASH PROFILE
-###############
+#----------------
+#  Bash Profile
+#----------------
 
-# Source .bashrc
+# Source .bashrc file
 if [ -f "${HOME}/.bashrc" ] ; then
   source "${HOME}/.bashrc"
 fi

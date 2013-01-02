@@ -1,47 +1,37 @@
 #!/bin/bash
 
-############
-# FUNCTIONS
-############
+#-------------
+#  Functions
+#-------------
 
-# NOTE-TAKING
-
-# Open/create note
+# Note-taking
 function no() {
-geany ~/Dropbox/Dokument/Anteckningar/$1.txt 
+  retext ~/Dropbox/Dokument/Anteckningar/$1.txt  # Open/create note
 }
 
-# Search for a note (by last modified date)
 function nos() {
-ls -c ~/Dropbox/Dokument/Anteckningar | grep --color=always $1
+  ls -c ~/Dropbox/Dokument/Anteckningar | grep --color=always $1  # Search for a note (by last modified date)
 }
 
-# List all notes (by last modified date)
 function nol() {
-ls -c ~/Dropbox/Dokument/Anteckningar
+  ls -c ~/Dropbox/Dokument/Anteckningar  # List all notes (by last modified date)
 }
 
-# Display the note in the terminal
 function not() {
-  cat ~/Dropbox/Dokument/Anteckningar/$1.txt
+  cat ~/Dropbox/Dokument/Anteckningar/$1.txt  # Display the note in the terminal
 }
 
-# TODO
-
-# Add a todo
+# Todo
 function td() {
-echo $@ >> ~/Dropbox/Dokument/Anteckningar/todo.txt
+  echo $@ >> ~/Dropbox/Dokument/Anteckningar/todo.txt  # Add a todo
 }
 
-# Find a todo (and/or context)
 function tdf() {
-cat ~/Dropbox/Dokument/Anteckningar/todo.txt | grep --color=always $1
+  cat ~/Dropbox/Dokument/Anteckningar/todo.txt | grep --color=always $1  # Find a todo
 }
 
-# THE SPARK FILE
-
-# Add an item (TaskPaper formatting)
+# The Spark File
 function add() {
-echo -e "\t- $@" >> ~/Dropbox/Dokument/Anteckningar/spark-file.txt
+  echo -e "\t- $@" >> ~/Dropbox/Dokument/Anteckningar/spark-file.txt  # Add an item (with TaskPaper formatting)
 }
 

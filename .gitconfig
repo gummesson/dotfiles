@@ -3,11 +3,23 @@
   email = ellengummesson@gmail.com
 [color]
   ui = true
+[diff]
+  tool = gvimdiff
+[core]
+
+  editor = gvim
+
 [alias]
+    st = status
+    cm = commit
+    br = branch
+    co = checkout
+    df = diff
+   dft = difftool
+    pl = pull
+    ps = push
   comm = commit -m
   psom = push origin master
   plom = pull origin master
-[diff]
-  tool = gvimdiff
 [credential]
   helper = cache --timeout=3600

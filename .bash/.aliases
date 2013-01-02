@@ -1,30 +1,30 @@
 #!/bin/bash
 
-##########
-# ALIASES
-##########
+#-----------
+#  Aliases
+#-----------
 
-# RUBY
+# Ruby
 alias rake="rake1.9.3"
 
-# GREP
+# Grep
 alias grep="grep --color"         # Enable diff color
-alias egrep="egrep --color=auto"  # Enable diff color
-alias fgrep="fgrep --color=auto"  # Enable diff color
+alias egrep="egrep --color=auto"
+alias fgrep="fgrep --color=auto"
 
-# LISTS
+# Lists
 alias ll="ls -l"  # Long list
 alias la="ls -a"  # List all but . and ..
 
-# COPY
+# Copy
 alias cp="cp -i"  # Confirm copy
 
-# MOVE
+# Move
 alias mv="mv -i"  # Confirm move
 
-# REMOVE
+# Remove
 alias rm="rm -i"  # Confirm removal
 
-# DIRECTORIES
+# Directories
 alias vdir="ls --color=auto --format=vertical"  # List directory (vertically)
 alias ldir="ls --color=auto --format=long"      # List directory (long)

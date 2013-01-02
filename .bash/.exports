@@ -1,11 +1,11 @@
 #!/bin/bash
 
-##########
-# EXPORTS
-##########
+#-----------
+#  Exports
+#-----------
 
 # Add local bins to path
 export PATH="$PATH:/usr/local/bin"
 
 # Default editor
-export EDITOR="geany"
+export EDITOR="gvim"

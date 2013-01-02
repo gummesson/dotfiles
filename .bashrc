@@ -1,8 +1,8 @@
-###############
-# BASH SCRIPTS
-###############
+#----------------
+#  Bash Scripts
+#----------------
 
-# Source files in .bash (add to existing .bashrc file)
+# Source files in .bash/ (add to existing .bashrc file)
 source ~/.bash/.paths
 source ~/.bash/.exports
 source ~/.bash/.aliases
