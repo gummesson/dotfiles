@@ -20,8 +20,6 @@
   psom = push origin master
   plom = pull origin master
 [push]
-
   default = tracking
-
 [credential]
   helper = cache --timeout=3600
