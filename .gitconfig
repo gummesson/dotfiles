@@ -1,5 +1,5 @@
 [user]
-  name = Ellen Gummesson
+   name = Ellen Gummesson
   email = ellengummesson@gmail.com
 [color]
   ui = true
@@ -19,5 +19,9 @@
   comm = commit -m
   psom = push origin master
   plom = pull origin master
+[push]
+
+  default = tracking
+
 [credential]
   helper = cache --timeout=3600
