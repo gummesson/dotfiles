@@ -15,9 +15,6 @@ A collection of assorted dotfiles from my [Crunchbang Linux Waldorf](http://www.
 
 ## Configs
 
-- Openbox
 - tint2
 - Terminator
-- Gmrun
-- Geany
 - ReText
