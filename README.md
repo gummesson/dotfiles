@@ -12,6 +12,9 @@ A collection of assorted dotfiles from my [Crunchbang Linux Waldorf](http://www.
 - Bash profile
 - Gitconfig
 - Gitignore *(currently empty)*
+- Cygwin
+  - .bash_profile
+  - .minttyrc
 
 ## Configs
 
