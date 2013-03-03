@@ -1,12 +1,14 @@
-# Solarized
-BoldAsFont=no
+Locale=C
+Charset=UTF-8
+Term=xterm-256color
 Transparency=low
-CursorType=line
+CursorType=block
 Font=Liberation Mono
 FontHeight=10
 FontSmoothing=default
 CopyAsRTF=no
 Rows=24
+Columns=80
 ForegroundColour=131,148,150
 BackgroundColour=0,43,54
 CursorColour=220,50,47
@@ -26,3 +28,5 @@ Cyan=42,161,152
 BoldCyan=147,161,161
 White=238,232,213
 BoldWhite=253,246,227
+BoldAsFont=no
+BellSound=yes

@@ -15,6 +15,7 @@ A collection of assorted dotfiles from my [Crunchbang Linux Waldorf](http://www.
 - Cygwin
   - .bash_profile
   - .minttyrc
+- Ackrc
 
 ## Configs
 
