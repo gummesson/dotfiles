@@ -1,11 +1,12 @@
-# Always sort the files
+# General stuff
 --sort-files
-
-# Colors please
 --color
-
-# Print a heading and a break for ever result
 --group
+--smart-case
+
+# Ignore directories
+--ignore-dir=log
+--ignore-dir=tmp
 
 # Add additional HTML extensions
 --type-add
@@ -18,7 +19,3 @@ css=.sass,.scss,.less
 # Add Markdown extensions
 --type-set
 markdown=.md,.mkd.,.markdown
-
-# Ignore directories
---ignore-dir=log
---ignore-dir=tmp
