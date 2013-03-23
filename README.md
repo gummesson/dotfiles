@@ -7,10 +7,11 @@ A collection of assorted dotfiles.
 - .bash_profile
 - .gitconfig
 - .gitignore
+- .ackrc
+- .gemrc
 - .cygwin
   - .bash_profile
   - .minttyrc
-- .ackrc
 
 ## Configs
 

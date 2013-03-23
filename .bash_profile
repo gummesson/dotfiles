@@ -2,6 +2,15 @@
 # ~/.bash_profile
 #
 
+#--------
+#  Term
+#--------
+
+if [ "xTERM" = "xxterm" ]
+then
+  export TERM="xterm-256colors"
+fi
+
 #---------
 #  rbenv
 #---------
@@ -21,7 +30,7 @@ export EDITOR="gvim"
 export PATH="$PATH:/usr/local/bin"
 
 # RubyGems
-export PATH="$PATH:$HOME/.gem/ruby/1.9.1/bin"
+# export PATH="$PATH:$HOME/.gem/ruby/1.9.1/bin"
 
 #---------
 #  Paths
