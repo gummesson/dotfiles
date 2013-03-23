@@ -16,3 +16,4 @@ A collection of assorted dotfiles.
 
 - tint2
 - lxterminal
+- compton
