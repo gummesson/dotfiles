@@ -6,7 +6,7 @@ A collection of assorted dotfiles.
 
 - .bash_profile
 - .gitconfig
-- Gitignore *(currently empty)*
+- .gitignore
 - .cygwin
   - .bash_profile
   - .minttyrc
