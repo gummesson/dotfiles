@@ -1,24 +1,18 @@
 # Dotfiles
 
-A collection of assorted dotfiles from my [Crunchbang Linux Waldorf](http://www.crunchbang.org/ "Crunchbang Linux") powered system.
+A collection of assorted dotfiles.
 
 ## Bash
 
-- Bashrc
-	- Aliases
-	- Exports
-	- Functions
-	- Paths
-- Bash profile
-- Gitconfig
+- .bash_profile
+- .gitconfig
 - Gitignore *(currently empty)*
-- Cygwin
+- .cygwin
   - .bash_profile
   - .minttyrc
-- Ackrc
+- .ackrc
 
 ## Configs
 
 - tint2
-- Terminator
-- ReText
+- lxterminal
