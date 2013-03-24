@@ -1,17 +1,21 @@
+#!/bin/bash
+
 # Directories
-alias gitdir='cd D:/Git'
+alias gitdir="cd D:/Git"
+alias dbnotes="cd D:/Dropbox/Dokument/Anteckningar/"
 
 # Tools
-alias ack='ack.bat'
+alias ack="ack.bat"
 
 # Ruby Gems
-alias gem='gem.bat'
-alias bundle='bundle.bat'
-alias compass='compass.bat'
-alias sass='sass.bat'
-alias rake='rake.bat'
-alias rack='rack.bat'
-alias jekyll='jekyll.bat'
+alias rake="rake.bat"
+alias gem="gem.bat"
+alias bundle="bundle.bat"
+alias haml="haml.bat"
+alias sass="sass.bat"
+alias compass="compass.bat"
+alias rack="rack.bat"
+alias jekyll="jekyll.bat"
 
-# Kill WEBrick (taskkill /F /PID {num})
-alias kwb='taskkill /F /PID'
+# Kill Webbrick (taskkill /F /PID {number})
+alias kwb="taskkill /F /PID"

@@ -29,9 +29,6 @@ export EDITOR="gvim"
 # Add local bins to path
 export PATH="$PATH:/usr/local/bin"
 
-# RubyGems
-# export PATH="$PATH:$HOME/.gem/ruby/1.9.1/bin"
-
 #---------
 #  Paths
 #---------
