@@ -1,6 +1,6 @@
-#===================
-# ~/.bash_profile
-#===================
+#====================
+#  ~/.bash_profile
+#====================
 
 # Source the .bashrc
 if [ -e "${HOME}/.bashrc" ] ; then
