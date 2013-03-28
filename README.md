@@ -5,6 +5,7 @@ A collection of assorted dotfiles.
 ## Bash
 
 - .bash_profile
+- .inputrc
 - .gitconfig
 - .gitignore
 - .ackrc

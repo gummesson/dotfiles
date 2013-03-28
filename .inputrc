@@ -1,0 +1,13 @@
+# Enable utf-8 support
+set meta-flag on
+set convert-meta off
+set output-meta on
+
+# Tab completes the first word, rather than showing the list
+TAB: menu-complete
+
+# Ignore case
+set completion-ignore-case on
+
+# Append a forward slash on directories
+set mark-directories on

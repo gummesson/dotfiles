@@ -1,6 +1,11 @@
-#
+#===================
 # ~/.bash_profile
-#
+#===================
+
+# Source the .bashrc
+if [ -e "${HOME}/.bashrc" ] ; then
+  source "${HOME}/.bashrc"
+fi
 
 #--------
 #  Term
