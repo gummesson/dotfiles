@@ -1,0 +1,15 @@
+# .gitconfig (~/.gitconfig)
+
+[user]
+   name = Ellen Gummesson
+  email = ellengummesson@gmail.com
+[color]
+  ui = true
+[diff]
+  tool = gvimdiff
+[core]
+  editor = gvim
+[push]
+  default = tracking
+[credential]
+  helper = cache --timeout=3600

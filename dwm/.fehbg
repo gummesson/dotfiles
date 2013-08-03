@@ -1,0 +1,3 @@
+# .fehbg (~/.fehbg)
+
+feh --bg-scale '/home/ellen/Pictures/Wallpapers/colourful.png' 

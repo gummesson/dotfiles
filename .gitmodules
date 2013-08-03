@@ -1,0 +1,6 @@
+[submodule "tools/z"]
+	path = tools/z
+	url = https://github.com/rupa/z.git
+[submodule "tools/ranger"]
+	path = tools/ranger
+	url = https://github.com/hut/ranger.git

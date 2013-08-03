@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# dwm-startup (/usr/bin/dwm-startup)
+
+# Set `feh` to change the wallpaper
+source ~/.fehbg
+
+# Set `unclutter` to hide the cursor after a second of inactivity
+unclutter -root -idle 1 &
+
+# Start `dwm` with a modified status bar
+while true; do
+  xsetroot -name "DB: $(dropbox status) | $(acpi -b | awk '{ print $3 $4 $5 }' | sed 's/,/ \/ /g') | $(date '+%d %b %Y') | $(date '+%H:%M')"
+  sleep 10s
+done & exec dwm
