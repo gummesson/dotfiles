@@ -7,6 +7,7 @@ red="\033[0;31m"
 reset="\033[0m"
 
 # == Development ==
+
 devs=(
   "git"
   "vim-gtk"
@@ -29,6 +30,7 @@ sudo chsh -s /bin/zsh
 sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
 
 # == Tools ==
+
 tools=(
   "tree"
   "hnb"
@@ -43,6 +45,7 @@ for tool in "${tools[@]}"; do
 done
 
 # == GUI ==
+
 guis=(
   "uberwriter"
   "midori"
@@ -58,6 +61,7 @@ for gui in "${guis[@]}"; do
 done
 
 # == Gems ==
+
 gems=(
   "sass"
   "compass"

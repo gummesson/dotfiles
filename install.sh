@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 
+# == Colors ==
+
 bold="\033[1m"
 red="\033[0;31m"
 reset="\033[0m"
 
 # == Files ==
+
 files=(
   "~/Git/dotfiles/ack/.ackrc ~/.ackrc"
   "~/Git/dotfiles/dav/.davrc ~/.davrc"
@@ -25,6 +28,7 @@ for file in "${files[@]}"; do
 done
 
 # == Folders ==
+
 git submodule init && git submodule update
 folders=(
   "~/Git/dotfiles/tools/z/ ~/.tools/z"

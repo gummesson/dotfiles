@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-#== Submodules ==
+# == Submodules ==
 git submodule foreach git pull origin master
