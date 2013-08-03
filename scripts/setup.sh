@@ -23,7 +23,7 @@ for dev in "${devs[@]}"; do
 done
 
 # Zsh setup
-sudo wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+sudo wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O -i | sh
 sudo chsh -s /bin/zsh
 
 # Ack setup
@@ -45,7 +45,8 @@ for tool in "${tools[@]}"; do
 done
 
 # Dropbox setup
-wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.0_i386.deb
+echo -e "${bold}Setting up Dropbox...${reset}"
+sudo wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.0_i386.deb
 sudo dpkg -i dropbox*
 
 # == GUI ==
