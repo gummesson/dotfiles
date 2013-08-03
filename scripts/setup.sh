@@ -44,6 +44,10 @@ for tool in "${tools[@]}"; do
   sudo apt-get install ${tool}
 done
 
+# Dropbox setup
+wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.0_i386.deb
+sudo dpkg -i dropbox*
+
 # == GUI ==
 
 guis=(

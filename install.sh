@@ -30,6 +30,8 @@ done
 # == Folders ==
 
 git submodule init && git submodule update
+sudo mkdir -p ~/.tools
+
 folders=(
   "~/Git/dotfiles/tools/z/ ~/.tools/z"
   "~/Git/dotfiles/tools/ranger/ ~/.tools/ranger"
