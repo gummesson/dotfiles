@@ -12,5 +12,6 @@ echo -e "${bold}Updating submodules...${reset}"
 git submodule foreach git pull origin master
 
 # == Oh My Zsh ==
+
 echo -e "${bold}Updating Oh My Zsh...${reset}"
 upgrade_oh_my_zsh
