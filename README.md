@@ -10,7 +10,7 @@ A collection of assorted dotfiles, tools and scripts from my Lubuntu + dwm power
 - [feh](http://feh.finalrewind.org/)
 - [git](http://git-scm.com/)
 - [hnb](http://hnb.sourceforge.net/)
-- [terminator](http://www.tenshu.net/p/terminator.html)
+- [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
 - [zsh](http://zsh.sourceforge.net/) + [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 ## Tools

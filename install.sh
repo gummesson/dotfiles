@@ -21,8 +21,8 @@ files=(
   "~/Git/dotfiles/git/.gitignore ~/.gitignore"
   "~/Git/dotfiles/hnb/.hnbrc ~/.hnbrc"
   "~/Git/dotfiles/zsh/.zshrc ~/.zshrc"
-  "~/Git/dotfiles/zsh/custom.zsh ~/.oh-my-zsh/custom/custom.zsh"
   "~/Git/dotfiles/urxvt/.Xdefaults ~/.Xdefaults"
+  "~/Git/dotfiles/zsh/custom.zsh ~/.oh-my-zsh/custom/custom.zsh"
   "~/Git/dotfiles/tools/note.sh ~/.tools/note.sh"
 )
 
