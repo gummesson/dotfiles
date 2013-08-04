@@ -32,6 +32,9 @@ for file in "${files[@]}"; do
   sudo ln -s ${file}
 done
 
+# `dwm.desktop` setup
+sudo cp ~/Git/dotfiles/dwm/dwm.desktop /usr/share/xsessions/
+
 # == Folders ==
 
 git submodule init && git submodule update
