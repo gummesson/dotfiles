@@ -6,6 +6,9 @@ export EDITOR="gvim"
 # Z
 source ~/.tools/z/z.sh
 
+# note.sh
+source ~/.tools/note.sh
+
 # Ranger
 alias rng="ranger"
 

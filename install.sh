@@ -6,6 +6,10 @@ bold="\033[1m"
 red="\033[0;31m"
 reset="\033[0m"
 
+# == Setup ==
+
+sudo mkdir -p ~/.tools
+
 # == Files ==
 
 files=(
@@ -19,6 +23,7 @@ files=(
   "~/Git/dotfiles/zsh/.zshrc ~/.zshrc"
   "~/Git/dotfiles/zsh/custom.zsh ~/.oh-my-zsh/custom/custom.zsh"
   "~/Git/dotfiles/terminator/config ~/.config/terminator/config"
+  "~/Git/dotfiles/tools/note.sh ~/.tools/note.sh"
 )
 
 echo -e "${bold}Symlinking files:${reset} ${red}${files[@]}${reset}"
@@ -30,7 +35,6 @@ done
 # == Folders ==
 
 git submodule init && git submodule update
-sudo mkdir -p ~/.tools
 
 folders=(
   "~/Git/dotfiles/tools/z/ ~/.tools/z"
