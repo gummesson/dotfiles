@@ -22,7 +22,7 @@ files=(
   "~/Git/dotfiles/hnb/.hnbrc ~/.hnbrc"
   "~/Git/dotfiles/zsh/.zshrc ~/.zshrc"
   "~/Git/dotfiles/zsh/custom.zsh ~/.oh-my-zsh/custom/custom.zsh"
-  "~/Git/dotfiles/terminator/config ~/.config/terminator/config"
+  "~/Git/dotfiles/urxvt/.Xdefaults ~/.Xdefaults"
   "~/Git/dotfiles/tools/note.sh ~/.tools/note.sh"
 )
 

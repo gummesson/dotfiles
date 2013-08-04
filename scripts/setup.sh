@@ -13,7 +13,7 @@ devs=(
   "vim-gtk"
   "zsh"
   "ack-grep"
-  "terminator"
+  "rxvt-unicode-256color ncurses-term"
 )
 
 echo -e "${bold}Installing:${reset} ${red}${devs[@]}${reset}"

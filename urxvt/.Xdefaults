@@ -1,0 +1,82 @@
+# .Xdefaults (~/.Xdefaults)
+
+! Xft
+Xft.dpi: 96
+Xft.antialias: false
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintslight
+
+! Window
+URxvt.depth: 32
+URxvt.geometry: 80x24
+URxvt.transparent: false
+URxvt.fading: 0
+URxvt.loginShell: true
+URxvt.saveLines: 500
+URxvt.internalBorder: 4
+
+! Fonts
+URxvt.allow_bold: true
+URxvt*font: xft:Monospace:pixelsize=13
+URxvt*boldFont: xft:Monospace:bold:pixelsize=13
+URxvt*letterSpace: -1
+URxvt.lineSpace: 0
+
+! Scrollbar
+URxvt.scrollStyle: plain
+URxvt.scrollBar: false
+
+! Extensions
+URxvt.perl-ext-common: default,tabbed
+URxvt.urlLauncher: midori
+
+! Cursor
+URxvt.cursorBlink: true
+URxvt.cursorColor: #657b83
+URxvt.cursorUnderline: false
+
+! Pointer
+URxvt.pointerBlank: true
+
+! Colors
+*background: #002b36
+!*background: #fdf6e3
+*foreground: #657b83
+*fading: 40
+*fadeColor: #002b36
+*cursorColor: #93a1a1
+*pointerColorBackground: #586e75
+*pointerColorForeground: #93a1a1
+
+! Black (dark/light)
+*color0: #073642
+*color8: #002b36
+
+! Red (dark/light)
+*color1: #dc322f
+*color9: #cb4b16
+
+! Green (dark/light)
+*color2: #859900
+*color10: #586e75
+
+! Yellow (dark/light)
+*color3: #b58900
+*color11: #657b83
+
+! Blue (dark/light)
+*color4: #268bd2
+*color12: #839496
+
+! Magenta (dark/light)
+*color5: #d33682
+*color13: #6c71c4
+
+! Cyan (dark/light)
+*color6: #2aa198
+*color14: #93a1a1
+
+! White (dark/light)
+*color7: #eee8d5
+*color15: #fdf6e3
