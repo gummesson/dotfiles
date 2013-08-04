@@ -17,7 +17,11 @@ A collection of assorted dotfiles, tools and scripts from my Lubuntu + dwm power
 
 - [ranger](http://ranger.nongnu.org/)
 - [z](https://github.com/rupa/z)
+- [note.sh](https://github.com/gummesson/dotfiles/blob/master/tools/notes.sh)
 
 ## Scripts
 
-- [setup](https://github.com/gummesson/dotfiles/blob/master/scripts/setup.sh)
+- [setup.sh](https://github.com/gummesson/dotfiles/blob/master/scripts/setup.sh)
+- [install.sh](https://github.com/gummesson/dotfiles/blob/master/install.sh)
+- [update.sh](https://github.com/gummesson/dotfiles/blob/master/update.sh)
+- [clean.sh](https://github.com/gummesson/dotfiles/blob/master/clean.sh)
