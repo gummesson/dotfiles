@@ -23,7 +23,6 @@ files=(
   "~/Git/dotfiles/hnb/.hnbrc ~/.hnbrc"
   "~/Git/dotfiles/zsh/.zshrc ~/.zshrc"
   "~/Git/dotfiles/urxvt/.Xdefaults ~/.Xdefaults"
-  "~/Git/dotfiles/vimprobable/vimprobablerc ~/.config/vimprobable/vimprobablerc"
   "~/Git/dotfiles/zsh/custom.zsh ~/.oh-my-zsh/custom/custom.zsh"
   "~/Git/dotfiles/tools/note.sh ~/.tools/note.sh"
 )
@@ -34,8 +33,11 @@ for file in "${files[@]}"; do
   sudo ln -s ${file}
 done
 
-# `dwm.desktop` setup
+# dwm.desktop setup
 sudo cp ~/Git/dotfiles/dwm/dwm.desktop /usr/share/xsessions/
+
+# Vimprobable setup
+sudo cp ~/Git/dotfiles/vimprobable/vimprobablerc ~/.config/vimprobable/vimprobablerc
 
 # == Folders ==
 
