@@ -11,7 +11,8 @@ A collection of assorted dotfiles, tools and scripts from my Lubuntu + dwm power
 - [git](http://git-scm.com/)
 - [hnb](http://hnb.sourceforge.net/)
 - [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
-- [zsh](http://zsh.sourceforge.net/) + [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+- [Vimprobable](http://sourceforge.net/projects/vimprobable/)
+- [Zsh](http://zsh.sourceforge.net/) + [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 ## Tools
 

@@ -22,6 +22,7 @@ files=(
   "~/Git/dotfiles/hnb/.hnbrc ~/.hnbrc"
   "~/Git/dotfiles/zsh/.zshrc ~/.zshrc"
   "~/Git/dotfiles/urxvt/.Xdefaults ~/.Xdefaults"
+  "~/Git/dotfiles/vimprobable/vimprobablerc ~/.config/vimprobable/vimprobablerc"
   "~/Git/dotfiles/zsh/custom.zsh ~/.oh-my-zsh/custom/custom.zsh"
   "~/Git/dotfiles/tools/note.sh ~/.tools/note.sh"
 )

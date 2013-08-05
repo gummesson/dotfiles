@@ -32,6 +32,7 @@ sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
 # == Tools ==
 
 tools=(
+  "vimprobable2"
   "tree"
   "hnb"
   "dav-text"
@@ -39,6 +40,9 @@ tools=(
 )
 
 echo -e "${bold}Installing:${reset} ${red}${tools[@]}${reset}"
+
+# Vimprobable setup
+sudo add-apt-repository ppa:serge-hallyn/vimprobable && sudo apt-get update
 
 for tool in "${tools[@]}"; do
   sudo apt-get install ${tool}
