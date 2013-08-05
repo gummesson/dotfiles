@@ -10,6 +10,6 @@ unclutter -root -idle 1 &
 
 # Start `dwm` with a modified status bar
 while true; do
-  xsetroot -name "$(dropbox status) | $(acpi -b | awk '{ print $3 $4 $5 }' | sed 's/,/ \/ /g') | $(amixer get PCM | grep 'Front Left:' | awk '{ print $5 }' | sed 's/\[\|\]//g') | $(date '+%d %b %Y') | $(date '+%H:%M')"
+  xsetroot -name "Db: $(dropbox status) | B: $(acpi -b | awk '{ print $4 $5 }' | sed 's/,/ \/ /g') | V: $(amixer get PCM | grep 'Front Left:' | awk '{ print $5 }' | sed 's/\[\|\]//g') | $(date '+%d %b %Y') | $(date '+%H:%M')"
   sleep 10s
 done & exec dwm
