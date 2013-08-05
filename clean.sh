@@ -21,16 +21,3 @@ echo -e "${bold}Cleaning up packages...${reset}"
 for command in "${commands[@]}"; do
   sudo apt-get ${command}
 done
-
-# == Folders ==
-
-folders=(
-  "Downloads"
-  "Desktop"
-)
-
-echo -e "${bold}Cleaning up folders...${reset}"
-
-for folder in "${folders[@]}"; do
-  sudo rm -rf ~/${folder}/*
-done
