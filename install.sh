@@ -9,6 +9,7 @@ reset="\033[0m"
 # == Setup ==
 
 sudo mkdir -p ~/.tools
+sudo mkdir -p ~/.colors
 
 # == Files ==
 
@@ -41,8 +42,9 @@ sudo cp ~/Git/dotfiles/dwm/dwm.desktop /usr/share/xsessions/
 git submodule init && git submodule update
 
 folders=(
-  "~/Git/dotfiles/tools/z/ ~/.tools/z"
-  "~/Git/dotfiles/tools/ranger/ ~/.tools/ranger"
+  "~/Git/dotfiles/tools/z ~/.tools/z"
+  "~/Git/dotfiles/tools/ranger ~/.tools/ranger"
+  "~/Git/dotfiles/urxvt/.colors ~/.colors"
 )
 
 echo -e "${bold}Symlinking folders:${reset} ${red}${folders[@]}${reset}"
