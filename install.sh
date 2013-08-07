@@ -8,15 +8,15 @@ reset="\033[0m"
 
 # == Setup ==
 
-sudo mkdir -p ~/.tools
-sudo mkdir -p ~/.colors
+mkdir -p ~/.tools
+mkdir -p ~/.colors
+mkdir -p ~/.config/vimprobable
 
 # == Files ==
 
 files=(
   "~/Git/dotfiles/ack/.ackrc ~/.ackrc"
   "~/Git/dotfiles/dav/.davrc ~/.davrc"
-  "~/Git/dotfiles/dwm/dwm-startup /usr/bin/dwm-startup"
   "~/Git/dotfiles/dwm/.fehbg ~/.fehbg"
   "~/Git/dotfiles/git/.gitconfig ~/.gitconfig"
   "~/Git/dotfiles/git/.gitignore ~/.gitignore"
@@ -30,14 +30,15 @@ files=(
 echo -e "${bold}Symlinking files:${reset} ${red}${files[@]}${reset}"
 
 for file in "${files[@]}"; do
-  sudo ln -s ${file}
+  ln -s ${file}
 done
 
-# dwm.desktop setup
-sudo cp ~/Git/dotfiles/dwm/dwm.desktop /usr/share/xsessions/
-
 # Vimprobable setup
-sudo cp ~/Git/dotfiles/vimprobable/vimprobablerc ~/.config/vimprobable/vimprobablerc
+cp ~/Git/dotfiles/vimprobable/vimprobablerc ~/.config/vimprobable/vimprobablerc
+
+# dwm setup
+sudo cp ~/Git/dotfiles/dwm/dwm.desktop /usr/share/xsessions/
+sudo ln -s "~/Git/dotfiles/dwm/dwm-startup /usr/bin/dwm-startup"
 
 # == Folders ==
 
@@ -52,5 +53,5 @@ folders=(
 echo -e "${bold}Symlinking folders:${reset} ${red}${folders[@]}${reset}"
 
 for folder in "${folders[@]}"; do
-  sudo ln -s ${folder}
+  ln -s ${folder}
 done

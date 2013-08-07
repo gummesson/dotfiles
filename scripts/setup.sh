@@ -56,14 +56,10 @@ sudo dpkg -i dropbox*
 # == GUI ==
 
 guis=(
-  "uberwriter"
   "midori"
 )
 
 echo -e "${bold}Installing:${reset} ${red}${guis[@]}${reset}"
-
-# UberWriter PPA
-sudo add-apt-repository ppa:w-vollprecht/ppa && sudo apt-get update
 
 for gui in "${guis[@]}"; do
   sudo apt-get install ${gui}
@@ -72,7 +68,6 @@ done
 # == Gems ==
 
 gems=(
-  "sass"
   "compass"
   "jekyll"
 )
