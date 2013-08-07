@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# .xinitrc (~/.xinitrc)
+
 # Load .Xresources
 xrdb -merge $HOME/.Xresources
 

@@ -42,6 +42,9 @@ done
 sudo cp $HOME/Git/dotfiles/dwm/dwm.desktop /usr/share/xsessions/
 sudo ln -s $HOME/Git/dotfiles/dwm/dwm-startup /usr/bin/dwm-startup
 
+# Slim setup
+sudo cp $HOME/Git/dotfiles/slim/slim.conf /etc/slim.conf
+
 # == Folders ==
 
 git submodule init && git submodule update

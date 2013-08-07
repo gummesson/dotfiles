@@ -11,6 +11,7 @@ A collection of assorted dotfiles, tools and scripts from my [Crunchbang Linux](
 - [git](http://git-scm.com/)
 - [hnb](http://hnb.sourceforge.net/)
 - [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
+- [Slim](http://slim.berlios.de/)
 - [Zsh](http://zsh.sourceforge.net/) + [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 ## Tools
