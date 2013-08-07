@@ -5,6 +5,7 @@ A collection of assorted dotfiles, tools and scripts from my [Crunchbang Linux](
 ## Configuration
 
 - [Openbox](http://openbox.org/)
+- [tint2](http://code.google.com/p/tint2/)
 - [Slim](http://slim.berlios.de/)
 - [ack](http://beyondgrep.com/)
 - [dav](http://dav-text.sourceforge.net/)

@@ -54,6 +54,7 @@ folders=(
   "$HOME/Git/dotfiles/tools/ranger $HOME/.tools/ranger"
   "$HOME/Git/dotfiles/urxvt/.colors $HOME/.colors"
   "$HOME/Git/dotfiles/openbox $HOME/.config/openbox"
+  "$HOME/Git/dotfiles/tint2 $HOME/.config/tint2"
 )
 
 echo -e "${bold}Symlinking folders:${reset} ${red}${folders[@]}${reset}"
