@@ -225,37 +225,6 @@
 		<separator/>
 		<menu id="settings" label="Settings">
 			<menu execute="cb-compositor" id="CompositingPipeMenu" label="Compositor"/>
-			<menu id="conkyconfig" label="Conky">
-				<item label="Edit .conkyrc">
-					<action name="Execute">
-						<command>
-							gvim ~/.conkyrc
-						</command>
-					</action>
-				</item>
-				<item label="Restart Conky">
-					<action name="Execute">
-						<command>
-							conkywonky
-						</command>
-					</action>
-				</item>
-				<separator label="Help?"/>
-				<item label="man page">
-					<action name="Execute">
-						<command>
-							urxvt --command="man conky"
-						</command>
-					</action>
-				</item>
-				<item label="Wiki Page">
-					<action name="Execute">
-						<command>
-							x-www-browser http://crunchbanglinux.org/wiki/conky
-						</command>
-					</action>
-				</item>
-			</menu>
 			<menu id="dmenuconfig" label="dmenu">
 				<item label="Edit start-up script">
 					<action name="Execute">
