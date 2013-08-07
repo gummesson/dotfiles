@@ -8,9 +8,15 @@ reset="\033[0m"
 
 # == Setup ==
 
-mkdir -p ~/.tools
-mkdir -p ~/.colors
-mkdir -p ~/.config/vimprobable
+setups=(
+  "~/.tools"
+  "~/.colors"
+  "~/.config/vimprobable"
+)
+
+for setup in "${setups[@]}"; do
+  mkdir -p ${setup}
+done
 
 # == Files ==
 
@@ -38,7 +44,7 @@ cp ~/Git/dotfiles/vimprobable/vimprobablerc ~/.config/vimprobable/vimprobablerc
 
 # dwm setup
 sudo cp ~/Git/dotfiles/dwm/dwm.desktop /usr/share/xsessions/
-sudo ln -s "~/Git/dotfiles/dwm/dwm-startup /usr/bin/dwm-startup"
+sudo ln -s ~/Git/dotfiles/dwm/dwm-startup /usr/bin/dwm-startup
 
 # == Folders ==
 
