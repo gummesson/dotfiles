@@ -1,6 +1,6 @@
 # Dotfiles
 
-A collection of assorted dotfiles, tools and scripts from my Lubuntu + dwm powered system.
+A collection of assorted dotfiles, tools and scripts from my [Crunchbang Linux](http://crunchbang.org/) + [dwm](http://dwm.suckless.org/) powered system.
 
 ## Configuration
 
@@ -11,7 +11,6 @@ A collection of assorted dotfiles, tools and scripts from my Lubuntu + dwm power
 - [git](http://git-scm.com/)
 - [hnb](http://hnb.sourceforge.net/)
 - [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
-- [Vimprobable](http://sourceforge.net/projects/vimprobable/)
 - [Zsh](http://zsh.sourceforge.net/) + [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 ## Tools

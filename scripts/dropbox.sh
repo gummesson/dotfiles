@@ -2,5 +2,4 @@
 
 # == Files ==
 
-ln -s ~/Dropbox/Dokument/Dotfiles/hnb/.hnb ~/.hnb
-cp ~/Dropbox/Dokument/Dotfiles/vimprobable/bookmarks ~/.config/vimprobable/bookmarks
+sudo ln -s $HOME/Dropbox/Dokument/Dotfiles/hnb/.hnb ~/.hnb

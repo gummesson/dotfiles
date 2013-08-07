@@ -9,55 +9,50 @@ reset="\033[0m"
 # == Setup ==
 
 setups=(
-  "~/.tools"
-  "~/.colors"
-  "~/.config/vimprobable"
+  "$HOME/.tools"
 )
 
 for setup in "${setups[@]}"; do
-  mkdir -p ${setup}
+  sudo mkdir -p ${setup}
 done
 
 # == Files ==
 
 files=(
-  "~/Git/dotfiles/ack/.ackrc ~/.ackrc"
-  "~/Git/dotfiles/dav/.davrc ~/.davrc"
-  "~/Git/dotfiles/dwm/.fehbg ~/.fehbg"
-  "~/Git/dotfiles/git/.gitconfig ~/.gitconfig"
-  "~/Git/dotfiles/git/.gitignore ~/.gitignore"
-  "~/Git/dotfiles/hnb/.hnbrc ~/.hnbrc"
-  "~/Git/dotfiles/zsh/.zshrc ~/.zshrc"
-  "~/Git/dotfiles/urxvt/.Xdefaults ~/.Xdefaults"
-  "~/Git/dotfiles/zsh/custom.zsh ~/.oh-my-zsh/custom/custom.zsh"
-  "~/Git/dotfiles/tools/note.sh ~/.tools/note.sh"
+  "$HOME/Git/dotfiles/ack/.ackrc $HOME/.ackrc"
+  "$HOME/Git/dotfiles/dav/.davrc $HOME/.davrc"
+  "$HOME/Git/dotfiles/dwm/.fehbg $HOME/.fehbg"
+  "$HOME/Git/dotfiles/git/.gitconfig $HOME/.gitconfig"
+  "$HOME/Git/dotfiles/git/.gitignore $HOME/.gitignore"
+  "$HOME/Git/dotfiles/hnb/.hnbrc $HOME/.hnbrc"
+  "$HOME/Git/dotfiles/zsh/.zshrc $HOME/.zshrc"
+  "$HOME/Git/dotfiles/urxvt/.Xdefaults $HOME/.Xdefaults"
+  "$HOME/Git/dotfiles/zsh/custom.zsh $HOME/.oh-my-zsh/custom/custom.zsh"
+  "$HOME/Git/dotfiles/tools/note.sh $HOME/.tools/note.sh"
 )
 
 echo -e "${bold}Symlinking files:${reset} ${red}${files[@]}${reset}"
 
 for file in "${files[@]}"; do
-  ln -s ${file}
+  sudo ln -s ${file}
 done
 
-# Vimprobable setup
-cp ~/Git/dotfiles/vimprobable/vimprobablerc ~/.config/vimprobable/vimprobablerc
-
 # dwm setup
-sudo cp ~/Git/dotfiles/dwm/dwm.desktop /usr/share/xsessions/
-sudo ln -s ~/Git/dotfiles/dwm/dwm-startup /usr/bin/dwm-startup
+sudo cp $HOME/Git/dotfiles/dwm/dwm.desktop /usr/share/xsessions/
+sudo ln -s $HOME/Git/dotfiles/dwm/dwm-startup /usr/bin/dwm-startup
 
 # == Folders ==
 
 git submodule init && git submodule update
 
 folders=(
-  "~/Git/dotfiles/tools/z ~/.tools/z"
-  "~/Git/dotfiles/tools/ranger ~/.tools/ranger"
-  "~/Git/dotfiles/urxvt/.colors ~/.colors"
+  "$HOME/Git/dotfiles/tools/z $HOME/.tools/z"
+  "$HOME/Git/dotfiles/tools/ranger $HOME/.tools/ranger"
+  "$HOME/Git/dotfiles/urxvt/.colors $HOME/.colors"
 )
 
 echo -e "${bold}Symlinking folders:${reset} ${red}${folders[@]}${reset}"
 
 for folder in "${folders[@]}"; do
-  ln -s ${folder}
+  sudo ln -s ${folder}
 done

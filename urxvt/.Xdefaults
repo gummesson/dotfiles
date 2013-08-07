@@ -37,7 +37,7 @@ URxvt.cursorBlink: true
 URxvt.cursorUnderline: false
 
 ! Colors
-#include "/home/ellen/.colors/solarized" 
+#include "/home/master/.colors/solarized" 
 
 ! Tabs
 URxvt.tabbed.tabbar-fg: 7

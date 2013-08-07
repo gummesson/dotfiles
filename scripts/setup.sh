@@ -23,7 +23,7 @@ for dev in "${devs[@]}"; do
 done
 
 # Zsh setup
-sudo wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O -i | sh
+sudo curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 sudo chsh -s /bin/zsh
 
 # Ack setup
@@ -32,7 +32,6 @@ sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
 # == Tools ==
 
 tools=(
-  "vimprobable2"
   "tree"
   "hnb"
   "dav-text"
@@ -41,17 +40,9 @@ tools=(
 
 echo -e "${bold}Installing:${reset} ${red}${tools[@]}${reset}"
 
-# Vimprobable setup
-sudo add-apt-repository ppa:serge-hallyn/vimprobable && sudo apt-get update
-
 for tool in "${tools[@]}"; do
   sudo apt-get install ${tool}
 done
-
-# Dropbox setup
-echo -e "${bold}Setting up Dropbox...${reset}"
-sudo wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.0_i386.deb
-sudo dpkg -i dropbox*
 
 # == GUI ==
 
