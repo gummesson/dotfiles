@@ -48,6 +48,7 @@ done
 
 guis=(
   "midori"
+  "focuswriter"
 )
 
 echo -e "${bold}Installing:${reset} ${red}${guis[@]}${reset}"

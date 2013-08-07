@@ -190,6 +190,13 @@
 			<menu execute="cb-dropbox-pipemenu" id="dropbox" label="Dropbox"/>
 		</menu>
 		<menu id="office" label="Office">
+			<item label="FocusWriter">
+				<action name="Execute">
+					<command>
+						focuswriter
+					</command>
+				</action>
+			</item>
 		    <item label="Google Docs">
 				<action name="Execute">
 					<command>
