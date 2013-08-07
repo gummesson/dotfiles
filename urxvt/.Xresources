@@ -1,0 +1,82 @@
+! .Xresources (~/.Xresources)
+
+! Font settings --------------------------------------------------------------
+
+Xft.autohint: true
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.dpi: 96
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+
+! xscreensaver ---------------------------------------------------------------
+
+! Font settings
+xscreensaver.Dialog.headingFont:        -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:           -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:          -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:          -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:         -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -*-fixed-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:         -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+
+! General dialog box (affects main hostname, username, password text)
+xscreensaver.Dialog.foreground:         #101010
+xscreensaver.Dialog.background:         #D8D8D8
+xscreensaver.Dialog.topShadowColor:     #D8D8D8
+xscreensaver.Dialog.bottomShadowColor:  #D8D8D8
+xscreensaver.Dialog.Button.foreground:  #101010
+xscreensaver.Dialog.Button.background:  #E5E5E5
+
+! Username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:    #101010
+xscreensaver.Dialog.text.background:    #E5E5E5
+xscreensaver.Dialog.internalBorderWidth:24
+xscreensaver.Dialog.borderWidth:        0
+xscreensaver.Dialog.shadowThickness:    2
+
+! Timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver.passwd.thermometer.foreground:  #101010
+xscreensaver.passwd.thermometer.background:  #2E2E2E
+xscreensaver.passwd.thermometer.width:       8
+
+! urxvt ---------------------------------------------------------------
+
+! Window
+URxvt.depth: 32
+URxvt.geometry: 80x24
+URxvt.transparent: false
+URxvt.fading: 0
+URxvt.loginShell: true
+URxvt.saveLines: 500
+URxvt.internalBorder: 4
+
+! Fonts
+URxvt.allow_bold: true
+URxvt*font: xft:Monospace:pixelsize=13
+URxvt*boldFont: xft:Monospace:bold:pixelsize=13
+URxvt*letterSpace: -1
+URxvt.lineSpace: 0
+
+! Scrollbar
+URxvt.scrollStyle: plain
+URxvt.scrollBar: false
+
+! Extensions
+URxvt.perl-ext-common: default,tabbed,matcher
+URxvt.matcher.button: 1
+URxvt.urlLauncher: vimprobable
+
+! Cursor
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+
+! Colors
+#include "/home/master/.colors/solarized" 
+
+! Tabs
+URxvt.tabbed.tabbar-fg: 7
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 7
+URxvt.tabbed.tab-bg: 4

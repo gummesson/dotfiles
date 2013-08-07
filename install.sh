@@ -26,7 +26,8 @@ files=(
   "$HOME/Git/dotfiles/git/.gitignore $HOME/.gitignore"
   "$HOME/Git/dotfiles/hnb/.hnbrc $HOME/.hnbrc"
   "$HOME/Git/dotfiles/zsh/.zshrc $HOME/.zshrc"
-  "$HOME/Git/dotfiles/urxvt/.Xdefaults $HOME/.Xdefaults"
+  "$HOME/Git/dotfiles/urxvt/.xinitrc $HOME/.xinitrc"
+  "$HOME/Git/dotfiles/urxvt/.Xresources $HOME/.Xresources"
   "$HOME/Git/dotfiles/zsh/custom.zsh $HOME/.oh-my-zsh/custom/custom.zsh"
   "$HOME/Git/dotfiles/tools/note.sh $HOME/.tools/note.sh"
 )
