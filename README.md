@@ -13,7 +13,7 @@ A collection of assorted dotfiles, tools and scripts from my [Crunchbang Linux](
 - [feh](http://feh.finalrewind.org/)
 - [git](http://git-scm.com/)
 - [hnb](http://hnb.sourceforge.net/)
-- [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
+- [x](http://www.x.org/)
 - [Zsh](http://zsh.sourceforge.net/) + [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 ## Tools
