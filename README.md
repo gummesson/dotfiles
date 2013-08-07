@@ -4,6 +4,8 @@ A collection of assorted dotfiles, tools and scripts from my [Crunchbang Linux](
 
 ## Configuration
 
+- [Openbox](http://openbox.org/)
+- [Slim](http://slim.berlios.de/)
 - [ack](http://beyondgrep.com/)
 - [dav](http://dav-text.sourceforge.net/)
 - [dwm](http://dwm.suckless.org/)
@@ -11,7 +13,6 @@ A collection of assorted dotfiles, tools and scripts from my [Crunchbang Linux](
 - [git](http://git-scm.com/)
 - [hnb](http://hnb.sourceforge.net/)
 - [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
-- [Slim](http://slim.berlios.de/)
 - [Zsh](http://zsh.sourceforge.net/) + [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 ## Tools
