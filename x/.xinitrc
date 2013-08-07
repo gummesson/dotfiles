@@ -5,10 +5,10 @@
 # Load .Xresources
 xrdb -merge $HOME/.Xresources
 
-# Set default window manager session
+# Set the default window manager
 DEFAULT=openbox-session
 
-# Start openbox/dwm
+# Start `Openbox`/`dwm`
 case $1 in
   openbox-session)
     exec openbox-session
