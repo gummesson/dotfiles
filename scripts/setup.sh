@@ -33,6 +33,7 @@ sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
 
 tools=(
   "tree"
+  "xclip"
   "hnb"
   "dav-text"
   "cmus"
