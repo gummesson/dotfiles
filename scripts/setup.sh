@@ -13,7 +13,7 @@ devs=(
   "vim-gtk"
   "zsh"
   "ack-grep"
-  "rxvt-unicode-256color ncurses-term"
+  "rxvt-unicode-256color"
 )
 
 echo -e "${bold}Installing:${reset} ${red}${devs[@]}${reset}"
@@ -36,6 +36,7 @@ tools=(
   "hnb"
   "dav-text"
   "cmus"
+  "mplayer2"
 )
 
 echo -e "${bold}Installing:${reset} ${red}${tools[@]}${reset}"
