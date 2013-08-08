@@ -67,7 +67,7 @@ panel_dock = 0
 wm_menu = 1
 panel_layer = bottom
 panel_background_id = 1
- 
+
 # Panel Autohide
 autohide = 0
 autohide_show_timeout = 0.3
@@ -83,7 +83,7 @@ taskbar_active_background_id = 6
 taskbar_name = 1
 taskbar_name_background_id = 0
 taskbar_name_active_background_id = 0
-taskbar_name_font = Liberation Sans 9
+taskbar_name_font = Liberation Mono 9
 taskbar_name_font_color = #828282 100
 taskbar_name_active_font_color = #828282 100
  
@@ -136,7 +136,7 @@ systray_icon_asb = 100 0 0
  
 # Clock
 time1_format = %H:%M
-time1_font = Liberation Sans 11
+time1_font = Liberation Mono 10
 #time2_format = %A %d %B
 #time2_font = Liberation Sans 6
 clock_font_color = #b5b5b5 100
