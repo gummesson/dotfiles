@@ -64,8 +64,8 @@
 			#web_command "mozilla -remote 'openURL(*,new-window)'	> /dev/null 2>&1 &"
 			#web_command "konqueror *				> /dev/null 2>&1 &"
 			#web_command "galeon -n					> /dev/null 2>&1 &"
-			# web_command "w3m *"
-			web_command "lynx *"
+			web_command "w3m *"
+			#web_command "lynx *"
 			#web_commend "rxvt -fn fixed -rv +sb -e w3m *		> /dev/null 2>&1 &"
 			#web_command "opera -remote 'openURL(*,new-window)'	> /dev/null 2>&1 &"
 		
@@ -125,8 +125,8 @@
 	style parentnode     default/default bold
 	style node           default/default normal
 	style bullet         cyan/default    normal
-	style selected       yellow/red      bold
-	style parentselected yellow/red      bold
+	style selected       default/default reverse,bold
+	style parentselected default/default reverse,bold
 	style background     default/default normal
 	
 ##### key-bindings
