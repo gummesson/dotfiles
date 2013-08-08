@@ -6,13 +6,14 @@ A collection of assorted dotfiles, tools and scripts from my [Crunchbang Linux](
 
 - [Openbox](http://openbox.org/)
 - [tint2](http://code.google.com/p/tint2/)
-- [Slim](http://slim.berlios.de/)
+- [SLiM](http://slim.berlios.de/)
 - [ack](http://beyondgrep.com/)
 - [dav](http://dav-text.sourceforge.net/)
 - [dwm](http://dwm.suckless.org/)
 - [feh](http://feh.finalrewind.org/)
-- [git](http://git-scm.com/)
+- [Git](http://git-scm.com/)
 - [hnb](http://hnb.sourceforge.net/)
+- [uzbl](http://www.uzbl.org/)
 - [x](http://www.x.org/)
 - [Zsh](http://zsh.sourceforge.net/) + [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 
