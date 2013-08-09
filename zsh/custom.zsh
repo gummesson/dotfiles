@@ -26,10 +26,10 @@ backlight() {
 # Set volume (for dwm)
 function volume() {
   if [ $1 = "up" ]; then
-    amixer set Master 10%+
+    amixer set PCM 10%+
   elif [ $1 = "down" ]; then
-    amixer set Master 10%-
+    amixer set PCM 10%-
   else
-    amixer set Master toggle && amixer get Master
+    amixer set PCM toggle && amixer get PCM
   fi
 }
