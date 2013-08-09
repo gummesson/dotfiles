@@ -11,14 +11,14 @@ GREP_SETTINGS="--color"
 
 # Create
 note() {
-  ${NOTES_EDITOR} ${NOTES_PATH}/"$*".${NOTES_EXTENSION}
+  $NOTES_EDITOR ${NOTES_PATH}/"$*".${NOTES_EXTENSION}
 }
 
 # List/search
 notes() {
   if [ -z $* ]; then
-    cd ${NOTES_PATH} && ls $LS_SETTINGS
+    cd $NOTES_PATH && ls $LS_SETTINGS
   else
-    cd ${NOTES_PATH} && grep $GREP_SETTINGS "$*" *.${NOTES_EXTENSION}
+    cd $NOTES_PATH && grep $GREP_SETTINGS "$*" *.${NOTES_EXTENSION}
   fi
 }
