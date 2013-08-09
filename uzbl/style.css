@@ -1,16 +1,17 @@
 #uzbl_link_hints > span {
-    z-index:            1000   !important;
+    z-index:            1000 !important;
 
-    background-color:   #333           !important;
-    margin:             0              !important;
-    padding:            3px            !important;
+    background-color:   #333 !important;
+    margin:             0    !important;
+    padding:            3px  !important;
 
-    color:              #ccc   !important;
-    font-size:          9px    !important;
-    line-height:        9px    !important;
-    font-weight:        bold   !important;
-    font-variant:       normal !important;
-    text-decoration:    none   !important;
+    color:              #ccc      !important;
+    font-family:        Monospace !important;
+    font-size:          10px      !important;
+    line-height:        10px      !important;
+    font-weight:        bold      !important;
+    font-variant:       normal    !important;
+    text-decoration:    none      !important;
 
     -webkit-transform:  translate(-5px,-5px);
     opacity:            0.8;
