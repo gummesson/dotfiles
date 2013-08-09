@@ -5,18 +5,11 @@
 # Load .Xresources
 xrdb -merge $HOME/.Xresources
 
-# Set the default window manager
-DEFAULT=openbox-session
+# Set `feh` to change the wallpaper
+source $HOME/.fehbg
 
-# Start `Openbox`/`dwm`
-case $1 in
-  openbox-session)
-    exec openbox-session
-  ;;
-  dwm)
-    exec dwm-startup
-  ;;
-  *)
-    exec $DEFAULT
-  ;;
-esac
+# Set `unclutter` to hide the cursor after a second of inactivity
+unclutter -root -idle 1 &
+
+# Execute the dwm-startup script
+dwm-startup

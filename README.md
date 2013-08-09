@@ -1,18 +1,16 @@
 # Dotfiles
 
-A collection of assorted dotfiles, tools and scripts from my [Crunchbang Linux](http://crunchbang.org/) + [dwm](http://dwm.suckless.org/) powered system.
+A collection of assorted dotfiles, tools and scripts from my [Debian](http://www.debian.org/) + [dwm](http://dwm.suckless.org/) powered system.
 
 ## Configuration
 
-- [Openbox](http://openbox.org/)
-- [tint2](http://code.google.com/p/tint2/)
-- [SLiM](http://slim.berlios.de/)
 - [ack](http://beyondgrep.com/)
 - [dav](http://dav-text.sourceforge.net/)
 - [dwm](http://dwm.suckless.org/)
 - [feh](http://feh.finalrewind.org/)
 - [Git](http://git-scm.com/)
 - [hnb](http://hnb.sourceforge.net/)
+- [RubyGems](http://www.rubygems.org/)
 - [uzbl](http://www.uzbl.org/)
 - [x](http://www.x.org/)
 - [Zsh](http://zsh.sourceforge.net/) + [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)

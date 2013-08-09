@@ -13,7 +13,7 @@ setups=(
 )
 
 for setup in "${setups[@]}"; do
-  sudo mkdir -p ${setup}
+  mkdir -p ${setup}
 done
 
 # == Files ==
@@ -21,7 +21,7 @@ done
 files=(
   "$HOME/Git/dotfiles/ack/.ackrc $HOME/.ackrc"
   "$HOME/Git/dotfiles/dav/.davrc $HOME/.davrc"
-  "$HOME/Git/dotfiles/dwm/.fehbg $HOME/.fehbg"
+  "$HOME/Git/dotfiles/feh/.fehbg $HOME/.fehbg"
   "$HOME/Git/dotfiles/git/.gitconfig $HOME/.gitconfig"
   "$HOME/Git/dotfiles/git/.gitignore $HOME/.gitignore"
   "$HOME/Git/dotfiles/hnb/.hnbrc $HOME/.hnbrc"
@@ -35,25 +35,19 @@ files=(
 echo -e "${bold}Symlinking files:${reset} ${red}${files[@]}${reset}"
 
 for file in "${files[@]}"; do
-  sudo ln -s ${file}
+  ln -s ${file}
 done
 
 # dwm setup
-sudo cp $HOME/Git/dotfiles/dwm/dwm.desktop /usr/share/xsessions/
 sudo ln -s $HOME/Git/dotfiles/dwm/dwm-startup /usr/bin/dwm-startup
-
-# Slim setup
-sudo cp $HOME/Git/dotfiles/slim/slim.conf /etc/slim.conf
 
 # == Folders ==
 
 git submodule init && git submodule update
 
 folders=(
-  "$HOME/Git/dotfiles/openbox $HOME/.config/openbox"
-  "$HOME/Git/dotfiles/tint2 $HOME/.config/tint2"
-  "$HOME/Git/dotfiles/uzbl $HOME/.config/uzbl"
   "$HOME/Git/dotfiles/x/.colors $HOME/.colors"
+  "$HOME/Git/dotfiles/uzbl $HOME/.config/uzbl"
   "$HOME/Git/dotfiles/tools/z $HOME/.tools/z"
   "$HOME/Git/dotfiles/tools/ranger $HOME/.tools/ranger"
 )
@@ -61,5 +55,5 @@ folders=(
 echo -e "${bold}Symlinking folders:${reset} ${red}${folders[@]}${reset}"
 
 for folder in "${folders[@]}"; do
-  sudo ln -s ${folder}
+  ln -s ${folder}
 done

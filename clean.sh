@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Remove configuration files: 
-#  Synaptic Package Manager -> Status -> Not Installed (Residual config)
-
 # == Colors ==
 
 bold="\033[1m"
