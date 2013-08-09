@@ -66,7 +66,7 @@ URxvt.scrollBar: false
 ! Extensions
 URxvt.perl-ext-common: default,tabbed,matcher
 URxvt.matcher.button: 1
-URxvt.urlLauncher: vimprobable
+URxvt.urlLauncher: uzbl
 
 ! Cursor
 URxvt.cursorBlink: true
