@@ -57,6 +57,7 @@ apps=(
   "cmus"
   "uzbl"
   "irssi"
+  "zathura"
 )
 
 echo -e "${bold}Installing:${reset} ${red}${apps[@]}${reset}"
