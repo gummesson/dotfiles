@@ -45,13 +45,26 @@ tools=(
   "cmus"
   "uzbl"
   "irssi"
-  "ttf-liberation"
 )
 
 echo -e "${bold}Installing:${reset} ${red}${tools[@]}${reset}"
 
 for tool in "${tools[@]}"; do
   sudo apt-get install ${tool}
+done
+
+
+# == Fonts ==
+
+fonts=(
+  "xfonts-terminus"
+  "ttf-liberation"
+)
+
+echo -e "${bold}Installing:${reset} ${red}${fonts[@]}${reset}"
+
+for font in "${fonts[@]}"; do
+  sudo apt-get install ${font}
 done
 
 # == Gems ==
