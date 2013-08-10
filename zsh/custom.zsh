@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # custom.zsh (~.oh-my-zsh/custom/custom.zsh)
 
 # Editor

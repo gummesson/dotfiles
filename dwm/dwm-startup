@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 # dwm-startup (/usr/bin/dwm-startup)
 

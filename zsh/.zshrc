@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # .zshrc (~/.zshrc)
 
 # Path to your oh-my-zsh configuration.
