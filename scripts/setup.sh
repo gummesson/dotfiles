@@ -15,7 +15,6 @@ devs=(
   "ack-grep"
   "ruby"
   "ruby1.9.1-dev"
-  "vim-gtk"
 )
 
 echo -e "${bold}Installing:${reset} ${red}${devs[@]}${reset}"
@@ -38,13 +37,8 @@ tools=(
   "feh"
   "tree"
   "xclip"
+  "scrot"
   "usbmount"
-  "dav-text"
-  "hnb"
-  "mplayer2"
-  "cmus"
-  "uzbl"
-  "irssi"
 )
 
 echo -e "${bold}Installing:${reset} ${red}${tools[@]}${reset}"
@@ -53,6 +47,23 @@ for tool in "${tools[@]}"; do
   sudo apt-get install ${tool}
 done
 
+# == Apps ==
+
+apps=(
+  "vim-gtk"
+  "dav-text"
+  "hnb"
+  "mplayer2"
+  "cmus"
+  "uzbl"
+  "irssi"
+)
+
+echo -e "${bold}Installing:${reset} ${red}${apps[@]}${reset}"
+
+for app in "${apps[@]}"; do
+  sudo apt-get install ${app}
+done
 
 # == Fonts ==
 
