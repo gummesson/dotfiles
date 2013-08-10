@@ -38,6 +38,7 @@ tools=(
   "feh"
   "tree"
   "xclip"
+  "usbmount"
   "dav-text"
   "hnb"
   "mplayer2"
