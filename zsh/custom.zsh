@@ -40,3 +40,8 @@ function volume() {
 function set-cpu-gov() {
   echo "$1" | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 }
+
+# Convert Markdown to HTML (with smart quotes and HTML5 markup)
+function mdtohtml() {
+  pandoc -f markdown -t html -S -5 "$1" -o "$2"
+}

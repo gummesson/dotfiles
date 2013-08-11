@@ -42,6 +42,7 @@ tools=(
   "xclip"
   "scrot"
   "usbmount"
+  "pandoc"
 )
 
 echo -e "${bold}Installing:${reset} ${red}${tools[@]}${reset}"
