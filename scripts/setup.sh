@@ -34,6 +34,7 @@ sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
 
 tools=(
   "cpufrequtils"
+  "curl"
   "feh"
   "unclutter"
   "autocutsel"
