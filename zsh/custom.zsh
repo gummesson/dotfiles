@@ -20,12 +20,12 @@ alias zreload="source ~/.zshrc"
 # Find all symlinks in the current directory
 alias symlinks="find . -type l"
 
-# Set backlight (for dwm)
+# Set backlight
 backlight() {
-  xrandr --output LVDS1 --set BACKLIGHT $1
+  xrandr --output LVDS1 --set BACKLIGHT "$1"
 }
 
-# Set volume (for dwm)
+# Set volume
 function volume() {
   if [ $1 = "up" ]; then
     amixer set PCM 10%+
@@ -34,4 +34,9 @@ function volume() {
   else
     amixer set PCM toggle && amixer get PCM
   fi
+}
+
+# Set CPU frequency scaling governor (conservative/powersave)
+function set-cpu-gov() {
+  echo "$1" | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 }
