@@ -2,8 +2,11 @@
 
 # custom.zsh (~.oh-my-zsh/custom/custom.zsh)
 
+# Term
+export TERM=xterm-256color
+
 # Editor
-export EDITOR="gvim"
+export EDITOR="vim"
 
 # Z
 source ~/.tools/z/z.sh
@@ -43,5 +46,5 @@ function set-cpu-gov() {
 
 # Convert Markdown to HTML (with smart quotes and HTML5 markup)
 function mdtohtml() {
-  pandoc -f markdown -t html -S -5 "$1" -o "$2"
+  pandoc -f markdown -t html5 -S "$1" -o "$2"
 }
