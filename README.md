@@ -11,8 +11,9 @@ A collection of assorted dotfiles, tools and scripts from my [Debian](http://www
 - [Git](http://git-scm.com/)
 - [hnb](http://hnb.sourceforge.net/)
 - [RubyGems](http://www.rubygems.org/)
+- [surfraw](http://surfraw.alioth.debian.org/)
 - [uzbl](http://www.uzbl.org/)
-- [x](http://www.x.org/)
+- [X](http://www.x.org/)
 - [Zsh](http://zsh.sourceforge.net/) + [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 ## Tools
