@@ -26,6 +26,7 @@ files=(
   "$HOME/Git/dotfiles/git/.gitignore $HOME/.gitignore"
   "$HOME/Git/dotfiles/hnb/.hnbrc $HOME/.hnbrc"
   "$HOME/Git/dotfiles/ruby/.gemrc $HOME/.gemrc"
+  "$HOME/Git/dotfiles/ruby/.surfraw.conf $HOME/.surfraw.conf"
   "$HOME/Git/dotfiles/zsh/.zprofile $HOME/.zprofile"
   "$HOME/Git/dotfiles/zsh/.zshrc $HOME/.zshrc"
   "$HOME/Git/dotfiles/x/.xinitrc $HOME/.xinitrc"
