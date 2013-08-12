@@ -3,7 +3,7 @@
 # custom.zsh (~.oh-my-zsh/custom/custom.zsh)
 
 # Term
-export TERM=xterm-256color
+export TERM=rxvt-unicode
 
 # Editor
 export EDITOR="vim"
