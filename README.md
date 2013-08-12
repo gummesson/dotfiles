@@ -7,6 +7,7 @@ A collection of assorted dotfiles, tools and scripts from my [Debian](http://www
 - [ack](http://beyondgrep.com/)
 - [dav](http://dav-text.sourceforge.net/)
 - [dwm](http://dwm.suckless.org/)
+- [elinks](http://elinks.or.cz/)
 - [feh](http://feh.finalrewind.org/)
 - [Git](http://git-scm.com/)
 - [hnb](http://hnb.sourceforge.net/)
