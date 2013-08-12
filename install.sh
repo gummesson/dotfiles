@@ -21,6 +21,7 @@ done
 files=(
   "$HOME/Git/dotfiles/ack/.ackrc $HOME/.ackrc"
   "$HOME/Git/dotfiles/dav/.davrc $HOME/.davrc"
+  "$HOME/Git/dotfiles/elinks/elinks.conf $HOME/.elinks/elinks.conf"
   "$HOME/Git/dotfiles/feh/.fehbg $HOME/.fehbg"
   "$HOME/Git/dotfiles/git/.gitconfig $HOME/.gitconfig"
   "$HOME/Git/dotfiles/git/.gitignore $HOME/.gitignore"
