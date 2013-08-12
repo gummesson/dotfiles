@@ -14,7 +14,7 @@ devs=(
   "git"
   "ack-grep"
   "ruby"
-  "ruby1.9.1-dev"
+  "ruby-dev"
 )
 
 echo -e "${bold}Installing:${reset} ${red}${devs[@]}${reset}"
@@ -60,6 +60,8 @@ apps=(
   "mplayer2"
   "cmus"
   "uzbl"
+  "elinks"
+  "surfraw surfraw-extra"
   "irssi"
   "zathura"
 )
@@ -74,7 +76,7 @@ done
 
 fonts=(
   "xfonts-terminus"
-  "ttf-liberation"
+  "fonts-liberation"
 )
 
 echo -e "${bold}Installing:${reset} ${red}${fonts[@]}${reset}"
