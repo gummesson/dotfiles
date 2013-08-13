@@ -60,7 +60,7 @@ apps=(
   "mplayer2"
   "cmus"
   "uzbl"
-  "elinks"
+  "w3m"
   "surfraw surfraw-extra"
   "irssi"
   "zathura"
