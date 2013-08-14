@@ -30,6 +30,20 @@ sudo chsh -s /bin/zsh
 # Ack setup
 sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
 
+# == ncurses ==
+
+ncurses=(
+  "libncurses5"
+  "libncurses5-dev"
+  "ncurses-term"
+)
+
+echo -e "${bold}Installing:${reset} ${red}${ncurses[@]}${reset}"
+
+for ncurse in "${ncurses[@]}"; do
+  sudo apt-get install ${ncurse}
+done
+
 # == Tools ==
 
 tools=(
