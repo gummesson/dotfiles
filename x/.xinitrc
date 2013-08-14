@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 # .xinitrc (~/.xinitrc)
 
@@ -6,7 +6,7 @@
 xrdb -merge $HOME/.Xresources
 
 # Set `feh` to change the wallpaper
-source $HOME/.fehbg
+sh $HOME/.fehbg
 
 # Disable the touchpad when typing
 syndaemon -d &
@@ -19,4 +19,4 @@ autocutsel &
 autocutsel -s PRIMARY &
 
 # Execute the dwm-startup script
-dwm-startup
+exec /usr/bin/dwm-startup
