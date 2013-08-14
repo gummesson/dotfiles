@@ -1,0 +1,4 @@
+# config (~/.w3m/config)
+
+extbrowser sh -c 'printf %s "$0" | xclip'
+editor vim
