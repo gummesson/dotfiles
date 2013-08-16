@@ -23,7 +23,9 @@ static const Rule rules[] = {
 	 */
 	/* class         instance    title       tags mask     isfloating   monitor */
 	{ "Uzbl",        NULL,       NULL,       1 << 0,       False,       -1 }, /* web */
-	{ "Gvim",        NULL,       NULL,       1 << 3,       False,       -1 }, /* etc */
+	{  NULL,         NULL,      "vim",       1 << 1,       False,       -1 }, /* term */
+	{ "Gvim",        NULL,       NULL,       1 << 1,       False,       -1 }, /* term */
+	{  NULL,         NULL,      "cmus",      1 << 2,       False,       -1 }, /* media */
 	{ "Focuswriter", NULL,       NULL,       1 << 3,       False,       -1 }, /* etc */
 };
 
@@ -52,13 +54,21 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]  = { "x-terminal-emulator", NULL };
+static const char    *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
+static const char     *termcmd[] = { "x-terminal-emulator", NULL };
+static const char      *vimcmd[] = { "urxvt", "-title", "vim", "-e", "vim", NULL };
+static const char     *cmuscmd[] = { "urxvt", "-title", "cmus", "-e", "cmus", NULL };
+static const char   *rebootcmd[] = { "sudo", "shutdown", "-r", "now", NULL };
+static const char *shutdowncmd[] = { "sudo", "shutdown", "-h", "now", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+	{ ControlMask|Mod1Mask,         XK_v,      spawn,          {.v = vimcmd } },
+	{ ControlMask|Mod1Mask,         XK_m,      spawn,          {.v = cmuscmd } },
+  { ControlMask|Mod1Mask,         XK_r,      spawn,          {.v = rebootcmd } },
+  { ControlMask|Mod1Mask,         XK_q,      spawn,          {.v = shutdowncmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
