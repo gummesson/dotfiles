@@ -31,16 +31,16 @@ backlight() {
 # Set volume
 function volume() {
   if [ $1 = "up" ]; then
-    amixer set PCM 10%+
+    amixer set PCM 5%+
   elif [ $1 = "down" ]; then
-    amixer set PCM 10%-
-  else
-    amixer set PCM toggle && amixer get PCM
+    amixer set PCM 5%-
+  elif [ $1 = "toggle" ]; then
+    amixer set Master toggle
   fi
 }
 
 # Set CPU frequency scaling governor (conservative/powersave)
-function set-cpu-gov() {
+function cpu-gov() {
   echo "$1" | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 }
 
