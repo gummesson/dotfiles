@@ -55,11 +55,12 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[]    = { "dmenu_run", "-m", dmenumon, "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]     = { "x-terminal-emulator", NULL };
+static const char *termcmd[]     = { "urxvt", NULL };
 static const char *rebootcmd[]   = { "sudo", "shutdown", "-r", "now", NULL };
 static const char *shutdowncmd[] = { "sudo", "shutdown", "-h", "now", NULL };
 static const char *vimcmd[]      = { "urxvt", "-title", "vim", "-e", "vim", NULL };
 static const char *cmuscmd[]     = { "urxvt", "-title", "cmus", "-e", "cmus", NULL };
+static const char *uzblcmd[]     = { "uzbl", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -69,6 +70,7 @@ static Key keys[] = {
 	{ ControlMask|Mod1Mask,         XK_q,      spawn,          {.v = shutdowncmd } },
 	{ ControlMask|Mod1Mask,         XK_v,      spawn,          {.v = vimcmd } },
 	{ ControlMask|Mod1Mask,         XK_m,      spawn,          {.v = cmuscmd } },
+	{ ControlMask|Mod1Mask,         XK_u,      spawn,          {.v = uzblcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
