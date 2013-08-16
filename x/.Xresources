@@ -23,11 +23,11 @@ URxvt.saveLines: 500
 URxvt.internalBorder: 4
 
 ! Fonts
+URxvt*font: xft:Liberation Mono:pixelsize=13
+URxvt*boldFont: xft:Liberation Mono:bold:pixelsize=13
 URxvt.allow_bold: true
-URxvt*font: xft:Monospace:pixelsize=13
-URxvt*boldFont: xft:Monospace:bold:pixelsize=13
-URxvt*letterSpace: -1
 URxvt.lineSpace: 0
+URxvt*letterSpace: -1
 
 ! Scrollbar
 URxvt.scrollStyle: plain
