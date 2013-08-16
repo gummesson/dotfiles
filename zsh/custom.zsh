@@ -3,7 +3,7 @@
 # custom.zsh (~.oh-my-zsh/custom/custom.zsh)
 
 # Term
-export TERM=rxvt-unicode
+export TERM="rxvt-unicode"
 
 # Editor
 export EDITOR="vim"
@@ -40,7 +40,7 @@ function volume() {
 }
 
 # Set CPU frequency scaling governor (conservative/powersave)
-function cpu-gov() {
+function cpu-governor() {
   echo "$1" | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 }
 
