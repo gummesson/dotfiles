@@ -12,6 +12,7 @@ A collection of assorted dotfiles, tools and scripts from my [Debian](http://www
 - [hnb](http://hnb.sourceforge.net/)
 - [RubyGems](http://www.rubygems.org/)
 - [surfraw](http://surfraw.alioth.debian.org/)
+- [tmux](http://tmux.sourceforge.net/)
 - [uzbl](http://www.uzbl.org/)
 - [w3m](http://w3m.sourceforge.net/)
 - [X](http://www.x.org/)
