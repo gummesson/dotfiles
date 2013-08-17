@@ -28,6 +28,7 @@ A collection of assorted dotfiles, tools and scripts from my [Debian](http://www
 
 - [setup.sh](https://github.com/gummesson/dotfiles/blob/master/scripts/setup.sh)
 - [install.sh](https://github.com/gummesson/dotfiles/blob/master/install.sh)
+- [builds.sh](https://github.com/gummesson/dotfiles/blob/master/scripts/builds.sh)
 - [dropbox.sh](https://github.com/gummesson/dotfiles/blob/master/scripts/dropbox.sh)
 - [update.sh](https://github.com/gummesson/dotfiles/blob/master/update.sh)
 - [clean.sh](https://github.com/gummesson/dotfiles/blob/master/clean.sh)
