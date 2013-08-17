@@ -56,6 +56,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[]    = { "dmenu_run", "-m", dmenumon, "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]     = { "urxvt", NULL };
+static const char *lockcmd[]     = { "slock", NULL };
 static const char *rebootcmd[]   = { "sudo", "shutdown", "-r", "now", NULL };
 static const char *shutdowncmd[] = { "sudo", "shutdown", "-h", "now", NULL };
 static const char *vimcmd[]      = { "urxvt", "-title", "vim", "-e", "vim", NULL };
@@ -66,6 +67,7 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+	{ ControlMask|Mod1Mask,         XK_l,      spawn,          {.v = lockcmd } },
 	{ ControlMask|Mod1Mask,         XK_r,      spawn,          {.v = rebootcmd } },
 	{ ControlMask|Mod1Mask,         XK_q,      spawn,          {.v = shutdowncmd } },
 	{ ControlMask|Mod1Mask,         XK_v,      spawn,          {.v = vimcmd } },
