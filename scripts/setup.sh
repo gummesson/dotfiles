@@ -11,6 +11,7 @@ reset="\033[0m"
 devs=(
   "rxvt-unicode-256color"
   "zsh"
+  "tmux"
   "git"
   "ack-grep"
   "ruby"
@@ -48,6 +49,7 @@ done
 
 tools=(
   "cpufrequtils"
+  "htop"
   "curl"
   "feh"
   "unclutter"
