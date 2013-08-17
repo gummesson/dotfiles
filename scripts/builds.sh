@@ -16,7 +16,7 @@ repos=(
 
 echo -e "${bold}Cloning:${reset} ${red}${repos[@]}${reset}"
 
-cd $HOME/test
+cd $HOME/.tools
 
 for repo in "${repos[@]}"; do
   git clone http://git.suckless.org/"${repo}"
