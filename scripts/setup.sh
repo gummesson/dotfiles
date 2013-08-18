@@ -36,6 +36,8 @@ sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
 ncurses=(
   "libncurses5"
   "libncurses5-dev"
+  "libncursesw5"
+  "libncursesw5-dev"
   "ncurses-term"
 )
 
