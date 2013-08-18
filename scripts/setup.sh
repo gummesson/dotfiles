@@ -52,6 +52,7 @@ done
 tools=(
   "cpufrequtils"
   "htop"
+  "xbacklight"
   "curl"
   "feh"
   "unclutter"
