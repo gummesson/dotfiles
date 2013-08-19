@@ -16,6 +16,7 @@ A collection of assorted dotfiles, tools and scripts from my [Debian](http://www
 - [uzbl](http://www.uzbl.org/)
 - [w3m](http://w3m.sourceforge.net/)
 - [X](http://www.x.org/)
+- [zathura](http://pwmt.org/projects/zathura/)
 - [Zsh](http://zsh.sourceforge.net/) + [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 ## Tools

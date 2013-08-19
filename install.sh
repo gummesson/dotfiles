@@ -22,6 +22,7 @@ files=(
   "$HOME/Git/dotfiles/w3m/keymap $HOME/.w3m/keymap"
   "$HOME/Git/dotfiles/x/.xinitrc $HOME/.xinitrc"
   "$HOME/Git/dotfiles/x/.Xresources $HOME/.Xresources"
+  "$HOME/Git/dotfiles/zathura/zathurarc $HOME/.config/zathura/zathurarc"
   "$HOME/Git/dotfiles/zsh/.zprofile $HOME/.zprofile"
   "$HOME/Git/dotfiles/zsh/.zshrc $HOME/.zshrc"
   "$HOME/Git/dotfiles/zsh/custom.zsh $HOME/.oh-my-zsh/custom/custom.zsh"

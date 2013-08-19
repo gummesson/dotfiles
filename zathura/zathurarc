@@ -1,0 +1,10 @@
+# zathurarc (~/.config/zathura/zathurarc)
+
+# Font
+set font "Terminus normal 9"
+
+# UI
+set statusbar-bg "#202020"
+set statusbar-fg "#606060"
+set inputbar-bg "#202020"
+set inputbar-fg "#909090"
