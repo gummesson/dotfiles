@@ -51,6 +51,7 @@ done
 
 tools=(
   "cpufrequtils"
+  "acpi"
   "htop"
   "xbacklight"
   "curl"
