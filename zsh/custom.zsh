@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 # custom.zsh (~.oh-my-zsh/custom/custom.zsh)
 
