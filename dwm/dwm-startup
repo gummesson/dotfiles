@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # dwm-startup (/usr/bin/dwm-startup)
 
@@ -10,6 +10,7 @@ while true; do
   VOL=$(amixer get PCM | awk '/Front Left:/{ print $5 }' | sed 's/\[\|\]//g') 
   DATE=$(date '+%d %b %Y') 
   TIME=$(date '+%H:%M')
+
   xsetroot -name "Db: $DB | W: $WIFI |  B: $BATT | V: $VOL | $DATE | $TIME"
   sleep 5s
 done & exec dwm
