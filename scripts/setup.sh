@@ -63,6 +63,7 @@ tools=(
   "scrot"
   "usbmount"
   "pandoc"
+  "trash-cli"
 )
 
 echo -e "${bold}Installing:${reset} ${red}${tools[@]}${reset}"
