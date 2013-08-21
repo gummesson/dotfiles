@@ -23,11 +23,6 @@ alias zreload="source ~/.zshrc"
 # Find all symlinks in the current directory
 alias symlinks="find . -type l"
 
-# Set backlight
-backlight() {
-  xrandr --output LVDS1 --set BACKLIGHT "$1"
-}
-
 # Set volume
 function volume() {
   if [ $1 = "up" ]; then
