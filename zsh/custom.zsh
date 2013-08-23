@@ -31,6 +31,8 @@ function volume() {
     amixer set PCM 5%-
   elif [ $1 = "toggle" ]; then
     amixer set Master toggle
+  else
+    amixer set PCM "$1"
   fi
 }
 
