@@ -24,7 +24,7 @@ alias zreload="source ~/.zshrc"
 alias symlinks="find . -type l"
 
 # Set volume
-function volume() {
+volume() {
   if [ $1 = "up" ]; then
     amixer set PCM 5%+
   elif [ $1 = "down" ]; then
@@ -37,11 +37,11 @@ function volume() {
 }
 
 # Set CPU frequency scaling governor (conservative/powersave)
-function cpu-governor() {
+governor() {
   echo "$1" | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 }
 
 # Convert Markdown to HTML (with smart quotes and HTML5 markup)
-function mdtohtml() {
+mdtohtml() {
   pandoc -f markdown -t html5 -S "$1" -o "$2"
 }
