@@ -23,6 +23,9 @@ alias zreload="source ~/.zshrc"
 # Find all symlinks in the current directory
 alias symlinks="find . -type l"
 
+# PowerShell(!) inspired
+alias cls="clear"
+
 # Set volume
 volume() {
   if [ $1 = "up" ]; then
