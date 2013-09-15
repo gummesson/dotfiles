@@ -85,6 +85,7 @@ apps=(
   "surfraw surfraw-extra"
   "irssi"
   "zathura"
+  "pcmanfm"
 )
 
 echo -e "${bold}Installing:${reset} ${red}${apps[@]}${reset}"
@@ -105,6 +106,19 @@ echo -e "${bold}Installing:${reset} ${red}${fonts[@]}${reset}"
 for font in "${fonts[@]}"; do
   sudo apt-get install ${font}
 done
+
+# == Icons ==
+
+icons=(
+  "tango-icon-theme"
+)
+
+echo -e "${bold}Installing:${reset} ${red}${icons[@]}${reset}"
+
+for icon in "${icons[@]}"; do
+  sudo apt-get install ${icon}
+done
+
 
 # == Gems ==
 

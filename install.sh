@@ -14,6 +14,7 @@ files=(
   "$HOME/Git/dotfiles/feh/.fehbg $HOME/.fehbg"
   "$HOME/Git/dotfiles/git/.gitconfig $HOME/.gitconfig"
   "$HOME/Git/dotfiles/git/.gitignore $HOME/.gitignore"
+  "$HOME/Git/dotfiles/gtk/.gtkrc-2.0 $HOME/.gtkrc-2.0"
   "$HOME/Git/dotfiles/hnb/.hnbrc $HOME/.hnbrc"
   "$HOME/Git/dotfiles/ruby/.gemrc $HOME/.gemrc"
   "$HOME/Git/dotfiles/surfraw/.surfraw.conf $HOME/.surfraw.conf"
