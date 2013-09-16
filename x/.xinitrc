@@ -11,9 +11,6 @@ xbacklight -set 20 &
 # Set `unclutter` to hide the cursor after a second of inactivity
 unclutter -root -idle 1 &
 
-# Disable the touchpad when typing
-syndaemon -d &
-
 # Set `autocutsel` to sync the clipboards
 autocutsel &
 autocutsel -s PRIMARY &
