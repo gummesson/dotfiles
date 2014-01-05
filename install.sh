@@ -24,11 +24,13 @@ files=(
   "$HOME/Git/dotfiles/x/.xinitrc $HOME/.xinitrc"
   "$HOME/Git/dotfiles/x/.Xresources $HOME/.Xresources"
   "$HOME/Git/dotfiles/zathura/zathurarc $HOME/.config/zathura/zathurarc"
-  "$HOME/Git/dotfiles/zsh/.zprofile $HOME/.zprofile"
+  "$HOME/Git/dotfiles/zsh/.zlogin $HOME/.zlogin"
   "$HOME/Git/dotfiles/zsh/.zshrc $HOME/.zshrc"
   "$HOME/Git/dotfiles/zsh/custom.zsh $HOME/.oh-my-zsh/custom/custom.zsh"
-  "$HOME/Git/dotfiles/tools/note.sh $HOME/.tools/note.sh"
 )
+
+mkdir -p ~/.config/zathura
+mkdir -p ~/.w3m
 
 echo -e "${bold}Symlinking files:${reset} ${red}${files[@]}${reset}"
 
