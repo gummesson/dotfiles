@@ -1,12 +1,12 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
-# == Colors ==
+# Colors
 
 bold="\033[1m"
 red="\033[0;31m"
 reset="\033[0m"
 
-# == Files ==
+# Files
 
 files=(
   "$HOME/Git/dotfiles/ack/.ackrc $HOME/.ackrc"
@@ -41,7 +41,7 @@ done
 # dwm setup
 sudo ln -s $HOME/Git/dotfiles/dwm/dwm-startup /usr/bin/dwm-startup
 
-# == Folders ==
+# Folders
 
 git submodule init && git submodule update
 

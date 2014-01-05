@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
-# == Colors ==
+# Colors
 
 bold="\033[1m"
 red="\033[0;31m"
@@ -31,7 +31,7 @@ sudo chsh -s /bin/zsh
 # Ack setup
 sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
 
-# == ncurses ==
+# ncurses
 
 ncurses=(
   "libncurses5"
@@ -47,7 +47,7 @@ for ncurse in "${ncurses[@]}"; do
   sudo apt-get install ${ncurse}
 done
 
-# == Tools ==
+# Tools
 
 tools=(
   "cpufrequtils"
@@ -72,7 +72,7 @@ for tool in "${tools[@]}"; do
   sudo apt-get install ${tool}
 done
 
-# == Apps ==
+# Apps
 
 apps=(
   "vim-gtk"
@@ -94,7 +94,7 @@ for app in "${apps[@]}"; do
   sudo apt-get install ${app}
 done
 
-# == Fonts ==
+# Fonts
 
 fonts=(
   "xfonts-terminus"
@@ -107,7 +107,7 @@ for font in "${fonts[@]}"; do
   sudo apt-get install ${font}
 done
 
-# == Icons ==
+# Icons
 
 icons=(
   "tango-icon-theme"
@@ -120,7 +120,7 @@ for icon in "${icons[@]}"; do
 done
 
 
-# == Gems ==
+# Gems
 
 gems=(
   "compass"

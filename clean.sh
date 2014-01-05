@@ -1,12 +1,12 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
-# == Colors ==
+# Colors
 
 bold="\033[1m"
 red="\033[0;31m"
 reset="\033[0m"
 
-# == apt-get ==
+# apt-get
 
 commands=(
   "autoremove"

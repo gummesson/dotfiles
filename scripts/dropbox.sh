@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
-# == Setup ==
+# Setup
 
 cd $HOME
 wget -O - "https://www.dropbox.com/download?plat=lnx.x86" | tar xzf -
