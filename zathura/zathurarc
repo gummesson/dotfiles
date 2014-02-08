@@ -1,0 +1,16 @@
+# -- zathurarc ----------------------------------------------------- {{{
+
+# -- Font --
+
+set font "Ubuntu Mono normal 12"
+
+# -- UI --
+
+set statusbar-bg "#202020"
+set statusbar-fg "#606060"
+set inputbar-bg "#202020"
+set inputbar-fg "#909090"
+
+# }}}
+
+# vim:foldmethod=marker:filetype=conf

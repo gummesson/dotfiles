@@ -1,0 +1,73 @@
+# -- .aliases ------------------------------------------------------ {{{
+#
+# -- Directories
+# -- Lists
+# -- Files
+# -- Git
+# -- npm
+# -- Misc.
+#
+# }}}
+
+# -- Directories --------------------------------------------------- {{{
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# }}}
+
+# -- Lists --------------------------------------------------------- {{{
+
+alias ls="ls --color=auto"
+alias ll="ls -l"
+alias la="ls -a"
+
+# }}}
+
+# -- Files --------------------------------------------------------- {{{
+
+alias cp="cp --interactive"
+alias mv="mv --interactive"
+alias rm="rm --interactive"
+
+# }}}
+
+# -- Git ----------------------------------------------------------- {{{
+
+alias g="git"
+alias gi="git init"
+alias gst="git status"
+alias gd="git diff"
+alias gl="git pull"
+alias gp="git push"
+alias gd="git diff"
+alias gcmsg="git commit -m"
+alias gco="git checkout"
+alias gcm="git checkout master"
+alias gr="git remote"
+alias gb="git branch"
+alias ga="git add"
+alias gm="git merge"
+alias gf="git fetch"
+alias grh="git reset HEAD"
+
+# }}}
+
+# -- npm ----------------------------------------------------------- {{{
+
+alias npmeu="npm --registry http://registry.npmjs.eu"
+alias npmls="npm ls --depth=0"
+
+# }}}
+
+# -- Misc. --------------------------------------------------------- {{{
+
+alias _="sudo"
+alias cls="clear"
+alias untar="tar -xzvf"
+
+# }}}
+
+# vim:foldmethod=marker:filetype=sh

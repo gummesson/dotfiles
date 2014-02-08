@@ -1,0 +1,44 @@
+# -- Minifile ------------------------------------------------------ {{{
+#
+# -- Setup
+# -- Zsh
+# -- Bash
+#
+# }}}
+
+# -- Setup --------------------------------------------------------- {{{
+
+.PHONY: zsh bash
+
+USER = /home/ellen
+GIT  = $(USER)/Git
+DOT  = $(GIT)/dotfiles
+
+# }}}
+
+# -- Zsh ----------------------------------------------------------- {{{
+
+zsh:
+	@ln -vsf $(DOT)/zsh/.zshrc $(USER)/.zshrc
+	@ln -vsf $(DOT)/zsh/.zprompt $(USER)/.zprompt
+	@ln -vsf $(DOT)/sh/.env $(USER)/.zshenv
+	@ln -vsf $(DOT)/sh/.aliases $(USER)/.aliases
+	@ln -vsf $(DOT)/sh/.functions $(USER)/.functions
+	@ln -vsf $(DOT)/sh/.dir_colors $(USER)/.dir_colors
+
+# }}}
+
+# -- Bash ---------------------------------------------------------- {{{
+
+bash:
+	@ln -vsf $(DOT)/sh/.bashrc $(USER)/.bashrc
+	@ln -vsf $(DOT)/sh/.prompt $(USER)/.prompt
+	@ln -vsf $(DOT)/sh/.env $(USER)/.env
+	@ln -vsf $(DOT)/sh/.aliases $(USER)/.aliases
+	@ln -vsf $(DOT)/sh/.functions $(USER)/.functions
+	@ln -vsf $(DOT)/sh/.inputrc $(USER)/.inputrc
+	@ln -vsf $(DOT)/sh/.dir_colors $(USER)/.dir_colors
+
+# }}}
+
+# vim:foldmethod=marker:filetype=make

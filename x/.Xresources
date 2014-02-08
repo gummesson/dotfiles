@@ -1,0 +1,70 @@
+! -- .Xresources --------------------------------------------------- {{{
+!
+! -- Xft
+! -- urxvt
+!
+! }}}
+
+! -- Xft ----------------------------------------------------------- {{{
+
+Xft.autohint: true
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.dpi: 96
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+
+! }}}
+
+! -- urxvt --------------------------------------------------------- {{{
+
+! -- Window --
+
+URxvt.depth: 32
+URxvt.geometry: 80x24
+URxvt.transparent: false
+URxvt.fading: 0
+URxvt.loginShell: true
+URxvt.saveLines: 500
+URxvt.internalBorder: 4
+URxvt.urgentOnBell: true
+
+! -- Font --
+
+URxvt.font: xft:Ubuntu Mono:pixelsize=15
+URxvt.boldFont: xft:Ubuntu Mono:bold:pixelsize=15
+URxvt.allow_bold: true
+URxvt.lineSpace: 0
+URxvt.letterSpace: -1
+
+! -- Scrollbar --
+
+URxvt.scrollStyle: plain
+URxvt.scrollBar: false
+
+! -- Cursor --
+
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+
+! -- Colors --
+
+#include "/home/ellen/.xcolors"
+
+! -- Extensions --
+
+URxvt.perl-ext-common: default,tabbed,matcher
+URxvt.matcher.button: 1
+URxvt.url-launcher: /usr/bin/uzbl-browser
+
+! -- Tabs --
+
+URxvt.tabbed.tabbar-fg: 7
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 7
+URxvt.tabbed.tab-bg: 4
+
+! }}}
+
+! vim:foldmethod=marker

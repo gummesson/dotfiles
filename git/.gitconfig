@@ -1,0 +1,19 @@
+# -- .gitconfig ---------------------------------------------------- {{{
+
+[user]
+   name = Ellen Gummesson
+  email = ellengummesson@gmail.com
+[color]
+  ui = true
+[diff]
+  tool = vimdiff
+[core]
+  editor = vim
+[push]
+  default = tracking
+[credential]
+  helper = cache --timeout=3600
+
+# }}}
+
+# vim:foldmethod=marker

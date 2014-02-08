@@ -1,0 +1,24 @@
+# -- .zprompt ------------------------------------------------------ {{{
+
+autoload -U colors && colors
+
+function __git_branch() {
+  git branch 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/(\1)/"
+}
+
+RED="%{$fg[red]%}"
+GREEN="%{$fg[green]%}"
+YELLOW="%{$fg[yellow]%}"
+CYAN="%{$fg[cyan]%}"
+CLEAR="%{$reset_color%}"
+
+PROMPT="$GREEN%n $RED%~ $YELLOW\$(__git_branch)
+$CYAN\$$CLEAR "
+RPROMPT="%(?..$RED%?$CLEAR)"
+SPROMPT="Correct $RED%R$CLEAR to $GREEN%r$CLEAR? (yes, no, abort, edit) "
+
+autoload -U promptinit && promptinit
+
+# }}}
+
+# vim:foldmethod=marker:filetype=zsh

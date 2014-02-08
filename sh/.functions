@@ -1,0 +1,33 @@
+# -- .functions ---------------------------------------------------- {{{
+#
+# -- `mkcd`
+# -- `volume`
+#
+# }}}
+
+# -- `mkcd` -------------------------------------------------------- {{{
+
+function mkcd() {
+  mkdir -p $1
+  cd $1
+}
+
+# }}}
+
+# -- `volume` ------------------------------------------------------ {{{
+
+function volume() {
+  if [ $1 = "up" ]; then
+    amixer set Master 5%+
+  elif [ $1 = "down" ]; then
+    amixer set Master 5%-
+  elif [ $1 = "toggle" ]; then
+    amixer set Master toggle
+  else
+    amixer set Master "$1"
+  fi
+}
+
+# }}}
+
+# vim:foldmethod=marker:filetype=sh

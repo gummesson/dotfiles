@@ -1,0 +1,8 @@
+# -- keymap -------------------------------------------------------- {{{
+
+keymap y EXTERN
+keymap Y EXTERN_LINK
+
+# }}}
+
+# vim:foldmethod=marker

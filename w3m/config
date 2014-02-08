@@ -1,0 +1,8 @@
+# -- config -------------------------------------------------------- {{{
+
+extbrowser sh -c 'printf %s "$0" | xclip'
+editor vim
+
+# }}}
+
+# vim:foldmethod=marker

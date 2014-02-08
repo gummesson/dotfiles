@@ -1,0 +1,37 @@
+# -- .ackrc -------------------------------------------------------- {{{
+#
+# -- General
+# -- Ignores
+# -- Types
+#
+# }}}
+
+# -- General ------------------------------------------------------- {{{
+
+--sort-files
+--color
+--group
+--smart-case
+
+# }}}
+
+# -- Ignores ------------------------------------------------------- {{{
+
+--ignore-dir=log
+--ignore-dir=tmp
+--ignore-dir=node_modules
+--ignore-dir=bower_components
+--ignore-dir=public
+--ignore-dir=_site
+
+# }}}
+
+# -- Types --------------------------------------------------------- {{{
+
+--type-set=markdown=.md,.mkd.,.markdown,.txt
+--type-add=html=.erb,.haml,.jade
+--type-add=css=.sass,.scss,.less,.styl
+
+# }}}
+
+# vim:foldmethod=marker
