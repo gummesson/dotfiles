@@ -1,4 +1,0 @@
-# .gemrc (~/.gemrc)
-
-install: --no-ri --no-doc
-update: --no-ri --no-doc

@@ -1,4 +1,0 @@
-# keymap (~/.w3m/keymap)
-
-keymap y EXTERN
-keymap Y EXTERN_LINK
