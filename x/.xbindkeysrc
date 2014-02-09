@@ -6,13 +6,13 @@
 "xbacklight -dec 20"
   XF86MonBrightnessDown
 
-"amixer set Master -5%"
+"amixer --quiet sset Master 5-"
   XF86AudioLowerVolume
 
-"amixer set Master +5%"
+"amixer --quiet sset Master 5+"
   XF86AudioRaiseVolume
 
-"amixer set Master toggle"
+"amixer --quiet sset Master toggle"
   XF86AudioMute
 
 # }}}
