@@ -15,6 +15,9 @@
 "amixer --quiet sset Master toggle"
   XF86AudioMute
 
+"scrot ~/Pictures/%Y%m%d-%H%M%S-screenshot.png"
+  Print
+
 # }}}
 
 # vim:foldmethod=marker:filetype=conf
