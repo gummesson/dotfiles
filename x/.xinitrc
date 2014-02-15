@@ -18,6 +18,9 @@ autocutsel -selection PRIMARY -fork &
 # Start the `urxvt` daemon
 urxvtd --quiet --fork --opendisplay &
 
+# Start the `dropbox` daemon
+dropboxd &
+
 # Bind special keys
 xbindkeys
 
