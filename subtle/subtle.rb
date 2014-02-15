@@ -103,8 +103,8 @@ style :title do
 end
 
 style :clients do
-  active   solarized[:blue], 1
-  inactive solarized[:base00], 1
+  active   solarized[:blue], 2
+  inactive solarized[:base00], 2
   margin   0
   width    50
 end
