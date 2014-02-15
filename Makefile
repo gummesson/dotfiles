@@ -34,6 +34,7 @@ wm:
 	@sur install battery
 	@sur install clock
 	@yaourt -Sa dmenu
+	@yaourt -Sa dunst
 	@yaourt -Sa feh
 	@yaourt -Sa unclutter
 
@@ -82,6 +83,7 @@ folders:
 	@mkdir -vp $(USER)/Downloads
 	@mkdir -vp $(USER)/Documents
 	@mkdir -vp $(USER)/.irssi/scripts/autorun
+	@mkdir -vp $(CONF)/dunst
 	@mkdir -vp $(CONF)/subtle
 	@mkdir -vp $(CONF)/uzbl
 	@mkdir -vp $(USER)/.w3m
@@ -89,6 +91,7 @@ folders:
 
 files:
 	@ln -vsf $(DOT)/ack/.ackrc $(USER)/.ackrc
+	@ln -vsf $(DOT)/dunst/dunstrc $(CONF)/dunst/dunstrc
 	@ln -vsf $(DOT)/git/.gitconfig $(USER)/.gitconfig
 	@ln -vsf $(DOT)/git/.gitignore $(USER)/.gitignore
 	@ln -vsf $(DOT)/irssi/scripts/* $(USER)/.irssi/scripts/autorun
