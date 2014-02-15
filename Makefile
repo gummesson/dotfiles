@@ -82,6 +82,7 @@ install: env wm fonts tools apps
 folders:
 	@mkdir -vp $(USER)/Downloads
 	@mkdir -vp $(USER)/Documents
+	@mkdir -vp $(USER)/Pictures
 	@mkdir -vp $(USER)/.irssi/scripts/autorun
 	@mkdir -vp $(CONF)/dunst
 	@mkdir -vp $(CONF)/subtle
