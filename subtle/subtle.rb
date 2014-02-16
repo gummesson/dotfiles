@@ -63,7 +63,7 @@ solarized = {
 
 style :all do
   background solarized[:base03]
-  icon       solarized[:base3]
+  icon       solarized[:base00]
   border     solarized[:base02], 0
   padding    0, 4
   font       "xft:Ubuntu Mono:pixelsize=15"
