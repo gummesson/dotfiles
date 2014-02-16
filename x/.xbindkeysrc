@@ -15,7 +15,7 @@
 "amixer --quiet sset Master toggle"
   XF86AudioMute
 
-"scrot ~/Pictures/%Y%m%d-%H%M%S-screenshot.png"
+"scrot ~/Pictures/Screenshots/%Y%m%d-%H%M%S-screenshot.png"
   Print
 
 # }}}
