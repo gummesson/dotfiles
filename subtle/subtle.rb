@@ -196,6 +196,24 @@ grab "W-z", [ :bottom_left,  :bottom_left66,  :bottom_left33  ]
 grab "W-x", [ :bottom,       :bottom66,       :bottom33       ]
 grab "W-c", [ :bottom_right, :bottom_right66, :bottom_right33 ]
 
+grab "A-Tab" do
+  clients = Subtlext::Client.visible
+  clients.last.instance_eval do
+    focus
+    raise
+  end
+end
+ 
+grab "A-S-Tab" do
+  clients = Subtlext::Client.visible
+  clients.first.instance_eval do
+    lower
+  end
+  clients.first.instance_eval do
+    focus
+  end
+end
+
 # -- Subtle --
 
 grab "W-C-r",   :SubtleReload
