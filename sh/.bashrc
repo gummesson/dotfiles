@@ -1,12 +1,19 @@
 # -- .bashrc ------------------------------------------------------- {{{
 #
+# -- Path
 # -- Sources
 #
 # }}}
 
+# -- Path ---------------------------------------------------------- {{{
+
+PATH="$PATH:$HOME/.bin"
+
+# }}}
+
 # -- Sources ------------------------------------------------------- {{{
 
-for file in ~/.{env,aliases,functions,prompt}; do
+for file in ~/.{aliases,env,functions,prompt}; do
   if [[ -r "$file" ]]; then
     source "$file"
   fi
