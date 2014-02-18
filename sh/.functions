@@ -8,8 +8,8 @@
 # -- `mkcd` -------------------------------------------------------- {{{
 
 function mkcd() {
-  mkdir -p $1
-  cd $1
+  mkdir -p "$1"
+  cd "$1"
 }
 
 # }}}
@@ -17,11 +17,11 @@ function mkcd() {
 # -- `volume` ------------------------------------------------------ {{{
 
 function volume() {
-  if [ $1 = "up" ]; then
+  if [ "$1" = "up" ]; then
     amixer set Master 5%+
-  elif [ $1 = "down" ]; then
+  elif [ "$1" = "down" ]; then
     amixer set Master 5%-
-  elif [ $1 = "toggle" ]; then
+  elif [ "$1" = "toggle" ]; then
     amixer set Master toggle
   else
     amixer set Master "$1"
