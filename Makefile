@@ -83,6 +83,7 @@ folders:
 	@mkdir -vp $(USER)/Downloads
 	@mkdir -vp $(USER)/Documents
 	@mkdir -vp $(USER)/Pictures/Screenshots
+	@mkdir -vp $(USER)/.bin
 	@mkdir -vp $(USER)/.irssi/scripts/autorun
 	@mkdir -vp $(CONF)/dunst
 	@mkdir -vp $(CONF)/subtle
@@ -92,6 +93,7 @@ folders:
 
 files:
 	@ln -vsf $(DOT)/ack/.ackrc $(USER)/.ackrc
+	@ln -vsf $(DOT)/bin/* $(USER)/.bin
 	@ln -vsf $(DOT)/dunst/dunstrc $(CONF)/dunst/dunstrc
 	@ln -vsf $(DOT)/git/.gitconfig $(USER)/.gitconfig
 	@ln -vsf $(DOT)/git/.gitignore $(USER)/.gitignore
@@ -112,8 +114,8 @@ files:
 	@ln -vsf $(DOT)/zsh/.zshrc $(USER)/.zshrc
 	@ln -vsf $(DOT)/zsh/.zprofile $(USER)/.zprofile
 	@ln -vsf $(DOT)/zsh/.zprompt $(USER)/.zprompt
-	@ln -vsf $(DOT)/sh/.env $(USER)/.zshenv
 	@ln -vsf $(DOT)/sh/.aliases $(USER)/.aliases
+	@ln -vsf $(DOT)/sh/.env $(USER)/.zshenv
 	@ln -vsf $(DOT)/sh/.functions $(USER)/.functions
 	@ln -vsf $(DOT)/sh/.dir_colors $(USER)/.dir_colors
 
