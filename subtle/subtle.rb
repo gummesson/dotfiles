@@ -63,15 +63,14 @@ solarized = {
 
 style :all do
   background solarized[:base03]
+  foreground solarized[:base00]
   icon       solarized[:base00]
-  border     solarized[:base02], 0
-  padding    0, 4
+  border     solarized[:base00], 0
+  padding    0, 4, 0, 4
   font       "xft:Ubuntu Mono:pixelsize=15"
 end
 
 style :views do
-  foreground solarized[:base00]
-
   style :focus do
     foreground solarized[:base3]
     background solarized[:blue]
@@ -94,8 +93,7 @@ style :sublets do
 end
 
 style :separator do
-  foreground solarized[:base00]
-  separator  "|"
+  separator "|"
 end
 
 style :title do
