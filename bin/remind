@@ -1,4 +1,3 @@
 #!/usr/bin/env sh
 
-# remind 1800 "Something important"
 (sleep "$1" && notify-send -u critical "$2" &) > /dev/null 2>&1
