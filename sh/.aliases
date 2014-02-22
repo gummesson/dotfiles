@@ -70,7 +70,6 @@ alias reboot="sudo reboot"
 alias shutdown="sudo shutdown -h now"
 alias ping="ping -c 5"
 alias untar="tar -xzvf"
-alias drive="cd /media/usb"
 alias today="date +%Y/%m/%d"
 
 # }}}
