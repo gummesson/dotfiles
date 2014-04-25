@@ -132,7 +132,7 @@ editor:
 	@git clone https://github.com/gmarik/vundle.git $(USER)/.vim/bundle/vundle
 	@ln -vsf $(GIT)/vimfiles/.vimrc $(USER)/.vimrc
 	@ln -vsf $(GIT)/vimfiles/.gvimrc $(USER)/.gvimrc
-	@vim +BundleInstall +qall
+	@vim +PluginInstall +qall
 
 shell:
 	@chsh -s /usr/bin/zsh
