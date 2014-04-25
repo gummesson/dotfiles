@@ -67,7 +67,7 @@ style :all do
   icon       solarized[:base00]
   border     solarized[:base00], 0
   padding    0, 4, 0, 4
-  font       "xft:Ubuntu Mono:pixelsize=15"
+  font       "xft:Source Code Pro:pixelsize=13"
 end
 
 style :views do
@@ -201,7 +201,7 @@ grab "A-Tab" do
     raise
   end
 end
- 
+
 grab "A-S-Tab" do
   clients = Subtlext::Client.visible
   clients.first.instance_eval do
