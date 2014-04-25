@@ -87,6 +87,7 @@ folders:
 	@mkdir -vp $(USER)/Pictures/Screenshots
 	@mkdir -vp $(USER)/.bin
 	@mkdir -vp $(USER)/.irssi/scripts/autorun
+	@mkdir -vp $(USER)/.nano
 	@mkdir -vp $(CONF)/dunst
 	@mkdir -vp $(CONF)/subtle
 	@mkdir -vp $(CONF)/uzbl
@@ -100,6 +101,8 @@ files:
 	@ln -vsf $(DOT)/git/.gitconfig $(USER)/.gitconfig
 	@ln -vsf $(DOT)/git/.gitignore $(USER)/.gitignore
 	@ln -vsf $(DOT)/irssi/scripts/* $(USER)/.irssi/scripts/autorun
+	@ln -vsf $(DOT)/nano/.nanorc $(USER)/.nanorc
+	@ln -vsf $(DOT)/nano/syntax/* $(USER)/.nano
 	@ln -vsf $(DOT)/node/.jshintrc $(USER)/.jshintrc
 	@ln -vsf $(DOT)/ruby/.gemrc $(USER)/.gemrc
 	@ln -vsf $(DOT)/subtle/subtle.rb $(CONF)/subtle/subtle.rb
