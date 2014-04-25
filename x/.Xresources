@@ -45,7 +45,7 @@ URxvt.scrollBar: false
 
 ! -- Cursor --
 
-URxvt.cursorBlink: true
+URxvt.cursorBlink: false
 URxvt.cursorUnderline: false
 
 ! -- Colors --
