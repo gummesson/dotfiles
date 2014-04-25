@@ -1,0 +1,19 @@
+{
+  "camelcase": true,
+  "curly": true,
+  "eqeqeq": true,
+  "forin": true,
+  "indent": 2,
+  "newcap": true,
+  "quotmark": "single",
+  "undef": true,
+  "unused": false,
+  "laxbreak": true,
+  "browser": true,
+  "node": true,
+  "globals": {
+    "require": true,
+    "module": true,
+    "exports": true
+  }
+}

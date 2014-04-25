@@ -99,6 +99,7 @@ files:
 	@ln -vsf $(DOT)/git/.gitconfig $(USER)/.gitconfig
 	@ln -vsf $(DOT)/git/.gitignore $(USER)/.gitignore
 	@ln -vsf $(DOT)/irssi/scripts/* $(USER)/.irssi/scripts/autorun
+	@ln -vsf $(DOT)/node/.jshintrc $(USER)/.jshintrc
 	@ln -vsf $(DOT)/ruby/.gemrc $(USER)/.gemrc
 	@ln -vsf $(DOT)/subtle/subtle.rb $(CONF)/subtle/subtle.rb
 	@ln -vsf $(DOT)/surfraw/.surfraw.conf $(USER)/.surfraw.conf
