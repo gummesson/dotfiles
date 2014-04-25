@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+case "$1" in
+  "node")
+    for dir in {test,lib}; do
+      if [ ! -d "$dir" ]; then
+        mkdir "$dir"
+      fi
+    done; unset dir
+
+    for file in {README.md,index.js,test/index.js}; do
+      if [ ! -f "$file" ]; then
+        printf "\n" > "$file"
+      fi
+    done; unset file
+  ;;
+  "frontend")
+    for dir in {assets/css,assets/js,assets/img}; do
+      if [ ! -d "$dir" ]; then
+        mkdir -p "$dir"
+      fi
+    done; unset dir
+
+    for file in {index.html,assets/css/index.css,assets/js/index.js}; do
+      if [ ! -f "$file" ]; then
+        printf "\n" > "$file"
+      fi
+    done; unset file
+  ;;
+  *)
+    echo "Invalid option."
+  ;;
+esac
