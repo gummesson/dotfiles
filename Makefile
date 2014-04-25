@@ -26,6 +26,7 @@ env:
 	@yaourt -Sa zsh-completions
 	@yaourt -Sa ruby
 	@yaourt -Sa nodejs
+	@yaourt -Sa phantomjs
 
 wm:
 	@yaourt -Sa ruby-archive-tar-minitar
