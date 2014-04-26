@@ -12,6 +12,5 @@
   "laxbreak": true,
   "smarttabs": true,
   "browser": true,
-  "node": true,
-  "globals": {}
+  "node": true
 }
