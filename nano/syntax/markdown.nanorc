@@ -8,12 +8,11 @@ color blue "^(#|%).*"
 color green "\*[^\*]*\*"
 color green "\*\*[^\*]*\*\*"
 
-# Links, URLs, HTML tags, footnotes and images
-color magenta start="<"   end=">"
+# Links, URLs, HTML tags and images
 color magenta start="\["  end="\]"
-color magenta start="\["  end="\]:"
-color magenta start="!\[" end="\]"
 color magenta start="\("  end="\)"
+color magenta start="<"   end=">"
+color magenta start="!\[" end="\]"
 
 # Lists and rulers
 color red "^( )*(\*|\+|-|~|[0-9]+\.)"
