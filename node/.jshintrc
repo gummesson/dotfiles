@@ -8,12 +8,10 @@
   "quotmark": "single",
   "undef": true,
   "unused": false,
+  "trailing": true,
   "laxbreak": true,
+  "smarttabs": true,
   "browser": true,
   "node": true,
-  "globals": {
-    "require": true,
-    "module": true,
-    "exports": true
-  }
+  "globals": {}
 }
