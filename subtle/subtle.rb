@@ -65,7 +65,6 @@ style :all do
   background solarized[:base03]
   foreground solarized[:base00]
   icon       solarized[:base00]
-  border     solarized[:base00], 0
   padding    0, 4, 0, 4
   font       "xft:Source Code Pro:pixelsize=13"
 end
@@ -87,31 +86,15 @@ style :views do
   end
 end
 
-style :sublets do
-  foreground solarized[:base00]
-  background solarized[:base03]
-end
-
-style :separator do
-  separator "|"
-end
-
-style :title do
-  foreground solarized[:base00]
-end
-
 style :clients do
   active   solarized[:blue], 2
   inactive solarized[:base00], 2
-  margin   0
-  width    50
+  width    48
 end
 
 style :subtle do
-  margin     0, 0, 0, 0
   panel      solarized[:base03]
   background solarized[:base02]
-  stipple    solarized[:base00]
 end
 
 # }}}
