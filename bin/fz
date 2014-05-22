@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+find . -type f -name "*$1*" ! -path "*./.git*" ! -path "*./node_modules" ! -path "*./bower_components" ! -path "*./_site" -print
