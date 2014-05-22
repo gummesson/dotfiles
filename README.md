@@ -15,7 +15,7 @@ git clone https://github.com/gummesson/dotfiles.git Git/dotfiles
 
 ### Keyboard
 
-If the `FN` keys act up, run:
+If the `Fn` keys act up, run:
 
 ~~~ sh
 sudo keyboardctl --set-layout se
