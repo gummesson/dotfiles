@@ -6,10 +6,10 @@
 "xbacklight -dec 20"
   XF86MonBrightnessDown
 
-"amixer --quiet sset Master 5- && volume"
+"amixer --quiet sset Master 5- && sh ~/.bin/volume"
   XF86AudioLowerVolume
 
-"amixer --quiet sset Master 5+ && volume"
+"amixer --quiet sset Master 5+ && sh ~/.bin/volume"
   XF86AudioRaiseVolume
 
 "amixer --quiet sset Master toggle"
