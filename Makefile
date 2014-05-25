@@ -71,6 +71,7 @@ apps:
 	@yaourt -Sa dropbox-cli
 	@yaourt -Sa irssi
 	@yaourt -Sa mplayer2
+	@yaourt -Sa cmus
 	@yaourt -Sa zathura
 	@yaourt -Sa zathura-pdf-mupdf
 	@yaourt -Sa ranger
