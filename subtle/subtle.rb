@@ -161,12 +161,12 @@ grab "W-space", :WindowFull
 grab "W-equal", :WindowZaphod
 grab "W-S-s",   :WindowStick
 grab "W-S-k",   :WindowKill
-grab "W-r",     :WindowRaise
-grab "W-l",     :WindowLower
-grab "W-Left",  :WindowLeft
-grab "W-Down",  :WindowDown
-grab "W-Up",    :WindowUp
-grab "W-Right", :WindowRight
+grab "W-Up",    :WindowRaise
+grab "W-Down",  :WindowLower
+grab "W-h",     :WindowLeft
+grab "W-j",     :WindowDown
+grab "W-k",     :WindowUp
+grab "W-l",     :WindowRight
 
 grab "W-q", [ :top_left,     :top_left66,     :top_left33     ]
 grab "W-w", [ :top,          :top66,          :top33          ]
