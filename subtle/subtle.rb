@@ -68,7 +68,7 @@ style :all do
   foreground colors[:gray8]
   icon       colors[:gray8]
   padding    0, 4, 0, 4
-  font       "xft:Source Code Pro:pixelsize=13"
+  font       "xft:Source Code Pro:pixelsize=14"
 end
 
 style :views do
