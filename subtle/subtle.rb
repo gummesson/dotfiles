@@ -40,7 +40,7 @@ end
 
 # -- Colors --
 
-solarized = {
+colors = {
   :base03  => "#002b36",
   :base02  => "#073642",
   :base01  => "#586e75",
@@ -62,39 +62,39 @@ solarized = {
 # -- Settings ---
 
 style :all do
-  background solarized[:base03]
-  foreground solarized[:base00]
-  icon       solarized[:base00]
+  background colors[:base03]
+  foreground colors[:base00]
+  icon       colors[:base00]
   padding    0, 4, 0, 4
   font       "xft:Source Code Pro:pixelsize=13"
 end
 
 style :views do
   style :focus do
-    foreground solarized[:base3]
-    background solarized[:blue]
+    foreground colors[:base3]
+    background colors[:blue]
   end
 
   style :urgent do
-    foreground solarized[:base3]
-    background solarized[:red]
+    foreground colors[:base3]
+    background colors[:red]
   end
 
   style :occupied do
-    foreground solarized[:base3]
-    background solarized[:magenta]
+    foreground colors[:base3]
+    background colors[:magenta]
   end
 end
 
 style :clients do
-  active   solarized[:blue], 2
-  inactive solarized[:base00], 2
+  active   colors[:blue], 2
+  inactive colors[:base00], 2
   width    48
 end
 
 style :subtle do
-  panel      solarized[:base03]
-  background solarized[:base02]
+  panel      colors[:base03]
+  background colors[:base02]
 end
 
 # }}}
@@ -236,7 +236,7 @@ end
 
 sublet :battery do
   interval 30
-  colors   25 => solarized[:red], 50 => solarized[:yellow], 100 => solarized[:green]
+  colors   25 => colors[:red], 50 => colors[:yellow], 100 => colors[:green]
 end
 
 sublet :clock do
