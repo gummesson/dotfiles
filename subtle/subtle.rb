@@ -95,8 +95,7 @@ style :clients do
 end
 
 style :subtle do
-  panel      colors[:gray2]
-  background colors[:base02]
+  panel colors[:gray2]
 end
 
 # }}}

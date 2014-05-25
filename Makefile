@@ -98,6 +98,7 @@ files:
 	@ln -vsf $(DOT)/ack/.ackrc $(USER)/.ackrc
 	@ln -vsf $(DOT)/bin/* $(USER)/.bin
 	@ln -vsf $(DOT)/dunst/dunstrc $(CONF)/dunst/dunstrc
+	@ln -vsf $(DOT)/feh/.fehbg $(USER)/.fehbg
 	@ln -vsf $(DOT)/git/.gitconfig $(USER)/.gitconfig
 	@ln -vsf $(DOT)/git/.gitignore $(USER)/.gitignore
 	@ln -vsf $(DOT)/irssi/scripts/* $(USER)/.irssi/scripts/autorun

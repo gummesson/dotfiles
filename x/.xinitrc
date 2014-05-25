@@ -8,6 +8,9 @@ xrdb -merge $HOME/.Xresources
 # Set the brightness of the screen
 xbacklight -set 40 &
 
+# Set the wallpaper
+sh ~/.fehbg &
+
 # Hide the cursor after a second of inactivity
 unclutter -root -idle 1 &
 
