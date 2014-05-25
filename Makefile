@@ -9,7 +9,7 @@
 
 # -- Setup --------------------------------------------------------- {{{
 
-.PHONY: env wm fonts tools apps install folders files link editor shell upgrade clean reboot all
+.PHONY: env wm fonts tools apps extras install folders files link editor shell upgrade clean reboot all
 
 USER = /home/ellen
 CONF = $(USER)/.config
@@ -76,7 +76,11 @@ apps:
 	@yaourt -Sa zathura-pdf-mupdf
 	@yaourt -Sa ranger
 
-install: env wm fonts tools apps
+extras:
+	@yaourt -Sa termite
+	@yaourt -Sa dvtm
+
+install: env wm fonts tools apps extras
 
 # }}}
 
