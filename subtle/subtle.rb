@@ -56,15 +56,17 @@ colors = {
   :violet  => "#6c71c4",
   :blue    => "#268bd2",
   :cyan    => "#2aa198",
-  :green   => "#859900"
+  :green   => "#859900",
+  :gray2   => "#303030",
+  :gray8   => "#9e9e9e"
 }
 
 # -- Settings ---
 
 style :all do
-  background colors[:base03]
-  foreground colors[:base00]
-  icon       colors[:base00]
+  background colors[:gray2]
+  foreground colors[:gray8]
+  icon       colors[:gray8]
   padding    0, 4, 0, 4
   font       "xft:Source Code Pro:pixelsize=13"
 end
@@ -88,12 +90,12 @@ end
 
 style :clients do
   active   colors[:blue], 2
-  inactive colors[:base00], 2
+  inactive colors[:gray8], 2
   width    48
 end
 
 style :subtle do
-  panel      colors[:base03]
+  panel      colors[:gray2]
   background colors[:base02]
 end
 
