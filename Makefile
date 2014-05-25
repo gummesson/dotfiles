@@ -95,6 +95,7 @@ folders:
 	@mkdir -vp $(USER)/.nano
 	@mkdir -vp $(CONF)/dunst
 	@mkdir -vp $(CONF)/subtle
+	@mkdir -vp $(CONF)/termite
 	@mkdir -vp $(CONF)/uzbl
 	@mkdir -vp $(USER)/.w3m
 	@mkdir -vp $(CONF)/zathura
@@ -113,6 +114,7 @@ files:
 	@ln -vsf $(DOT)/ruby/.gemrc $(USER)/.gemrc
 	@ln -vsf $(DOT)/subtle/subtle.rb $(CONF)/subtle/subtle.rb
 	@ln -vsf $(DOT)/surfraw/.surfraw.conf $(USER)/.surfraw.conf
+	@ln -vsf $(DOT)/termite/config $(CONF)/termite/config
 	@ln -vsf $(DOT)/tmux/.tmux.conf $(USER)/.tmux.conf
 	@ln -vsf $(DOT)/uzbl/config $(CONF)/uzbl/config
 	@ln -vsf $(DOT)/uzbl/style.css $(CONF)/uzbl/style.css
