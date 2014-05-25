@@ -55,4 +55,4 @@
 
 # }}}
 
-# vim:foldmethod=marker
+# vim:foldmethod=marker:filetype=dosini
