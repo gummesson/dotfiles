@@ -1,3 +1,5 @@
+# -- termite ------------------------------------------------------- {{{
+
 [options]
 resize_grip = false
 scroll_on_output = false
@@ -39,4 +41,6 @@ color14 = #93a1a1
 color7 = #eee8d5
 color15 = #fdf6e3
 
-# vim:filetype=dosini
+# }}}
+
+# vim:foldmethod=marker:filetype=dosini
