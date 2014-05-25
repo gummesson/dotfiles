@@ -161,8 +161,8 @@ grab "W-space", :WindowFull
 grab "W-equal", :WindowZaphod
 grab "W-S-s",   :WindowStick
 grab "W-S-k",   :WindowKill
-grab "W-Up",    :WindowRaise
-grab "W-Down",  :WindowLower
+grab "W-S-r",    :WindowRaise
+grab "W-S-l",  :WindowLower
 grab "W-h",     :WindowLeft
 grab "W-j",     :WindowDown
 grab "W-k",     :WindowUp
