@@ -2,14 +2,14 @@
 
 # -- Font --
 
-set font "Source Code Pro normal 12"
+set font "Source Code Pro normal 11"
 
 # -- UI --
 
 set statusbar-bg "#303030"
 set statusbar-fg "#9e9e9e"
-set inputbar-bg "#4e4e4e"
-set inputbar-fg "#bcbcbc"
+set inputbar-bg "#585858"
+set inputbar-fg "#d0d0d0"
 
 # }}}
 
