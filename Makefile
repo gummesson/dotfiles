@@ -79,6 +79,7 @@ apps:
 extras:
 	@yaourt -Sa termite
 	@yaourt -Sa dvtm
+	@yaourt -Sa pcmanfm
 	@yaourt -Sa numix-themes
 	@yaourt -Sa numix-icon-theme-git
 	@yaourt -Sa numix-circle-icon-theme-git
@@ -110,6 +111,7 @@ files:
 	@ln -vsf $(DOT)/feh/.fehbg $(USER)/.fehbg
 	@ln -vsf $(DOT)/git/.gitconfig $(USER)/.gitconfig
 	@ln -vsf $(DOT)/git/.gitignore $(USER)/.gitignore
+	@ln -vsf $(DOT)/gtk/.gtkrc-2.0 $(USER)/.gtkrc-2.0
 	@ln -vsf $(DOT)/irssi/scripts/* $(USER)/.irssi/scripts/autorun
 	@ln -vsf $(DOT)/nano/.nanorc $(USER)/.nanorc
 	@ln -vsf $(DOT)/nano/syntax/* $(USER)/.nano
