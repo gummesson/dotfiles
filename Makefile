@@ -79,6 +79,9 @@ apps:
 extras:
 	@yaourt -Sa termite
 	@yaourt -Sa dvtm
+	@yaourt -Sa numix-themes
+	@yaourt -Sa numix-icon-theme-git
+	@yaourt -Sa numix-circle-icon-theme-git
 
 install: env wm fonts tools apps extras
 
