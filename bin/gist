@@ -1,0 +1,24 @@
+#!/usr/bin/env sh
+
+username="gummesson"
+filename="$1"
+
+if [ -z "$filename" ]; then
+  filename="gistfile1.txt"
+fi
+
+tmpfile="/tmp/gist.$$.tmp"
+touch $tmpfile
+
+if [ ! -t 0 ]; then
+  cat > $tmpfile
+fi
+
+content=$(cat $tmpfile)
+
+curl \
+  --user "$username" \
+  --data "{\"files\":{\"$filename\":{\"content\":\"$content\"}}}" \
+  https://api.github.com/gists
+
+rm $tmpfile
