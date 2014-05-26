@@ -217,6 +217,7 @@ end
 tag "term",    "xterm|[u]?rxvt"
 tag "browser", "uzbl"
 tag "editor",  "gvim"
+tag "files",   "pcmanfm"
 
 # }}}
 
@@ -224,7 +225,7 @@ tag "editor",  "gvim"
 
 view "term", "term|default"
 view "www",  "browser"
-view "dev",  "editor"
+view "dev",  "editor|files"
 
 # }}}
 
