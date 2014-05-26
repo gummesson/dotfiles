@@ -4,7 +4,7 @@ username="gummesson"
 filename="$1"
 
 if [ -z "$filename" ]; then
-  filename="gistfile1.txt"
+  filename="gist.txt"
 fi
 
 tmpfile="/tmp/gist.$$.tmp"
