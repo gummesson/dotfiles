@@ -216,6 +216,7 @@ end
 
 tag "term",    "xterm|[u]?rxvt"
 tag "browser", "uzbl"
+tag "player",  "mplayer"
 tag "files",   "pcmanfm|feh|zathura"
 
 # }}}
@@ -224,7 +225,7 @@ tag "files",   "pcmanfm|feh|zathura"
 
 view "term", "term|default"
 view "www",  "browser"
-view "media", "files"
+view "media", "files|player"
 
 # }}}
 
