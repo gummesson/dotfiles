@@ -60,6 +60,7 @@ tools:
 	@yaourt -Sa usbmount
 	@yaourt -Sa autojump
 	@yaourt -Sa ack
+	@yaourt -Sa youtube-dl
 
 apps:
 	@yaourt -Sa gvim
