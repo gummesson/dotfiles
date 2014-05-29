@@ -1,10 +1,17 @@
 # -- conf.py ------------------------------------------------------- {{{
 
-# -- Settings --
+# -- Imports --
 
 from canto.extra import *
-filters=[show_unread]
+
+# -- Settings --
+
 link_handler("uzbl \"%u\"")
+
+# -- Keybindings --
+
+keys['+'] = set_filter(show_unread)
+keys['-'] = set_filter(None)
 
 # -- Colors --
 
