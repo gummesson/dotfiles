@@ -62,6 +62,8 @@ tools:
 	@yaourt -Sa ack
 	@yaourt -Sa youtube-dl
 	@yaourt -Sa slock
+	@yaourt -Sa msmtp
+	@yaourt -Sa msmtp-mta
 
 apps:
 	@yaourt -Sa gvim
@@ -78,6 +80,7 @@ apps:
 	@yaourt -Sa zathura-pdf-mupdf
 	@yaourt -Sa ranger
 	@yaourt -Sa canto
+	@yaourt -Sa mutt
 
 extras:
 	@yaourt -Sa termite
