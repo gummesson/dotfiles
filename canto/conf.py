@@ -6,7 +6,7 @@ from canto.extra import *
 
 # -- Settings --
 
-link_handler("uzbl \"%u\"")
+link_handler("w3m \"%u\"")
 
 # -- Keybindings --
 
