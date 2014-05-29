@@ -61,6 +61,7 @@ tools:
 	@yaourt -Sa autojump
 	@yaourt -Sa ack
 	@yaourt -Sa youtube-dl
+	@yaourt -Sa slock
 
 apps:
 	@yaourt -Sa gvim
