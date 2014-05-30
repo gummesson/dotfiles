@@ -11,6 +11,10 @@ default_keep(10)
 never_discard("unread")
 link_handler("uzbl-browser \"%u\"")
 
+# -- Hooks --
+
+start_hook = show_unread
+
 # -- Keybindings --
 
 keys['+'] = set_filter(show_unread)
