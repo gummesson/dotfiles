@@ -25,6 +25,9 @@ keys['-'] = set_filter(None)
 # Defaults
 colors[0] = ("default", "default")
 
+# Emphasis
+colors[6] = ("default", "default")
+
 # -- Feeds --
 
 source_urls("/home/ellen/.canto/urls")
