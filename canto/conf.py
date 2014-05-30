@@ -17,8 +17,8 @@ start_hook = show_unread
 
 # -- Keybindings --
 
-keys['+'] = set_filter(show_unread)
-keys['-'] = set_filter(None)
+keys['-'] = set_filter(show_unread)
+keys['+'] = set_filter(None)
 
 # -- Colors --
 
