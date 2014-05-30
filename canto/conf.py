@@ -6,10 +6,10 @@ from canto.extra import *
 
 # -- Settings --
 
-default_keep(60)
+default_rate(60)
 default_keep(10)
 never_discard("unread")
-link_handler("w3m \"%u\"")
+link_handler("uzbl-browser \"%u\"")
 
 # -- Keybindings --
 
