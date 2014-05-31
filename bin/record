@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+resolution=$(xdpyinfo | grep 'dimensions:' | awk '{print $2}')
+ffmpeg -f x11grab -r 25 -s "$resolution" -i :0.0 "$1"
