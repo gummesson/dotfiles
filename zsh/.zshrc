@@ -46,7 +46,6 @@ setopt complete_aliases
 setopt complete_in_word
 setopt always_to_end
 setopt extended_glob
-setopt auto_cd
 setopt multios
 setopt cdablevarS
 setopt correct
