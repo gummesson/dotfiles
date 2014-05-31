@@ -137,7 +137,7 @@ gravity :bottom_right33, [  50,  67,  50,  33 ]
 # -- Programs --
 
 grab "W-Return", "urxvtc"
-grab "W-m",      "~/.bin/launcher"
+grab "W-m",      "~/.bin/launch"
 
 # -- Views --
 
