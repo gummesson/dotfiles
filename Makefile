@@ -65,6 +65,7 @@ tools:
 	@yaourt -Sa msmtp
 	@yaourt -Sa msmtp-mta
 	@yaourt -Sa urlview
+	@yaourt -Sa markdown
 
 apps:
 	@yaourt -Sa gvim
