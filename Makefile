@@ -131,6 +131,7 @@ files:
 	@ln -vsf $(DOT)/subtle/subtle.rb $(CONF)/subtle/subtle.rb
 	@ln -vsf $(DOT)/surfraw/.surfraw.conf $(USER)/.surfraw.conf
 	@ln -vsf $(DOT)/termite/config $(CONF)/termite/config
+	@ln -vsf $(DOT)/tig/.tigrc $(USER)/.tigrc
 	@ln -vsf $(DOT)/tmux/.tmux.conf $(USER)/.tmux.conf
 	@ln -vsf $(DOT)/urlview/.urlview $(USER)/.urlview
 	@ln -vsf $(DOT)/uzbl/config $(CONF)/uzbl/config

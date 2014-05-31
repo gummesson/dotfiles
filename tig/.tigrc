@@ -1,0 +1,10 @@
+# -- .tigrc -------------------------------------------------------- {{{
+
+# -- Keybindings --
+
+# Status view
+bind status P !git push origin
+
+# }}}
+
+# vim:foldmethod=marker
