@@ -83,6 +83,7 @@ apps:
 	@yaourt -Sa ranger
 	@yaourt -Sa canto
 	@yaourt -Sa mutt
+	@yaourt -Sa tig
 
 extras:
 	@yaourt -Sa termite
