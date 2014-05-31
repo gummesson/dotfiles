@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+awk '/@yaourt/ { print $3; }' < Makefile | sed '/^$/d' | sort > PACKAGES.txt
