@@ -1,0 +1,7 @@
+# -- .urlview ------------------------------------------------------ {{{
+
+COMMAND uzbl-browser %s
+
+# }}}
+
+# vim:foldmethod=marker

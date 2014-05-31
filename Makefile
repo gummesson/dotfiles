@@ -64,6 +64,7 @@ tools:
 	@yaourt -Sa slock
 	@yaourt -Sa msmtp
 	@yaourt -Sa msmtp-mta
+	@yaourt -Sa urlview
 
 apps:
 	@yaourt -Sa gvim
@@ -129,6 +130,7 @@ files:
 	@ln -vsf $(DOT)/surfraw/.surfraw.conf $(USER)/.surfraw.conf
 	@ln -vsf $(DOT)/termite/config $(CONF)/termite/config
 	@ln -vsf $(DOT)/tmux/.tmux.conf $(USER)/.tmux.conf
+	@ln -vsf $(DOT)/urlview/.urlview $(USER)/.urlview
 	@ln -vsf $(DOT)/uzbl/config $(CONF)/uzbl/config
 	@ln -vsf $(DOT)/uzbl/style.css $(CONF)/uzbl/style.css
 	@ln -vsf $(DOT)/w3m/config $(USER)/.w3m/config
