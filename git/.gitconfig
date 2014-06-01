@@ -9,6 +9,7 @@
   tool = vimdiff
 [core]
   editor = vim
+  excludesfile = ~/.gitignore
 [push]
   default = tracking
 [credential]
