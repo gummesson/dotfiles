@@ -5,6 +5,7 @@ autocutsel
 autojump
 canto
 cmus
+cortex-git
 curl
 dmenu
 dropbox
