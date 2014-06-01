@@ -66,6 +66,7 @@ tools:
 	@yaourt -Sa msmtp-mta
 	@yaourt -Sa urlview
 	@yaourt -Sa markdown
+	@yaourt -Sa ctags
 
 apps:
 	@yaourt -Sa gvim
@@ -118,6 +119,7 @@ folders:
 files:
 	@ln -vsf $(DOT)/ack/.ackrc $(USER)/.ackrc
 	@ln -vsf $(DOT)/bin/* $(USER)/.bin
+	@ln -vsf $(DOT)/ctags/.ctags $(USER)/.ctags
 	@ln -vsf $(DOT)/canto/conf.py $(USER)/.canto/conf.py
 	@ln -vsf $(DOT)/dunst/dunstrc $(CONF)/dunst/dunstrc
 	@ln -vsf $(DOT)/feh/.fehbg $(USER)/.fehbg

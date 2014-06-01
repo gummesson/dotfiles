@@ -6,6 +6,7 @@ autojump
 canto
 cmus
 cortex-git
+ctags
 curl
 dmenu
 dropbox
