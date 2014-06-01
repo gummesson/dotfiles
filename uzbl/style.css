@@ -2,20 +2,18 @@
 
 #uzbl_link_hints > span {
   z-index:          1000              !important;
-  background-color: #333              !important;
+  background-color: #303030           !important;
   margin:           0                 !important;
-  padding:          2px               !important;
-  color:            #ccc              !important;
+  padding:          4px               !important;
+  color:            #d0d0d0           !important;
   font-family:      "Source Code Pro" !important;
-  font-size:        11px              !important;
-  line-height:      11px              !important;
-  font-weight:      bold              !important;
-  font-variant:     normal            !important;
+  font-size:        12px              !important;
+  line-height:      12px              !important;
   text-decoration:  none              !important;
 
   -webkit-transform:     translate(-5px,-5px);
-  opacity:               0.8;
-  -webkit-border-radius: 6px !important;
+  opacity:               0.75;
+  -webkit-border-radius: 4px !important;
 }
 
 #uzbl_link_hints.new-window > span {
@@ -25,8 +23,8 @@
 
 .uzbl-follow-text-match {
   outline:          2px solid invert;
-  background-color: #333  !important;
-  color:            white !important;
+  background-color: #303030 !important;
+  color:            #d0d0d0 !important;
 }
 
 /* }}} */
