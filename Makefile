@@ -84,6 +84,7 @@ apps:
 	@yaourt -Sa canto
 	@yaourt -Sa mutt
 	@yaourt -Sa tig
+	@yaourt -Sa cortex-git
 
 extras:
 	@yaourt -Sa termite
