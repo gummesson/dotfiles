@@ -145,6 +145,7 @@ files:
 	@ln -vsf $(DOT)/x/.Xresources $(USER)/.Xresources
 	@ln -vsf $(DOT)/x/.xcolors $(USER)/.xcolors
 	@ln -vsf $(DOT)/x/.xbindkeysrc $(USER)/.xbindkeysrc
+	@ln -vsf $(DOT)/youtube-dl/youtube-dl.conf $(CONF)/youtube-dl.conf
 	@ln -vsf $(DOT)/zathura/zathurarc $(CONF)/zathura/zathurarc
 	@ln -vsf $(DOT)/zsh/.zshrc $(USER)/.zshrc
 	@ln -vsf $(DOT)/zsh/.zprofile $(USER)/.zprofile
