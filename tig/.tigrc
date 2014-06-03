@@ -1,8 +1,13 @@
 # -- .tigrc -------------------------------------------------------- {{{
+#
+# -- Keybindings
+#
+# }}}
 
-# -- Keybindings --
+# -- Keybindings --------------------------------------------------- {{{
 
-# Status view
+# -- Status view --
+
 bind status P !git push origin
 
 # }}}
