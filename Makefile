@@ -71,7 +71,6 @@ tools:
 apps:
 	@yaourt -Sa gvim
 	@yaourt -Sa tmux
-	@yaourt -Sa uzbl-browser
 	@yaourt -Sa w3m
 	@yaourt -Sa surfraw
 	@yaourt -Sa dropbox
@@ -112,7 +111,6 @@ folders:
 	@mkdir -vp $(CONF)/dunst
 	@mkdir -vp $(CONF)/subtle
 	@mkdir -vp $(CONF)/termite
-	@mkdir -vp $(CONF)/uzbl
 	@mkdir -vp $(USER)/.w3m
 	@mkdir -vp $(CONF)/zathura
 
@@ -137,8 +135,6 @@ files:
 	@ln -vsf $(DOT)/tig/.tigrc $(USER)/.tigrc
 	@ln -vsf $(DOT)/tmux/.tmux.conf $(USER)/.tmux.conf
 	@ln -vsf $(DOT)/urlview/.urlview $(USER)/.urlview
-	@ln -vsf $(DOT)/uzbl/config $(CONF)/uzbl/config
-	@ln -vsf $(DOT)/uzbl/style.css $(CONF)/uzbl/style.css
 	@ln -vsf $(DOT)/w3m/config $(USER)/.w3m/config
 	@ln -vsf $(DOT)/w3m/keymap $(USER)/.w3m/keymap
 	@ln -vsf $(DOT)/x/.xinitrc $(USER)/.xinitrc

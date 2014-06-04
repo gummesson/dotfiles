@@ -48,7 +48,6 @@ ttf-ubuntu-font-family
 unclutter
 urlview
 usbmount
-uzbl-browser
 w3m
 xbindkeys
 xclip
