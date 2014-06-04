@@ -71,6 +71,7 @@ tools:
 apps:
 	@yaourt -Sa gvim
 	@yaourt -Sa tmux
+	@yaourt -Sa dwb
 	@yaourt -Sa w3m
 	@yaourt -Sa surfraw
 	@yaourt -Sa dropbox
@@ -109,6 +110,7 @@ folders:
 	@mkdir -vp $(USER)/.irssi/scripts/autorun
 	@mkdir -vp $(USER)/.nano
 	@mkdir -vp $(CONF)/dunst
+	@mkdir -vp $(CONF)/dwb
 	@mkdir -vp $(CONF)/subtle
 	@mkdir -vp $(CONF)/termite
 	@mkdir -vp $(USER)/.w3m
@@ -120,6 +122,7 @@ files:
 	@ln -vsf $(DOT)/ctags/.ctags $(USER)/.ctags
 	@ln -vsf $(DOT)/canto/conf.py $(USER)/.canto/conf.py
 	@ln -vsf $(DOT)/dunst/dunstrc $(CONF)/dunst/dunstrc
+	@ln -vsf $(DOT)/dwb/settings $(CONF)/dwb/settings
 	@ln -vsf $(DOT)/feh/.fehbg $(USER)/.fehbg
 	@ln -vsf $(DOT)/git/.gitconfig $(USER)/.gitconfig
 	@ln -vsf $(DOT)/git/.gitignore $(USER)/.gitignore

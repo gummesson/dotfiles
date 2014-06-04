@@ -13,6 +13,7 @@ dropbox
 dropbox-cli
 dunst
 dvtm
+dwb
 feh
 gvim
 htop
