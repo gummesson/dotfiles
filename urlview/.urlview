@@ -1,6 +1,6 @@
 # -- .urlview ------------------------------------------------------ {{{
 
-COMMAND uzbl-browser %s
+COMMAND dwb %s
 
 # }}}
 

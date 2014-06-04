@@ -18,7 +18,7 @@ transparency = 0.0
 pseudo_transparency = false
 cursor_blink = off
 cursor_shape = block
-browser = /usr/bin/uzbl-browser
+browser = /usr/bin/dwb
 
 [colors]
 foreground = #657b83

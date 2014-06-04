@@ -20,7 +20,7 @@ from canto.extra import *
 default_rate(60)
 default_keep(10)
 never_discard("unread")
-link_handler("uzbl-browser \"%u\"")
+link_handler("dwb \"%u\"")
 
 # }}}
 
