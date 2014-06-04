@@ -214,8 +214,8 @@ end
 
 # -- Tags ---------------------------------------------------------- {{{
 
-tag "term",    "xterm|[u]?rxvt"
-tag "browser", "uzbl"
+tag "term",    "[u]?rxvt|termite"
+tag "browser", "dwb"
 tag "player",  "mplayer"
 tag "files",   "pcmanfm|feh|zathura"
 
