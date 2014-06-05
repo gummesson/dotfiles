@@ -73,6 +73,7 @@ alias vimsu="sudo -E vim"
 alias ping="ping -c 5"
 alias untar="tar -xzvf"
 alias today="date +%Y/%m/%d"
+alias duh="du -h -d 0 [^.]*"
 
 # }}}
 
