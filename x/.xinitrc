@@ -14,7 +14,7 @@ sh ~/.fehbg &
 # Hide the cursor after a second of inactivity
 unclutter -root -idle 1 &
 
-# Disable touch when typing
+# Disable touchpad when typing
 syndaemon -k -i 1 &
 
 # Sync clipboards
