@@ -82,7 +82,6 @@ apps:
 	@yaourt -Sa zathura
 	@yaourt -Sa zathura-pdf-mupdf
 	@yaourt -Sa ranger
-	@yaourt -Sa canto
 	@yaourt -Sa mutt
 	@yaourt -Sa tig
 
@@ -105,7 +104,6 @@ folders:
 	@mkdir -vp $(USER)/Documents
 	@mkdir -vp $(USER)/Pictures/Screenshots
 	@mkdir -vp $(USER)/.bin
-	@mkdir -vp $(USER)/.canto
 	@mkdir -vp $(USER)/.irssi/scripts/autorun
 	@mkdir -vp $(USER)/.nano
 	@mkdir -vp $(CONF)/dunst
@@ -119,7 +117,6 @@ files:
 	@ln -vsf $(DOT)/ack/.ackrc $(USER)/.ackrc
 	@ln -vsf $(DOT)/bin/* $(USER)/.bin
 	@ln -vsf $(DOT)/ctags/.ctags $(USER)/.ctags
-	@ln -vsf $(DOT)/canto/conf.py $(USER)/.canto/conf.py
 	@ln -vsf $(DOT)/dunst/dunstrc $(CONF)/dunst/dunstrc
 	@ln -vsf $(DOT)/dwb/settings $(CONF)/dwb/settings
 	@ln -vsf $(DOT)/feh/.fehbg $(USER)/.fehbg

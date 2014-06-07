@@ -3,7 +3,6 @@ acpi
 adobe-source-code-pro-fonts
 autocutsel
 autojump
-canto
 cmus
 ctags
 curl
