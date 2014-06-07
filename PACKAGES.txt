@@ -21,6 +21,7 @@ mplayer2
 msmtp
 msmtp-mta
 mutt
+newsbeuter
 nodejs
 numix-circle-icon-theme-git
 numix-icon-theme-git

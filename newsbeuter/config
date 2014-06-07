@@ -1,0 +1,45 @@
+# -- config -------------------------------------------------------- {{{
+#
+# -- General
+# -- Keybindings
+# -- Colors
+#
+# }}}
+
+# -- General ------------------------------------------------------- {{{
+
+auto-reload yes
+reload-time 30
+max-items 25
+browser "dwb %u &"
+confirm-exit yes
+
+# }}}
+
+# -- Keybindings --------------------------------------------------- {{{
+
+unbind-key J next
+unbind-key K prev
+unbind-key j next-feed
+unbind-key k prev-feed
+
+bind-key J next-feed
+bind-key K prev-feed
+bind-key j next
+bind-key k prev
+
+# }}}
+
+# -- Colors -------------------------------------------------------- {{{
+
+color background        default default
+color listnormal        default default
+color listfocus         white   blue
+color listnormal_unread magenta default
+color listfocus_unread  white   blue
+color info              white   blue    bold
+color article           default default
+
+# }}}
+
+# vim:foldmethod=marker

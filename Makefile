@@ -84,6 +84,7 @@ apps:
 	@yaourt -Sa ranger
 	@yaourt -Sa mutt
 	@yaourt -Sa tig
+	@yaourt -Sa newsbeuter
 
 extras:
 	@yaourt -Sa termite
@@ -106,6 +107,7 @@ folders:
 	@mkdir -vp $(USER)/.bin
 	@mkdir -vp $(USER)/.irssi/scripts/autorun
 	@mkdir -vp $(USER)/.nano
+	@mkdir -vp $(USER)/.newsbeuter
 	@mkdir -vp $(CONF)/dunst
 	@mkdir -vp $(CONF)/dwb
 	@mkdir -vp $(CONF)/subtle
@@ -125,6 +127,7 @@ files:
 	@ln -vsf $(DOT)/gtk/.gtkrc-2.0 $(USER)/.gtkrc-2.0
 	@ln -vsf $(DOT)/irssi/scripts/* $(USER)/.irssi/scripts/autorun
 	@ln -vsf $(DOT)/nano/.nanorc $(USER)/.nanorc
+	@ln -vsf $(DOT)/newsbeuter/config $(USER)/.newsbeuter/config
 	@ln -vsf $(DOT)/nano/syntax/* $(USER)/.nano
 	@ln -vsf $(DOT)/node/.jshintrc $(USER)/.jshintrc
 	@ln -vsf $(DOT)/ruby/.gemrc $(USER)/.gemrc
