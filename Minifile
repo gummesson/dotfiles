@@ -8,11 +8,13 @@
 
 # -- Setup --------------------------------------------------------- {{{
 
-.PHONY: zsh bash
-
 USER = /home/ellen
 GIT  = $(USER)/Git
 DOT  = $(GIT)/dotfiles
+
+.PHONY: zsh bash all
+
+all: zsh bash
 
 # }}}
 
