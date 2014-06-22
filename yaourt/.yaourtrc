@@ -1,0 +1,10 @@
+# -- .yaourtrc ----------------------------------------------------- {{{
+
+TMPDIR="/.tmp"
+AURCOMMENT=0
+BUILD_NOCONFIRM=1
+EDITFILES=0
+
+# }}}
+
+# vim:foldmethod=marker
