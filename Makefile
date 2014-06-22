@@ -9,7 +9,7 @@
 
 # -- Setup --------------------------------------------------------- {{{
 
-.PHONY: env wm fonts tools apps extras install folders files link editor shell upgrade clean reboot list all
+.PHONY: env wm fonts tools apps extras install folders files permissions link editor shell upgrade clean reboot list all
 
 USER = /home/ellen
 CONF = $(USER)/.config
@@ -159,7 +159,11 @@ files:
 	@ln -vsf $(DOT)/sh/.functions $(USER)/.functions
 	@ln -vsf $(DOT)/sh/.dir_colors $(USER)/.dir_colors
 
-link: folders files
+permissions:
+	@chmod 600 $(USER)/.msmtprc
+	@chmod 600 $(USER)/.muttrc
+
+link: folders files permissions
 
 # }}}
 
