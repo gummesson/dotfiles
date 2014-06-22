@@ -9,7 +9,7 @@
 
 # -- Setup --------------------------------------------------------- {{{
 
-.PHONY: env wm fonts tools apps extras install folders files link editor shell upgrade clean reboot all
+.PHONY: env wm fonts tools apps extras install folders files link editor shell upgrade clean reboot list all
 
 USER = /home/ellen
 CONF = $(USER)/.config
@@ -178,6 +178,11 @@ clean:
 
 reboot:
 	@sudo reboot
+
+list:
+	@awk '/@yaourt/ { print $$3; };' \
+	< Makefile | sed '/^$$/d;/{/d' | sort \
+	> PACKAGES.txt
 
 all: install link editor shell upgrade clean reboot
 
