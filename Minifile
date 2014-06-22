@@ -22,6 +22,7 @@ all: zsh bash
 
 zsh:
 	@ln -vsf $(DOT)/zsh/.zshrc $(USER)/.zshrc
+	@ln -vsf $(DOT)/zsh/.zprofile $(USER)/.zprofile
 	@ln -vsf $(DOT)/zsh/.zprompt $(USER)/.zprompt
 	@ln -vsf $(DOT)/sh/.env $(USER)/.zshenv
 	@ln -vsf $(DOT)/sh/.aliases $(USER)/.aliases
