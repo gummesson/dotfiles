@@ -126,6 +126,7 @@ files:
 	@ln -vsf $(DOT)/git/.gitignore $(USER)/.gitignore
 	@ln -vsf $(DOT)/gtk/.gtkrc-2.0 $(USER)/.gtkrc-2.0
 	@ln -vsf $(DOT)/irssi/scripts/* $(USER)/.irssi/scripts/autorun
+	@ln -vsf $(DOT)/msmtp/.msmtprc $(USER)/.msmtprc
 	@ln -vsf $(DOT)/nano/.nanorc $(USER)/.nanorc
 	@ln -vsf $(DOT)/newsbeuter/config $(USER)/.newsbeuter/config
 	@ln -vsf $(DOT)/nano/syntax/* $(USER)/.nano
