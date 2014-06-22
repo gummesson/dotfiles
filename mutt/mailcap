@@ -1,0 +1,11 @@
+# -- mailcap ------------------------------------------------------- {{{
+
+text/html;       w3m -I %{charset} -T text/html; copiousoutput;
+application/pdf; /usr/bin/zathura %s;            copiousoutput;
+image/*;         /usr/bin/feh %s;                copiousoutput;
+audio/*;         /usr/bin/mplayer %s;            copiousoutput;
+video/*;         /usr/bin/mplayer %s;            copiousoutput;
+
+# }}}
+
+# vim:foldmethod=marker

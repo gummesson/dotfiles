@@ -1,0 +1,123 @@
+# -- .muttrc ------------------------------------------------------- {{{
+#
+# -- Base
+# -- Colors
+# -- Paths
+# -- IMAP
+# -- Views
+# -- Keybindings
+# -- Macros
+#
+# }}}
+
+# -- Base ---------------------------------------------------------- {{{
+
+set from="ellengummesson@gmail.com"
+set realname="Ellen Gummesson"
+set use_from="yes"
+
+set sendmail="/usr/bin/msmtp"
+set sendmail_wait = 0
+
+set editor="vim"
+
+# }}}
+
+# -- Colors -------------------------------------------------------- {{{
+
+source "/home/ellen/.mutt/colors.muttrc"
+
+# }}}
+
+# -- Paths --------------------------------------------------------- {{{
+
+set header_cache="~/.mutt/cache/headers"
+set message_cachedir="~/.mutt/cache/bodies"
+set certificate_file="~/.mutt/certificates"
+set tmpdir="~/.mutt/tmp"
+set mailcap_path="~/.mutt/mailcap"
+
+# }}}
+
+# -- IMAP ---------------------------------------------------------- {{{
+
+set imap_user="ellengummesson@gmail.com"
+set imap_check_subscribed
+
+set imap_keepalive="300"
+set timeout="90"
+set mail_check="150"
+
+set folder="imaps://imap.gmail.com/"
+set spoolfile="+INBOX"
+set postponed="+[Gmail]/Utkast"
+
+set delete=yes
+unset record
+
+# }}}
+
+# -- Views --------------------------------------------------------- {{{
+
+set sort=threads
+set sort_aux=reverse-last-date-received
+unset move
+unset mark_old
+
+auto_view text/html
+alternative_order text/plain text/html
+set pager_stop
+unset markers
+
+set askcc
+set fcc_attach
+set forward_format = "Fwd: %s"
+set forward_decode
+set attribution = "On %d, %n wrote:"
+set fast_reply
+set reply_to
+set reverse_name
+set include
+set forward_quote
+unset mime_forward
+
+set edit_headers
+
+# }}}
+
+# -- Keybindings --------------------------------------------------- {{{
+
+bind index "^" imap-fetch-mail
+bind index gg  first-entry
+bind index G   last-entry
+bind index R   group-reply
+
+bind pager k  previous-line
+bind pager j  next-line
+bind pager gg top
+bind pager G  bottom
+bind pager R  group-reply
+
+bind attach <return> view-mailcap
+
+bind compose p postpone-message
+
+# }}}
+
+# -- Macros -------------------------------------------------------- {{{
+
+macro pager \Cu "<pipe-message>urlview<enter>"
+
+macro index,pager I "<save-message>=INBOX<enter><enter>" "Move to inbox"
+macro index,pager A "<save-message>=[Gmail]/Alla mail<enter><enter>" "Move to all mail"
+macro index,pager D "<save-message>=[Gmail]/Papperskorgen<enter><enter>" "Move to thrash"
+
+macro index,pager gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index,pager gd "<change-folder>=[Gmail]/Utkast<enter>" "Go to drafts"
+macro index,pager gt "<change-folder>=[Gmail]/Papperskorgen<enter>" "Go to thrash"
+macro index,pager gs "<change-folder>=[Gmail]/Skickade mail<enter>" "Go to sent gmail"
+macro index,pager ga "<change-folder>=[Gmail]/Alla mail<enter>" "Go to all mail"
+
+# }}}
+
+# vim:foldmethod=marker

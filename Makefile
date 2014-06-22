@@ -110,6 +110,7 @@ folders:
 	@mkdir -vp $(USER)/.newsbeuter
 	@mkdir -vp $(CONF)/dunst
 	@mkdir -vp $(CONF)/dwb
+	@mkdir -vp $(USER)/.mutt
 	@mkdir -vp $(CONF)/subtle
 	@mkdir -vp $(CONF)/termite
 	@mkdir -vp $(USER)/.w3m
@@ -127,6 +128,9 @@ files:
 	@ln -vsf $(DOT)/gtk/.gtkrc-2.0 $(USER)/.gtkrc-2.0
 	@ln -vsf $(DOT)/irssi/scripts/* $(USER)/.irssi/scripts/autorun
 	@ln -vsf $(DOT)/msmtp/.msmtprc $(USER)/.msmtprc
+	@ln -vsf $(DOT)/mutt/.muttrc $(USER)/.muttrc
+	@ln -vsf $(DOT)/mutt/colors.muttrc $(USER)/.mutt/colors.muttrc
+	@ln -vsf $(DOT)/mutt/mailcap $(USER)/.mutt/mailcap
 	@ln -vsf $(DOT)/nano/.nanorc $(USER)/.nanorc
 	@ln -vsf $(DOT)/newsbeuter/config $(USER)/.newsbeuter/config
 	@ln -vsf $(DOT)/nano/syntax/* $(USER)/.nano
