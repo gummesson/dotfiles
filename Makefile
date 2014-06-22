@@ -9,7 +9,12 @@
 
 # -- Setup --------------------------------------------------------- {{{
 
-.PHONY: env wm fonts tools apps extras install folders files permissions link editor shell upgrade clean reboot list all
+.PHONY: env wm fonts tools apps extras install \
+	folders files permissions link \
+	editor shell \
+	upgrade clean reboot \
+	list \
+	all
 
 USER = /home/ellen
 CONF = $(USER)/.config
