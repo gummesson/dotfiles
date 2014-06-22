@@ -162,7 +162,7 @@ link: folders files
 
 editor:
 	@git clone https://github.com/gummesson/vimfiles.git $(GIT)/vimfiles
-	@git clone https://github.com/gmarik/vundle.git $(USER)/.vim/bundle/vundle
+	@git clone https://github.com/gmarik/Vundle.vim.git $(USER)/.vim/bundle/vundle
 	@ln -vsf $(GIT)/vimfiles/.vimrc $(USER)/.vimrc
 	@ln -vsf $(GIT)/vimfiles/.gvimrc $(USER)/.gvimrc
 	@vim +PluginInstall +qall
