@@ -9,6 +9,11 @@
 
 # -- Setup --------------------------------------------------------- {{{
 
+USER = /home/ellen
+CONF = $(USER)/.config
+GIT  = $(USER)/Git
+DOT  = $(GIT)/dotfiles
+
 .PHONY: env wm fonts tools apps extras install \
 	folders files permissions link \
 	editor shell \
@@ -16,10 +21,7 @@
 	list \
 	all
 
-USER = /home/ellen
-CONF = $(USER)/.config
-GIT  = $(USER)/Git
-DOT  = $(GIT)/dotfiles
+all: install link editor shell upgrade clean reboot
 
 # }}}
 
@@ -199,8 +201,6 @@ list:
 	@awk '/@yaourt/ { print $$3; };' \
 	< Makefile | sed '/^$$/d;/{/d' | sort \
 	> PACKAGES.txt
-
-all: install link editor shell upgrade clean reboot
 
 # }}}
 
