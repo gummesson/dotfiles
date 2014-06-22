@@ -111,6 +111,7 @@ folders:
 	@mkdir -vp $(CONF)/dunst
 	@mkdir -vp $(CONF)/dwb
 	@mkdir -vp $(USER)/.mutt
+	@mkdir -vp $(USER)/.rtorrent/{session,watch}
 	@mkdir -vp $(CONF)/subtle
 	@mkdir -vp $(CONF)/termite
 	@mkdir -vp $(USER)/.w3m
@@ -135,6 +136,7 @@ files:
 	@ln -vsf $(DOT)/newsbeuter/config $(USER)/.newsbeuter/config
 	@ln -vsf $(DOT)/nano/syntax/* $(USER)/.nano
 	@ln -vsf $(DOT)/node/.jshintrc $(USER)/.jshintrc
+	@ln -vsf $(DOT)/rtorrent/.rtorrent.rc $(USER)/.rtorrent.rc
 	@ln -vsf $(DOT)/ruby/.gemrc $(USER)/.gemrc
 	@ln -vsf $(DOT)/subtle/subtle.rb $(CONF)/subtle/subtle.rb
 	@ln -vsf $(DOT)/surfraw/.surfraw.conf $(USER)/.surfraw.conf
