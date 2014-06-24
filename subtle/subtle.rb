@@ -57,6 +57,7 @@ colors = {
   :blue    => "#268bd2",
   :cyan    => "#2aa198",
   :green   => "#859900",
+  :gray0   => "#151515",
   :gray2   => "#303030",
   :gray8   => "#9e9e9e"
 }
@@ -95,7 +96,8 @@ style :clients do
 end
 
 style :subtle do
-  panel colors[:gray2]
+  panel      colors[:gray2]
+  background colors[:gray0]
 end
 
 # }}}
