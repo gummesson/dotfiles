@@ -74,6 +74,7 @@ tools:
 	@yaourt -Sa urlview
 	@yaourt -Sa markdown
 	@yaourt -Sa ctags
+	@yaourt -Sa entr
 
 apps:
 	@yaourt -Sa gvim
