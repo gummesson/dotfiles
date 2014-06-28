@@ -34,7 +34,6 @@ source "/home/ellen/.mutt/colors.muttrc"
 set header_cache="~/.mutt/cache/headers"
 set message_cachedir="~/.mutt/cache/bodies"
 set certificate_file="~/.mutt/certificates"
-set tmpdir="~/.mutt/tmp"
 set mailcap_path="~/.mutt/mailcap"
 
 # }}}
