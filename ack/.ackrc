@@ -12,6 +12,7 @@
 --color
 --group
 --smart-case
+--pager=less -r
 
 # }}}
 
