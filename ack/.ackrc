@@ -17,12 +17,18 @@
 
 # -- Ignores ------------------------------------------------------- {{{
 
+# -- Directories --
+
 --ignore-dir=log
 --ignore-dir=tmp
 --ignore-dir=node_modules
 --ignore-dir=bower_components
 --ignore-dir=public
 --ignore-dir=_site
+
+# -- Files --
+
+--ignore-file=is:tags
 
 # }}}
 
