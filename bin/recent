@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-find . -type f -mtime -7 ! -path "*./.git*" ! -path "*./node_modules" ! -path "*./bower_components" ! -path "*./_site" -print
+find . -type f -mtime -7 ! -path "*./.git*" ! -path "*./node_modules*" ! -path "*./bower_components*" ! -path "*./_site*" -print
