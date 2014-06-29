@@ -1,33 +1,25 @@
 #!/usr/bin/env sh
 
+make() {
+  local file="$1"
+  if [ ! -f "$file" ]; then
+    mkdir -p "$(dirname $file)"
+    printf "\n" > "$file"
+  fi
+}
+
 case "$1" in
   "node")
-    for dir in {test,lib}; do
-      if [ ! -d "$dir" ]; then
-        mkdir "$dir"
-      fi
-    done; unset dir
-
-    for file in {README.md,index.js,test/index.js}; do
-      if [ ! -f "$file" ]; then
-        printf "\n" > "$file"
-      fi
-    done; unset file
+    files=("README.md" "index.js" "test/index.js")
   ;;
   "frontend")
-    for dir in {assets/css,assets/js,assets/img}; do
-      if [ ! -d "$dir" ]; then
-        mkdir -p "$dir"
-      fi
-    done; unset dir
-
-    for file in {index.html,assets/css/index.css,assets/js/index.js}; do
-      if [ ! -f "$file" ]; then
-        printf "\n" > "$file"
-      fi
-    done; unset file
+    files=("index.html" "assets/js/index.js" "assets/css/index.css")
   ;;
   *)
     echo "Invalid option."
   ;;
 esac
+
+for i in ${files[@]}; do
+  make $i
+done; unset files
