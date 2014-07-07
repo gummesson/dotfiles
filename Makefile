@@ -201,7 +201,7 @@ reboot:
 list:
 	@awk '/@yaourt/ { print $$3; };' \
 	< Makefile | sed '/^$$/d;/{/d' | sort \
-	> PACKAGES.txt
+	> PACKAGES
 
 # }}}
 
