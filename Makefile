@@ -188,6 +188,7 @@ editor:
 	@git clone https://github.com/gmarik/Vundle.vim.git $(USER)/.vim/bundle/vundle
 	@ln -vsf $(GIT)/vimfiles/.vimrc $(USER)/.vimrc
 	@ln -vsf $(GIT)/vimfiles/.gvimrc $(USER)/.gvimrc
+	@mkdir -vp $(USER)/.vim/undo
 	@vim +PluginInstall +qall
 
 gems:
