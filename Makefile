@@ -16,7 +16,7 @@ DOT  = $(GIT)/dotfiles
 
 .PHONY: env wm fonts tools apps extras install \
 	folders files permissions link \
-	editor shell \
+	editor shell gems \
 	upgrade clean reboot \
 	list \
 	all
@@ -185,6 +185,9 @@ editor:
 	@ln -vsf $(GIT)/vimfiles/.vimrc $(USER)/.vimrc
 	@ln -vsf $(GIT)/vimfiles/.gvimrc $(USER)/.gvimrc
 	@vim +PluginInstall +qall
+
+gems:
+	@gem install jekyll --user-install
 
 shell:
 	@chsh -s /usr/bin/zsh
