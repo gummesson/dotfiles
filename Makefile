@@ -21,7 +21,7 @@ DOT  = $(GIT)/dotfiles
 	list \
 	all
 
-all: install link editor shell upgrade clean reboot
+all: install link editor shell gems upgrade clean reboot
 
 # }}}
 
