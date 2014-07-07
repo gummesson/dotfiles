@@ -75,6 +75,7 @@ tools:
 	@yaourt -Sa markdown
 	@yaourt -Sa ctags
 	@yaourt -Sa entr
+	@yaourt -Sa git-extras-git
 
 apps:
 	@yaourt -Sa gvim
