@@ -3,19 +3,12 @@
 #    Settings heavily borrowed from "Oh my Zsh!"
 #    (https://github.com/robbyrussell/oh-my-zsh)
 #
-# -- Path
 # -- Sources
 # -- History
 # -- Keys
 # -- Options
 # -- Completions
 #
-# }}}
-
-# -- Path ---------------------------------------------------------- {{{
-
-PATH="$PATH:$HOME/.bin:$HOME/.gem/ruby/2.1.0/bin"
-
 # }}}
 
 # -- Sources ------------------------------------------------------- {{{
