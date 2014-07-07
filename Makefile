@@ -16,7 +16,7 @@ DOT  = $(GIT)/dotfiles
 
 .PHONY: env wm fonts tools apps extras install \
 	folders files permissions link \
-	editor shell gems \
+	shell editor gems \
 	upgrade clean reboot \
 	list \
 	all
@@ -179,6 +179,9 @@ link: folders files permissions
 
 # -- Misc. --------------------------------------------------------- {{{
 
+shell:
+	@chsh -s /usr/bin/zsh
+
 editor:
 	@git clone https://github.com/gummesson/vimfiles.git $(GIT)/vimfiles
 	@git clone https://github.com/gmarik/Vundle.vim.git $(USER)/.vim/bundle/vundle
@@ -188,9 +191,6 @@ editor:
 
 gems:
 	@gem install jekyll --user-install
-
-shell:
-	@chsh -s /usr/bin/zsh
 
 upgrade:
 	@yaourt -Syua
