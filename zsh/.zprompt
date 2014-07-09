@@ -2,22 +2,17 @@
 
 autoload -U colors && colors
 
-red="%{$fg[red]%}"
-green="%{$fg[green]%}"
-yellow="%{$fg[yellow]%}"
-cyan="%{$fg[cyan]%}"
-reset="%{$reset_color%}"
-
 function __git_branch() {
   git branch 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/(\1)/"
 }
 
-PROMPT="$green%n $red%~ $yellow\$(__git_branch)
-$cyan\$$reset "
-SPROMPT="Correct $red%R$reset to $green%r$reset? (yes, no, abort, edit) "
+PROMPT="%{$fg[green]%}%n %{$fg[red]%}%~ %{$fg[yellow]%}\$(__git_branch)
+%{$fg[cyan]%}\$%{$reset_color%} "
+SPROMPT="Correct %{$fg[red]%}%R%{$reset_color%} to %{$fg[green]%}%r%{$reset_color%}? (yes, no, abort, edit) "
 
 function zle-line-init zle-keymap-select {
-  RPROMPT="${${KEYMAP/(vicmd|opp)/NORMAL}/(main|viins)/INSERT}"
+  VIMODE="${${KEYMAP/(vicmd|opp)/NORMAL}/(main|viins)/INSERT}"
+  RPROMPT="%B${VIMODE}%{$reset_color%}"
   zle reset-prompt
 }
 
@@ -25,12 +20,6 @@ zle -N zle-line-init
 zle -N zle-keymap-select
 
 autoload -U promptinit && promptinit
-
-unset red
-unset green
-unset yellow
-unset cyan
-unset reset
 
 # }}}
 
