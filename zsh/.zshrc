@@ -68,10 +68,10 @@ setopt share_history
 # -- Keys ---------------------------------------------------------- {{{
 
 bindkey -v
-bindkey "^?" backward-delete-char  # Del
-bindkey "^[[3~" delete-char        # Backspace
-bindkey "^[3;5~" delete-char
-bindkey "\e[3~" delete-char
+bindkey '^?' backward-delete-char  # Del
+bindkey '^[[3~' delete-char        # Backspace
+bindkey '^[3;5~' delete-char
+bindkey '\e[3~' delete-char
 
 # }}}
 
