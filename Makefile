@@ -166,7 +166,7 @@ files:
 	@ln -vsf $(DOT)/zsh/.zprofile $(USER)/.zprofile
 	@ln -vsf $(DOT)/zsh/.zprompt $(USER)/.zprompt
 	@ln -vsf $(DOT)/sh/.aliases $(USER)/.aliases
-	@ln -vsf $(DOT)/sh/.env $(USER)/.zshenv
+	@ln -vsf $(DOT)/sh/.env $(USER)/.env
 	@ln -vsf $(DOT)/sh/.functions $(USER)/.functions
 	@ln -vsf $(DOT)/sh/.dir_colors $(USER)/.dir_colors
 
