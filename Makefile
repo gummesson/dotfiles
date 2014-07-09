@@ -132,7 +132,6 @@ files:
 	@ln -vsf $(DOT)/ctags/.ctags $(USER)/.ctags
 	@ln -vsf $(DOT)/dunst/dunstrc $(CONF)/dunst/dunstrc
 	@ln -vsf $(DOT)/dwb/settings $(CONF)/dwb/settings
-	@ln -vsf $(DOT)/feh/.fehbg $(USER)/.fehbg
 	@ln -vsf $(DOT)/git/.gitconfig $(USER)/.gitconfig
 	@ln -vsf $(DOT)/git/.gitignore $(USER)/.gitignore
 	@ln -vsf $(DOT)/gtk/.gtkrc-2.0 $(USER)/.gtkrc-2.0
