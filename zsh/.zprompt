@@ -6,18 +6,24 @@ function __git_branch() {
   git branch 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/(\1)/"
 }
 
-RED="%{$fg[red]%}"
-GREEN="%{$fg[green]%}"
-YELLOW="%{$fg[yellow]%}"
-CYAN="%{$fg[cyan]%}"
-CLEAR="%{$reset_color%}"
+red="%{$fg[red]%}"
+green="%{$fg[green]%}"
+yellow="%{$fg[yellow]%}"
+cyan="%{$fg[cyan]%}"
+reset="%{$reset_color%}"
 
-PROMPT="$GREEN%n $RED%~ $YELLOW\$(__git_branch)
-$CYAN\$$CLEAR "
-RPROMPT="%(?..$RED%?$CLEAR)"
-SPROMPT="Correct $RED%R$CLEAR to $GREEN%r$CLEAR? (yes, no, abort, edit) "
+PROMPT="$green%n $red%~ $yellow\$(__git_branch)
+$cyan\$$reset "
+RPROMPT="%(?..$red%?$reset)"
+SPROMPT="Correct $red%R$reset to $green%r$reset? (yes, no, abort, edit) "
 
 autoload -U promptinit && promptinit
+
+unset red
+unset green
+unset yellow
+unset cyan
+unset reset
 
 # }}}
 

@@ -4,13 +4,19 @@ function __git_branch() {
   git branch 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/(\1)/"
 }
 
-RED="\[\033[0;31m\]"
-GREEN="\[\033[0;32m\]"
-YELLOW="\[\033[0;33m\]"
-CYAN="\[\033[0;36m\]"
-CLEAR="\[\033[0m\]"
+red="\[\033[0;31m\]"
+green="\[\033[0;32m\]"
+yellow="\[\033[0;33m\]"
+cyan="\[\033[0;36m\]"
+reset="\[\033[0m\]"
 
-PS1="$GREEN\u $RED\w $YELLOW\$(__git_branch)\n$CYAN\$$CLEAR "
+PS1="$green\u $red\w $yellow\$(__git_branch)\n$cyan\$$reset "
+
+unset red
+unset green
+unset yellow
+unset cyan
+unset reset
 
 # }}}
 
