@@ -2,15 +2,15 @@
 
 autoload -U colors && colors
 
-function __git_branch() {
-  git branch 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/(\1)/"
-}
-
 red="%{$fg[red]%}"
 green="%{$fg[green]%}"
 yellow="%{$fg[yellow]%}"
 cyan="%{$fg[cyan]%}"
 reset="%{$reset_color%}"
+
+function __git_branch() {
+  git branch 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/(\1)/"
+}
 
 PROMPT="$green%n $red%~ $yellow\$(__git_branch)
 $cyan\$$reset "
