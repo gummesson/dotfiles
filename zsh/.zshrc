@@ -8,6 +8,7 @@
 # -- Keys
 # -- Options
 # -- Completions
+# -- Miscellaneous
 #
 # }}}
 
@@ -89,7 +90,7 @@ autoload -Uz compinit && compinit
 
 # }}}
 
-# -- Misc. --------------------------------------------------------- {{{
+# -- Miscellaneous ------------------------------------------------- {{{
 
 autoload -U url-quote-magic
 zle -N self-insert url-quote-magic

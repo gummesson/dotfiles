@@ -3,7 +3,7 @@
 # -- Setup
 # -- Install
 # -- Link
-# -- Misc.
+# -- Miscellaneous
 #
 # }}}
 
@@ -178,7 +178,7 @@ link: folders files permissions
 
 # }}}
 
-# -- Misc. --------------------------------------------------------- {{{
+# -- Miscellaneous ------------------------------------------------- {{{
 
 shell:
 	@chsh -s /usr/bin/zsh

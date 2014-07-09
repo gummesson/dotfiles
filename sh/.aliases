@@ -5,7 +5,7 @@
 # -- Files
 # -- Git
 # -- npm
-# -- Misc.
+# -- Miscellaneous
 #
 # }}}
 
@@ -63,7 +63,7 @@ alias npmx="npm run"
 
 # }}}
 
-# -- Misc. --------------------------------------------------------- {{{
+# -- Miscellaneous ------------------------------------------------- {{{
 
 alias _="sudo"
 alias cls="clear"
