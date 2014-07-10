@@ -31,6 +31,8 @@ env:
 	@yaourt -Sa rxvt-unicode
 	@yaourt -Sa zsh
 	@yaourt -Sa zsh-completions
+	@yaourt -Sa python
+	@yaourt -Sa python2
 	@yaourt -Sa ruby
 	@yaourt -Sa nodejs
 	@yaourt -Sa phantomjs
