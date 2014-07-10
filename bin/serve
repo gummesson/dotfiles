@@ -1,3 +1,5 @@
 #!/usr/bin/env sh
 
+# serve <directory>
+
 ruby -run -e httpd "$1" -p 8000

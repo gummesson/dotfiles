@@ -1,3 +1,5 @@
 #!/usr/bin/env sh
- 
+
+# +x <files>
+
 chmod +x "$@"
