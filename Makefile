@@ -64,7 +64,7 @@ tools:
 	@yaourt -Sa scrot
 	@yaourt -Sa curl
 	@yaourt -Sa tree
-	@yaourt -Sa usbmount
+	@yaourt -Sa udiskie
 	@yaourt -Sa autojump
 	@yaourt -Sa ack
 	@yaourt -Sa youtube-dl

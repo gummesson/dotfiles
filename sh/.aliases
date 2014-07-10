@@ -72,6 +72,7 @@ alias shutdown="sudo shutdown -h now"
 alias vimsu="sudo -E vim"
 alias ping="ping -c 5"
 alias untar="tar -xzvf"
+alias unmount="udiskie-umount -a"
 alias today="date +%Y/%m/%d"
 alias duh="du -h -d 0 [^.]*"
 

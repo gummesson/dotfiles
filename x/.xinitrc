@@ -18,6 +18,9 @@ syndaemon -k -i 1 &
 autocutsel -fork &
 autocutsel -selection PRIMARY -fork &
 
+# Start automatic mounting
+udiskie &
+
 # Start the `urxvt` daemon
 urxvtd --quiet --fork --opendisplay &
 
