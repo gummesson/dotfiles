@@ -86,7 +86,7 @@ apps:
 	@yaourt -Sa dropbox
 	@yaourt -Sa dropbox-cli
 	@yaourt -Sa irssi
-	@yaourt -Sa mplayer2
+	@yaourt -Sa mpv
 	@yaourt -Sa cmus
 	@yaourt -Sa zathura
 	@yaourt -Sa zathura-pdf-mupdf

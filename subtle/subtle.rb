@@ -218,7 +218,7 @@ end
 
 tag "term",    "[u]?rxvt|termite"
 tag "browser", "dwb"
-tag "player",  "mplayer"
+tag "player",  "mpv"
 tag "files",   "pcmanfm|feh|zathura"
 
 # }}}
