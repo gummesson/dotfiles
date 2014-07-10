@@ -114,11 +114,11 @@ folders:
 	@mkdir -vp $(USER)/Documents
 	@mkdir -vp $(USER)/Pictures/Screenshots
 	@mkdir -vp $(USER)/.bin
+	@mkdir -vp $(CONF)/dunst
+	@mkdir -vp $(CONF)/dwb
 	@mkdir -vp $(USER)/.irssi/scripts/autorun
 	@mkdir -vp $(USER)/.nano
 	@mkdir -vp $(USER)/.newsbeuter
-	@mkdir -vp $(CONF)/dunst
-	@mkdir -vp $(CONF)/dwb
 	@mkdir -vp $(USER)/.mutt
 	@mkdir -vp $(USER)/.rtorrent/{session,watch}
 	@mkdir -vp $(CONF)/subtle
