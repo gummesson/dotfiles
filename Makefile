@@ -113,10 +113,10 @@ folders:
 	@mkdir -vp $(USER)/Downloads
 	@mkdir -vp $(USER)/Documents
 	@mkdir -vp $(USER)/Pictures/Screenshots
-	@mkdir -vp $(USER)/.bin
 	@mkdir -vp $(CONF)/dunst
 	@mkdir -vp $(CONF)/dwb
 	@mkdir -vp $(USER)/.irssi/scripts/autorun
+	@mkdir -vp $(USER)/.local/bin
 	@mkdir -vp $(USER)/.nano
 	@mkdir -vp $(USER)/.newsbeuter
 	@mkdir -vp $(USER)/.mutt
@@ -128,7 +128,7 @@ folders:
 
 files:
 	@ln -vsf $(DOT)/ack/.ackrc $(USER)/.ackrc
-	@ln -vsf $(DOT)/bin/* $(USER)/.bin
+	@ln -vsf $(DOT)/bin/* $(USER)/.local/bin
 	@ln -vsf $(DOT)/ctags/.ctags $(USER)/.ctags
 	@ln -vsf $(DOT)/dunst/dunstrc $(CONF)/dunst/dunstrc
 	@ln -vsf $(DOT)/dwb/settings $(CONF)/dwb/settings
