@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+# gsize <file>
+
+gzip -9f < "$1" | wc -c | awk '{ i = $1 / 1000; print i " kb"; }'
