@@ -3,7 +3,7 @@
 autoload -U colors && colors
 
 function __git_branch() {
-  git branch 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/(\1)/"
+  git symbolic-ref --short HEAD 2> /dev/null | awk '{ print "(" $1 ")"; }'
 }
 
 PROMPT="%{$fg[green]%}%n %{$fg[red]%}%~ %{$fg[yellow]%}\$(__git_branch)
