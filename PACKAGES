@@ -3,6 +3,7 @@ acpi
 adobe-source-code-pro-fonts
 autocutsel
 autojump
+cabal-install
 cmus
 ctags
 curl
@@ -14,6 +15,7 @@ dvtm
 dwb
 entr
 feh
+ghc
 git-extras-git
 gvim
 htop
