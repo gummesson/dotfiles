@@ -211,6 +211,9 @@ npm:
 pandoc:
 	@yaourt -Sa ghc
 	@yaourt -Sa cabal-install
+	@yaourt -Sa haddock
+	@yaourt -Sa happy
+	@yaourt -Sa alex
 	@cabal install pandoc
 
 pkgs: gems npm pandoc

@@ -1,6 +1,7 @@
 ack
 acpi
 adobe-source-code-pro-fonts
+alex
 autocutsel
 autojump
 cabal-install
@@ -18,6 +19,8 @@ feh
 ghc
 git-extras-git
 gvim
+haddock
+happy
 htop
 irssi
 markdown
