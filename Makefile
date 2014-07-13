@@ -16,12 +16,12 @@ DOT  = $(GIT)/dotfiles
 
 .PHONY: env wm fonts tools apps extras install \
 	folders files permissions link \
-	shell editor gems npm \
+	shell editor gems npm pandoc \
 	upgrade clean reboot \
 	list \
 	all
 
-all: install link editor shell gems npm upgrade clean reboot
+all: install link editor shell gems npm pandoc upgrade clean reboot
 
 # }}}
 
@@ -198,6 +198,11 @@ gems:
 npm:
 	@npm install npm-check-updates --prefix ~/.local
 	@npm install gulp --prefix ~/.local
+
+pandoc:
+	@yaourt -Sa ghc
+	@yaourt -Sa cabal-install
+	@cabal install pandoc
 
 upgrade:
 	@yaourt -Syua
