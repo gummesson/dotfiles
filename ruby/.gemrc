@@ -1,6 +1,6 @@
 # -- .gemrc -------------------------------------------------------- {{{
 
-gem: --no-document
+gem: --no-document --user-install
 
 # }}}
 
