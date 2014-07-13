@@ -3,6 +3,9 @@
 # -- Setup
 # -- Install
 # -- Link
+# -- Development
+# -- Packages
+# -- System
 # -- Miscellaneous
 #
 # }}}
@@ -16,12 +19,12 @@ DOT  = $(GIT)/dotfiles
 
 .PHONY: env wm fonts tools apps extras install \
 	folders files permissions link \
-	shell editor gems npm pandoc \
-	upgrade clean reboot \
+	shell editor gems npm pandoc dev pkgs \
+	upgrade clean reboot system \
 	list \
 	all
 
-all: install link editor shell gems npm pandoc upgrade clean reboot
+all: install link dev pkgs system
 
 # }}}
 
@@ -179,7 +182,7 @@ link: folders files permissions
 
 # }}}
 
-# -- Miscellaneous ------------------------------------------------- {{{
+# -- Development --------------------------------------------------- {{{
 
 shell:
 	@chsh -s /usr/bin/zsh
@@ -191,6 +194,12 @@ editor:
 	@ln -vsf $(GIT)/vimfiles/.gvimrc $(USER)/.gvimrc
 	@mkdir -vp $(USER)/.vim/undo
 	@vim +PluginInstall +qall
+
+dev: shell editor
+
+# }}}
+
+# -- Packages ------------------------------------------------------ {{{
 
 gems:
 	@gem install jekyll --user-install
@@ -204,6 +213,12 @@ pandoc:
 	@yaourt -Sa cabal-install
 	@cabal install pandoc
 
+pkgs: gems npm pandoc
+
+# }}}
+
+# -- System ------------------------------------------------------- {{{
+
 upgrade:
 	@yaourt -Syua
 
@@ -212,6 +227,12 @@ clean:
 
 reboot:
 	@sudo reboot
+
+system: upgrade clean reboot
+
+# }}}
+
+# -- Miscellaneous ------------------------------------------------- {{{
 
 list:
 	@awk '/@yaourt/ { print $$3; };' \
