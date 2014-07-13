@@ -16,12 +16,12 @@ DOT  = $(GIT)/dotfiles
 
 .PHONY: env wm fonts tools apps extras install \
 	folders files permissions link \
-	shell editor gems \
+	shell editor gems npm \
 	upgrade clean reboot \
 	list \
 	all
 
-all: install link editor shell gems upgrade clean reboot
+all: install link editor shell gems npm upgrade clean reboot
 
 # }}}
 
@@ -194,6 +194,10 @@ editor:
 
 gems:
 	@gem install jekyll --user-install
+
+npm:
+	@npm install npm-check-updates --prefix ~/.local
+	@npm install gulp --prefix ~/.local
 
 upgrade:
 	@yaourt -Syua
