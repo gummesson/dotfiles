@@ -225,8 +225,8 @@ tag "files",   "pcmanfm|feh|zathura"
 
 # -- Views --------------------------------------------------------- {{{
 
-view "term ", "term|default"
-view "www  ", "browser"
+view "term",  "term|default"
+view "www",   "browser"
 view "media", "files|player"
 
 # }}}
