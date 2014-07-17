@@ -138,8 +138,20 @@ gravity :bottom_right33, [  50,  67,  50,  33 ]
 
 # -- Programs --
 
+launcher = [
+  "dmenu_run",
+  "-i",
+  "-b",
+  "-p '>>'",
+  "-fn 'Source Code Pro-10'",
+  "-nb '#{colors[:gray2]}'",
+  "-nf '#{colors[:gray8]}'",
+  "-sb '#{colors[:blue]}'",
+  "-sf '#{colors[:base3]}'"
+].join(" ")
+
 grab "W-Return", "urxvtc"
-grab "W-m",      "~/.local/bin/dmenu-launcher"
+grab "W-m",      launcher
 
 # -- Views --
 
