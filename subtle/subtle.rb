@@ -142,7 +142,7 @@ launcher = [
   "dmenu_run",
   "-i",
   "-b",
-  "-p '>>'",
+  "-p '$'",
   "-fn 'Source Code Pro-10'",
   "-nb '#{colors[:gray2]}'",
   "-nf '#{colors[:gray8]}'",
