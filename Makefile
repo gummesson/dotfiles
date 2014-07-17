@@ -46,7 +46,7 @@ wm:
 	@sur install wifi
 	@sur install battery
 	@sur install clock
-	@yaourt -Sa dmenu
+	@yaourt -Sa dmenu-xft
 	@yaourt -Sa dunst
 	@yaourt -Sa feh
 	@yaourt -Sa unclutter

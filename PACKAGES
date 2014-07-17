@@ -8,7 +8,7 @@ cabal-install
 cmus
 ctags
 curl
-dmenu
+dmenu-xft
 dropbox
 dropbox-cli
 dunst
