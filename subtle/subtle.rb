@@ -68,7 +68,7 @@ style :all do
   background colors[:gray2]
   foreground colors[:gray8]
   icon       colors[:gray8]
-  padding    0, 6, 2, 6
+  padding    0, 8, 2, 8
   font       "xft:Source Code Pro:pixelsize=14"
 end
 
