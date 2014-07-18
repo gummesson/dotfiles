@@ -48,6 +48,7 @@ wm:
 	@sur install clock
 	@yaourt -Sa dmenu-xft
 	@yaourt -Sa dunst
+	@yaourt -Sa libnotify
 
 fonts:
 	@yaourt -Sa ttf-droid
