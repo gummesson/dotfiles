@@ -68,8 +68,8 @@ style :all do
   background colors[:gray2]
   foreground colors[:gray8]
   icon       colors[:gray8]
-  padding    0, 8, 2, 8
-  font       "xft:Source Code Pro:pixelsize=14"
+  padding    2, 8, 2, 8
+  font       "xft:Inconsolata:pixelsize=15.5"
 end
 
 style :views do
@@ -143,7 +143,7 @@ launcher = [
   "-i",
   "-b",
   "-p '$'",
-  "-fn 'Source Code Pro-10'",
+  "-fn 'Inconsolata-11.5'",
   "-nb '#{colors[:gray2]}'",
   "-nf '#{colors[:gray8]}'",
   "-sb '#{colors[:blue]}'",

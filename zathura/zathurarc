@@ -2,7 +2,7 @@
 
 # -- Font --
 
-set font "Source Code Pro normal 11"
+set font "Inconsolata normal 11.5"
 
 # -- UI --
 

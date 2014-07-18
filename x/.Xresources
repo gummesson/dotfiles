@@ -32,8 +32,8 @@ URxvt.urgentOnBell: true
 
 ! -- Font --
 
-URxvt.font: xft:Source Code Pro:pixelsize=15
-URxvt.boldFont: xft:Source Code Pro:bold:pixelsize=15
+URxvt.font: xft:Inconsolata:pixelsize=17.5
+URxvt.boldFont: xft:Inconsolata:bold:pixelsize=17.5
 URxvt.allow_bold: true
 URxvt.lineSpace: -1
 URxvt.letterSpace: -1
