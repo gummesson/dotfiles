@@ -13,6 +13,7 @@ auto-reload yes
 reload-time 30
 max-items 25
 text-width 80
+display-article-progress yes
 confirm-exit yes
 
 # }}}
@@ -31,10 +32,10 @@ unbind-key K prev
 unbind-key j next-feed
 unbind-key k prev-feed
 
+bind-key j down
+bind-key k up
 bind-key J next-feed
 bind-key K prev-feed
-bind-key j next
-bind-key k prev
 
 # }}}
 
