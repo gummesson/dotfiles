@@ -216,6 +216,8 @@ pandoc:
 	@yaourt -Sa happy
 	@yaourt -Sa alex
 	@cabal install pandoc
+	@yaourt -Sa textlive-core
+	@yaourt -Sa textlive-latexextra
 
 pkgs: gems npm pandoc
 
