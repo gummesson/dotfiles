@@ -47,6 +47,7 @@ color listnormal_unread magenta default
 color listfocus_unread  white   blue
 color info              white   blue    bold
 color article           default default
+search-highlight-colors black   yellow
 
 # }}}
 
