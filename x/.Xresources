@@ -35,7 +35,7 @@ URxvt.urgentOnBell: true
 URxvt.font: xft:Inconsolata:pixelsize=17.5
 URxvt.boldFont: xft:Inconsolata:bold:pixelsize=17.5
 URxvt.allow_bold: true
-URxvt.lineSpace: -1
+URxvt.lineSpace: 0
 URxvt.letterSpace: -1
 
 ! -- Scrollbar --
