@@ -12,6 +12,7 @@ auto-reload yes
 reload-time 30
 max-items 25
 browser "dwb %u &"
+text-width 80
 confirm-exit yes
 
 # }}}
