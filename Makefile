@@ -48,8 +48,6 @@ wm:
 	@sur install clock
 	@yaourt -Sa dmenu-xft
 	@yaourt -Sa dunst
-	@yaourt -Sa feh
-	@yaourt -Sa unclutter
 
 fonts:
 	@yaourt -Sa ttf-droid
@@ -61,6 +59,7 @@ fonts:
 	@yaourt -Sa ttf-ms-fonts
 
 tools:
+	@yaourt -Sa unclutter
 	@yaourt -Sa htop
 	@yaourt -Sa acpi
 	@yaourt -Sa xorg-xbacklight
@@ -94,6 +93,7 @@ apps:
 	@yaourt -Sa irssi
 	@yaourt -Sa mpv
 	@yaourt -Sa cmus
+	@yaourt -Sa feh
 	@yaourt -Sa zathura
 	@yaourt -Sa zathura-pdf-mupdf
 	@yaourt -Sa ranger
