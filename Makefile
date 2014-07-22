@@ -191,7 +191,7 @@ shell:
 
 editor:
 	@git clone https://github.com/gummesson/vimfiles.git $(GIT)/vimfiles
-	@git clone https://github.com/gmarik/Vundle.vim.git $(USER)/.vim/bundle/vundle
+	@git clone https://github.com/gmarik/Vundle.vim.git $(USER)/.vim/bundle/Vundle.vim
 	@ln -vsf $(GIT)/vimfiles/.vimrc $(USER)/.vimrc
 	@ln -vsf $(GIT)/vimfiles/.gvimrc $(USER)/.gvimrc
 	@mkdir -vp $(USER)/.vim/undo
