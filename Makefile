@@ -204,6 +204,7 @@ dev: shell editor
 # -- Packages ------------------------------------------------------ {{{
 
 gems:
+	@gem install bundler --user-install
 	@gem install jekyll --user-install
 
 npm:
