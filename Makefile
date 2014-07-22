@@ -205,7 +205,7 @@ dev: shell editor
 
 gems:
 	@gem install bundler --user-install
-	@gem install jekyll --user-install
+	@gem install github-pages --user-install
 
 npm:
 	@npm install npm-check-updates --prefix ~/.local
