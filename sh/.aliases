@@ -73,6 +73,7 @@ alias be="bundle exec"
 # -- Miscellaneous ------------------------------------------------- {{{
 
 alias _="sudo"
+alias e="vim"
 alias cls="clear"
 alias reboot="sudo reboot"
 alias shutdown="sudo shutdown -h now"
