@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+# exec <path/to/script>
+
+# Set background color
+xsetroot -solid "#262626"
+
+# Configure the status bar
+while true; do
+  battery="$(acpi -b | awk '{ print $4 }')"
+  clock="$(date '+%H:%M')"
+  xsetroot -name "$battery • $clock"
+  sleep 1s
+done &
+
+# Start `dwm`
+exec dwm
