@@ -21,7 +21,6 @@ Xft.lcdfilter: lcddefault
 
 ! -- Window --
 
-URxvt.depth: 32
 URxvt.geometry: 80x24
 URxvt.transparent: false
 URxvt.fading: 0
