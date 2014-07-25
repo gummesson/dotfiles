@@ -4,6 +4,7 @@
 # -- Install
 # -- Link
 # -- Development
+# -- Builds
 # -- Packages
 # -- System
 # -- Miscellaneous
@@ -16,10 +17,13 @@ USER = /home/ellen
 CONF = $(USER)/.config
 GIT  = $(USER)/Git
 DOT  = $(GIT)/dotfiles
+BDS  = $(USER)/.local/builds
 
 .PHONY: env wm fonts tools apps extras install \
 	folders files permissions link \
-	shell editor gems npm pandoc dev pkgs \
+	shell editor \
+	dwm builds \
+	gems npm pandoc dev pkgs \
 	upgrade clean reboot system \
 	list \
 	all
@@ -199,6 +203,20 @@ editor:
 	@vim +PluginInstall +qall
 
 dev: shell editor
+
+# }}}
+
+# -- Builds -------------------------------------------------------- {{{
+
+dwm:
+	@mkdir -p $(BDS)
+	@git clone http://git.suckless.org/dwm $(BDS)/dwm
+	@ln -vsf $(DOT)/dwm/config.h $(BDS)/dwm/config.h
+	@cd $(BDS)/dwm && git apply $(DOT)/dwm/xft.diff
+	@ln -vsf $(DOT)/dwm/dwm-start $(USER)/.local/bin/dwm-start
+	@echo "Run 'sudo make clean install' in '$(BDS)/dwm'"
+
+builds: dwm
 
 # }}}
 
