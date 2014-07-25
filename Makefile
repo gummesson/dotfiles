@@ -28,7 +28,7 @@ BDS  = $(USER)/.local/builds
 	list \
 	all
 
-all: install link dev pkgs system
+all: install link dev builds pkgs system
 
 # }}}
 
