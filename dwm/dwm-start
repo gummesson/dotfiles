@@ -8,7 +8,7 @@ xsetroot -solid "#262626"
 # Configure the status bar
 while true; do
   wifi="$(iwconfig wlp2s0 | sed -n '6p' | awk 'sub(/Quality=/, "") { print $2; }')"
-  battery="$(acpi -b | awk '{ print $4; }')"
+  battery="$(acpi -b | awk 'gsub(/,/, "") { print $4; }')"
   clock="$(date '+%H:%M')"
   xsetroot -name "$wifi • $battery • $clock"
   sleep 3s
