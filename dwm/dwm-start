@@ -11,7 +11,7 @@ while true; do
   battery="$(acpi -b | awk '{ print $4; }')"
   clock="$(date '+%H:%M')"
   xsetroot -name "$wifi • $battery • $clock"
-  sleep 1s
+  sleep 3s
 done &
 
 # Start `dwm`
