@@ -1,16 +1,19 @@
+# Source: http://permalink.gmane.org/gmane.comp.misc.suckless/17043
+# Commit: 18248ebf4b9465b837e717dcd14a5202a98248e0
+
 diff --git a/config.mk b/config.mk
 index bc3d80e..f5e949f 100644
 --- a/config.mk
 +++ b/config.mk
 @@ -15,8 +15,8 @@ XINERAMALIBS  = -lXinerama
  XINERAMAFLAGS = -DXINERAMA
- 
+
  # includes and libs
 -INCS = -I${X11INC}
 -LIBS = -L${X11LIB} -lX11 ${XINERAMALIBS}
 +INCS = -I${X11INC} -I/usr/include/freetype2
 +LIBS = -L${X11LIB} -lX11 -lXft ${XINERAMALIBS}
- 
+
  # flags
  CPPFLAGS = -D_BSD_SOURCE -D_POSIX_C_SOURCE=2 -DVERSION=\"${VERSION}\" ${XINERAMAFLAGS}
 diff --git a/drw.c b/drw.c
@@ -22,19 +25,19 @@ index b130405..7057a34 100644
  #include <string.h>
  #include <X11/Xlib.h>
 +#include <X11/Xft/Xft.h>
- 
+
  #include "drw.h"
  #include "util.h"
 @@ -42,39 +43,19 @@ drw_free(Drw *drw) {
  }
- 
+
  Fnt *
 -drw_font_create(Display *dpy, const char *fontname) {
 +drw_font_create(Display *dpy, int screen, const char *fontname) {
  	Fnt *font;
 -	char *def, **missing;
 -	int n;
- 
+
  	font = (Fnt *)calloc(1, sizeof(Fnt));
  	if(!font)
  		return NULL;
@@ -71,7 +74,7 @@ index b130405..7057a34 100644
 +	font->dpy = dpy;
  	return font;
  }
- 
+
 @@ -82,10 +63,7 @@ void
  drw_font_free(Display *dpy, Fnt *font) {
  	if(!font)
@@ -83,14 +86,14 @@ index b130405..7057a34 100644
 +	XftFontClose(dpy, font->xfont);
  	free(font);
  }
- 
+
 @@ -93,7 +71,7 @@ Clr *
  drw_clr_create(Drw *drw, const char *clrname) {
  	Clr *clr;
  	Colormap cmap;
 -	XColor color;
 +	Visual *vis;
- 
+
  	if(!drw)
  		return NULL;
 @@ -101,9 +79,10 @@ drw_clr_create(Drw *drw, const char *clrname) {
@@ -105,18 +108,18 @@ index b130405..7057a34 100644
 +	clr->pix = clr->rgb.pixel;
  	return clr;
  }
- 
+
 @@ -121,7 +100,7 @@ drw_setfont(Drw *drw, Fnt *font) {
- 
+
  void
  drw_setscheme(Drw *drw, ClrScheme *scheme) {
--	if(drw && scheme) 
+-	if(drw && scheme)
 +	if(drw && scheme)
  		drw->scheme = scheme;
  }
- 
+
 @@ -131,7 +110,7 @@ drw_rect(Drw *drw, int x, int y, unsigned int w, unsigned int h, int filled, int
- 
+
  	if(!drw || !drw->font || !drw->scheme)
  		return;
 -	XSetForeground(drw->dpy, drw->gc, invert ? drw->scheme->bg->rgb : drw->scheme->fg->rgb);
@@ -131,7 +134,7 @@ index b130405..7057a34 100644
 +	Colormap cmap;
 +	Visual *vis;
 +	XftDraw *d;
- 
+
  	if(!drw || !drw->scheme)
  		return;
 -	XSetForeground(drw->dpy, drw->gc, invert ? drw->scheme->fg->rgb : drw->scheme->bg->rgb);
@@ -159,15 +162,15 @@ index b130405..7057a34 100644
 +	XftDrawStringUtf8(d, invert ? &drw->scheme->bg->rgb : &drw->scheme->fg->rgb, drw->font->xfont, tx, ty, (XftChar8 *)buf, len);
 +	XftDrawDestroy(d);
  }
- 
+
  void
 @@ -182,19 +166,13 @@ drw_map(Drw *drw, Window win, int x, int y, unsigned int w, unsigned int h) {
- 
+
  void
  drw_font_getexts(Fnt *font, const char *text, unsigned int len, Extnts *tex) {
 -	XRectangle r;
 +	XGlyphInfo ext;
- 
+
  	if(!font || !text)
  		return;
 -	if(font->set) {
@@ -183,7 +186,7 @@ index b130405..7057a34 100644
 +	tex->h = font->h;
 +	tex->w = ext.xOff;
  }
- 
+
  unsigned int
 diff --git a/drw.h b/drw.h
 index a5f34e0..503e764 100644
@@ -191,17 +194,17 @@ index a5f34e0..503e764 100644
 +++ b/drw.h
 @@ -1,7 +1,8 @@
  /* See LICENSE file for copyright and license details. */
- 
+
  typedef struct {
 -	unsigned long rgb;
 +	unsigned long pix;
 +	XftColor rgb;
  } Clr;
- 
+
  typedef struct {
 @@ -9,11 +10,11 @@ typedef struct {
  } Cur;
- 
+
  typedef struct {
 +	Display *dpy;
  	int ascent;
@@ -211,11 +214,11 @@ index a5f34e0..503e764 100644
 -	XFontStruct *xfont;
 +	XftFont *xfont;
  } Fnt;
- 
+
  typedef struct {
 @@ -44,7 +45,7 @@ void drw_resize(Drw *drw, unsigned int w, unsigned int h);
  void drw_free(Drw *drw);
- 
+
  /* Fnt abstraction */
 -Fnt *drw_font_create(Display *dpy, const char *fontname);
 +Fnt *drw_font_create(Display *dpy, int screen, const char *fontname);
@@ -231,7 +234,7 @@ index 1bbb4b3..f9ae316 100644
  #include <X11/extensions/Xinerama.h>
  #endif /* XINERAMA */
 +#include <X11/Xft/Xft.h>
- 
+
  #include "drw.h"
  #include "util.h"
 @@ -792,7 +797,7 @@ focus(Client *c) {
@@ -244,7 +247,7 @@ index 1bbb4b3..f9ae316 100644
  	}
  	else {
 @@ -1040,7 +1045,7 @@ manage(Window w, XWindowAttributes *wa) {
- 
+
  	wc.border_width = c->bw;
  	XConfigureWindow(dpy, w, CWBorderWidth, &wc);
 -	XSetWindowBorder(dpy, w, scheme[SchemeNorm].border->rgb);
