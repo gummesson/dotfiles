@@ -14,7 +14,7 @@
 
 # -- Sources ------------------------------------------------------- {{{
 
-for file in ~/.{aliases,env,functions,zprompt}; do
+for file in ~/.{aliases,exports,functions,zprompt}; do
   if [[ -r "$file" ]]; then
     source "$file"
   fi

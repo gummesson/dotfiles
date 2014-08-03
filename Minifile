@@ -24,7 +24,7 @@ zsh:
 	@ln -vsf $(DOT)/zsh/.zshrc $(USER)/.zshrc
 	@ln -vsf $(DOT)/zsh/.zprofile $(USER)/.zprofile
 	@ln -vsf $(DOT)/zsh/.zprompt $(USER)/.zprompt
-	@ln -vsf $(DOT)/sh/.env $(USER)/.env
+	@ln -vsf $(DOT)/sh/.exports $(USER)/.exports
 	@ln -vsf $(DOT)/sh/.aliases $(USER)/.aliases
 	@ln -vsf $(DOT)/sh/.functions $(USER)/.functions
 	@ln -vsf $(DOT)/sh/.dir_colors $(USER)/.dir_colors
@@ -36,7 +36,7 @@ zsh:
 bash:
 	@ln -vsf $(DOT)/sh/.bashrc $(USER)/.bashrc
 	@ln -vsf $(DOT)/sh/.prompt $(USER)/.prompt
-	@ln -vsf $(DOT)/sh/.env $(USER)/.env
+	@ln -vsf $(DOT)/sh/.exports $(USER)/.exports
 	@ln -vsf $(DOT)/sh/.aliases $(USER)/.aliases
 	@ln -vsf $(DOT)/sh/.functions $(USER)/.functions
 	@ln -vsf $(DOT)/sh/.inputrc $(USER)/.inputrc
