@@ -98,7 +98,6 @@ apps:
 	@yaourt -Sa dropbox-cli
 	@yaourt -Sa irssi
 	@yaourt -Sa mpv
-	@yaourt -Sa cmus
 	@yaourt -Sa feh
 	@yaourt -Sa zathura
 	@yaourt -Sa zathura-pdf-mupdf
