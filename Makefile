@@ -48,6 +48,7 @@ wm:
 	@yaourt -Sa ruby-archive-tar-minitar
 	@yaourt -Sa ruby-curb
 	@yaourt -Sa subtle
+	@sur install volume
 	@sur install wifi
 	@sur install battery
 	@sur install clock
