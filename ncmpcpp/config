@@ -35,21 +35,21 @@ cyclic_scrolling = "yes"
 # -- Formats ------------------------------------------------------- {{{
 
 progressbar_look="••"
-song_columns_list_format = "(10)[white]{l} (30)[white]{a} (40)[white]{t} (30)[white]{b}"
-song_list_format = "$8{%a - }{%t}$R{%l}$9"
-song_status_format = "$8{%a - }{%t}$9"
-browser_playlist_prefix = "$8[Playlist]$9 "
+song_columns_list_format = "(10)[blue]{l} (30)[blue]{a} (40)[blue]{t} (30)[blue]{b}"
+song_list_format = "$5{%a - }{%t}$R{%l}$9"
+song_status_format = "$6{%a - }{%t}$9"
+browser_playlist_prefix = "$5[Playlist]$9 "
 
 # }}}
 
 # -- Colors -------------------------------------------------------- {{{
 
 colors_enabled = "yes"
-empty_tag_color = "white"
+empty_tag_color = "red"
 header_window_color = "default"
 main_window_color = "default"
-color1 = "white"
-color2 = "white"
+color1 = "blue"
+color2 = "blue"
 main_window_highlight_color = "default"
 progressbar_color = "default"
 statusbar_color = "default"
