@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-
-notify-send "$(amixer sget Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')%"
