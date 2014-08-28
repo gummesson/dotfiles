@@ -100,6 +100,7 @@ apps:
 	@yaourt -Sa mpv
 	@yaourt -Sa mopidy
 	@yaourt -Sa mopidy-spotify
+	@yaourt -Sa ncmpcpp
 	@yaourt -Sa feh
 	@yaourt -Sa zathura
 	@yaourt -Sa zathura-pdf-mupdf
@@ -132,6 +133,7 @@ folders:
 	@mkdir -vp $(USER)/.local/bin
 	@mkdir -vp $(USER)/.nano
 	@mkdir -vp $(USER)/.newsbeuter
+	@mkdir -vp $(USER)/.ncmpcpp
 	@mkdir -vp $(USER)/.mutt
 	@mkdir -vp $(USER)/.rtorrent/{session,watch}
 	@mkdir -vp $(CONF)/subtle
@@ -155,6 +157,7 @@ files:
 	@ln -vsf $(DOT)/mutt/mailcap $(USER)/.mutt/mailcap
 	@ln -vsf $(DOT)/nano/.nanorc $(USER)/.nanorc
 	@ln -vsf $(DOT)/newsbeuter/config $(USER)/.newsbeuter/config
+	@ln -vsf $(DOT)/ncmpcpp/config $(USER)/.ncmpcpp/config
 	@ln -vsf $(DOT)/nano/syntax/* $(USER)/.nano
 	@ln -vsf $(DOT)/nodejs/.jshintrc $(USER)/.jshintrc
 	@ln -vsf $(DOT)/rtorrent/.rtorrent.rc $(USER)/.rtorrent.rc

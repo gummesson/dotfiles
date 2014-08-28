@@ -1,0 +1,62 @@
+# -- .ncmpcpp ------------------------------------------------------ {{{
+#
+# -- mpd
+# -- General
+# -- Formats
+# -- Colors
+#
+# }}}
+
+# -- mpd ----------------------------------------------------------- {{{
+
+mpd_music_dir = "/home/ellen/Music"
+mpd_connection_timeout = "5"
+mpd_crossfade_time = "5"
+
+# }}}
+
+# -- General ------------------------------------------------------- {{{
+
+playlist_disable_highlight_delay = "0"
+playlist_display_mode = "columns"
+browser_display_mode = "columns"
+search_engine_display_mode = "columns"
+playlist_editor_display_mode = "columns"
+autocenter_mode = "yes"
+clock_display_seconds = "yes"
+display_volume_level = "no"
+display_bitrate = "yes"
+display_remaining_time = "yes"
+ignore_leading_the = "yes"
+cyclic_scrolling = "yes"
+
+# }}}
+
+# -- Formats ------------------------------------------------------- {{{
+
+progressbar_look="••"
+song_columns_list_format = "(10)[white]{l} (30)[white]{a} (40)[white]{t} (30)[white]{b}"
+song_list_format = "$8{%a - }{%t}$R{%l}$9"
+song_status_format = "$8{%a - }{%t}$9"
+browser_playlist_prefix = "$8[Playlist]$9 "
+
+# }}}
+
+# -- Colors -------------------------------------------------------- {{{
+
+colors_enabled = "yes"
+empty_tag_color = "white"
+header_window_color = "default"
+main_window_color = "default"
+color1 = "white"
+color2 = "white"
+main_window_highlight_color = "default"
+progressbar_color = "default"
+statusbar_color = "default"
+active_column_color = "default"
+window_border_color = "default"
+active_window_border = "default"
+
+# }}}
+
+# vim:foldmethod=marker
