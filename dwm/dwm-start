@@ -7,10 +7,11 @@ xsetroot -solid "#262626"
 
 # Configure the status bar
 while true; do
+  volume="$(amixer sget Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')%"
   wifi="$(iwconfig wlp2s0 | sed -n '6p' | awk 'sub(/Quality=/, "") { print $2; }')"
   battery="$(acpi -b | awk 'gsub(/,/, "") { print $4; }')"
   clock="$(date '+%H:%M')"
-  xsetroot -name "$wifi • $battery • $clock"
+  xsetroot -name "$volume • $wifi • $battery • $clock"
   sleep 3s
 done &
 
