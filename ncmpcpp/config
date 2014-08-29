@@ -11,7 +11,7 @@
 
 mpd_music_dir = "/home/ellen/Music"
 mpd_connection_timeout = "5"
-mpd_crossfade_time = "5"
+mpd_crossfade_time = "3"
 
 # }}}
 
