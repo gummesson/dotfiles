@@ -41,6 +41,8 @@ song_status_format = "$5{%a$9 • }$8{%t$9 • }$6{%b}$9"
 browser_playlist_prefix = "$2<playlist>$9 "
 now_playing_prefix = "$8"
 now_playing_suffix = "$9"
+selected_item_prefix = "$8"
+selected_item_suffix = "$9"
 
 # }}}
 
