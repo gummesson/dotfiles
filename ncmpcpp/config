@@ -29,6 +29,7 @@ display_volume_level = "no"
 display_remaining_time = "yes"
 ignore_leading_the = "yes"
 cyclic_scrolling = "yes"
+media_library_display_date = "no"
 
 # }}}
 
