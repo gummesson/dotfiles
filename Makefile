@@ -159,6 +159,7 @@ files:
 	@ln -vsf $(DOT)/nano/.nanorc $(USER)/.nanorc
 	@ln -vsf $(DOT)/newsbeuter/config $(USER)/.newsbeuter/config
 	@ln -vsf $(DOT)/ncmpcpp/config $(USER)/.ncmpcpp/config
+	@ln -vsf $(DOT)/ncmpcpp/keys $(USER)/.ncmpcpp/keys
 	@ln -vsf $(DOT)/nano/syntax/* $(USER)/.nano
 	@ln -vsf $(DOT)/nodejs/.jshintrc $(USER)/.jshintrc
 	@ln -vsf $(DOT)/rtorrent/.rtorrent.rc $(USER)/.rtorrent.rc
