@@ -245,6 +245,7 @@ pandoc:
 	@cabal install pandoc
 	@yaourt -Sa textlive-core
 	@yaourt -Sa textlive-latexextra
+	@yaourt -Sa textlive-fontsextra
 
 pkgs: gems npm pandoc
 
