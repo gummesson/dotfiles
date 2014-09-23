@@ -109,6 +109,7 @@ apps:
 	@yaourt -Sa mutt
 	@yaourt -Sa tig
 	@yaourt -Sa newsbeuter
+	@yaourt -Sa rtorrent
 
 extras:
 	@yaourt -Sa termite
