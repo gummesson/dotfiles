@@ -8,7 +8,7 @@ xrdb -merge $HOME/.Xresources
 # Setup the screen(s)
 if (xrandr | grep "VGA1 connected" > /dev/null); then
   xrandr --output VGA1 --auto --right-of LVDS1 &  # Use a bigger screen if available...
-  xrandr --output LVDS1 --off                     # ...and turn of the smaller screen
+  xrandr --output LVDS1 --off                     # ...and turn off the smaller screen
 else
   syndaemon -k -i 1 &  # Disable touchpad when typing
   xbacklight -set 40   # Set the brightness of the screen
