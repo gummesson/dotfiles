@@ -9,7 +9,7 @@ function __git_branch() {
   git symbolic-ref --short HEAD 2> /dev/null | awk '{ print "(" $1 ") "; }'
 }
 
-PS1="$red\w $yellow\$(__git_branch)$reset➔ "
+PS1="$red\w $yellow\$(__git_branch)$reset:: "
 
 unset red
 unset green
