@@ -1,11 +1,14 @@
 # -- .gitignore ---------------------------------------------------- {{{
 
 .bundle/
+.gems/
+.gs/
 .sass-cache/
 node_modules/
 bower_components/
 vendor/
-npm-debug.log
+*.log
+*.lock
 tags
 
 # }}}

@@ -26,6 +26,10 @@
 --ignore-dir=bower_components
 --ignore-dir=public
 --ignore-dir=_site
+--ignore-dir=vendor
+--ignore-dir=.bundle
+--ignore-dir=.gems
+--ignore-dir=.gs
 
 # -- Files --
 
