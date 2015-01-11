@@ -2,11 +2,11 @@
 
 /* appearance */
 static const char font[]            = "Inconsolata-11.5";
-static const char normbordercolor[] = "#9e9e9e";
+static const char normbordercolor[] = "#606060";
 static const char normbgcolor[]     = "#303030";
 static const char normfgcolor[]     = "#9e9e9e";
-static const char selbordercolor[]  = "#4e4e4e";
-static const char selbgcolor[]      = "#4e4e4e";
+static const char selbordercolor[]  = "#606060";
+static const char selbgcolor[]      = "#606060";
 static const char selfgcolor[]      = "#fdf6e3";
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
