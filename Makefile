@@ -231,7 +231,6 @@ builds: dwm
 
 gems:
 	@gem install bundler --user-install
-	@gem install github-pages --user-install
 
 npm:
 	@npm install npm-check-updates --prefix ~/.local
