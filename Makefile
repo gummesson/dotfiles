@@ -131,12 +131,13 @@ folders:
 	@mkdir -vp $(USER)/Pictures/Screenshots
 	@mkdir -vp $(CONF)/dunst
 	@mkdir -vp $(CONF)/dwb
+	@mkdir -vp $(USER)/.bundle
 	@mkdir -vp $(USER)/.irssi/scripts/autorun
 	@mkdir -vp $(USER)/.local/bin
 	@mkdir -vp $(USER)/.nano
 	@mkdir -vp $(USER)/.newsbeuter
 	@mkdir -vp $(USER)/.ncmpcpp
-	@mkdir -vp $(USER)/.mutt
+	@mkdir -vp $(USER)/.mutt/{certificates,cache/{bodies,headers}}
 	@mkdir -vp $(USER)/.rtorrent/{session,watch}
 	@mkdir -vp $(CONF)/subtle
 	@mkdir -vp $(CONF)/termite
