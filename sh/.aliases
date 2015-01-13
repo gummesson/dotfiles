@@ -68,6 +68,7 @@ alias npmx="npm run"
 # -- Bundler ------------------------------------------------------- {{{
 
 alias be="bundle exec"
+alias bi="bundle install"
 
 # }}}
 
