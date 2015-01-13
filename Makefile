@@ -88,6 +88,7 @@ tools:
 	@yaourt -Sa ctags
 	@yaourt -Sa entr
 	@yaourt -Sa git-extras-git
+	@yaourt -Sa wordnet
 
 apps:
 	@yaourt -Sa gvim
