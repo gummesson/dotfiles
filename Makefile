@@ -220,7 +220,7 @@ dev: shell editor
 # -- Builds -------------------------------------------------------- {{{
 
 dwm:
-	@mkdir -p $(BDS)
+	@mkdir -vp $(BDS)
 	@git clone http://git.suckless.org/dwm $(BDS)/dwm
 	@ln -vsf $(DOT)/dwm/config.h $(BDS)/dwm/config.h
 	@cd $(BDS)/dwm && git apply $(DOT)/dwm/dwm-6.1-xft.diff
