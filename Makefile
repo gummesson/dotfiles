@@ -166,6 +166,7 @@ files:
 	@ln -vsf $(DOT)/nodejs/.jshintrc $(USER)/.jshintrc
 	@ln -vsf $(DOT)/rtorrent/.rtorrent.rc $(USER)/.rtorrent.rc
 	@ln -vsf $(DOT)/ruby/.gemrc $(USER)/.gemrc
+	@ln -vsf $(DOT)/ruby/.bundle-config $(USER)/.bundle/config
 	@ln -vsf $(DOT)/subtle/subtle.rb $(CONF)/subtle/subtle.rb
 	@ln -vsf $(DOT)/surfraw/.surfraw.conf $(USER)/.surfraw.conf
 	@ln -vsf $(DOT)/termite/config $(CONF)/termite/config
