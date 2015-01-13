@@ -3,10 +3,10 @@
 # mkproj <name>
 
 make() {
-  local file="$1"
+  file="$1"
   if [ ! -f "$file" ]; then
     mkdir -p "$(dirname $file)"
-    printf "\n" > "$file"
+    touch "$file"
   fi
 }
 
