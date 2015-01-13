@@ -21,25 +21,25 @@ cursor_shape = block
 browser = /usr/bin/dwb
 
 [colors]
-foreground = #98d1ce
-background = #0a0f14
-cursor = #98d1ce
-color0 = #0a0f14
-color8 = #10151b
-color1 = #c33027
-color9 = #d26939
-color2 = #26a98b
-color10 = #081f2d
-color3 = #edb54b
-color11 = #245361
-color4 = #195465
-color12 = #093748
-color5 = #4e5165
-color13 = #888ba5
-color6 = #33859d
-color14 = #599caa
-color7 = #98d1ce
-color15 = #d3ebe9
+foreground = #657b83
+background = #002b36
+cursor = #93a1a1
+color0 = #073642
+color8 = #002b36
+color1 = #dc322f
+color9 = #cb4b16
+color2 = #859900
+color10 = #586e75
+color3 = #b58900
+color11 = #657b83
+color4 = #268bd2
+color12 = #839496
+color5 = #d33682
+color13 = #6c71c4
+color6 = #2aa198
+color14 = #93a1a1
+color7 = #eee8d5
+color15 = #fdf6e3
 
 # }}}
 
