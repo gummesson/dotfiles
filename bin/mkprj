@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-# mkproj <name>
+# mkprj <name>
 
 make() {
   file="$1"
@@ -12,14 +12,11 @@ make() {
 
 case "$1" in
   "node")
-    files=("README.md" "index.js" "test/index.js")
-  ;;
+    files=("README.md" "index.js" "test/index.js") ;;
   "frontend")
-    files=("index.html" "assets/js/index.js" "assets/css/index.css")
-  ;;
+    files=("index.html" "assets/js/index.js" "assets/css/index.css") ;;
   *)
-    echo "Invalid option."
-  ;;
+    echo "Invalid option." ;;
 esac
 
 for i in ${files[@]}; do
