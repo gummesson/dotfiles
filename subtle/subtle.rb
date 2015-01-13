@@ -69,7 +69,7 @@ style :all do
   foreground colors[:gray8]
   icon       colors[:gray8]
   padding    2, 8, 2, 8
-  font       "xft:Inconsolata:pixelsize=15.5"
+  font       "xft:Inconsolata:pixelsize=17"
 end
 
 style :views do
@@ -142,8 +142,7 @@ launcher = [
   "dmenu_run",
   "-i",
   "-b",
-  "-p '$'",
-  "-fn 'Inconsolata-11.5'",
+  "-fn 'Inconsolata-13'",
   "-nb '#{colors[:gray2]}'",
   "-nf '#{colors[:gray8]}'",
   "-sb '#{colors[:blue]}'",
