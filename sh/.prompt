@@ -6,7 +6,7 @@ yellow="\[\033[0;33m\]"
 reset="\[\033[0m\]"
 
 function __git_branch() {
-  git symbolic-ref --short HEAD 2> /dev/null | awk '{ print "(" $1 ") "; }'
+  [[ -d .git ]] && git symbolic-ref --short HEAD 2> /dev/null | awk '{ print "(" $1 ") "; }'
 }
 
 PS1="$red\w $yellow\$(__git_branch)$reset:: "

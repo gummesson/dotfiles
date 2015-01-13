@@ -3,7 +3,7 @@
 autoload -U colors && colors
 
 function __git_branch() {
-  git symbolic-ref --short HEAD 2> /dev/null | awk '{ print "(" $1 ") "; }'
+  [[ -d .git  ]] && git symbolic-ref --short HEAD 2> /dev/null | awk '{ print "(" $1 ") "; }'
 }
 
 PROMPT="%{$fg[red]%}%~ %{$fg[yellow]%}\$(__git_branch)%{$reset_color%}:: "
