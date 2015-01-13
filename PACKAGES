@@ -25,6 +25,7 @@ irssi
 libnotify
 markdown
 mopidy
+mopidy-notifier-git
 mopidy-spotify
 mpv
 msmtp

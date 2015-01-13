@@ -101,6 +101,7 @@ apps:
 	@yaourt -Sa mpv
 	@yaourt -Sa mopidy
 	@yaourt -Sa mopidy-spotify
+	@yaourt -Sa mopidy-notifier-git
 	@yaourt -Sa ncmpcpp
 	@yaourt -Sa feh
 	@yaourt -Sa zathura
