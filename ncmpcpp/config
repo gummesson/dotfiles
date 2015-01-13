@@ -35,7 +35,7 @@ cyclic_scrolling = "yes"
 # -- Formats ------------------------------------------------------- {{{
 
 progressbar_look="••"
-song_columns_list_format = "(10)[]{l} (30)[blue]{a} (40)[white]{t} (30)[magenta]{b}"
+song_columns_list_format = "(10)[]{l} (25)[blue]{a} (35)[white]{t} (30)[magenta]{b}"
 song_list_format = "$5{%a$9 • }$8{%t$9}$R{%l}"
 song_status_format = "$5{%a$9 • }$8{%t$9 • }$6{%b}$9"
 browser_playlist_prefix = "$2<playlist>$9 "
