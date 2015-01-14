@@ -195,11 +195,8 @@ shell:
 
 editor:
 	@git clone https://github.com/gummesson/vimfiles.git $(GIT)/vimfiles
-	@git clone https://github.com/gmarik/Vundle.vim.git $(USER)/.vim/bundle/Vundle.vim
-	@ln -vsf $(GIT)/vimfiles/.vimrc $(USER)/.vimrc
-	@ln -vsf $(GIT)/vimfiles/.gvimrc $(USER)/.gvimrc
-	@mkdir -vp $(USER)/.vim/undo
-	@vim +PluginInstall +qall
+	@cd $(GIT)/vimfiles && ./scripts/install.sh
+	@vim +PlugInstall +qall
 
 dev: shell editor
 
