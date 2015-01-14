@@ -108,7 +108,6 @@ apps:
 
 extras:
 	@yaourt -Sa termite
-	@yaourt -Sa dvtm
 	@yaourt -Sa pcmanfm
 	@yaourt -Sa numix-themes
 	@yaourt -Sa numix-icon-theme-git
