@@ -44,7 +44,7 @@ env:
 	@yaourt -Sa nodejs
 	@yaourt -Sa phantomjs
 
-wm:
+wm: dwm
 	@yaourt -Sa dmenu-xft
 	@yaourt -Sa dunst
 	@yaourt -Sa libnotify
