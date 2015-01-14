@@ -17,7 +17,7 @@ USER = /home/ellen
 CONF = $(USER)/.config
 GIT  = $(USER)/Git
 DOT  = $(GIT)/dotfiles
-BDS  = $(USER)/.local/builds
+SRC  = $(USER)/.local/builds
 
 .PHONY: env wm fonts tools apps extras install \
 	folders files permissions link \
@@ -205,8 +205,8 @@ dev: shell editor
 # -- Builds -------------------------------------------------------- {{{
 
 dwm:
-	@mkdir -vp $(BDS)
-	@git clone http://git.suckless.org/dwm $(BDS)/dwm
+	@mkdir -vp $(SRC)
+	@git clone http://git.suckless.org/dwm $(SRC)/dwm
 	@./dwm/install.sh
 
 builds: dwm
