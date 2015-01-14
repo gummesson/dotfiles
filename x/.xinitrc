@@ -24,7 +24,7 @@ autocutsel -fork &
 autocutsel -selection PRIMARY -fork &
 
 # Start automatic mounting
-udiskie &
+udiskie --automount --notify &
 
 # Start the `urxvt` daemon
 urxvtd --quiet --fork --opendisplay &
