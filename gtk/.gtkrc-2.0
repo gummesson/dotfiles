@@ -2,7 +2,7 @@
 
 gtk-theme-name="Numix"
 gtk-icon-theme-name="Numix-Circle"
-gtk-font-name = "Sans 10"
+gtk-font-name = "Inconsolata 11.5"
 
 # }}}
 
