@@ -3,11 +3,11 @@
 # fz <pattern>
 
 find . -type f -iname "*$1*" \
-  ! -path "*./.git*" \
-  ! -path "*./.bundle*" \
-  ! -path "*./.gems*" \
-  ! -path "*./node_modules*" \
-  ! -path "*./bower_components*" \
-  ! -path "*./vendor*" \
-  ! -path "*./_site*" \
+  ! -path "*/.git*" \
+  ! -path "*/.bundle*" \
+  ! -path "*/.gems*" \
+  ! -path "*/node_modules*" \
+  ! -path "*/bower_components*" \
+  ! -path "*/vendor*" \
+  ! -path "*/_site*" \
   -print
