@@ -2,7 +2,7 @@
 
 /* appearance */
 static const char font[]            = "Inconsolata-13";
-static const char normbordercolor[] = "#606060";
+static const char normbordercolor[] = "#303030";
 static const char normbgcolor[]     = "#303030";
 static const char normfgcolor[]     = "#9e9e9e";
 static const char selbordercolor[]  = "#606060";
