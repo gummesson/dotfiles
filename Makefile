@@ -19,14 +19,9 @@ GIT  = $(USER)/Git
 DOT  = $(GIT)/dotfiles
 SRC  = $(USER)/.local/builds
 
-.PHONY: env wm fonts tools apps extras install \
-	folders files permissions link \
-	shell editor \
-	dwm builds \
-	gems npm pandoc dev pkgs \
-	upgrade clean reboot system \
-	list \
-	all
+.PHONY: env wm fonts tools apps extras install folders files perms link \
+	shell editor dwm builds gems npm pandoc dev pkgs \
+	upgrade clean reboot system list all
 
 all: install link dev builds pkgs system
 
@@ -180,11 +175,11 @@ files:
 	@ln -vsf $(DOT)/sh/.functions $(USER)/.functions
 	@ln -vsf $(DOT)/sh/.dir_colors $(USER)/.dir_colors
 
-permissions:
+perms:
 	@chmod 600 $(USER)/.msmtprc
 	@chmod 600 $(USER)/.muttrc
 
-link: folders files permissions
+link: folders files perms
 
 # }}}
 
@@ -255,9 +250,7 @@ system: upgrade clean reboot
 # -- Miscellaneous ------------------------------------------------- {{{
 
 list:
-	@awk '/@yaourt/ { print $$3; };' \
-	< Makefile | sed '/^$$/d;/{/d' | sort \
-	> PACKAGES
+	@awk '/@yaourt/ { print $$3; };' < Makefile | sed '/^$$/d;/{/d' | sort > PACKAGES
 
 # }}}
 
