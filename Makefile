@@ -54,8 +54,6 @@ fonts:
 	@yaourt -Sa ttf-liberation
 	@yaourt -Sa ttf-dejavu
 	@yaourt -Sa ttf-inconsolata
-	@yaourt -Sa adobe-source-code-pro-fonts
-	@yaourt -Sa ttf-ubuntu-font-family
 	@yaourt -Sa ttf-ms-fonts
 
 tools:
