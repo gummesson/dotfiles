@@ -1,5 +1,4 @@
-# Source: http://permalink.gmane.org/gmane.comp.misc.suckless/17043
-# Commit: 35db6d8afc3fd9f80166feac6c1e4adf71d553c3
+# <http://permalink.gmane.org/gmane.comp.misc.suckless/17043>
 
 diff --git a/config.mk b/config.mk
 index bc3d80e..f5e949f 100644
