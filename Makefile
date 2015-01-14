@@ -224,6 +224,7 @@ dwm:
 	@git clone http://git.suckless.org/dwm $(BDS)/dwm
 	@ln -vsf $(DOT)/dwm/config.h $(BDS)/dwm/config.h
 	@cd $(BDS)/dwm && git apply $(DOT)/dwm/dwm-6.1-xft.diff
+	@cd $(BDS)/dwm && git apply $(DOT)/dwm/dwm-6.1-better-borders.diff
 	@ln -vsf $(DOT)/dwm/dwm-start $(USER)/.local/bin/dwm-start
 	@echo "Run 'sudo make clean install' in '$(BDS)/dwm'"
 
