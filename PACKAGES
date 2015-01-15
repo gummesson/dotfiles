@@ -10,7 +10,6 @@ dmenu-xft
 dropbox
 dropbox-cli
 dunst
-dwb
 entr
 feh
 ghc
@@ -39,6 +38,7 @@ pcmanfm
 phantomjs
 python
 python2
+qutebrowser
 ranger
 rtorrent
 ruby

@@ -26,7 +26,7 @@
     separator_color = frame
     startup_notification = false
     dmenu = /usr/bin/dmenu -p dunst:
-    browser = /usr/bin/dwb
+    browser = /usr/bin/qutebrowser
 
 [frame]
     width = 2

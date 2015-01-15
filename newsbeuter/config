@@ -20,7 +20,7 @@ confirm-exit yes
 
 # -- Programs ------------------------------------------------------ {{{
 
-browser "dwb %u &"
+browser "qutebrowser %u &"
 external-url-viewer "urlview"
 
 # }}}

@@ -1,6 +1,6 @@
 # -- .urlview ------------------------------------------------------ {{{
 
-COMMAND dwb %s
+COMMAND qutebrowser %s
 
 # }}}
 

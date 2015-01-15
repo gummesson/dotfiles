@@ -55,7 +55,7 @@ URxvt.cursorUnderline: false
 
 URxvt.perl-ext-common: default,matcher
 URxvt.matcher.button: 1
-URxvt.url-launcher: /usr/bin/dwb
+URxvt.url-launcher: /usr/bin/qutebrowser
 
 ! }}}
 

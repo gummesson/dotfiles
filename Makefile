@@ -79,7 +79,7 @@ tools:
 apps:
 	@yaourt -Sa gvim
 	@yaourt -Sa tmux
-	@yaourt -Sa dwb
+	@yaourt -Sa qutebrowser
 	@yaourt -Sa w3m
 	@yaourt -Sa surfraw
 	@yaourt -Sa dropbox
@@ -117,7 +117,6 @@ folders:
 	@mkdir -vp $(USER)/Documents
 	@mkdir -vp $(USER)/Pictures/Screenshots
 	@mkdir -vp $(CONF)/dunst
-	@mkdir -vp $(CONF)/dwb
 	@mkdir -vp $(USER)/.bundle
 	@mkdir -vp $(USER)/.irssi/scripts/autorun
 	@mkdir -vp $(USER)/.local/bin
@@ -125,6 +124,7 @@ folders:
 	@mkdir -vp $(USER)/.newsbeuter
 	@mkdir -vp $(USER)/.ncmpcpp
 	@mkdir -vp $(USER)/.mutt/{certificates,cache/{bodies,headers}}
+	@mkdir -vp $(CONF)/qutebrowser
 	@mkdir -vp $(USER)/.rtorrent/{session,watch}
 	@mkdir -vp $(CONF)/termite
 	@mkdir -vp $(USER)/.w3m
@@ -135,7 +135,6 @@ files:
 	@ln -vsf $(DOT)/bin/* $(USER)/.local/bin
 	@ln -vsf $(DOT)/ctags/.ctags $(USER)/.ctags
 	@ln -vsf $(DOT)/dunst/dunstrc $(CONF)/dunst/dunstrc
-	@ln -vsf $(DOT)/dwb/settings $(CONF)/dwb/settings
 	@ln -vsf $(DOT)/git/.gitconfig $(USER)/.gitconfig
 	@ln -vsf $(DOT)/git/.gitignore $(USER)/.gitignore
 	@ln -vsf $(DOT)/gtk/.gtkrc-2.0 $(USER)/.gtkrc-2.0
@@ -150,6 +149,8 @@ files:
 	@ln -vsf $(DOT)/ncmpcpp/keys $(USER)/.ncmpcpp/keys
 	@ln -vsf $(DOT)/nano/syntax/* $(USER)/.nano
 	@ln -vsf $(DOT)/nodejs/.jshintrc $(USER)/.jshintrc
+	@ln -vsf $(DOT)/qutebrowser/qutebrowser.conf $(CONF)/qutebrowser/qutebrowser.conf
+	@ln -vsf $(DOT)/qutebrowser/keys.conf $(CONF)/qutebrowser/keys.conf
 	@ln -vsf $(DOT)/rtorrent/.rtorrent.rc $(USER)/.rtorrent.rc
 	@ln -vsf $(DOT)/ruby/.gemrc $(USER)/.gemrc
 	@ln -vsf $(DOT)/ruby/.bundle-config $(USER)/.bundle/config
