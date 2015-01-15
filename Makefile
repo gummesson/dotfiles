@@ -62,6 +62,7 @@ tools:
 	@yaourt -Sa xbindkeys
 	@yaourt -Sa xclip
 	@yaourt -Sa xdotool
+	@yaourt -Sa wmctrl
 	@yaourt -Sa autocutsel
 	@yaourt -Sa scrot
 	@yaourt -Sa curl
