@@ -19,9 +19,12 @@ GIT  = $(USER)/Git
 DOT  = $(GIT)/dotfiles
 SRC  = $(USER)/.local/builds
 
-.PHONY: env wm fonts tools apps extras install folders files perms link \
-	shell editor dwm builds gems npm pandoc dev pkgs \
-	upgrade clean reboot system list all
+.PHONY: all env wm fonts tools apps extras install \
+	folders files perms link \
+	shell editor dev dwm builds \
+	gems npm pandoc pkgs \
+	upgrade clean reboot system \
+	list-system list-gems list-npm list-cabal list
 
 all: install link dev builds pkgs system
 
@@ -39,7 +42,7 @@ env:
 	@yaourt -Sa nodejs
 	@yaourt -Sa phantomjs
 
-wm: dwm
+wm:
 	@yaourt -Sa dmenu-xft
 	@yaourt -Sa dunst
 	@yaourt -Sa libnotify
@@ -250,8 +253,19 @@ system: upgrade clean reboot
 
 # -- Miscellaneous ------------------------------------------------- {{{
 
-list:
+list-system:
 	@awk '/@yaourt/ { print $$3; };' < Makefile | sed '/^$$/d;/{/d' | sort > PACKAGES
+
+list-gems:
+	@awk '/@gem/ { print $$3; };' < Makefile | sed '/^$$/d;/{/d' | sort > GEMS
+
+list-npm:
+	@awk '/@npm/ { print $$3; };' < Makefile | sed '/^$$/d;/{/d' | sort > NPM
+
+list-cabal:
+	@awk '/@cabal/ { print $$3; };' < Makefile | sed '/^$$/d;/{/d' | sort > CABAL
+
+list: list-system list-gems list-npm list-cabal
 
 # }}}
 
