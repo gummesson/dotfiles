@@ -61,6 +61,7 @@ tools:
 	@yaourt -Sa xorg-xbacklight
 	@yaourt -Sa xbindkeys
 	@yaourt -Sa xclip
+	@yaourt -Sa xdotool
 	@yaourt -Sa autocutsel
 	@yaourt -Sa scrot
 	@yaourt -Sa curl
