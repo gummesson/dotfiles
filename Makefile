@@ -39,7 +39,7 @@ env:
 	@yaourt -Sa python
 	@yaourt -Sa python-pip
 	@yaourt -Sa python2
-	-yaourt -Sa python2-pip
+	@yaourt -Sa python2-pip
 	@yaourt -Sa ruby
 	@yaourt -Sa nodejs
 	@yaourt -Sa phantomjs
