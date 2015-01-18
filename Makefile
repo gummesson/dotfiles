@@ -34,6 +34,8 @@ all: install link dev builds pkgs system
 
 env:
 	@yaourt -Sa rxvt-unicode
+	@yaourt -Sa urxvt-fullscreen
+	@yaourt -Sa urxvt-font-size-git
 	@yaourt -Sa zsh
 	@yaourt -Sa zsh-completions
 	@yaourt -Sa python
