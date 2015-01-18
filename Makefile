@@ -160,7 +160,7 @@ files:
 	@ln -vsf $(DOT)/qutebrowser/keys.conf $(CONF)/qutebrowser/keys.conf
 	@ln -vsf $(DOT)/rtorrent/.rtorrent.rc $(USER)/.rtorrent.rc
 	@ln -vsf $(DOT)/ruby/.gemrc $(USER)/.gemrc
-	@ln -vsf $(DOT)/ruby/.bundle-config $(USER)/.bundle/config
+	@ln -vsf $(DOT)/ruby/.bundle/config $(USER)/.bundle/config
 	@ln -vsf $(DOT)/surfraw/.surfraw.conf $(USER)/.surfraw.conf
 	@ln -vsf $(DOT)/termite/config $(CONF)/termite/config
 	@ln -vsf $(DOT)/tig/.tigrc $(USER)/.tigrc
