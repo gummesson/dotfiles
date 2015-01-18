@@ -210,7 +210,7 @@ dev: shell editor
 dwm:
 	@mkdir -vp $(SRC)
 	@git clone http://git.suckless.org/dwm $(SRC)/dwm
-	@./dwm/install.sh
+	@./dwm/scripts/install.sh
 
 builds: dwm
 
