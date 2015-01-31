@@ -225,6 +225,7 @@ gems:
 
 npm:
 	@npm install npm-check-updates --prefix ~/.local
+	@npm install write-good --prefix ~/.local
 	@npm install gulp --prefix ~/.local
 
 pandoc:
