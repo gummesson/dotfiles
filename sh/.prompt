@@ -1,15 +1,19 @@
 # -- .prompt ------------------------------------------------------- {{{
 
 red="\[\033[0;31m\]"
-green="\[\033[0;32m\]"
 yellow="\[\033[0;33m\]"
+green="\[\033[0;32m\]"
 reset="\[\033[0m\]"
 
 function __git_branch() {
   [[ -d .git ]] && git symbolic-ref --short HEAD 2> /dev/null | awk '{ print "(" $1 ") "; }'
 }
 
-PS1="$red\w $yellow\$(__git_branch)$reset➔ "
+function __git_dirty() {
+  [[ -d .git  ]] && [[ $(git status --porcelain 2> /dev/null) != "" ]] && echo "[+] "
+}
+
+PS1="$red\w $yellow\$(__git_branch)$green\$(__git_dirty)$reset➔ "
 
 unset red
 unset green
