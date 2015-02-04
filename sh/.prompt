@@ -10,7 +10,7 @@ function __git_branch() {
 }
 
 function __git_dirty() {
-  [[ -d .git  ]] && [[ $(git status --porcelain 2> /dev/null) != "" ]] && echo "[+] "
+  [[ -d .git  ]] && [[ $(git status --porcelain 2> /dev/null) != "" ]] && echo "* "
 }
 
 PS1="$red\w $yellow\$(__git_branch)$green\$(__git_dirty)$reset➔ "

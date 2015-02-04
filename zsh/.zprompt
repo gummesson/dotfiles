@@ -7,7 +7,7 @@ function __git_branch() {
 }
 
 function __git_dirty() {
-  [[ -d .git  ]] && [[ $(git status --porcelain 2> /dev/null) != "" ]] && echo "[+] "
+  [[ -d .git  ]] && [[ $(git status --porcelain 2> /dev/null) != "" ]] && echo "* "
 }
 
 PROMPT="%{$fg[red]%}%~ %{$fg[yellow]%}\$(__git_branch)%{$fg[green]%}\$(__git_dirty)%{$reset_color%}➔ "
