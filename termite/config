@@ -21,25 +21,25 @@ cursor_shape = block
 browser = /usr/bin/qutebrowser
 
 [colors]
-foreground = #657b83
-background = #002b36
-cursor = #93a1a1
-color0 = #073642
-color8 = #002b36
-color1 = #dc322f
-color9 = #cb4b16
-color2 = #859900
-color10 = #586e75
-color3 = #b58900
-color11 = #657b83
-color4 = #268bd2
-color12 = #839496
-color5 = #d33682
-color13 = #6c71c4
-color6 = #2aa198
-color14 = #93a1a1
-color7 = #eee8d5
-color15 = #fdf6e3
+background = #212121
+foreground = #d9d9d9
+cursorColor = #20bbfc
+color0 = #212121
+color8 = #424242
+color1 = #c30771
+color9 = #fb007a
+color2 = #10a778
+color10 = #5fd7af
+color3 = #a89c14
+color11 = #f3e430
+color4 = #008ec4
+color12 = #20bbfc
+color5 = #523c79
+color13 = #6855de
+color6 = #20a5ba
+color14 = #4fb8cc
+color7 = #d9d9d9
+color15 = #f1f1f1
 
 # }}}
 
