@@ -8,8 +8,8 @@ set font "Inconsolata normal 13"
 
 set statusbar-bg "#303030"
 set statusbar-fg "#9e9e9e"
-set inputbar-bg "#606060"
-set inputbar-fg "#fdf6e3"
+set inputbar-bg "#303030"
+set inputbar-fg "#d0d0d0"
 
 # }}}
 
