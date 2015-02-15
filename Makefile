@@ -158,6 +158,7 @@ files:
 	@ln -vsf $(DOT)/ncmpcpp/keys $(USER)/.ncmpcpp/keys
 	@ln -vsf $(DOT)/nano/syntax/* $(USER)/.nano
 	@ln -vsf $(DOT)/nodejs/.jshintrc $(USER)/.jshintrc
+	@ln -vsf $(DOT)/nodejs/.eslintrc $(USER)/.eslintrc
 	@ln -vsf $(DOT)/qutebrowser/qutebrowser.conf $(CONF)/qutebrowser/qutebrowser.conf
 	@ln -vsf $(DOT)/qutebrowser/keys.conf $(CONF)/qutebrowser/keys.conf
 	@ln -vsf $(DOT)/rtorrent/.rtorrent.rc $(USER)/.rtorrent.rc
