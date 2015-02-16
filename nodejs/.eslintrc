@@ -4,16 +4,13 @@
     "node": true
   },
   "rules": {
-    // Errors
     "no-shadow-restricted-names": 2,
     "no-unused-vars": 2,
     "no-undef": 2,
     "no-dupe-keys": 2,
     "handle-callback-err": 2,
     "valid-typeof": 2,
-    // Style
     "quotes": [2, "single", "avoid-escape"],
-    // Mute
     "no-use-before-define": 0,
     "no-multi-spaces": 0,
     "strict": 0,
