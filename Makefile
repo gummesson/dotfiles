@@ -226,7 +226,11 @@ gems:
 
 npm:
 	@npm install npm-check-updates --prefix ~/.local
+	@npm install eslint --prefix ~/.local
+	@npm install internal-ip --prefix ~/.local
+	@npm install irish-pub --prefix ~/.local
 	@npm install write-good --prefix ~/.local
+	@npm install mversion --prefix ~/.local
 	@npm install gulp --prefix ~/.local
 
 pandoc:
