@@ -17,7 +17,7 @@ GIT  = $(USER)/Git
 DOT  = $(GIT)/dotfiles
 SRC  = $(USER)/.local/builds
 
-.PHONY: all env wm fonts tools apps extras install \
+.PHONY: all env fonts tools apps extras install \
 	folders files permissions link \
 	shell editor dev dwm builds \
 	gems npm pandoc pkgs
@@ -41,11 +41,6 @@ env:
 	@yaourt -Sa ruby
 	@yaourt -Sa nodejs
 	@yaourt -Sa phantomjs
-
-wm:
-	@yaourt -Sa dmenu-xft
-	@yaourt -Sa dunst
-	@yaourt -Sa libnotify
 
 fonts:
 	@yaourt -Sa ttf-droid
@@ -82,6 +77,9 @@ tools:
 	@yaourt -Sa wordnet
 
 apps:
+	@yaourt -Sa dmenu-xft
+	@yaourt -Sa dunst
+	@yaourt -Sa libnotify
 	@yaourt -Sa gvim
 	@yaourt -Sa tmux
 	@yaourt -Sa qutebrowser
@@ -111,7 +109,7 @@ extras:
 	@yaourt -Sa numix-icon-theme-git
 	@yaourt -Sa numix-circle-icon-theme-git
 
-install: env wm fonts tools apps extras
+install: env fonts tools apps extras
 
 # }}}
 
