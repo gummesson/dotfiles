@@ -181,6 +181,9 @@ files:
 	@ln -vsf $(DOT)/sh/.exports $(USER)/.exports
 	@ln -vsf $(DOT)/sh/.functions $(USER)/.functions
 	@ln -vsf $(DOT)/sh/.dir_colors $(USER)/.dir_colors
+	@ln -vsf $(DOT)/sh/.bashrc $(USER)/.bashrc
+	@ln -vsf $(DOT)/sh/.inputrc $(USER)/.inputrc
+	@ln -vsf $(DOT)/sh/.prompt $(USER)/.prompt
 
 permissions:
 	@chmod 600 $(USER)/.msmtprc
