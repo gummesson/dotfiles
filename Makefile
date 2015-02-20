@@ -22,7 +22,7 @@ SRC  = $(USER)/.local/builds
 	shell editor dev dwm builds \
 	gems npm pandoc pkgs
 
-all: install link dev builds pkgs system
+all: install link dev builds pkgs
 
 # }}}
 
