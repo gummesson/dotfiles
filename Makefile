@@ -17,18 +17,18 @@ GIT  = $(USER)/Git
 DOT  = $(GIT)/dotfiles
 SRC  = $(USER)/.local/builds
 
-.PHONY: all env fonts tools apps extras install \
+.PHONY: all environment fonts tools applications extras install \
 	folders files permissions link \
-	shell editor dev dwm builds \
-	gems npm pandoc pkgs
+	shell editor development dwm builds \
+	gems npm pandoc packages
 
-all: install link dev builds pkgs
+all: install link development builds packages
 
 # }}}
 
 # -- Install ------------------------------------------------------- {{{
 
-env:
+environment:
 	@yaourt -Sa rxvt-unicode
 	@yaourt -Sa urxvt-fullscreen
 	@yaourt -Sa urxvt-font-size-git
@@ -76,7 +76,7 @@ tools:
 	@yaourt -Sa git-extras-git
 	@yaourt -Sa wordnet
 
-apps:
+applications:
 	@yaourt -Sa dmenu-xft
 	@yaourt -Sa dunst
 	@yaourt -Sa libnotify
@@ -109,7 +109,7 @@ extras:
 	@yaourt -Sa numix-icon-theme-git
 	@yaourt -Sa numix-circle-icon-theme-git
 
-install: env fonts tools apps extras
+install: environment fonts tools applications extras
 
 # }}}
 
@@ -201,7 +201,7 @@ editor:
 	@cd $(GIT)/vimfiles && ./scripts/install.sh
 	@vim +PlugInstall +qall
 
-dev: shell editor
+development: shell editor
 
 # }}}
 
@@ -240,7 +240,7 @@ pandoc:
 	@yaourt -Sa textlive-latexextra
 	@yaourt -Sa textlive-fontsextra
 
-pkgs: gems npm pandoc
+packages: gems npm pandoc
 
 # }}}
 
