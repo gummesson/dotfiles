@@ -25,15 +25,6 @@ sudo keyboardctl --set-layout se
 
 `cd` into `Git/dotfiles`, take a look in the `Makefile` and execute at will.
 
-### Minimal
-
-~~~ sh
-make --file Minifile zsh
-make --file Minifile bash
-~~~
-
-The minimal installation will create symlinks for the `bash` or the `zsh` configuration files.
-
 ## Setup
 
 ### Wifi
