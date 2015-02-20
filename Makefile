@@ -227,7 +227,6 @@ npm:
 	@npm install irish-pub --prefix ~/.local
 	@npm install write-good --prefix ~/.local
 	@npm install mversion --prefix ~/.local
-	@npm install gulp --prefix ~/.local
 
 pandoc:
 	@yaourt -Sa ghc
