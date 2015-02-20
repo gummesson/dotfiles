@@ -12,10 +12,10 @@
 # -- Setup --------------------------------------------------------- {{{
 
 USER = /home/ellen
-CONF = $(USER)/.config
-GIT  = $(USER)/Git
-DOT  = $(GIT)/dotfiles
-SRC  = $(USER)/.local/builds
+CONF = ${USER}/.config
+GIT  = ${USER}/Git
+DOT  = ${GIT}/dotfiles
+SRC  = ${USER}/.local/builds
 
 .PHONY: all environment fonts tools applications extras install \
 	folders files permissions link \
@@ -116,76 +116,76 @@ install: environment fonts tools applications extras
 # -- Link ---------------------------------------------------------- {{{
 
 folders:
-	@mkdir -vp $(USER)/Downloads
-	@mkdir -vp $(USER)/Documents
-	@mkdir -vp $(USER)/Pictures/Screenshots
-	@mkdir -vp $(CONF)/dunst
-	@mkdir -vp $(USER)/.bundle
-	@mkdir -vp $(USER)/.irssi/scripts/autorun
-	@mkdir -vp $(USER)/.local/bin
-	@mkdir -vp $(USER)/.nano
-	@mkdir -vp $(USER)/.newsbeuter
-	@mkdir -vp $(USER)/.ncmpcpp
-	@mkdir -vp $(USER)/.mutt/{certificates,cache/{bodies,headers}}
-	@mkdir -vp $(CONF)/qutebrowser
-	@mkdir -vp $(USER)/.rtorrent/{session,watch}
-	@mkdir -vp $(CONF)/termite
-	@mkdir -vp $(USER)/.w3m
-	@mkdir -vp $(CONF)/zathura
+	@mkdir -vp ${USER}/Downloads
+	@mkdir -vp ${USER}/Documents
+	@mkdir -vp ${USER}/Pictures/Screenshots
+	@mkdir -vp ${CONF}/dunst
+	@mkdir -vp ${USER}/.bundle
+	@mkdir -vp ${USER}/.irssi/scripts/autorun
+	@mkdir -vp ${USER}/.local/bin
+	@mkdir -vp ${USER}/.nano
+	@mkdir -vp ${USER}/.newsbeuter
+	@mkdir -vp ${USER}/.ncmpcpp
+	@mkdir -vp ${USER}/.mutt/{certificates,cache/{bodies,headers}}
+	@mkdir -vp ${CONF}/qutebrowser
+	@mkdir -vp ${USER}/.rtorrent/{session,watch}
+	@mkdir -vp ${CONF}/termite
+	@mkdir -vp ${USER}/.w3m
+	@mkdir -vp ${CONF}/zathura
 
 files:
-	@ln -vsf $(DOT)/ack/.ackrc $(USER)/.ackrc
-	@ln -vsf $(DOT)/bin/* $(USER)/.local/bin
-	@ln -vsf $(DOT)/ctags/.ctags $(USER)/.ctags
-	@ln -vsf $(DOT)/dunst/dunstrc $(CONF)/dunst/dunstrc
-	@ln -vsf $(DOT)/git/.gitconfig $(USER)/.gitconfig
-	@ln -vsf $(DOT)/git/.gitignore $(USER)/.gitignore
-	@ln -vsf $(DOT)/gtk/.gtkrc-2.0 $(USER)/.gtkrc-2.0
-	@ln -vsf $(DOT)/irssi/scripts/* $(USER)/.irssi/scripts/autorun
-	@ln -vsf $(DOT)/msmtp/.msmtprc $(USER)/.msmtprc
-	@ln -vsf $(DOT)/mutt/.muttrc $(USER)/.muttrc
-	@ln -vsf $(DOT)/mutt/colors.muttrc $(USER)/.mutt/colors.muttrc
-	@ln -vsf $(DOT)/mutt/mailcap $(USER)/.mutt/mailcap
-	@ln -vsf $(DOT)/nano/.nanorc $(USER)/.nanorc
-	@ln -vsf $(DOT)/newsbeuter/config $(USER)/.newsbeuter/config
-	@ln -vsf $(DOT)/ncmpcpp/config $(USER)/.ncmpcpp/config
-	@ln -vsf $(DOT)/ncmpcpp/keys $(USER)/.ncmpcpp/keys
-	@ln -vsf $(DOT)/nano/syntax/* $(USER)/.nano
-	@ln -vsf $(DOT)/nodejs/.jshintrc $(USER)/.jshintrc
-	@ln -vsf $(DOT)/nodejs/.eslintrc $(USER)/.eslintrc
-	@ln -vsf $(DOT)/qutebrowser/qutebrowser.conf $(CONF)/qutebrowser/qutebrowser.conf
-	@ln -vsf $(DOT)/qutebrowser/keys.conf $(CONF)/qutebrowser/keys.conf
-	@ln -vsf $(DOT)/rtorrent/.rtorrent.rc $(USER)/.rtorrent.rc
-	@ln -vsf $(DOT)/ruby/.gemrc $(USER)/.gemrc
-	@ln -vsf $(DOT)/ruby/.bundle/config $(USER)/.bundle/config
-	@ln -vsf $(DOT)/surfraw/.surfraw.conf $(USER)/.surfraw.conf
-	@ln -vsf $(DOT)/termite/config $(CONF)/termite/config
-	@ln -vsf $(DOT)/tig/.tigrc $(USER)/.tigrc
-	@ln -vsf $(DOT)/tmux/.tmux.conf $(USER)/.tmux.conf
-	@ln -vsf $(DOT)/urlview/.urlview $(USER)/.urlview
-	@ln -vsf $(DOT)/w3m/config $(USER)/.w3m/config
-	@ln -vsf $(DOT)/w3m/keymap $(USER)/.w3m/keymap
-	@ln -vsf $(DOT)/x/.xinitrc $(USER)/.xinitrc
-	@ln -vsf $(DOT)/x/.Xresources $(USER)/.Xresources
-	@ln -vsf $(DOT)/x/.xcolors $(USER)/.xcolors
-	@ln -vsf $(DOT)/x/.xbindkeysrc $(USER)/.xbindkeysrc
-	@ln -vsf $(DOT)/yaourt/.yaourtrc $(USER)/.yaourtrc
-	@ln -vsf $(DOT)/youtube-dl/youtube-dl.conf $(CONF)/youtube-dl.conf
-	@ln -vsf $(DOT)/zathura/zathurarc $(CONF)/zathura/zathurarc
-	@ln -vsf $(DOT)/zsh/.zshrc $(USER)/.zshrc
-	@ln -vsf $(DOT)/zsh/.zprofile $(USER)/.zprofile
-	@ln -vsf $(DOT)/zsh/.zprompt $(USER)/.zprompt
-	@ln -vsf $(DOT)/sh/.aliases $(USER)/.aliases
-	@ln -vsf $(DOT)/sh/.exports $(USER)/.exports
-	@ln -vsf $(DOT)/sh/.functions $(USER)/.functions
-	@ln -vsf $(DOT)/sh/.dir_colors $(USER)/.dir_colors
-	@ln -vsf $(DOT)/sh/.bashrc $(USER)/.bashrc
-	@ln -vsf $(DOT)/sh/.inputrc $(USER)/.inputrc
-	@ln -vsf $(DOT)/sh/.prompt $(USER)/.prompt
+	@ln -vsf ${DOT}/ack/.ackrc ${USER}/.ackrc
+	@ln -vsf ${DOT}/bin/* ${USER}/.local/bin
+	@ln -vsf ${DOT}/ctags/.ctags ${USER}/.ctags
+	@ln -vsf ${DOT}/dunst/dunstrc ${CONF}/dunst/dunstrc
+	@ln -vsf ${DOT}/git/.gitconfig ${USER}/.gitconfig
+	@ln -vsf ${DOT}/git/.gitignore ${USER}/.gitignore
+	@ln -vsf ${DOT}/gtk/.gtkrc-2.0 ${USER}/.gtkrc-2.0
+	@ln -vsf ${DOT}/irssi/scripts/* ${USER}/.irssi/scripts/autorun
+	@ln -vsf ${DOT}/msmtp/.msmtprc ${USER}/.msmtprc
+	@ln -vsf ${DOT}/mutt/.muttrc ${USER}/.muttrc
+	@ln -vsf ${DOT}/mutt/colors.muttrc ${USER}/.mutt/colors.muttrc
+	@ln -vsf ${DOT}/mutt/mailcap ${USER}/.mutt/mailcap
+	@ln -vsf ${DOT}/nano/.nanorc ${USER}/.nanorc
+	@ln -vsf ${DOT}/newsbeuter/config ${USER}/.newsbeuter/config
+	@ln -vsf ${DOT}/ncmpcpp/config ${USER}/.ncmpcpp/config
+	@ln -vsf ${DOT}/ncmpcpp/keys ${USER}/.ncmpcpp/keys
+	@ln -vsf ${DOT}/nano/syntax/* ${USER}/.nano
+	@ln -vsf ${DOT}/nodejs/.jshintrc ${USER}/.jshintrc
+	@ln -vsf ${DOT}/nodejs/.eslintrc ${USER}/.eslintrc
+	@ln -vsf ${DOT}/qutebrowser/qutebrowser.conf ${CONF}/qutebrowser/qutebrowser.conf
+	@ln -vsf ${DOT}/qutebrowser/keys.conf ${CONF}/qutebrowser/keys.conf
+	@ln -vsf ${DOT}/rtorrent/.rtorrent.rc ${USER}/.rtorrent.rc
+	@ln -vsf ${DOT}/ruby/.gemrc ${USER}/.gemrc
+	@ln -vsf ${DOT}/ruby/.bundle/config ${USER}/.bundle/config
+	@ln -vsf ${DOT}/surfraw/.surfraw.conf ${USER}/.surfraw.conf
+	@ln -vsf ${DOT}/termite/config ${CONF}/termite/config
+	@ln -vsf ${DOT}/tig/.tigrc ${USER}/.tigrc
+	@ln -vsf ${DOT}/tmux/.tmux.conf ${USER}/.tmux.conf
+	@ln -vsf ${DOT}/urlview/.urlview ${USER}/.urlview
+	@ln -vsf ${DOT}/w3m/config ${USER}/.w3m/config
+	@ln -vsf ${DOT}/w3m/keymap ${USER}/.w3m/keymap
+	@ln -vsf ${DOT}/x/.xinitrc ${USER}/.xinitrc
+	@ln -vsf ${DOT}/x/.Xresources ${USER}/.Xresources
+	@ln -vsf ${DOT}/x/.xcolors ${USER}/.xcolors
+	@ln -vsf ${DOT}/x/.xbindkeysrc ${USER}/.xbindkeysrc
+	@ln -vsf ${DOT}/yaourt/.yaourtrc ${USER}/.yaourtrc
+	@ln -vsf ${DOT}/youtube-dl/youtube-dl.conf ${CONF}/youtube-dl.conf
+	@ln -vsf ${DOT}/zathura/zathurarc ${CONF}/zathura/zathurarc
+	@ln -vsf ${DOT}/zsh/.zshrc ${USER}/.zshrc
+	@ln -vsf ${DOT}/zsh/.zprofile ${USER}/.zprofile
+	@ln -vsf ${DOT}/zsh/.zprompt ${USER}/.zprompt
+	@ln -vsf ${DOT}/sh/.aliases ${USER}/.aliases
+	@ln -vsf ${DOT}/sh/.exports ${USER}/.exports
+	@ln -vsf ${DOT}/sh/.functions ${USER}/.functions
+	@ln -vsf ${DOT}/sh/.dir_colors ${USER}/.dir_colors
+	@ln -vsf ${DOT}/sh/.bashrc ${USER}/.bashrc
+	@ln -vsf ${DOT}/sh/.inputrc ${USER}/.inputrc
+	@ln -vsf ${DOT}/sh/.prompt ${USER}/.prompt
 
 permissions:
-	@chmod 600 $(USER)/.msmtprc
-	@chmod 600 $(USER)/.muttrc
+	@chmod 600 ${USER}/.msmtprc
+	@chmod 600 ${USER}/.muttrc
 
 link: folders files permissions
 
@@ -197,8 +197,8 @@ shell:
 	@chsh -s /usr/bin/zsh
 
 editor:
-	@git clone https://github.com/gummesson/vimfiles.git $(GIT)/vimfiles
-	@cd $(GIT)/vimfiles && ./scripts/install.sh
+	@git clone https://github.com/gummesson/vimfiles.git ${GIT}/vimfiles
+	@cd ${GIT}/vimfiles && ./scripts/install.sh
 	@vim +PlugInstall +qall
 
 development: shell editor
@@ -208,8 +208,8 @@ development: shell editor
 # -- Builds -------------------------------------------------------- {{{
 
 dwm:
-	@mkdir -vp $(SRC)
-	@git clone http://git.suckless.org/dwm $(SRC)/dwm
+	@mkdir -vp ${SRC}
+	@git clone http://git.suckless.org/dwm ${SRC}/dwm
 	@./dwm/scripts/install.sh
 
 builds: dwm
