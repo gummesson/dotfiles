@@ -6,7 +6,6 @@
 # -- Development
 # -- Builds
 # -- Packages
-# -- System
 #
 # }}}
 
@@ -21,8 +20,7 @@ SRC  = $(USER)/.local/builds
 .PHONY: all env wm fonts tools apps extras install \
 	folders files perms link \
 	shell editor dev dwm builds \
-	gems npm pandoc pkgs \
-	upgrade clean reboot system \
+	gems npm pandoc pkgs
 
 all: install link dev builds pkgs system
 
@@ -243,21 +241,6 @@ pandoc:
 	@yaourt -Sa textlive-fontsextra
 
 pkgs: gems npm pandoc
-
-# }}}
-
-# -- System ------------------------------------------------------- {{{
-
-upgrade:
-	@yaourt -Syua
-
-clean:
-	@yaourt -Qdt
-
-reboot:
-	@sudo reboot
-
-system: upgrade clean reboot
 
 # }}}
 
