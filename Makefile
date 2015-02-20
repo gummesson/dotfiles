@@ -18,7 +18,7 @@ DOT  = $(GIT)/dotfiles
 SRC  = $(USER)/.local/builds
 
 .PHONY: all env wm fonts tools apps extras install \
-	folders files perms link \
+	folders files permissions link \
 	shell editor dev dwm builds \
 	gems npm pandoc pkgs
 
@@ -182,11 +182,11 @@ files:
 	@ln -vsf $(DOT)/sh/.functions $(USER)/.functions
 	@ln -vsf $(DOT)/sh/.dir_colors $(USER)/.dir_colors
 
-perms:
+permissions:
 	@chmod 600 $(USER)/.msmtprc
 	@chmod 600 $(USER)/.muttrc
 
-link: folders files perms
+link: folders files permissions
 
 # }}}
 
