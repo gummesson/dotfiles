@@ -29,25 +29,6 @@ sudo keyboardctl --set-layout se
 
 ### Wifi
 
-Disable `NetworkManager` (and `ModemManager`):
-
 ~~~ sh
-sudo systemctl stop NetworkManager
-sudo systemctl disable NetworkManager
-sudo systemctl stop ModemManager
-sudo systemctl disable ModemManager
-~~~
-
-Enable `netctl`:
-
-~~~ sh
-sudo systemctl start netctl.service
-sudo systemctl enable netctl.service
-~~~
-
-Start `wifi-menu`, generate a profile and start the service with `netctl`:
-
-~~~ sh
-sudo netctl start <profile>
-sudo netctl enable <profile>
+nmtui
 ~~~
