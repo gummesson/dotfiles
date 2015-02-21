@@ -37,6 +37,9 @@ dropboxd &
 # Bind special keys
 xbindkeys
 
+# Set cursor
+xsetroot -cursor_name left_ptr
+
 # Set background color
 xsetroot -solid "#262626"
 
