@@ -18,7 +18,7 @@ SRC  = ${USER}/.local/src
 
 .PHONY: all environment tools applications graphical install \
 	shell folders files permissions link \
-	editor dwm builds gems npm pandoc packages
+	editor dwm frankenwm builds gems npm pandoc packages
 
 all: install link builds packages
 
@@ -33,6 +33,10 @@ environment:
 	@yaourt -Sa termite
 	@yaourt -Sa zsh
 	@yaourt -Sa zsh-completions
+	@yaourt -Sa libxcb
+	@yaourt -Sa xcb-util
+	@yaourt -Sa xcb-util-wm
+	@yaourt -Sa xcb-util-keysyms
 	@yaourt -Sa python
 	@yaourt -Sa python-pip
 	@yaourt -Sa python2
@@ -201,7 +205,11 @@ dwm:
 	@git clone http://git.suckless.org/dwm ${SRC}/dwm
 	@./dwm/scripts/install.sh
 
-builds: editor dwm
+frankenwm:
+	@git clone https://github.com/sulami/FrankenWM ${SRC}/frankenwm
+	@./frankenwm/scripts/install.sh
+
+builds: editor dwm frankenwm
 
 # }}}
 
