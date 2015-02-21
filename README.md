@@ -2,6 +2,8 @@
 
 Welcome to my `~/`.
 
+[![~/](screenshot.png)](screenshot.png)
+
 ## Flavor
 
 [Manjaro Minimal Net Edition](http://manjaro.org/)
