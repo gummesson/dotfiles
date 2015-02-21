@@ -35,8 +35,11 @@ dropboxd &
 # Bind special keys
 xbindkeys
 
-# Start `dwm`
-exec $HOME/.local/bin/dwm-start
+# Set background color
+xsetroot -solid "#262626"
+
+# Start `frankenwm`
+exec frankenwm
 
 # }}}
 
