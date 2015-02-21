@@ -44,9 +44,12 @@
  * you do not wish to use this functionality.
  */
 static const AppRule rules[] = { \
-    /*  class     desktop  follow  float */
-    { "GNU Image",-1,      False,  True },
-    { "Skype",     3,      False,  True },
+    /* class         desktop  follow  float */
+    { "qutebrowser", 1,       True,   False },
+    { "zathura",     2,       True,   False },
+    { "mpv",         2,       True,   False },
+    { "feh",         2,       True,   False },
+    { "Pcmanfm",     2,       True,   False },
 };
 
 /* helper for spawning shell commands, usually you don't edit this */
