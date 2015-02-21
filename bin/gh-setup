@@ -11,6 +11,3 @@ url="https://github.com/$user/$repo"
 
 curl -u "$user" "$api" -d '{"name":"'$repo'"}'
 git remote add origin "$ori"
-git push -u origin master
-
-echo "Browse: $url"
