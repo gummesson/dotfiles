@@ -212,12 +212,13 @@ gems:
 	@gem install bundler --user-install
 
 npm:
-	@npm install npm-check-updates --prefix ~/.local
-	@npm install eslint --prefix ~/.local
-	@npm install internal-ip --prefix ~/.local
-	@npm install irish-pub --prefix ~/.local
-	@npm install write-good --prefix ~/.local
-	@npm install mversion --prefix ~/.local
+	@npm config set prefix ~/.local
+	@npm install -g npm-check-updates
+	@npm install -g eslint
+	@npm install -g internal-ip
+	@npm install -g irish-pub
+	@npm install -g write-good
+	@npm install -g mversion
 
 pandoc:
 	@yaourt -Sa ghc
