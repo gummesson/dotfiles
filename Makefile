@@ -3,7 +3,6 @@
 # -- Setup
 # -- Install
 # -- Link
-# -- Development
 # -- Builds
 # -- Packages
 #
@@ -18,11 +17,10 @@ DOT  = ${GIT}/dotfiles
 SRC  = ${USER}/.local/builds
 
 .PHONY: all environment tools applications graphical install \
-	folders files permissions link \
-	shell editor development dwm builds \
-	gems npm pandoc packages
+	shell folders files permissions link \
+	editor dwm builds gems npm pandoc packages
 
-all: install link development builds packages
+all: install link builds packages
 
 # }}}
 
@@ -113,6 +111,9 @@ install: environment tools applications graphical
 
 # -- Link ---------------------------------------------------------- {{{
 
+shell:
+	@chsh -s /usr/bin/zsh
+
 folders:
 	@mkdir -vp ${USER}/Downloads
 	@mkdir -vp ${USER}/Documents
@@ -185,32 +186,23 @@ permissions:
 	@chmod 600 ${USER}/.msmtprc
 	@chmod 600 ${USER}/.muttrc
 
-link: folders files permissions
+link: shell folders files permissions
 
 # }}}
 
-# -- Development --------------------------------------------------- {{{
-
-shell:
-	@chsh -s /usr/bin/zsh
+# -- Builds -------------------------------------------------------- {{{
 
 editor:
 	@git clone https://github.com/gummesson/vimfiles.git ${GIT}/vimfiles
 	@cd ${GIT}/vimfiles && ./scripts/install.sh
 	@vim +PlugInstall +qall
 
-development: shell editor
-
-# }}}
-
-# -- Builds -------------------------------------------------------- {{{
-
 dwm:
 	@mkdir -vp ${SRC}
 	@git clone http://git.suckless.org/dwm ${SRC}/dwm
 	@./dwm/scripts/install.sh
 
-builds: dwm
+builds: editor dwm
 
 # }}}
 
