@@ -166,6 +166,7 @@ files:
 	@ln -vsf ${DOT}/termite/config ${CONF}/termite/config
 	@ln -vsf ${DOT}/tig/.tigrc ${USER}/.tigrc
 	@ln -vsf ${DOT}/tmux/.tmux.conf ${USER}/.tmux.conf
+	@ln -vsf ${DOT}/tmux/.tmuxify.layout ${USER}/.tmuxify.layout
 	@ln -vsf ${DOT}/urlview/.urlview ${USER}/.urlview
 	@ln -vsf ${DOT}/w3m/config ${USER}/.w3m/config
 	@ln -vsf ${DOT}/w3m/keymap ${USER}/.w3m/keymap
