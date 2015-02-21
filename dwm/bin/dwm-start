@@ -2,9 +2,6 @@
 
 # exec <path/to/script>
 
-# Set background color
-xsetroot -solid "#262626"
-
 # Configure the status bar
 while true; do
   volume="$(amixer sget Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')%"
