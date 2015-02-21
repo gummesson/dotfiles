@@ -14,11 +14,12 @@ USER = /home/ellen
 CONF = ${USER}/.config
 GIT  = ${USER}/Git
 DOT  = ${GIT}/dotfiles
+BIN  = ${USER}/.local/bin
 SRC  = ${USER}/.local/src
 
 .PHONY: all environment tools applications graphical install \
 	shell folders files permissions link \
-	editor dwm frankenwm builds gems npm pandoc packages
+	editor mux dwm frankenwm builds gems npm pandoc packages
 
 all: install link builds packages
 
@@ -201,6 +202,10 @@ editor:
 	@cd ${GIT}/vimfiles && ./scripts/install.sh
 	@vim +PlugInstall +qall
 
+mux:
+	@git clone https://github.com/tonchis/tmuxify.git ${SRC}/tmuxify
+	@ln -vsf ${SRC}/tmuxify/bin/tmuxify ${BIN}/tmuxify
+
 dwm:
 	@git clone http://git.suckless.org/dwm ${SRC}/dwm
 	@./dwm/scripts/install.sh
@@ -209,7 +214,7 @@ frankenwm:
 	@git clone https://github.com/sulami/FrankenWM ${SRC}/frankenwm
 	@./frankenwm/scripts/install.sh
 
-builds: editor dwm frankenwm
+builds: editor mux dwm frankenwm
 
 # }}}
 
