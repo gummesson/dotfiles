@@ -17,7 +17,7 @@ GIT  = ${USER}/Git
 DOT  = ${GIT}/dotfiles
 SRC  = ${USER}/.local/builds
 
-.PHONY: all environment fonts tools applications extras install \
+.PHONY: all environment tools applications graphical install \
 	folders files permissions link \
 	shell editor development dwm builds \
 	gems npm pandoc packages
@@ -32,6 +32,7 @@ environment:
 	@yaourt -Sa rxvt-unicode
 	@yaourt -Sa urxvt-fullscreen
 	@yaourt -Sa urxvt-font-size-git
+	@yaourt -Sa termite
 	@yaourt -Sa zsh
 	@yaourt -Sa zsh-completions
 	@yaourt -Sa python
@@ -41,13 +42,6 @@ environment:
 	@yaourt -Sa ruby
 	@yaourt -Sa nodejs
 	@yaourt -Sa phantomjs
-
-fonts:
-	@yaourt -Sa ttf-droid
-	@yaourt -Sa ttf-liberation
-	@yaourt -Sa ttf-dejavu
-	@yaourt -Sa ttf-inconsolata
-	@yaourt -Sa ttf-ms-fonts
 
 tools:
 	@yaourt -Sa unclutter
@@ -97,19 +91,23 @@ applications:
 	@yaourt -Sa zathura
 	@yaourt -Sa zathura-pdf-mupdf
 	@yaourt -Sa ranger
+	@yaourt -Sa pcmanfm
 	@yaourt -Sa mutt
 	@yaourt -Sa tig
 	@yaourt -Sa newsbeuter
 	@yaourt -Sa rtorrent
 
-extras:
-	@yaourt -Sa termite
-	@yaourt -Sa pcmanfm
+graphical:
+	@yaourt -Sa ttf-droid
+	@yaourt -Sa ttf-liberation
+	@yaourt -Sa ttf-dejavu
+	@yaourt -Sa ttf-inconsolata
+	@yaourt -Sa ttf-ms-fonts
 	@yaourt -Sa numix-themes
 	@yaourt -Sa numix-icon-theme-git
 	@yaourt -Sa numix-circle-icon-theme-git
 
-install: environment fonts tools applications extras
+install: environment tools applications graphical
 
 # }}}
 
