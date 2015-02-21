@@ -4,7 +4,7 @@ set -e
 
 gitpath=$HOME/Git/dotfiles
 binpath=$HOME/.local/bin
-srcpath=$HOME/.local/builds/dwm
+srcpath=$HOME/.local/src/dwm
 
 echo "Symlinking files..."
 ln -vsf $gitpath/dwm/config.h $srcpath/config.h

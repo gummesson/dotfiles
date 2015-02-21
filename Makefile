@@ -14,7 +14,7 @@ USER = /home/ellen
 CONF = ${USER}/.config
 GIT  = ${USER}/Git
 DOT  = ${GIT}/dotfiles
-SRC  = ${USER}/.local/builds
+SRC  = ${USER}/.local/src
 
 .PHONY: all environment tools applications graphical install \
 	shell folders files permissions link \
@@ -121,7 +121,7 @@ folders:
 	@mkdir -vp ${CONF}/dunst
 	@mkdir -vp ${USER}/.bundle
 	@mkdir -vp ${USER}/.irssi/scripts/autorun
-	@mkdir -vp ${USER}/.local/bin
+	@mkdir -vp ${USER}/.local/{bin,src}
 	@mkdir -vp ${USER}/.nano
 	@mkdir -vp ${USER}/.newsbeuter
 	@mkdir -vp ${USER}/.ncmpcpp
@@ -198,7 +198,6 @@ editor:
 	@vim +PlugInstall +qall
 
 dwm:
-	@mkdir -vp ${SRC}
 	@git clone http://git.suckless.org/dwm ${SRC}/dwm
 	@./dwm/scripts/install.sh
 
