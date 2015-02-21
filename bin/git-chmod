@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+# Usage: git-chmod <file>
+
+git update-index --chmod=+x "$1"
