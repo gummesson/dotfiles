@@ -97,7 +97,6 @@ applications:
 	@yaourt -Sa pcmanfm
 	@yaourt -Sa mutt
 	@yaourt -Sa tig
-	@yaourt -Sa newsbeuter
 	@yaourt -Sa feednix
 	@yaourt -Sa rtorrent
 
