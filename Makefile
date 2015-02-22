@@ -97,6 +97,7 @@ applications:
 	@yaourt -Sa ranger
 	@yaourt -Sa pcmanfm
 	@yaourt -Sa mutt
+	@yaourt -Sa offlineimap
 	@yaourt -Sa tig
 	@yaourt -Sa feednix
 	@yaourt -Sa rtorrent
@@ -130,7 +131,8 @@ folders:
 	@mkdir -vp ${USER}/.local/{bin,src}
 	@mkdir -vp ${USER}/.nano
 	@mkdir -vp ${USER}/.ncmpcpp
-	@mkdir -vp ${USER}/.mutt/{certificates,cache/{bodies,headers}}
+	@mkdir -vp ${USER}/.mutt/{certificates,accounts,cache/{bodies,headers}}
+	@mkdir -vp ${USER}/.mail/Gmail
 	@mkdir -vp ${CONF}/qutebrowser
 	@mkdir -vp ${USER}/.rtorrent/{session,watch}
 	@mkdir -vp ${CONF}/termite
@@ -148,8 +150,10 @@ files:
 	@ln -vsf ${DOT}/irssi/scripts/* ${USER}/.irssi/scripts/autorun
 	@ln -vsf ${DOT}/msmtp/.msmtprc ${USER}/.msmtprc
 	@ln -vsf ${DOT}/mutt/.muttrc ${USER}/.muttrc
+	@ln -vsf ${DOT}/mutt/accounts/* ${USER}/.mutt/accounts
 	@ln -vsf ${DOT}/mutt/colors.muttrc ${USER}/.mutt/colors.muttrc
 	@ln -vsf ${DOT}/mutt/mailcap ${USER}/.mutt/mailcap
+	@ln -vsf ${DOT}/offlineimap/.offlineimaprc ${USER}/.offlineimaprc
 	@ln -vsf ${DOT}/nano/.nanorc ${USER}/.nanorc
 	@ln -vsf ${DOT}/ncmpcpp/config ${USER}/.ncmpcpp/config
 	@ln -vsf ${DOT}/ncmpcpp/keys ${USER}/.ncmpcpp/keys

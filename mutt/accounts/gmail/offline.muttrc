@@ -1,0 +1,35 @@
+# -- offline.muttrc ------------------------------------------------ {{{
+#
+# -- Base
+# -- Macros
+#
+# }}}
+
+# -- Base ---------------------------------------------------------- {{{
+
+set sendmail="/usr/bin/msmtp -a gmail"
+set from="ellengummesson@gmail.com"
+
+set mbox_type = Maildir
+set spoolfile="+Gmail/INBOX"
+set postponed="+Gmail/Utkast"
+set mbox="+Gmail/Alla mail"
+
+mailboxes +INBOX
+
+# }}}
+
+# -- Macros -------------------------------------------------------- {{{
+
+macro index,pager I "<save-message>=Gmail/INBOX<enter><enter>" "Move to inbox"
+macro index,pager A "<save-message>=Gmail/Alla mail<enter><enter>" "Move to all mail"
+macro index,pager D "<save-message>=Gmail/Papperskorgen<enter><enter>" "Move to thrash"
+
+macro index,pager gi "<change-folder>=Gmail/INBOX<enter>" "Go to inbox"
+macro index,pager gd "<change-folder>=Gmail/Utkast<enter>" "Go to drafts"
+macro index,pager gt "<change-folder>=Gmail/Papperskorgen<enter>" "Go to thrash"
+macro index,pager gs "<change-folder>=Gmail/Skickade mail<enter>" "Go to sent gmail"
+macro index,pager ga "<change-folder>=Gmail/Alla mail<enter>" "Go to all mail"
+
+# }}}
+# vim:foldmethod=marker
