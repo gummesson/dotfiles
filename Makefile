@@ -19,7 +19,8 @@ SRC  = ${USER}/.local/src
 
 .PHONY: all environment tools applications graphical install \
 	shell folders files permissions link \
-	editor mux dwm frankenwm builds gems npm pandoc packages
+	editor mux dwm frankenwm builds \
+	gems npm pip cabal packages
 
 all: install link builds packages
 
@@ -234,7 +235,10 @@ npm:
 	@npm install -g mversion
 	@npm install -g vmd
 
-pandoc:
+pip:
+	@pip install rainbowstream --user
+
+cabal:
 	@yaourt -Sa ghc
 	@yaourt -Sa cabal-install
 	@yaourt -Sa haddock
@@ -245,7 +249,7 @@ pandoc:
 	@yaourt -Sa textlive-latexextra
 	@yaourt -Sa textlive-fontsextra
 
-packages: gems npm pandoc
+packages: gems npm pip cabal
 
 # }}}
 
