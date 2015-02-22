@@ -129,7 +129,6 @@ folders:
 	@mkdir -vp ${USER}/.irssi/scripts/autorun
 	@mkdir -vp ${USER}/.local/{bin,src}
 	@mkdir -vp ${USER}/.nano
-	@mkdir -vp ${USER}/.newsbeuter
 	@mkdir -vp ${USER}/.ncmpcpp
 	@mkdir -vp ${USER}/.mutt/{certificates,cache/{bodies,headers}}
 	@mkdir -vp ${CONF}/qutebrowser
@@ -152,7 +151,6 @@ files:
 	@ln -vsf ${DOT}/mutt/colors.muttrc ${USER}/.mutt/colors.muttrc
 	@ln -vsf ${DOT}/mutt/mailcap ${USER}/.mutt/mailcap
 	@ln -vsf ${DOT}/nano/.nanorc ${USER}/.nanorc
-	@ln -vsf ${DOT}/newsbeuter/config ${USER}/.newsbeuter/config
 	@ln -vsf ${DOT}/ncmpcpp/config ${USER}/.ncmpcpp/config
 	@ln -vsf ${DOT}/ncmpcpp/keys ${USER}/.ncmpcpp/keys
 	@ln -vsf ${DOT}/nano/syntax/* ${USER}/.nano
