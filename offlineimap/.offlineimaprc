@@ -10,7 +10,7 @@ maxconnections = 3
 [Repository Gmail-Local]
 type = Maildir
 localfolders = ~/.mail/Gmail
-sep = /
+nametrans = lambda folder: "".join(("[Gmail].", folder))
 
 [Repository Gmail-Remote]
 type = IMAP
