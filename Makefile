@@ -232,6 +232,7 @@ npm:
 	@npm install -g irish-pub
 	@npm install -g write-good
 	@npm install -g mversion
+	@npm install -g vmd
 
 pandoc:
 	@yaourt -Sa ghc
