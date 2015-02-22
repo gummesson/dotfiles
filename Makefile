@@ -154,6 +154,7 @@ files:
 	@ln -vsf ${DOT}/mutt/colors.muttrc ${USER}/.mutt/colors.muttrc
 	@ln -vsf ${DOT}/mutt/mailcap ${USER}/.mutt/mailcap
 	@ln -vsf ${DOT}/offlineimap/.offlineimaprc ${USER}/.offlineimaprc
+	@ln -vsf ${DOT}/offlineimap/offlineimap.py ${USER}/.mutt/offlineimap.py
 	@ln -vsf ${DOT}/nano/.nanorc ${USER}/.nanorc
 	@ln -vsf ${DOT}/ncmpcpp/config ${USER}/.ncmpcpp/config
 	@ln -vsf ${DOT}/ncmpcpp/keys ${USER}/.ncmpcpp/keys

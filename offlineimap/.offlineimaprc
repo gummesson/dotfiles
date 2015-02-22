@@ -1,6 +1,20 @@
+# -- .offlineimaprc ------------------------------------------------ {{{
+#
+# -- General
+# -- Gmail
+#
+# }}}
+
+# -- General ------------------------------------------------------- {{{
+
 [general]
 ui = ttyui
+pythonfile = ~/.mutt/offlineimap.py
 accounts = Gmail
+
+# }}}
+
+# -- Gmail --------------------------------------------------------- {{{
 
 [Account Gmail]
 localrepository = Gmail-Local
@@ -10,7 +24,7 @@ maxconnections = 3
 [Repository Gmail-Local]
 type = Maildir
 localfolders = ~/.mail/Gmail
-nametrans = lambda folder: "".join(("[Gmail].", folder))
+nametrans = lambda folder: gmail_prefix(folder)
 
 [Repository Gmail-Remote]
 type = IMAP
@@ -21,3 +35,7 @@ realdelete = no
 ssl = yes
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 nametrans = lambda folder: re.sub("^\[Gmail\].", "", folder)
+
+# }}}
+
+# vim:foldmethod=marker
