@@ -2,4 +2,4 @@
 
 # Usage: sync-mail
 
-offlineimap -o
+offlineimap -o -u quiet &
