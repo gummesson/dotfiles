@@ -1,8 +1,8 @@
 ! -- Colors ------------------------------------------------------- {{{
 
 *background: #002b36
-*foreground: #657b83
-*cursorColor: #93a1a1
+*foreground: #839496
+*cursorColor: #839496
 
 ! black dark/light
 *color0: #073642
