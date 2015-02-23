@@ -1,6 +1,7 @@
 # -- offline.muttrc ------------------------------------------------ {{{
 #
 # -- Base
+# -- Keybindings
 # -- Macros
 #
 # }}}
@@ -16,6 +17,13 @@ set postponed="+Gmail/Utkast"
 set mbox="+Gmail/Alla mail"
 
 mailboxes +INBOX
+
+# }}}
+
+# -- Keybindings --------------------------------------------------- {{{
+
+set query_command = "goobook query '%s'"
+bind editor <Tab> complete-query
 
 # }}}
 

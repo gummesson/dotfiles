@@ -240,6 +240,7 @@ npm:
 
 pip:
 	@pip install rainbowstream --user
+	@pip2 install goobook --user
 
 cabal:
 	@yaourt -Sa ghc

@@ -1,6 +1,7 @@
 # -- imap.muttrc --------------------------------------------------- {{{
 #
 # -- Base
+# -- Keybindings
 # -- Macros
 #
 # }}}
@@ -19,6 +20,13 @@ set mail_check="150"
 set folder="imaps://imap.gmail.com/"
 set spoolfile="+INBOX"
 set postponed="+[Gmail]/Utkast"
+
+# }}}
+
+# -- Keybindings --------------------------------------------------- {{{
+
+set query_command = "goobook query '%s'"
+bind editor <Tab> complete-query
 
 # }}}
 
