@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-# Usage: laptop-info
+# Usage: system-info
 
 volume="$(amixer sget Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')%"
 wifi="$(iwconfig wlp2s0 | sed -n '6p' | awk 'sub(/Quality=/, "") { print $2; }')"
