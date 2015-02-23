@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 
-# Usage: sync-mail
+# Usage: mailsync
 
 offlineimap -o -u quiet &
