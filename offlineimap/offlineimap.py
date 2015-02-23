@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-def gmail_prefix(folder):
+def prefix(prefix, folder):
     if folder != "INBOX":
-        return "".join(("[Gmail].", folder))
+        return "".join((prefix, folder))
     else:
         return folder

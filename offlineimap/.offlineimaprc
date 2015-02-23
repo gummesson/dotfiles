@@ -24,7 +24,7 @@ maxconnections = 3
 [Repository Gmail-Local]
 type = Maildir
 localfolders = ~/.mail/Gmail
-nametrans = lambda folder: gmail_prefix(folder)
+nametrans = lambda folder: prefix("[Gmail].", folder)
 
 [Repository Gmail-Remote]
 type = IMAP
