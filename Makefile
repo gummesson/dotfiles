@@ -19,7 +19,7 @@ SRC  = ${USER}/.local/src
 
 .PHONY: all environment tools applications graphical install \
 	shell folders files permissions link \
-	editor mux dwm frankenwm builds \
+	editor mux irc dwm frankenwm builds \
 	gems npm pip cabal packages
 
 all: install link builds packages
@@ -147,7 +147,6 @@ files:
 	@ln -vsf ${DOT}/git/.gitconfig ${USER}/.gitconfig
 	@ln -vsf ${DOT}/git/.gitignore ${USER}/.gitignore
 	@ln -vsf ${DOT}/gtk/.gtkrc-2.0 ${USER}/.gtkrc-2.0
-	@ln -vsf ${DOT}/irssi/scripts/* ${USER}/.irssi/scripts/autorun
 	@ln -vsf ${DOT}/msmtp/.msmtprc ${USER}/.msmtprc
 	@ln -vsf ${DOT}/mutt/.muttrc ${USER}/.muttrc
 	@ln -vsf ${DOT}/mutt/accounts/* ${USER}/.mutt/accounts
@@ -211,6 +210,9 @@ mux:
 	@git clone https://github.com/tonchis/tmuxify.git ${SRC}/tmuxify
 	@ln -vsf ${SRC}/tmuxify/bin/tmuxify ${BIN}/tmuxify
 
+irc:
+	@./irssi/scripts/install.sh
+
 dwm:
 	@git clone http://git.suckless.org/dwm ${SRC}/dwm
 	@./dwm/scripts/install.sh
@@ -219,7 +221,7 @@ frankenwm:
 	@git clone https://github.com/sulami/FrankenWM ${SRC}/frankenwm
 	@./frankenwm/scripts/install.sh
 
-builds: editor mux dwm frankenwm
+builds: editor mux irc dwm frankenwm
 
 # }}}
 
