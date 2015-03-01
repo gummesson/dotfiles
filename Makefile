@@ -101,6 +101,7 @@ applications:
 	@yaourt -Sa tig
 	@yaourt -Sa feednix
 	@yaourt -Sa rtorrent
+	@yaourt -Sa snb-git
 
 graphical:
 	@yaourt -Sa ttf-droid
