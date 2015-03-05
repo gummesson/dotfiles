@@ -32,7 +32,7 @@ udiskie --automount --notify &
 urxvtd --quiet --fork --opendisplay &
 
 # Start the `dropbox` daemon
-dropboxd &
+dropbox &
 
 # Bind special keys
 xbindkeys
