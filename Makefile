@@ -224,7 +224,7 @@ frankenwm:
 	@git clone https://github.com/sulami/FrankenWM ${SRC}/frankenwm
 	@./frankenwm/scripts/install.sh
 
-builds: editor mux irc dwm frankenwm
+builds: editor mux irc frankenwm
 
 # }}}
 
