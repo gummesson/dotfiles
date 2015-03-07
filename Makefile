@@ -17,7 +17,7 @@ DOT  = ${GIT}/dotfiles
 BIN  = ${USER}/.local/bin
 SRC  = ${USER}/.local/src
 
-.PHONY: all environment tools applications graphical install \
+.PHONY: all environment tools applications games graphical install \
 	shell folders files permissions link \
 	editor mux irc dwm frankenwm builds \
 	gems npm pip cabal packages
@@ -104,6 +104,9 @@ applications:
 	@yaourt -Sa feednix
 	@yaourt -Sa rtorrent
 	@yaourt -Sa snb-git
+
+games:
+	@yaourt -Sa bastet
 
 graphical:
 	@yaourt -Sa ttf-droid
