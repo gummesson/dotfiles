@@ -73,6 +73,7 @@ tools:
 	@yaourt -Sa entr
 	@yaourt -Sa git-extras-git
 	@yaourt -Sa wordnet
+	@yaourt -Sa jq
 
 applications:
 	@yaourt -Sa dmenu-xft
