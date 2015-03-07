@@ -1,8 +1,18 @@
 # -- .gtkrc-2.0 ---------------------------------------------------- {{{
 
+# -- Theme --
+
 gtk-theme-name="Numix"
 gtk-icon-theme-name="Numix-Circle"
 gtk-font-name = "Inconsolata 11.5"
+
+# -- Styles --
+
+style "vim-border-fix" {
+  bg[NORMAL] = "#262626"
+}
+
+widget "vim-main-window.*GtkForm" style "vim-border-fix"
 
 # }}}
 

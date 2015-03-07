@@ -45,6 +45,7 @@
  */
 static const AppRule rules[] = { \
     /* class         desktop  follow  float */
+    { "Gvim",        0,       True,   True  },
     { "qutebrowser", 1,       True,   False },
     { "vmd",         1,       True,   False },
     { "zathura",     2,       True,   False },
