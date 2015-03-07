@@ -27,5 +27,5 @@ curl --fail --location --output \
   http://scripts.irssi.org/scripts/trackbar.pl
 
 curl --fail --location --output \
-  $scrpath/sercount.pl \
+  $scrpath/usercount.pl \
   http://scripts.irssi.org/scripts/usercount.pl
