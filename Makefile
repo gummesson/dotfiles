@@ -107,6 +107,7 @@ applications:
 
 games:
 	@yaourt -Sa bastet
+	@yaourt -Sa myman
 
 graphical:
 	@yaourt -Sa ttf-droid
