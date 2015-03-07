@@ -74,6 +74,7 @@ tools:
 	@yaourt -Sa git-extras-git
 	@yaourt -Sa wordnet
 	@yaourt -Sa jq
+	@yaourt -Sa trickle
 
 applications:
 	@yaourt -Sa dmenu-xft
