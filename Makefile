@@ -82,7 +82,6 @@ applications:
 	@yaourt -Sa libnotify
 	@yaourt -Sa gvim
 	@yaourt -Sa tmux
-	@yaourt -Sa qutebrowser
 	@yaourt -Sa w3m
 	@yaourt -Sa surfraw
 	@yaourt -Sa dropbox
@@ -139,7 +138,6 @@ folders:
 	@mkdir -vp ${USER}/.ncmpcpp
 	@mkdir -vp ${USER}/.mutt/{certificates,accounts,cache/{bodies,headers}}
 	@mkdir -vp ${USER}/.mail/Gmail
-	@mkdir -vp ${CONF}/qutebrowser
 	@mkdir -vp ${USER}/.rtorrent/{session,watch}
 	@mkdir -vp ${CONF}/termite
 	@mkdir -vp ${USER}/.w3m
@@ -166,8 +164,6 @@ files:
 	@ln -vsf ${DOT}/nano/syntax/* ${USER}/.nano
 	@ln -vsf ${DOT}/nodejs/.jshintrc ${USER}/.jshintrc
 	@ln -vsf ${DOT}/nodejs/.eslintrc ${USER}/.eslintrc
-	@ln -vsf ${DOT}/qutebrowser/qutebrowser.conf ${CONF}/qutebrowser/qutebrowser.conf
-	@ln -vsf ${DOT}/qutebrowser/keys.conf ${CONF}/qutebrowser/keys.conf
 	@ln -vsf ${DOT}/rtorrent/.rtorrent.rc ${USER}/.rtorrent.rc
 	@ln -vsf ${DOT}/ruby/.gemrc ${USER}/.gemrc
 	@ln -vsf ${DOT}/ruby/.bundle/config ${USER}/.bundle/config
