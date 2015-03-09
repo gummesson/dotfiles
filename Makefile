@@ -115,9 +115,6 @@ graphical:
 	@yaourt -Sa ttf-dejavu
 	@yaourt -Sa ttf-inconsolata
 	@yaourt -Sa ttf-ms-fonts
-	@yaourt -Sa numix-themes
-	@yaourt -Sa numix-icon-theme-git
-	@yaourt -Sa numix-circle-icon-theme-git
 
 install: environment tools applications graphical
 
