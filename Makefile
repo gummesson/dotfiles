@@ -116,6 +116,7 @@ graphical:
 	@yaourt -Sa ttf-inconsolata
 	@yaourt -Sa ttf-ms-fonts
 	@yaourt -Sa gtk-theme-bsm-simple
+	@yaourt -Sa faenza-icon-theme
 
 install: environment tools applications graphical
 
