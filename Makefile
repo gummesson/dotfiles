@@ -19,7 +19,7 @@ SRC  = ${USER}/.local/src
 
 .PHONY: all environment tools applications games graphical install \
 	shell folders files permissions link \
-	editor mux irc dwm frankenwm builds \
+	editor mux irc frankenwm builds \
 	gems npm pip cabal packages
 
 all: install link builds packages
@@ -215,10 +215,6 @@ mux:
 
 irc:
 	@./irssi/scripts/install.sh
-
-dwm:
-	@git clone http://git.suckless.org/dwm ${SRC}/dwm
-	@./dwm/scripts/install.sh
 
 frankenwm:
 	@git clone https://github.com/sulami/FrankenWM ${SRC}/frankenwm
