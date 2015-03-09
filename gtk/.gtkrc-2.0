@@ -2,8 +2,8 @@
 
 # -- Theme --
 
-gtk-theme-name="Numix"
 gtk-icon-theme-name="Numix-Circle"
+gtk-theme-name="BSM Simple"
 gtk-font-name = "Inconsolata 11.5"
 
 # -- Styles --

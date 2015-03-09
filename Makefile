@@ -115,6 +115,7 @@ graphical:
 	@yaourt -Sa ttf-dejavu
 	@yaourt -Sa ttf-inconsolata
 	@yaourt -Sa ttf-ms-fonts
+	@yaourt -Sa gtk-theme-bsm-simple
 
 install: environment tools applications graphical
 
