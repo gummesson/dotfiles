@@ -1,6 +1,6 @@
 # -- .urlview ------------------------------------------------------ {{{
 
-COMMAND qutebrowser %s
+COMMAND chromium %s
 
 # }}}
 
