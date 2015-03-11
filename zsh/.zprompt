@@ -10,7 +10,7 @@ function __git_dirty() {
   [[ -d .git  ]] && [[ $(git status --porcelain 2> /dev/null) != "" ]] && echo "* "
 }
 
-PROMPT="%{$fg[red]%}%~ %{$fg[yellow]%}\$(__git_branch)%{$fg[green]%}\$(__git_dirty)%{$reset_color%}➔ "
+PROMPT="%{$fg[red]%}%~ %{$fg[yellow]%}\$(__git_branch)%{$fg[green]%}\$(__git_dirty)%{$reset_color%}"
 SPROMPT="Correct %{$fg[red]%}%R%{$reset_color%} to %{$fg[green]%}%r%{$reset_color%}? (yes, no, abort, edit) "
 
 function zle-line-init zle-keymap-select {
