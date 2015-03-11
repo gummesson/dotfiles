@@ -69,7 +69,7 @@ static const AppRule rules[] = { \
 static const char *termcmd[] = { "urxvtc", NULL };
 static const char *menucmd[] = { "dmenu_run",
                                  "-i",
-                                 "-fn", "Inconsolata-13",
+                                 "-fn", "M+ 1m-11",
                                  "-nb", "#303030",
                                  "-nf", "#9e9e9e",
                                  "-sb", "#303030",

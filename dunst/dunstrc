@@ -1,7 +1,7 @@
 # -- dunstrc ------------------------------------------------------- {{{
 
 [global]
-    font = Inconsolata 13
+    font = M+ 1m 11.5
     allow_markup = yes
     format = "<b>%s</b>\n%b"
     sort = yes

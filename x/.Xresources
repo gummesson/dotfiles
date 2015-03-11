@@ -26,13 +26,13 @@ URxvt.transparent: false
 URxvt.fading: 0
 URxvt.loginShell: true
 URxvt.saveLines: 500
-URxvt.internalBorder: 4
+URxvt.internalBorder: 0
 URxvt.urgentOnBell: true
 
 ! -- Font --
 
-URxvt.font: xft:Inconsolata:pixelsize=19
-URxvt.boldFont: xft:Inconsolata:bold:pixelsize=19
+URxvt.font: xft:M+ 1m:pixelsize=17
+URxvt.boldFont: xft:M+ 1m:bold:pixelsize=17
 URxvt.allow_bold: true
 URxvt.lineSpace: 0
 URxvt.letterSpace: -1
