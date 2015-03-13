@@ -1,7 +1,7 @@
 # -- dunstrc ------------------------------------------------------- {{{
 
 [global]
-    font = Fira Mono 11.5
+    font = Fira Mono 11
     allow_markup = yes
     format = "<b>%s</b>\n%b"
     sort = yes
