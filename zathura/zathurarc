@@ -2,7 +2,7 @@
 
 # -- Font --
 
-set font "M+ 1m normal 11.5"
+set font "Fira Mono normal 11.5"
 
 # -- UI --
 

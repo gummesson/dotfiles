@@ -114,7 +114,7 @@ graphical:
 	@yaourt -Sa ttf-liberation
 	@yaourt -Sa ttf-dejavu
 	@yaourt -Sa ttf-inconsolata
-	@yaourt -Sa ttf-mplus
+	@yaourt -Sa ttf-fira-mono
 	@yaourt -Sa ttf-ms-fonts
 	@yaourt -Sa gtk-theme-bsm-simple
 	@yaourt -Sa faenza-icon-theme
