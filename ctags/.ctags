@@ -1,12 +1,18 @@
 --recurse=yes
 --fields=-k
 --fields=+K
+
+--exclude=.bundle
+--exclude=.gems
 --exclude=.git
---exclude=node_modules
+--exclude=.gs
+--exclude=_site
 --exclude=bower_components
---exclude=log
---exclude=tmp
 --exclude=dist
+--exclude=node_modules
+--exclude=public
+--exclude=tmp
+--exclude=vendor
 
 --langdef=css
 --langmap=css:.css
