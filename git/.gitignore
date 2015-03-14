@@ -4,11 +4,13 @@
 .gems/
 .gs/
 .sass-cache/
-node_modules/
 bower_components/
+coverage/
+node_modules/
+tmp/
 vendor/
-*.log
 *.lock
+*.log
 tags
 
 # }}}
