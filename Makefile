@@ -150,6 +150,7 @@ files:
 	@ln -vsf ${DOT}/bin/* ${USER}/.local/bin
 	@ln -vsf ${DOT}/ctags/.ctags ${USER}/.ctags
 	@ln -vsf ${DOT}/dunst/dunstrc ${CONF}/dunst/dunstrc
+	@ln -vsf ${DOT}/editorconfig/.editorconfig ${USER}/.editorconfig
 	@ln -vsf ${DOT}/git/.gitconfig ${USER}/.gitconfig
 	@ln -vsf ${DOT}/git/.gitignore ${USER}/.gitignore
 	@ln -vsf ${DOT}/gtk/.gtkrc-2.0 ${USER}/.gtkrc-2.0
