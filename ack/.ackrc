@@ -20,16 +20,15 @@
 
 # -- Directories --
 
---ignore-dir=log
---ignore-dir=tmp
---ignore-dir=node_modules
---ignore-dir=bower_components
---ignore-dir=public
---ignore-dir=_site
---ignore-dir=vendor
 --ignore-dir=.bundle
 --ignore-dir=.gems
 --ignore-dir=.gs
+--ignore-dir=_site
+--ignore-dir=bower_components
+--ignore-dir=node_modules
+--ignore-dir=public
+--ignore-dir=tmp
+--ignore-dir=vendor
 
 # -- Files --
 
