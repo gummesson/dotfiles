@@ -1,0 +1,41 @@
+! -- Colors ------------------------------------------------------- {{{
+ 
+*background: #111314
+*foreground: #b7bbb7
+*cursorcolor: #b7bbb7
+ 
+! Black
+*color0: #2c2f33
+*color8: #4b5056
+ 
+! Red
+*color1: #b04c50
+*color9: #b04c50
+ 
+! Green
+*color2: #919652
+*color10: #94985b
+ 
+! Yellow
+*color3: #e2995c
+*color11: #e2995c
+ 
+! Blue
+*color4: #66899d
+*color12: #66899d
+ 
+! Magenta
+*color5: #8d6494
+*color13: #8d6494
+ 
+! Cyan
+*color6: #527c77
+*color14: #527c77
+ 
+! White
+*color7: #606360
+*color15: #dde3dc
+ 
+! }}}
+ 
+! vim:foldmethod=marker:filetype=xdefaults
