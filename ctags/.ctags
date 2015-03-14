@@ -8,6 +8,7 @@
 --exclude=.gs
 --exclude=_site
 --exclude=bower_components
+--exclude=coverage
 --exclude=dist
 --exclude=node_modules
 --exclude=public

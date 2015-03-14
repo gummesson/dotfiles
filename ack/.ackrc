@@ -25,6 +25,7 @@
 --ignore-dir=.gs
 --ignore-dir=_site
 --ignore-dir=bower_components
+--ignore-dir=coverage
 --ignore-dir=dist
 --ignore-dir=node_modules
 --ignore-dir=public
