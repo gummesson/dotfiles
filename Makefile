@@ -51,6 +51,7 @@ tools:
 	@yaourt -Sa unclutter
 	@yaourt -Sa htop
 	@yaourt -Sa acpi
+	@yaourt -Sa powertop
 	@yaourt -Sa xorg-xbacklight
 	@yaourt -Sa xbindkeys
 	@yaourt -Sa xclip
