@@ -1,8 +1,5 @@
 # -- .zshrc -------------------------------------------------------- {{{
 #
-#    Settings heavily borrowed from "Oh my Zsh!"
-#    (https://github.com/robbyrussell/oh-my-zsh)
-#
 # -- Sources
 # -- History
 # -- Keys
