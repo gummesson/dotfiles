@@ -1,6 +1,7 @@
 # -- .exports ------------------------------------------------------ {{{
 #
 # -- Variables
+# -- Sources
 #
 # }}}
 
@@ -10,9 +11,24 @@ PATH="${HOME}/.local/bin:$(ruby -rubygems -e 'puts Gem.user_dir')/bin:${HOME}/.c
 LANG="en_US.UTF-8"
 EDITOR="vim"
 PAGER="less"
+KEYTIMEOUT=1
+
+# -- grep --
+
 GREP_OPTIONS="--color=auto"
 GREP_COLOR="1;32"
-KEYTIMEOUT=1
+
+# -- nvm --
+
+NVM_DIR="$HOME/.nvm"
+
+# }}}
+
+# -- Sources ------------------------------------------------------- {{{
+
+# -- nvm --
+
+source /usr/share/nvm/nvm.sh
 
 # }}}
 
