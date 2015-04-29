@@ -7,7 +7,7 @@
 
 # -- Variables ----------------------------------------------------- {{{
 
-PATH="${HOME}/.local/bin:$(ruby -rubygems -e 'puts Gem.user_dir')/bin:${HOME}/.cabal/bin:${PATH}"
+PATH="$HOME/.local/bin:$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$HOME/.cabal/bin:$PATH"
 LANG="en_US.UTF-8"
 EDITOR="vim"
 PAGER="less"
