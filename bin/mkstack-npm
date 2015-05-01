@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+modules=(
+  "tape"
+  "browserify"
+  "smokestack"
+  "tap-closer"
+  "covert"
+)
+
+for module in ${modules[@]}; do
+  npm install ${module} --save-dev
+done

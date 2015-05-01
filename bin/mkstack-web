@@ -1,0 +1,24 @@
+#!/usr/bin/env sh
+
+modules=(
+  "cssnext"
+  "browserify"
+  "babelify"
+  "uglifyify"
+  "rimraf"
+  "mkdirp"
+  "cpy"
+  "http-server"
+)
+
+assets=(
+  "normalize.css"
+)
+
+for module in ${modules[@]}; do
+  npm install ${module} --save-dev
+done
+
+for asset in ${assets[@]}; do
+  npm install ${asset} --save
+done
