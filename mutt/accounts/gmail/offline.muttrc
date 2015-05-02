@@ -40,4 +40,5 @@ macro index,pager gs "<change-folder>=Gmail/Skickat<enter>" "Go to sent gmail"
 macro index,pager ga "<change-folder>=Gmail/Alla mail<enter>" "Go to all mail"
 
 # }}}
+
 # vim:foldmethod=marker
