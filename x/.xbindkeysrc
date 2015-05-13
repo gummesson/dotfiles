@@ -1,9 +1,9 @@
 # -- .xbindkeysrc -------------------------------------------------- {{{
 
-"xbacklight -inc 20"
+"light -A 10"
   XF86MonBrightnessUp
 
-"xbacklight -dec 20"
+"light -U 10"
   XF86MonBrightnessDown
 
 "amixer --quiet sset Master 5-"

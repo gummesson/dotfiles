@@ -54,6 +54,7 @@ tools:
 	@yaourt -Sa acpi
 	@yaourt -Sa powertop
 	@yaourt -Sa xorg-xbacklight
+	@yaourt -Sa light
 	@yaourt -Sa xbindkeys
 	@yaourt -Sa xclip
 	@yaourt -Sa xdotool
