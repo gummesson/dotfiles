@@ -108,6 +108,7 @@ applications:
 	@yaourt -Sa feednix
 	@yaourt -Sa rtorrent
 	@yaourt -Sa snb-git
+	@yaourt -Sa rtv
 
 games:
 	@yaourt -Sa bastet
