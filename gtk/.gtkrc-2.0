@@ -4,7 +4,7 @@
 
 gtk-theme-name="BSM Simple"
 gtk-icon-theme-name="Faenza"
-gtk-font-name = "Fira Mono 9"
+gtk-font-name = "Fira Sans 10"
 
 # -- Styles --
 
