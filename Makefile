@@ -257,9 +257,9 @@ cabal:
 	@yaourt -Sa happy
 	@yaourt -Sa alex
 	@cabal install pandoc
-	@yaourt -Sa textlive-core
-	@yaourt -Sa textlive-latexextra
-	@yaourt -Sa textlive-fontsextra
+	@yaourt -Sa texlive-core
+	@yaourt -Sa texlive-latexextra
+	@yaourt -Sa texlive-fontsextra
 
 packages: gems npm pip cabal
 
