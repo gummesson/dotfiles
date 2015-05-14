@@ -256,6 +256,7 @@ cabal:
 	@yaourt -Sa haddock
 	@yaourt -Sa happy
 	@yaourt -Sa alex
+	@cabal update
 	@cabal install pandoc
 	@yaourt -Sa texlive-core
 	@yaourt -Sa texlive-latexextra
