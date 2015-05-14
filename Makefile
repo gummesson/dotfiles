@@ -102,6 +102,7 @@ applications:
 	@yaourt -Sa ranger
 	@yaourt -Sa pcmanfm
 	@yaourt -Sa mutt
+	@yaourt -Sa goobook-git
 	@yaourt -Sa offlineimap
 	@yaourt -Sa tig
 	@yaourt -Sa feednix
@@ -246,7 +247,6 @@ npm:
 
 pip:
 	@pip install rainbowstream --user
-	@pip2 install goobook --user
 
 cabal:
 	@yaourt -Sa ghc
