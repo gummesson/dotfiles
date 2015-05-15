@@ -15,7 +15,7 @@ else
   # Disable the touchpad (when typing)
   # and set the brightness of the screen
   syndaemon -k -i 1 &
-  light -S 20
+  light -S 15
 fi &
 
 # Hide the cursor after a second of inactivity
