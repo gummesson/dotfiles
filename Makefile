@@ -52,6 +52,7 @@ tools:
 	@yaourt -Sa unclutter
 	@yaourt -Sa htop
 	@yaourt -Sa acpi
+	@yaourt -Sa tlp
 	@yaourt -Sa xorg-xbacklight
 	@yaourt -Sa light
 	@yaourt -Sa xbindkeys

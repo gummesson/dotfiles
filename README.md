@@ -34,3 +34,7 @@ sudo keyboardctl --set-layout se
 ~~~ sh
 nmtui
 ~~~
+
+### TLP
+
+See the [ArchWiki](https://wiki.archlinux.org/index.php/TLP#Installation).
