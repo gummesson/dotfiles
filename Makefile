@@ -70,7 +70,6 @@ tools:
 	@yaourt -Sa msmtp
 	@yaourt -Sa msmtp-mta
 	@yaourt -Sa urlview
-	@yaourt -Sa markdown
 	@yaourt -Sa ctags
 	@yaourt -Sa entr
 	@yaourt -Sa git-extras-git
