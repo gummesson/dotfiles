@@ -242,7 +242,6 @@ npm:
 	@npm install -g internal-ip
 	@npm install -g irish-pub
 	@npm install -g write-good
-	@npm install -g mversion
 	@npm install -g vmd
 
 pip:
