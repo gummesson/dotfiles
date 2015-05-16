@@ -46,7 +46,6 @@ environment:
 	@yaourt -Sa ruby
 	@yaourt -Sa nodejs
 	@yaourt -Sa nvm
-	@yaourt -Sa phantomjs
 
 tools:
 	@yaourt -Sa unclutter
