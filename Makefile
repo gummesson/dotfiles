@@ -75,6 +75,7 @@ tools:
 	@yaourt -Sa wordnet
 	@yaourt -Sa jq
 	@yaourt -Sa trickle
+	@yaourt -Sa tty-clock
 
 applications:
 	@yaourt -Sa dmenu-xft
