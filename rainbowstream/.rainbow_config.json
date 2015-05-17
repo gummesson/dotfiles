@@ -3,7 +3,7 @@
     "IMAGE_ON_TERM": false,
     "THEME": "monokai",
     "ASCII_ART": false,
-    "HIDE_PROMPT": false,
+    "HIDE_PROMPT": true,
     "PREFIX": "#owner#place#me#keyword",
     "SEARCH_TYPE": "mixed",
     "SEARCH_MAX_RECORD": 5,
