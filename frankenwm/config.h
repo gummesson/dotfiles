@@ -44,14 +44,14 @@
  * you do not wish to use this functionality.
  */
 static const AppRule rules[] = { \
-    /* class         desktop  follow  float */
-    { "Gvim",        0,       True,   True  },
-    { "Chromium",    1,       True,   False },
-    { "vmd",         1,       True,   False },
-    { "zathura",     2,       True,   False },
-    { "mpv",         2,       True,   False },
-    { "feh",         2,       True,   False },
-    { "Pcmanfm",     2,       True,   False },
+    /* class              desktop  follow  float */
+    { "Gvim",             0,       True,   True  },
+    { "Chromium",         1,       True,   False },
+    { "Google Chrome",    1,       True,   False },
+    { "zathura",          2,       True,   False },
+    { "mpv",              2,       True,   False },
+    { "feh",              2,       True,   False },
+    { "Pcmanfm",          2,       True,   False },
 };
 
 /* helper for spawning shell commands, usually you don't edit this */
