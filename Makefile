@@ -83,7 +83,7 @@ applications:
 	@yaourt -Sa libnotify
 	@yaourt -Sa gvim
 	@yaourt -Sa tmux
-	@yaourt -Sa chromium
+	@yaourt -Sa google-chrome-stable
 	@yaourt -Sa w3m
 	@yaourt -Sa surfraw
 	@yaourt -Sa dropbox
