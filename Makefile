@@ -45,6 +45,7 @@ environment:
 	@yaourt -Sa python2-pip
 	@yaourt -Sa ruby
 	@yaourt -Sa nodejs
+	@yaourt -Sa npm
 	@yaourt -Sa nvm
 
 tools:
