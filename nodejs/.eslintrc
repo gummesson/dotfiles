@@ -15,7 +15,6 @@
     "handle-callback-err": 2,
     "valid-typeof": 2,
     "quotes": [2, "single", "avoid-escape"],
-    "dot-notation": [2, { "allowKeywords": false }],
     "no-use-before-define": 0,
     "no-multi-spaces": 0,
     "no-underscore-dangle": 0,
