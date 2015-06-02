@@ -51,6 +51,7 @@ URxvt.cursorUnderline: false
 ! -- Colors --
 
 #include "/home/ellen/.xcolors"
+URxvt.intensityStyles: false
 
 ! -- Extensions --
 
