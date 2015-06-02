@@ -80,6 +80,7 @@ tools:
 	@yaourt -Sa calc
 
 applications:
+	@yaourt -Sa lemonbar-git-xft
 	@yaourt -Sa dmenu-xft
 	@yaourt -Sa dunst
 	@yaourt -Sa libnotify
