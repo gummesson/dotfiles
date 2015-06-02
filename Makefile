@@ -175,6 +175,7 @@ files:
 	@ln -vsf ${DOT}/nano/syntax/* ${USER}/.nano
 	@ln -vsf ${DOT}/nodejs/.jshintrc ${USER}/.jshintrc
 	@ln -vsf ${DOT}/nodejs/.eslintrc ${USER}/.eslintrc
+	@ln -vsf ${DOT}/nodejs/.tern-config ${USER}/.tern-config
 	@ln -vsf ${DOT}/rainbowstream/.rainbow_config.json ${USER}/.rainbow_config.json
 	@ln -vsf ${DOT}/rtorrent/.rtorrent.rc ${USER}/.rtorrent.rc
 	@ln -vsf ${DOT}/ruby/.gemrc ${USER}/.gemrc
