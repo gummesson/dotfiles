@@ -3,7 +3,7 @@
 # Usage: status-bar
 
 volume="$(amixer sget Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')%"
-wifi="$(iwconfig wlp2s0 | sed -n '6p' | awk 'sub(/Quality=/, "") { print $2; }')"
+wifi="$(iwconfig wlp2s0 | awk 'sub(/Quality=/, "") { print $2; }')"
 battery="$(acpi -b | awk 'gsub(/,/, "") { print $4 " (" $3 ")"; }')"
 clock="$(date '+%H:%M')"
 
