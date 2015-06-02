@@ -5,7 +5,7 @@ volume() {
 }
 
 battery() {
-  echo "$(acpi -b | awk 'gsub(/,/, "") { print $4 " (" $3 ")"; }')"
+  echo "$(acpi -b | awk 'gsub(/,/, "") { print $4; }')"
 }
 
 clock() {
