@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+
+volume() {
+  echo "$(amixer sget Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')%"
+}
+
+battery() {
+  echo "$(acpi -b | awk 'gsub(/,/, "") { print $4 " (" $3 ")"; }')"
+}
+
+clock() {
+  echo "$(date '+%H:%M')"
+}
+
+while true; do
+  echo "%{c}$(volume) • $(battery) • $(clock)"
+  sleep 1
+done | lemonbar -p -d -g x24xx -F "#FF9E9E9E" -B "#FF303030" -f "Fira Mono-11"

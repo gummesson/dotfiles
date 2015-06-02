@@ -11,9 +11,9 @@
 
 /* EDIT THIS: general settings */
 #define MASTER_SIZE     0.5          /* master-stack ratio */
-#define SHOW_PANEL      False        /* show panel by default on exec */
+#define SHOW_PANEL      True         /* show panel by default on exec */
 #define TOP_PANEL       True         /* False mean panel is on bottom */
-#define PANEL_HEIGHT    18           /* 0 for no space for panel, thus no panel */
+#define PANEL_HEIGHT    24           /* 0 for no space for panel, thus no panel */
 #define DEFAULT_MODE    MONOCLE      /* TILE MONOCLE BSTACK GRID FIBONACCI EQUAL */
 #define ATTACH_ASIDE    True         /* False means new window is master */
 #define FOLLOW_MOUSE    False        /* Focus the window the mouse just entered */

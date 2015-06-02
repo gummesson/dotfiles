@@ -43,6 +43,9 @@ xsetroot -cursor_name left_ptr
 # Set background color
 xsetroot -solid "#262626"
 
+# Launch panel
+sh $HOME/.local/bin/panel &
+
 # Start `frankenwm`
 exec frankenwm
 
