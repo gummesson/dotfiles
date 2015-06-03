@@ -1,6 +1,6 @@
 # -- .urlview ------------------------------------------------------ {{{
 
-COMMAND chromium %s
+COMMAND google-chrome-stable %s
 
 # }}}
 

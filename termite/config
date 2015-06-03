@@ -18,7 +18,7 @@ transparency = 0.0
 pseudo_transparency = false
 cursor_blink = off
 cursor_shape = block
-browser = /usr/bin/chromium
+browser = /usr/bin/google-chrome-stable
 
 [colors]
 background = #212121
