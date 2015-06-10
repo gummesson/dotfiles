@@ -123,6 +123,7 @@ graphical:
 	@yaourt -Sa ttf-inconsolata
 	@yaourt -Sa ttf-fira-mono
 	@yaourt -Sa ttf-fira-sans
+	@yaourt -Sa ttf-fantasque-sans
 	@yaourt -Sa ttf-ms-fonts
 	@yaourt -Sa gtk-theme-bsm-simple
 	@yaourt -Sa faenza-icon-theme
