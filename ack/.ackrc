@@ -20,21 +20,24 @@
 
 # -- Directories --
 
---ignore-dir=.bundle
 --ignore-dir=.gems
+--ignore-dir=.git
 --ignore-dir=.gs
---ignore-dir=_site
 --ignore-dir=bower_components
+--ignore-dir=node_modules
+--ignore-dir=vendor
+--ignore-dir=build
 --ignore-dir=coverage
 --ignore-dir=dist
---ignore-dir=node_modules
+--ignore-dir=doc
 --ignore-dir=public
---ignore-dir=tmp
---ignore-dir=vendor
+--ignore-dir=www
 
 # -- Files --
 
 --ignore-file=is:tags
+--ignore-file=is:bundle.css
+--ignore-file=is:bundle.js
 
 # }}}
 
