@@ -1,19 +1,22 @@
 --recurse=yes
+--tag-relative=yes
 --fields=-k
 --fields=+K
 
---exclude=.bundle
 --exclude=.gems
 --exclude=.git
 --exclude=.gs
---exclude=_site
 --exclude=bower_components
+--exclude=node_modules
+--exclude=vendor
+--exclude=build
 --exclude=coverage
 --exclude=dist
---exclude=node_modules
+--exclude=doc
 --exclude=public
---exclude=tmp
---exclude=vendor
+--exclude=www
+--exclude=bundle.css
+--exclude=bundle.js
 
 --langdef=css
 --langmap=css:.css
