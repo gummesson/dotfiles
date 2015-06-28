@@ -124,6 +124,7 @@ graphical:
 	@yaourt -Sa ttf-fira-sans
 	@yaourt -Sa ttf-fantasque-sans
 	@yaourt -Sa ttf-anonymous-pro
+	@yaourt -Sa terminus-font
 	@yaourt -Sa ttf-ms-fonts
 	@yaourt -Sa gtk-theme-bsm-simple
 	@yaourt -Sa faenza-icon-theme
