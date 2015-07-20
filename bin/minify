@@ -1,7 +1,0 @@
-#!/usr/bin/env sh
-
-# minify < style.css > style.min.css
-
-awk -vRS="*/" 'BEGIN {ORS=""} { gsub(/\/\*.*/,""); }1' | \
-tr -d "\n" -s " " | \
-sed -e 's/\s{\s/{/g' -e 's/:\s/:/g' -e 's/;\s/;/g' -e 's/;}/}/g'
