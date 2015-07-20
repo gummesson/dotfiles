@@ -32,7 +32,6 @@ environment:
 	@yaourt -Sa rxvt-unicode
 	@yaourt -Sa urxvt-fullscreen
 	@yaourt -Sa urxvt-font-size-git
-	@yaourt -Sa termite
 	@yaourt -Sa zsh
 	@yaourt -Sa zsh-completions
 	@yaourt -Sa libxcb
@@ -151,7 +150,6 @@ folders:
 	@mkdir -vp ${USER}/.mutt/{certificates,accounts,cache/{bodies,headers}}
 	@mkdir -vp ${USER}/.mail/Gmail
 	@mkdir -vp ${USER}/.rtorrent/{session,watch}
-	@mkdir -vp ${CONF}/termite
 	@mkdir -vp ${USER}/.w3m
 	@mkdir -vp ${CONF}/zathura
 
@@ -183,7 +181,6 @@ files:
 	@ln -vsf ${DOT}/ruby/.gemrc ${USER}/.gemrc
 	@ln -vsf ${DOT}/ruby/.bundle/config ${USER}/.bundle/config
 	@ln -vsf ${DOT}/surfraw/.surfraw.conf ${USER}/.surfraw.conf
-	@ln -vsf ${DOT}/termite/config ${CONF}/termite/config
 	@ln -vsf ${DOT}/tig/.tigrc ${USER}/.tigrc
 	@ln -vsf ${DOT}/tmux/.tmux.conf ${USER}/.tmux.conf
 	@ln -vsf ${DOT}/tmux/.tmuxify.layout ${USER}/.tmuxify.layout
