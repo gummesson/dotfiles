@@ -58,7 +58,6 @@ alias grh="git reset HEAD"
 
 # -- npm ----------------------------------------------------------- {{{
 
-alias npmeu="npm --registry http://registry.npmjs.eu"
 alias npmls="npm ls --depth=0"
 alias npmx="npm run"
 
