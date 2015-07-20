@@ -1,4 +1,4 @@
-#!usr/bin/env sh
+#!/usr/bin/env sh
 
 # Usage: find-replace <old> <new>
 # <https://github.com/yoshuawuyts/dotfiles/blob/master/bin/fr>
