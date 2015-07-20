@@ -10,4 +10,6 @@ find . -type f -iname "*$1*" \
   ! -path "*/bower_components*" \
   ! -path "*/vendor*" \
   ! -path "*/_site*" \
+  ! -path "*/build*" \
+  ! -path "*/www*" \
   -print

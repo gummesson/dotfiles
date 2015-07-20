@@ -3,10 +3,10 @@
 # Usage: xcolors <colorscheme>
 
 name="$1"
-src=/home/ellen/Git/dotfiles/x/colors/$name
-dest=/home/ellen/.xcolors
+src="/home/ellen/Git/dotfiles/x/colors/$name"
+dest="/home/ellen/.xcolors"
 
 if [[ -r "$src" ]]; then
   ln -sf "$src" "$dest"
-  echo "Now using colors from '$name'"
+  echo "Now using colors from $name"
 fi

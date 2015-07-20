@@ -2,7 +2,6 @@
 
 # Usage: bb-clone <username/repo>
 
-user="$(echo ${1} | awk -F '/' '{ print $1; }')"
-repo="$(echo ${1} | awk -F '/' '{ print $2; }')"
-
-git clone https://${user}@bitbucket.org/${user}/${repo}.git
+user=$(echo "$1" | awk -F '/' '{ print $1; }')
+repo=$(echo "$1" | awk -F '/' '{ print $2; }')
+git clone "https://$user@bitbucket.org/$user/$repo.git"

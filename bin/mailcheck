@@ -2,8 +2,8 @@
 
 # Usage: mailcheck
 
-inbox="$HOME/.mail/*/INBOX/new/"
-count="$(find $inbox -type f | wc -l)"
+inbox="${HOME}/.mail/*/INBOX/new/"
+count=$(find $inbox -type f | wc -l)
 
 if [[ $count == 0 ]]; then
   echo "0"
