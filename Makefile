@@ -189,7 +189,7 @@ files:
 	@ln -vsf ${DOT}/w3m/keymap ${USER}/.w3m/keymap
 	@ln -vsf ${DOT}/x/.xinitrc ${USER}/.xinitrc
 	@ln -vsf ${DOT}/x/.Xresources ${USER}/.Xresources
-	@ln -vsf ${DOT}/x/colors/solarized ${USER}/.xcolors
+	@ln -vsf ${DOT}/x/colors/base16-ocean ${USER}/.xcolors
 	@ln -vsf ${DOT}/x/.xbindkeysrc ${USER}/.xbindkeysrc
 	@ln -vsf ${DOT}/yaourt/.yaourtrc ${USER}/.yaourtrc
 	@ln -vsf ${DOT}/youtube-dl/youtube-dl.conf ${CONF}/youtube-dl.conf
