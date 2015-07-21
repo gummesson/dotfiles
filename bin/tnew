@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+# Usage: tnew
+
+tmux new-session -As "$(basename $PWD)"

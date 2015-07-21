@@ -6,7 +6,7 @@
 
 # -- Sources ------------------------------------------------------- {{{
 
-for file in ~/.{aliases,exports,functions,prompt}; do
+for file in ~/.{aliases,exports,prompt}; do
   if [[ -r "$file" ]]; then
     source "$file"
   fi

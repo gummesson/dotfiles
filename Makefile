@@ -199,7 +199,6 @@ files:
 	@ln -vsf ${DOT}/zsh/.zprompt ${USER}/.zprompt
 	@ln -vsf ${DOT}/sh/.aliases ${USER}/.aliases
 	@ln -vsf ${DOT}/sh/.exports ${USER}/.exports
-	@ln -vsf ${DOT}/sh/.functions ${USER}/.functions
 	@ln -vsf ${DOT}/sh/.dir_colors ${USER}/.dir_colors
 	@ln -vsf ${DOT}/sh/.bashrc ${USER}/.bashrc
 	@ln -vsf ${DOT}/sh/.inputrc ${USER}/.inputrc
