@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-# fz <pattern>
+# fuzzy <pattern>
 
 find . -type f -iname "*$1*" \
   ! -path "*/.git*" \

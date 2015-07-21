@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 
-# lt <depth>
+# ltree <depth>
 
 tree --dirsfirst --sort=size -ChFL "$1"
