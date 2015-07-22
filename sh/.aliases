@@ -83,6 +83,7 @@ alias today="date +%Y-%m-%d"
 alias week="date +%V"
 alias clock="tty-clock -D -c -C 7"
 alias duh="du -h -d 0 [^.]*"
+mkcd() { mkdir -p "$1" && cd "$1" }
 
 # }}}
 
