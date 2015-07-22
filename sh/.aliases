@@ -86,4 +86,4 @@ alias duh="du -h -d 0 [^.]*"
 
 # }}}
 
-# vim:oldmethod=marker:filetype=sh
+# vim:foldmethod=marker:filetype=sh
