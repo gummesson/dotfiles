@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 volume() {
-  echo $(amixer sget Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')%
+  echo "$(amixer sget Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')%"
 }
 
 battery() {
