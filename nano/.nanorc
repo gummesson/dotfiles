@@ -22,7 +22,6 @@ set smooth                    # Use smooth scrolling as the default
 set softwrap                  # Enable soft line wrapping
 set tabsize 2                 # Use this tab size instead of the default
 set tabstospaces              # Convert typed tabs to spaces
-set undo                      # Enable the new (EXPERIMENTAL) generic undo code, not just for line cuts
 set wordbounds                # Detect word boundaries more accurately by treating punctuation characters as parts of words
 
 # }}}
