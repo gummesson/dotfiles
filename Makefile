@@ -160,7 +160,7 @@ files:
 	@ln -vsf ${DOT}/dunst/dunstrc ${CONF}/dunst/dunstrc
 	@ln -vsf ${DOT}/editorconfig/.editorconfig ${USER}/.editorconfig
 	@ln -vsf ${DOT}/git/.gitconfig ${USER}/.gitconfig
-	@ln -vsf ${DOT}/git/.gitignore ${USER}/.gitignore
+	@ln -vsf ${DOT}/git/.gitexclude ${USER}/.gitexclude
 	@ln -vsf ${DOT}/gtk/.gtkrc-2.0 ${USER}/.gtkrc-2.0
 	@ln -vsf ${DOT}/msmtp/.msmtprc ${USER}/.msmtprc
 	@ln -vsf ${DOT}/mutt/.muttrc ${USER}/.muttrc
