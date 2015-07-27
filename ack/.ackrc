@@ -38,6 +38,7 @@
 --ignore-file=is:tags
 --ignore-file=is:bundle.css
 --ignore-file=is:bundle.js
+--ignore-file=is:Session.vim
 
 # }}}
 

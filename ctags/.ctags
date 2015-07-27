@@ -17,6 +17,7 @@
 --exclude=www
 --exclude=bundle.css
 --exclude=bundle.js
+--exclude=Session.vim
 
 --langdef=css
 --langmap=css:.css

@@ -11,6 +11,7 @@ tmp/
 vendor/
 *.lock
 *.log
+Session.vim
 tags
 
 # }}}
