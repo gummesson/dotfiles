@@ -2,7 +2,7 @@
 
 # Usage: tnew && tedit
 
-session=$(tmux display-message -p "#S")
+session="$(tmux display-message -p "#S")"
 window="1"
 
 tmux split-window -h

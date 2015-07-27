@@ -2,6 +2,6 @@
 
 # record <filename>
 
-resolution=$(xdpyinfo | awk '/dimensions:/ { print $2; }')
+resolution="$(xdpyinfo | awk '/dimensions:/ { print $2; }')"
 filename="$1"
 ffmpeg -f x11grab -r 25 -s "$resolution" -i :0.0 "$filename"

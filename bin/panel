@@ -5,11 +5,11 @@ volume() {
 }
 
 battery() {
-  echo $(acpi -b | awk 'gsub(/,/, "") { print $4; }')
+  echo "$(acpi -b | awk 'gsub(/,/, "") { print $4; }')"
 }
 
 clock() {
-  echo $(date '+%H:%M')
+  echo "$(date '+%H:%M')"
 }
 
 while true; do

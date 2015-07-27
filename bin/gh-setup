@@ -3,7 +3,7 @@
 # Usage: cd <project> && gh-create
 
 user="gummesson"
-repo=$(basename $PWD)
+repo="$(basename $PWD)"
 
 api="https://api.github.com/user/repos"
 ori="https://github.com/$user/$repo.git"

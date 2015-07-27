@@ -3,9 +3,9 @@
 # Usage: mailcheck
 
 inbox="${HOME}/.mail/*/INBOX/new/"
-count=$(find $inbox -type f | wc -l)
+count="$(find $inbox -type f | wc -l)"
 
-if [[ $count == 0 ]]; then
+if [[ "$count" == 0 ]]; then
   echo "0"
 else
   echo -en "$count"
