@@ -12,8 +12,8 @@ for file in ~/.{aliases,exports,prompt}; do
   fi
 done; unset file
 
-if [[ -r ~/.dir_colors ]]; then
-  eval "$(dircolors ~/.dir_colors)"
+if [[ -r ~/.dircolors ]]; then
+  eval "$(dircolors ~/.dircolors)"
 fi
 
 # }}}
