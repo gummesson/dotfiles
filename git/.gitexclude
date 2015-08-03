@@ -11,6 +11,7 @@ tmp/
 vendor/
 *.lock
 *.log
+*.wofl
 Session.vim
 tags
 
