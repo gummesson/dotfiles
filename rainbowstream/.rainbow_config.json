@@ -1,7 +1,7 @@
 {
     "HEARTBEAT_TIMEOUT": 120,
     "IMAGE_ON_TERM": false,
-    "THEME": "monokai",
+    "THEME": "tomorrow_night",
     "ASCII_ART": false,
     "HIDE_PROMPT": true,
     "PREFIX": "#owner#place#me#keyword",
