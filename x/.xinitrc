@@ -18,6 +18,9 @@ else
   light -S 10
 fi &
 
+# Enable `xorg` restarting
+setxkbmap -option terminate:ctrl_alt_nksp
+
 # Hide the cursor after a second of inactivity
 unclutter -root -idle 1 &
 
