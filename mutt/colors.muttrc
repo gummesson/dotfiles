@@ -10,15 +10,15 @@
 
 # -- Base ---------------------------------------------------------- {{{
 
-color normal        brightyellow    default
+color normal        yellow          default
 color error         red             default
 color tilde         black           default
 color message       cyan            default
 color markers       red             white
 color attachment    white           default
-color search        brightmagenta   default
-color status        brightyellow    black
-color indicator     brightblack     yellow
+color search        magenta         default
+color status        black           blue
+color indicator     black           yellow
 color tree          yellow          default                                     # Arrow in threads
 
 mono  bold          bold
@@ -31,26 +31,26 @@ mono  error         bold
 # -- Index --------------------------------------------------------- {{{
 
 color index         red             default         "~A"                        # All messages
-color index         brightred       default         "~E"                        # Expired messages
+color index         red             default         "~E"                        # Expired messages
 color index         blue            default         "~N"                        # New messages
 color index         blue            default         "~O"                        # Old messages
-color index         brightmagenta   default         "~Q"                        # Messages that have been replied to
-color index         brightgreen     default         "~R"                        # Read messages
+color index         magenta         default         "~Q"                        # Messages that have been replied to
+color index         green           default         "~R"                        # Read messages
 color index         blue            default         "~U"                        # Unread messages
 color index         blue            default         "~U~$"                      # Unread, unreferenced messages
-color index         brightyellow    default         "~v"                        # Messages part of a collapsed thread
-color index         brightyellow    default         "~P"                        # Messages from me
+color index         yellow          default         "~v"                        # Messages part of a collapsed thread
+color index         yellow          default         "~P"                        # Messages from me
 color index         cyan            default         "~p!~F"                     # Messages to me
 color index         cyan            default         "~N~p!~F"                   # New messages to me
 color index         cyan            default         "~U~p!~F"                   # Unread messages to me
-color index         brightgreen     default         "~R~p!~F"                   # Messages to me
+color index         green           default         "~R~p!~F"                   # Messages to me
 color index         red             default         "~F"                        # Flagged messages
 color index         red             default         "~F~p"                      # Flagged messages to me
 color index         red             default         "~N~F"                      # New flagged messages
 color index         red             default         "~N~F~p"                    # New flagged messages to me
 color index         red             default         "~U~F~p"                    # New flagged messages to me
 color index         black           red             "~D"                        # Deleted messages
-color index         brightcyan      default         "~v~(!~N)"                  # Collapsed thread with no unread
+color index         cyan            default         "~v~(!~N)"                  # Collapsed thread with no unread
 color index         yellow          default         "~v~(~N)"                   # Collapsed thread with some unread
 color index         green           default         "~N~v~(~N)"                 # Collapsed thread with unread parent
 color index         red             black           "~v~(~F)!~N"                # Collapsed thread with flagged, no unread
@@ -64,8 +64,8 @@ color index         yellow          red             "~v~(~D)"                   
 
 # -- Headers ------------------------------------------------------- {{{
 
-color hdrdefault    brightgreen     default
-color header        brightyellow    default         "^(From)"
+color hdrdefault    green           default
+color header        yellow          default         "^(From)"
 color header        blue            default         "^(Subject)"
 
 # }}}
@@ -76,18 +76,18 @@ color quoted        blue            default
 color quoted1       cyan            default
 color quoted2       yellow          default
 color quoted3       red             default
-color quoted4       brightred       default
+color quoted4       red             default
 
-color signature     brightgreen     default
+color signature     green           default
 color bold          black           default
 color underline     black           default
 color normal        default         default
 
-color body          brightcyan      default         "[;:][-o][)/(|]"
-color body          brightcyan      default         "[;:][)(|]"
-color body          brightcyan      default         "[*]?((N)?ACK|CU|LOL|SCNR|BRB|BTW|CWYL|FWIW|vbg|GD&R|HTH|HTHBE|IMHO|IMNSHO|IRL|RTFM|ROTFL|ROFL|YMMV)[*]?"
-color body          brightcyan      default         "[ ][*][^*]*[*][ ]?"
-color body          brightcyan      default         "[ ]?[*][^*]*[*][ ]"
+color body          cyan            default         "[;:][-o][)/(|]"
+color body          cyan            default         "[;:][)(|]"
+color body          cyan            default         "[*]?((N)?ACK|CU|LOL|SCNR|BRB|BTW|CWYL|FWIW|vbg|GD&R|HTH|HTHBE|IMHO|IMNSHO|IRL|RTFM|ROTFL|ROFL|YMMV)[*]?"
+color body          cyan            default         "[ ][*][^*]*[*][ ]?"
+color body          cyan            default         "[ ]?[*][^*]*[*][ ]"
 
 # }}}
 
@@ -95,9 +95,9 @@ color body          brightcyan      default         "[ ]?[*][^*]*[*][ ]"
 
 color body          red             default         "(BAD signature)"
 color body          cyan            default         "(Good signature)"
-color body          brightblack     default         "^gpg: Good signature .*"
-color body          brightyellow    default         "^gpg: "
-color body          brightyellow    red             "^gpg: BAD signature from.*"
+color body          black           default         "^gpg: Good signature .*"
+color body          yellow          default         "^gpg: "
+color body          yellow          red             "^gpg: BAD signature from.*"
 mono  body          bold                            "^gpg: Good signature"
 mono  body          bold                            "^gpg: BAD signature from.*"
 color body          red             default         "([a-z][a-z0-9+-]*://(((([a-z0-9_.!~*'();:&=+$,-]|%[0-9a-f][0-9a-f])*@)?((([a-z0-9]([a-z0-9-]*[a-z0-9])?)\\.)*([a-z]([a-z0-9-]*[a-z0-9])?)\\.?|[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+)(:[0-9]+)?)|([a-z0-9_.!~*'()$,;:@&=+-]|%[0-9a-f][0-9a-f])+)(/([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*(;([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*)*(/([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*(;([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*)*)*)?(\\?([a-z0-9_.!~*'();/?:@&=+$,-]|%[0-9a-f][0-9a-f])*)?(#([a-z0-9_.!~*'();/?:@&=+$,-]|%[0-9a-f][0-9a-f])*)?|(www|ftp)\\.(([a-z0-9]([a-z0-9-]*[a-z0-9])?)\\.)*([a-z]([a-z0-9-]*[a-z0-9])?)\\.?(:[0-9]+)?(/([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*(;([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*)*(/([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*(;([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*)*)*)?(\\?([-a-z0-9_.!~*'();/?:@&=+$,]|%[0-9a-f][0-9a-f])*)?(#([-a-z0-9_.!~*'();/?:@&=+$,]|%[0-9a-f][0-9a-f])*)?)[^].,:;!)? \t\r\n<>\"]"
