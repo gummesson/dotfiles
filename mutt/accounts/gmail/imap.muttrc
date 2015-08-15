@@ -39,7 +39,7 @@ macro index,pager D "<save-message>=[Gmail]/Papperskorgen<enter><enter>" "Move t
 macro index,pager gi "<change-folder>=INBOX<enter>" "Go to inbox"
 macro index,pager gd "<change-folder>=[Gmail]/Utkast<enter>" "Go to drafts"
 macro index,pager gt "<change-folder>=[Gmail]/Papperskorgen<enter>" "Go to thrash"
-macro index,pager gs "<change-folder>=Gmail/Skickat<enter>" "Go to sent gmail"
+macro index,pager gs "<change-folder>=[Gmail]/Skickat<enter>" "Go to sent gmail"
 macro index,pager ga "<change-folder>=[Gmail]/Alla mail<enter>" "Go to all mail"
 
 # }}}
