@@ -35,7 +35,7 @@ color index         red             default         "~E"                        
 color index         blue            default         "~N"                        # New messages
 color index         blue            default         "~O"                        # Old messages
 color index         magenta         default         "~Q"                        # Messages that have been replied to
-color index         green           default         "~R"                        # Read messages
+color index         default         default         "~R"                        # Read messages
 color index         blue            default         "~U"                        # Unread messages
 color index         blue            default         "~U~$"                      # Unread, unreferenced messages
 color index         yellow          default         "~v"                        # Messages part of a collapsed thread
@@ -43,7 +43,7 @@ color index         yellow          default         "~P"                        
 color index         cyan            default         "~p!~F"                     # Messages to me
 color index         cyan            default         "~N~p!~F"                   # New messages to me
 color index         cyan            default         "~U~p!~F"                   # Unread messages to me
-color index         green           default         "~R~p!~F"                   # Messages to me
+color index         default         default         "~R~p!~F"                   # Messages to me
 color index         red             default         "~F"                        # Flagged messages
 color index         red             default         "~F~p"                      # Flagged messages to me
 color index         red             default         "~N~F"                      # New flagged messages
@@ -53,11 +53,11 @@ color index         black           red             "~D"                        
 color index         cyan            default         "~v~(!~N)"                  # Collapsed thread with no unread
 color index         yellow          default         "~v~(~N)"                   # Collapsed thread with some unread
 color index         green           default         "~N~v~(~N)"                 # Collapsed thread with unread parent
-color index         red             black           "~v~(~F)!~N"                # Collapsed thread with flagged, no unread
-color index         yellow          black           "~v~(~F~N)"                 # Collapsed thread with some unread & flagged
-color index         green           black           "~N~v~(~F~N)"               # Collapsed thread with unread parent & flagged
-color index         green           black           "~N~v~(~F)"                 # Collapsed thread with unread parent, no unread inside, but some flagged
-color index         cyan            black           "~v~(~p)"                   # Collapsed thread with unread parent, no unread inside, some to me directly
+color index         red             default         "~v~(~F)!~N"                # Collapsed thread with flagged, no unread
+color index         yellow          default         "~v~(~F~N)"                 # Collapsed thread with some unread & flagged
+color index         green           default         "~N~v~(~F~N)"               # Collapsed thread with unread parent & flagged
+color index         green           default         "~N~v~(~F)"                 # Collapsed thread with unread parent, no unread inside, but some flagged
+color index         cyan            default         "~v~(~p)"                   # Collapsed thread with unread parent, no unread inside, some to me directly
 color index         yellow          red             "~v~(~D)"                   # Thread with deleted (doesn't differentiate between all or partial)
 
 # }}}
