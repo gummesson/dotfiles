@@ -1,29 +1,19 @@
 # -- offline.muttrc ------------------------------------------------ {{{
 #
 # -- Base
-# -- Keybindings
 # -- Macros
 #
 # }}}
 
 # -- Base ---------------------------------------------------------- {{{
 
-set sendmail = "/usr/bin/msmtp -a gmail"
-set from = "ellengummesson@gmail.com"
+source "~/.mutt/accounts/gmail/shared.muttrc"
 
 set mbox_type = Maildir
 set spoolfile = "+Gmail/INBOX"
 set postponed = "+Gmail/Utkast"
 set mbox = "+Gmail/Alla mail"
-
 mailboxes +INBOX
-
-# }}}
-
-# -- Keybindings --------------------------------------------------- {{{
-
-set query_command = "goobook query '%s'"
-bind editor <Tab> complete-query
 
 # }}}
 

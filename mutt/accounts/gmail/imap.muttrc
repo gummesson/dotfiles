@@ -1,32 +1,22 @@
 # -- imap.muttrc --------------------------------------------------- {{{
 #
 # -- Base
-# -- Keybindings
 # -- Macros
 #
 # }}}
 
 # -- Base ---------------------------------------------------------- {{{
 
-set sendmail = "/usr/bin/msmtp -a gmail"
-set from = "ellengummesson@gmail.com"
+source "~/.mutt/accounts/gmail/shared.muttrc"
+
 set imap_user = "ellengummesson@gmail.com"
 set imap_check_subscribed
-
 set imap_keepalive = "300"
 set timeout = "90"
 set mail_check = "150"
-
 set folder = "imaps://imap.gmail.com/"
 set spoolfile = "+INBOX"
 set postponed = "+[Gmail]/Utkast"
-
-# }}}
-
-# -- Keybindings --------------------------------------------------- {{{
-
-set query_command = "goobook query '%s'"
-bind editor <Tab> complete-query
 
 # }}}
 
