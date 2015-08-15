@@ -8,13 +8,13 @@
 
 # -- Base ---------------------------------------------------------- {{{
 
-set sendmail="/usr/bin/msmtp -a gmail"
-set from="ellengummesson@gmail.com"
+set sendmail = "/usr/bin/msmtp -a gmail"
+set from = "ellengummesson@gmail.com"
 
 set mbox_type = Maildir
-set spoolfile="+Gmail/INBOX"
-set postponed="+Gmail/Utkast"
-set mbox="+Gmail/Alla mail"
+set spoolfile = "+Gmail/INBOX"
+set postponed = "+Gmail/Utkast"
+set mbox = "+Gmail/Alla mail"
 
 mailboxes +INBOX
 

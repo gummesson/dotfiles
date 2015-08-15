@@ -12,12 +12,12 @@
 
 # -- Base ---------------------------------------------------------- {{{
 
-set realname="Ellen Gummesson"
-set use_from="yes"
-set editor="vim"
+set realname = "Ellen Gummesson"
+set use_from = "yes"
+set editor = "vim"
 set sendmail_wait = 0
-set folder="~/.mail"
-set delete=yes
+set folder = "~/.mail"
+set delete = yes
 unset record
 
 source "/home/ellen/.mutt/accounts/gmail/offline.muttrc"
@@ -32,10 +32,10 @@ source "/home/ellen/.mutt/colors.muttrc"
 
 # -- Paths --------------------------------------------------------- {{{
 
-set header_cache="~/.mutt/cache/headers"
-set message_cachedir="~/.mutt/cache/bodies"
-set certificate_file="~/.mutt/certificates"
-set mailcap_path="~/.mutt/mailcap"
+set header_cache = "~/.mutt/cache/headers"
+set message_cachedir = "~/.mutt/cache/bodies"
+set certificate_file = "~/.mutt/certificates"
+set mailcap_path = "~/.mutt/mailcap"
 
 # }}}
 
@@ -47,16 +47,9 @@ folder-hook Gmail/* source "/home/ellen/.mutt/accounts/gmail/offline.muttrc"
 #
 # -- Views --------------------------------------------------------- {{{
 
-set sort=threads
-set sort_aux=reverse-last-date-received
-unset move
-unset mark_old
-
-auto_view text/html
-alternative_order text/plain text/html
+set sort = threads
+set sort_aux = reverse-last-date-received
 set pager_stop
-unset markers
-
 set askcc
 set fcc_attach
 set forward_format = "Fwd: %s"
@@ -67,28 +60,30 @@ set reply_to
 set reverse_name
 set include
 set forward_quote
-unset mime_forward
-
 set edit_headers
+set smart_wrap = yes
+unset move
+unset mark_old
+unset mime_forward
+unset markers
+auto_view text/html
+alternative_order text/plain text/html
 
 # }}}
 
 # -- Keybindings --------------------------------------------------- {{{
 
-bind index "^" imap-fetch-mail
-bind index gg  first-entry
-bind index G   last-entry
-bind index R   group-reply
-
-bind pager k  previous-line
-bind pager j  next-line
-bind pager gg top
-bind pager G  bottom
-bind pager R  group-reply
-
-bind attach <return> view-mailcap
-
-bind compose p postpone-message
+bind index   "^"      imap-fetch-mail
+bind index   gg       first-entry
+bind index   G        last-entry
+bind index   R        group-reply
+bind pager   k        previous-line
+bind pager   j        next-line
+bind pager   gg       top
+bind pager   G        bottom
+bind pager   R        group-reply
+bind attach  <return> view-mailcap
+bind compose p        postpone-message
 
 # }}}
 
