@@ -3,7 +3,6 @@
 # -- Base
 # -- Colors
 # -- Paths
-# -- Hooks
 # -- Views
 # -- Keybindings
 # -- Macros
@@ -39,12 +38,6 @@ set mailcap_path = "~/.mutt/mailcap"
 
 # }}}
 
-# -- Hooks --------------------------------------------------------- {{{
-
-folder-hook Gmail/* source "/home/ellen/.mutt/accounts/gmail/offline.muttrc"
-
-# }}}
-#
 # -- Views --------------------------------------------------------- {{{
 
 set sort = threads
