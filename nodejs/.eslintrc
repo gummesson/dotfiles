@@ -91,7 +91,7 @@
     "no-useless-call": 2,
     "no-with": 2,
     "one-var": [2, { "initialized": "never" }],
-    "operator-linebreak": [2, "after"],
+    "operator-linebreak": [2, "before"],
     "quotes": [2, "single", "avoid-escape"],
     "radix": 2,
     "semi": [2, "never"],
