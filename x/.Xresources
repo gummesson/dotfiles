@@ -31,10 +31,10 @@ URxvt.urgentOnBell: true
 
 ! -- Font --
 
-URxvt.font: xft:Fira Mono:Regular:pixelsize=16
-URxvt.boldFont: xft:Fira Mono:Bold:pixelsize=16
-URxvt.italicFont: xft:Fira Mono:Italic:pixelsize=16
-URxvt.boldItalicFont: xft:Fira Mono:Bold:Italic:pixelsize=16
+URxvt.font: xft:Fantasque Sans Mono:Regular:pixelsize=18
+URxvt.boldFont: xft:Fantasque Sans Mono:Bold:pixelsize=18
+URxvt.italicFont: xft:Fantasque Sans Mono:Italic:pixelsize=18
+URxvt.boldItalicFont: xft:Fantasque Sans Mono:Bold:Italic:pixelsize=18
 URxvt.lineSpace: 0
 URxvt.letterSpace: -1
 
