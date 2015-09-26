@@ -109,6 +109,7 @@ applications:
 	@yaourt -Sa rtorrent
 	@yaourt -Sa rtv
 	@yaourt -Sa pinta
+	@yaourt -Sa graphviz
 
 games:
 	@yaourt -Sa bastet
