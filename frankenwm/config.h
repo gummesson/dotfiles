@@ -13,7 +13,7 @@
 #define MASTER_SIZE     0.5          /* master-stack ratio */
 #define SHOW_PANEL      True         /* show panel by default on exec */
 #define TOP_PANEL       True         /* False mean panel is on bottom */
-#define PANEL_HEIGHT    24           /* 0 for no space for panel, thus no panel */
+#define PANEL_HEIGHT    20           /* 0 for no space for panel, thus no panel */
 #define DEFAULT_MODE    MONOCLE      /* TILE MONOCLE BSTACK GRID FIBONACCI EQUAL */
 #define ATTACH_ASIDE    True         /* False means new window is master */
 #define FOLLOW_MOUSE    False        /* Focus the window the mouse just entered */
@@ -68,7 +68,7 @@ static const AppRule rules[] = { \
 static const char *termcmd[] = { "urxvtc", NULL };
 static const char *menucmd[] = { "dmenu_run",
                                  "-i",
-                                 "-fn", "Fantasque Sans Mono-13",
+                                 "-fn", "Fantasque Sans Mono-12",
                                  "-nb", "#303030",
                                  "-nf", "#9e9e9e",
                                  "-sb", "#303030",

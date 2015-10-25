@@ -15,4 +15,4 @@ clock() {
 while true; do
   echo "%{c}$(volume) • $(battery) • $(clock)"
   sleep 1
-done | lemonbar -p -d -g x24xx -F "#FF9E9E9E" -B "#FF303030" -f "Fantasque Sans Mono-13"
+done | lemonbar -p -d -g x20xx -F "#FF9E9E9E" -B "#FF303030" -f "Fantasque Sans Mono-12"
