@@ -243,11 +243,10 @@ gems:
 npm:
 	@npm config set prefix ~/.local
 	@npm install -g npm-check-updates
+	@npm install -g dependency-check
 	@npm install -g eslint
 	@npm install -g internal-ip
 	@npm install -g irish-pub
-	@npm install -g write-good
-	@npm install -g vmd
 
 pip:
 	@pip install rainbowstream --user
