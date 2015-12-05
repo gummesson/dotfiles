@@ -1,7 +1,0 @@
-#!/usr/bin/env sh
-
-# Usage: mailcheck
-
-inbox="${HOME}/.mail/*/INBOX/new/"
-count=$(find $inbox -type f | wc -l)
-echo -en "${count}"
