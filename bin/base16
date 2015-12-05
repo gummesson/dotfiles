@@ -7,6 +7,6 @@ path="${HOME}/.local/src/base16-xresources"
 theme="${path}/base16-${name}.dark.xresources"
 link="${HOME}/.xcolors"
 
-if [[ -r "$theme" ]]; then
-  ln -vsf "$theme" "$link"
+if [[ -r $theme ]]; then
+  ln -vsf $theme $link
 fi
