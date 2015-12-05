@@ -10,8 +10,8 @@ hashh="${BASH_REMATCH[1]}"
 if [[ "$1" =~ dn=([^&/]+) ]];then
   filename="${BASH_REMATCH[1]}"
 else
-  filename="$hashh"
+  filename=$hashh
 fi
 
-echo "d10:magnet-uri${#1}:${1}e" > "$filename.torrent"
-cd "$dir"
+echo "d10:magnet-uri${#1}:${1}e" > "${filename}.torrent"
+cd $dir
