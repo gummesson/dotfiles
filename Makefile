@@ -19,7 +19,7 @@ SRC  = ${USER}/.local/src
 
 .PHONY: all environment tools applications games graphical install \
 	shell folders files permissions link \
-	editor mux irc frankenwm builds \
+	editor irc frankenwm builds \
 	gems npm pip cabal packages
 
 all: install link builds packages
@@ -184,7 +184,6 @@ files:
 	@ln -vsf ${DOT}/surfraw/.surfraw.conf ${USER}/.surfraw.conf
 	@ln -vsf ${DOT}/tig/.tigrc ${USER}/.tigrc
 	@ln -vsf ${DOT}/tmux/.tmux.conf ${USER}/.tmux.conf
-	@ln -vsf ${DOT}/tmux/.tmuxify.layout ${USER}/.tmuxify.layout
 	@ln -vsf ${DOT}/urlview/.urlview ${USER}/.urlview
 	@ln -vsf ${DOT}/w3m/config ${USER}/.w3m/config
 	@ln -vsf ${DOT}/w3m/keymap ${USER}/.w3m/keymap
@@ -220,10 +219,6 @@ editor:
 	@cd ${GIT}/vimfiles && ./scripts/install.sh
 	@vim +PlugInstall +qall
 
-mux:
-	@git clone https://github.com/tonchis/tmuxify.git ${SRC}/tmuxify
-	@ln -vsf ${SRC}/tmuxify/bin/tmuxify ${BIN}/tmuxify
-
 irc:
 	@./irssi/scripts/install.sh
 
@@ -231,7 +226,7 @@ frankenwm:
 	@git clone https://github.com/sulami/FrankenWM ${SRC}/frankenwm
 	@./frankenwm/scripts/install.sh
 
-builds: editor mux irc frankenwm
+builds: editor irc frankenwm
 
 # }}}
 
