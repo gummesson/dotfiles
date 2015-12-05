@@ -19,7 +19,7 @@ SRC  = ${USER}/.local/src
 
 .PHONY: all environment tools applications games graphical install \
 	shell folders files permissions link \
-	editor irc frankenwm builds \
+	frankenwm colors editor chat builds \
 	gems npm pip cabal packages
 
 all: install link builds packages
@@ -189,7 +189,6 @@ files:
 	@ln -vsf ${DOT}/w3m/keymap ${USER}/.w3m/keymap
 	@ln -vsf ${DOT}/x/.xinitrc ${USER}/.xinitrc
 	@ln -vsf ${DOT}/x/.Xresources ${USER}/.Xresources
-	@ln -vsf ${DOT}/x/colors/base16-ocean ${USER}/.xcolors
 	@ln -vsf ${DOT}/x/.xbindkeysrc ${USER}/.xbindkeysrc
 	@ln -vsf ${DOT}/yaourt/.yaourtrc ${USER}/.yaourtrc
 	@ln -vsf ${DOT}/youtube-dl/youtube-dl.conf ${CONF}/youtube-dl.conf
@@ -214,19 +213,23 @@ link: shell folders files permissions
 
 # -- Builds -------------------------------------------------------- {{{
 
+frankenwm:
+	@git clone https://github.com/sulami/FrankenWM ${SRC}/frankenwm
+	@./frankenwm/scripts/install.sh
+
+colors:
+	@git clone https://github.com/chriskempson/base16-xresources ${SRC}/base16-xresources
+	@ln -vsf ${SRC}/base16-xresources/base16-ocean.dark.xresources ${USER}/.xcolors
+
 editor:
 	@git clone https://github.com/gummesson/vimfiles.git ${GIT}/vimfiles
 	@cd ${GIT}/vimfiles && ./scripts/install.sh
 	@vim +PlugInstall +qall
 
-irc:
+chat:
 	@./irssi/scripts/install.sh
 
-frankenwm:
-	@git clone https://github.com/sulami/FrankenWM ${SRC}/frankenwm
-	@./frankenwm/scripts/install.sh
-
-builds: editor irc frankenwm
+builds: frankenwm colors editor chat
 
 # }}}
 
