@@ -73,16 +73,16 @@ alias bi="bundle install"
 # -- Miscellaneous ------------------------------------------------- {{{
 
 alias _="sudo"
-alias e="vim"
 alias reboot="sudo reboot"
 alias shutdown="sudo shutdown -h now"
 alias ping="ping -c 5"
 alias untar="tar -xzvf"
-alias unmount="udiskie-umount -a"
+alias duh="du -h -d 0 [^.]*"
 alias today="date +%Y-%m-%d"
 alias week="date +%V"
 alias clock="tty-clock -D -c -C 7"
-alias duh="du -h -d 0 [^.]*"
+alias unmount="udiskie-umount -a"
+alias e="vim"
 mkcd() { mkdir -p "$1" && cd "$1" }
 
 # }}}
