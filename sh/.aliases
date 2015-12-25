@@ -83,6 +83,7 @@ alias week="date +%V"
 alias clock="tty-clock -D -c -C 7"
 alias unmount="udiskie-umount -a"
 alias e="vim"
+alias chrome="google-chrome-stable"
 mkcd() { mkdir -p "$1" && cd "$1" }
 
 # }}}
