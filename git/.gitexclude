@@ -6,8 +6,8 @@
 .sass-cache/
 bower_components/
 build/
-dist/
 coverage/
+dist/
 node_modules/
 public/
 tmp/
