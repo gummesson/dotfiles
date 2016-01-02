@@ -175,7 +175,7 @@ files:
 	@ln -vsf ${DOT}/ncmpcpp/keys ${USER}/.ncmpcpp/keys
 	@ln -vsf ${DOT}/nano/syntax/* ${USER}/.nano
 	@ln -vsf ${DOT}/nodejs/.jshintrc ${USER}/.jshintrc
-	@ln -vsf ${DOT}/nodejs/.eslintrc ${USER}/.eslintrc
+	@ln -vsf ${DOT}/nodejs/.eslintrc.json ${USER}/.eslintrc.json
 	@ln -vsf ${DOT}/nodejs/.tern-config ${USER}/.tern-config
 	@ln -vsf ${DOT}/rainbowstream/.rainbow_config.json ${USER}/.rainbow_config.json
 	@ln -vsf ${DOT}/rtorrent/.rtorrent.rc ${USER}/.rtorrent.rc
@@ -243,6 +243,8 @@ npm:
 	@npm install -g npm-check-updates
 	@npm install -g dependency-check
 	@npm install -g eslint
+	@npm install -g eslint-config-standard
+	@npm install -g eslint-plugin-standard
 	@npm install -g internal-ip
 	@npm install -g irish-pub
 
