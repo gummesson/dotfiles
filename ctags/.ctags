@@ -3,17 +3,19 @@
 --fields=-k
 --fields=+K
 
+--exclude=.bundle
 --exclude=.gems
 --exclude=.git
 --exclude=.gs
+--exclude=.sass-cache
 --exclude=bower_components
---exclude=node_modules
---exclude=vendor
 --exclude=build
 --exclude=coverage
 --exclude=dist
---exclude=doc
+--exclude=node_modules
 --exclude=public
+--exclude=tmp
+--exclude=vendor
 --exclude=www
 --exclude=bundle.css
 --exclude=bundle.js
