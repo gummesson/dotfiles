@@ -5,14 +5,18 @@
 .gs/
 .sass-cache/
 bower_components/
+build/
+dist/
 coverage/
 node_modules/
+public/
 tmp/
 vendor/
+www/
 *.lock
 *.log
 *.wofl
-Session.vim
+bundle.*
 tags
 
 # }}}
