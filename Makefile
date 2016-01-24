@@ -259,6 +259,7 @@ npm:
 	@npm install -g eslint-plugin-standard
 	@npm install -g internal-ip
 	@npm install -g irish-pub
+	@npm install -g elm
 
 pip:
 	@pip install rainbowstream --user

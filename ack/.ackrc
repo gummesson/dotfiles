@@ -29,6 +29,7 @@
 --ignore-dir=build
 --ignore-dir=coverage
 --ignore-dir=dist
+--ignore-dir=elm-stuff
 --ignore-dir=node_modules
 --ignore-dir=public
 --ignore-dir=tmp
