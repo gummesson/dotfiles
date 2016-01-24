@@ -17,7 +17,7 @@ DOT  = ${GIT}/dotfiles
 BIN  = ${USER}/.local/bin
 SRC  = ${USER}/.local/src
 
-.PHONY: all environment tools applications games graphical install \
+.PHONY: all base environment tools applications games graphical install \
 	shell folders files permissions link \
 	frankenwm colors editor chat builds \
 	gems npm pip cabal packages
@@ -28,7 +28,7 @@ all: install link builds packages
 
 # -- Install ------------------------------------------------------- {{{
 
-environment:
+base:
 	@yaourt -Sa rxvt-unicode
 	@yaourt -Sa urxvt-fullscreen
 	@yaourt -Sa urxvt-font-size-git
@@ -38,6 +38,8 @@ environment:
 	@yaourt -Sa xcb-util
 	@yaourt -Sa xcb-util-wm
 	@yaourt -Sa xcb-util-keysyms
+
+environment:
 	@yaourt -Sa python
 	@yaourt -Sa python-pip
 	@yaourt -Sa python2
@@ -138,7 +140,7 @@ graphical:
 	@yaourt -Sa gtk-theme-bsm-simple
 	@yaourt -Sa faenza-icon-theme
 
-install: environment tools applications graphical
+install: base environment tools applications graphical
 
 # }}}
 
