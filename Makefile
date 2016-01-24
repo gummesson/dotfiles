@@ -46,6 +46,14 @@ environment:
 	@yaourt -Sa nodejs
 	@yaourt -Sa npm
 	@yaourt -Sa nvm
+	@yaourt -Sa ghc
+	@yaourt -Sa cabal-install
+	@yaourt -Sa haddock
+	@yaourt -Sa happy
+	@yaourt -Sa alex
+	@yaourt -Sa texlive-core
+	@yaourt -Sa texlive-latexextra
+	@yaourt -Sa texlive-fontsextra
 
 tools:
 	@yaourt -Sa unclutter
@@ -254,16 +262,8 @@ pip:
 	@pip install rainbowstream --user
 
 cabal:
-	@yaourt -Sa ghc
-	@yaourt -Sa cabal-install
-	@yaourt -Sa haddock
-	@yaourt -Sa happy
-	@yaourt -Sa alex
 	@cabal update
 	@cabal install pandoc
-	@yaourt -Sa texlive-core
-	@yaourt -Sa texlive-latexextra
-	@yaourt -Sa texlive-fontsextra
 
 packages: gems npm pip cabal
 
