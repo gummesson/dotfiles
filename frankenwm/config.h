@@ -10,29 +10,32 @@
 #define SHIFT           ShiftMask   /* Shift key */
 
 /* EDIT THIS: general settings */
-#define MASTER_SIZE     0.5          /* master-stack ratio */
-#define SHOW_PANEL      True         /* show panel by default on exec */
-#define TOP_PANEL       True         /* False mean panel is on bottom */
-#define PANEL_HEIGHT    20           /* 0 for no space for panel, thus no panel */
-#define DEFAULT_MODE    MONOCLE      /* TILE MONOCLE BSTACK GRID FIBONACCI EQUAL */
-#define ATTACH_ASIDE    True         /* False means new window is master */
-#define FOLLOW_MOUSE    False        /* Focus the window the mouse just entered */
-#define FOLLOW_WINDOW   False        /* Follow the window when moved to a different desktop */
-#define CLICK_TO_FOCUS  True         /* Focus an unfocused window when clicked */
-#define BORDER_WIDTH    2            /* window border width */
-#define FOCUS           "#585858"    /* focused window border color   */
-#define UNFOCUS         "#303030"    /* unfocused window border color */
-#define DESKTOPS        10           /* number of desktops - edit DESKTOPCHANGE keys to suit */
-#define DEFAULT_DESKTOP 0            /* the desktop to focus on exec */
-#define MINWSZ          48           /* minimum window size in pixels */
-#define USELESSGAP      0            /* the size of the useless gap in pixels */
-#define GLOBALGAPS      True         /* use the same gap size on all desktops */
-#define MONOCLE_BORDERS False        /* display borders in monocle mode */
-#define INVERT          False        /* use alternative modes by default */
-#define AUTOCENTER      True         /* automatically center windows floating by default */
-#define OUTPUT_TITLE    False        /* output the title of the currently active window */
-#define USE_SCRATCHPAD  False        /* enable the scratchpad functionality */
-#define SCRPDNAME       "Scratchpad" /* the name of the scratchpad window */
+#define MASTER_SIZE      0.5          /* master-stack ratio */
+#define SHOW_PANEL       True         /* show panel by default on exec */
+#define TOP_PANEL        True         /* False means panel is on bottom */
+#define PANEL_HEIGHT     20           /* 0 for no space for panel, thus no panel */
+#define DEFAULT_MODE     MONOCLE      /* TILE MONOCLE BSTACK GRID FIBONACCI EQUAL */
+#define ATTACH_ASIDE     True         /* False means new window is master */
+#define FOLLOW_MOUSE     False        /* Focus the window the mouse just entered */
+#define FOLLOW_WINDOW    False        /* Follow the window when moved to a different desktop */
+#define CLICK_TO_FOCUS   True         /* Focus an unfocused window when clicked */
+#define BORDER_WIDTH     2            /* window border width */
+#define SCRATCH_WIDTH    1            /* scratch window border width, 0 to disable */
+#define FOCUS            "#585858"    /* focused window border color   */
+#define UNFOCUS          "#303030"    /* unfocused window border color */
+#define SCRATCH          "#cc0000"    /* scratchpad border color */
+#define DESKTOPS         10           /* number of desktops - edit DESKTOPCHANGE keys to suit */
+#define DEFAULT_DESKTOP  0            /* the desktop to focus on exec */
+#define MINWSZ           48           /* minimum window size in pixels */
+#define USELESSGAP       0            /* the size of the useless gap in pixels */
+#define GLOBALGAPS       True         /* use the same gap size on all desktops */
+#define MONOCLE_BORDERS  False        /* display borders in monocle mode */
+#define INVERT           False        /* use alternative modes by default */
+#define AUTOCENTER       True         /* automatically center windows floating by default */
+#define OUTPUT_TITLE     False        /* output the title of the currently active window */
+#define USE_SCRATCHPAD   False        /* enable the scratchpad functionality */
+#define CLOSE_SCRATCHPAD True         /* close scratchpad on quit */
+#define SCRPDNAME        "Scratchpad" /* the name of the scratchpad window */
 
 /*
  * EDIT THIS: applicaton specific rules
@@ -44,7 +47,7 @@
  * you do not wish to use this functionality.
  */
 static const AppRule rules[] = { \
-    /* class              desktop  follow  float */
+    /* title regex        desktop  follow  float */
     { "Gvim",             0,       True,   True  },
     { "Google Chrome",    1,       True,   False },
     { "zathura",          2,       True,   False },
