@@ -12,6 +12,7 @@
 --exclude=build
 --exclude=coverage
 --exclude=dist
+--exclude=elm-stuff
 --exclude=node_modules
 --exclude=public
 --exclude=tmp
