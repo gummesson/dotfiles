@@ -231,7 +231,7 @@ frankenwm:
 
 colors:
 	@git clone https://github.com/chriskempson/base16-xresources ${SRC}/base16-xresources
-	@ln -vsf ${DOT}/x/colors/base16-duotone-darksea.xresources ${USER}/.xcolors
+	@ln -vsf ${DOT}/x/colors/duotone-darksea.xresources ${USER}/.xcolors
 
 editor:
 	@git clone https://github.com/gummesson/vimfiles.git ${GIT}/vimfiles
