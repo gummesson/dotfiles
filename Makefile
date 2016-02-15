@@ -257,6 +257,7 @@ npm:
 	@npm install -g eslint
 	@npm install -g eslint-config-standard
 	@npm install -g eslint-plugin-standard
+	@npm install -g eslint-plugin-promise
 	@npm install -g internal-ip
 	@npm install -g irish-pub
 	@npm install -g elm
