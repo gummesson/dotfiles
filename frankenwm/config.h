@@ -23,7 +23,7 @@
 #define SCRATCH_WIDTH    1            /* scratch window border width, 0 to disable */
 #define FOCUS            "#585858"    /* focused window border color   */
 #define UNFOCUS          "#303030"    /* unfocused window border color */
-#define SCRATCH          "#cc0000"    /* scratchpad border color */
+#define SCRATCH          "#585858"    /* scratchpad border color */
 #define DESKTOPS         10           /* number of desktops - edit DESKTOPCHANGE keys to suit */
 #define DEFAULT_DESKTOP  0            /* the desktop to focus on exec */
 #define MINWSZ           48           /* minimum window size in pixels */
@@ -36,6 +36,7 @@
 #define USE_SCRATCHPAD   False        /* enable the scratchpad functionality */
 #define CLOSE_SCRATCHPAD True         /* close scratchpad on quit */
 #define SCRPDNAME        "Scratchpad" /* the name of the scratchpad window */
+#define EWMH_TASKBAR     True         /* false if text (or no) panel/taskbar */
 
 /*
  * EDIT THIS: applicaton specific rules
@@ -47,13 +48,13 @@
  * you do not wish to use this functionality.
  */
 static const AppRule rules[] = { \
-    /* title regex        desktop  follow  float */
-    { "Gvim",             0,       True,   True  },
-    { "Google Chrome",    1,       True,   False },
-    { "zathura",          2,       True,   False },
-    { "mpv",              2,       True,   False },
-    { "feh",              2,       True,   False },
-    { "Pcmanfm",          2,       True,   False },
+    /* title regex        desktop  follow  float  border_width */
+    { "Gvim",             0,       True,   True,  0 },
+    { "Google Chrome",    1,       True,   False, 0 },
+    { "zathura",          2,       True,   False, 0 },
+    { "mpv",              2,       True,   False, 0 },
+    { "feh",              2,       True,   False, 0 },
+    { "Pcmanfm",          2,       True,   False, 0 },
 };
 
 /* helper for spawning shell commands, usually you don't edit this */
