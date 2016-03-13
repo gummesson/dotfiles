@@ -95,6 +95,7 @@ applications:
 	@yaourt -Sa dunst
 	@yaourt -Sa libnotify
 	@yaourt -Sa gvim
+	@yaourt -Sa neovim
 	@yaourt -Sa tmux
 	@yaourt -Sa google-chrome-stable
 	@yaourt -Sa w3m
