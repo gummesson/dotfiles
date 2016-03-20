@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+# weather <location>
+
+curl "http://wttr.in/$1"
