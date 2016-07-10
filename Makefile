@@ -135,6 +135,7 @@ graphical:
 	@yaourt -Sa ttf-fira-mono
 	@yaourt -Sa ttf-fira-sans
 	@yaourt -Sa ttf-fantasque-sans
+	@yaourt -Sa ttf-input
 	@yaourt -Sa ttf-anonymous-pro
 	@yaourt -Sa terminus-font
 	@yaourt -Sa ttf-ms-fonts
