@@ -3,8 +3,8 @@
 # Usage: base16 <colorscheme>
 
 name="$1"
-path="${HOME}/.local/src/base16-xresources"
-theme="${path}/base16-${name}.dark.xresources"
+path="${HOME}/.local/src/base16-xresources/Xresources"
+theme="${path}/base16-${name}.xresources"
 link="${HOME}/.xcolors"
 
 if [[ -r $theme ]]; then
