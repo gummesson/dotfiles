@@ -18,4 +18,4 @@ while true; do
 done | lemonbar -p -d -g x20xx \
         -F "#FF9E9E9E" \
         -B "#FF303030" \
-        -f "Fantasque Sans Mono-13"
+        -f "Mononoki-12"

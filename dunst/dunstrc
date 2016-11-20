@@ -1,7 +1,7 @@
 # -- dunstrc ------------------------------------------------------- {{{
 
 [global]
-    font = Fantasque Sans Mono 13
+    font = Mononoki 12
     allow_markup = yes
     format = "<b>%s</b>\n%b"
     sort = yes
