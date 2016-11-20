@@ -50,6 +50,7 @@
 static const AppRule rules[] = { \
     /* title regex        desktop  follow  float  border_width */
     { "Gvim",             0,       True,   True,  0 },
+    { "termite",          0,       True,   False, 0 },
     { "Google Chrome",    1,       True,   False, 0 },
     { "zathura",          2,       True,   False, 0 },
     { "mpv",              2,       True,   False, 0 },

@@ -32,6 +32,7 @@ base:
 	@yaourt -Sa rxvt-unicode
 	@yaourt -Sa urxvt-fullscreen
 	@yaourt -Sa urxvt-font-size-git
+	@yaourt -Sa termite
 	@yaourt -Sa zsh
 	@yaourt -Sa zsh-completions
 	@yaourt -Sa libxcb
@@ -135,6 +136,7 @@ graphical:
 	@yaourt -Sa ttf-fira-mono
 	@yaourt -Sa ttf-fira-sans
 	@yaourt -Sa ttf-fantasque-sans
+	@yaourt -Sa ttf-mononoki
 	@yaourt -Sa ttf-input
 	@yaourt -Sa ttf-anonymous-pro
 	@yaourt -Sa terminus-font
@@ -165,6 +167,7 @@ folders:
 	@mkdir -vp ${USER}/.mail/Gmail
 	@mkdir -vp ${USER}/.rtorrent/{session,watch}
 	@mkdir -vp ${USER}/.w3m
+	@mkdir -vp ${CONF}/termite
 	@mkdir -vp ${CONF}/zathura
 
 files:
@@ -197,6 +200,7 @@ files:
 	@ln -vsf ${DOT}/sift/.sift.conf ${USER}/.sift.conf
 	@ln -vsf ${DOT}/surfraw/.surfraw.conf ${USER}/.surfraw.conf
 	@ln -vsf ${DOT}/tig/.tigrc ${USER}/.tigrc
+	@ln -vsf ${DOT}/termite/config ${CONF}/termite/config
 	@ln -vsf ${DOT}/tmux/.tmux.conf ${USER}/.tmux.conf
 	@ln -vsf ${DOT}/urlview/.urlview ${USER}/.urlview
 	@ln -vsf ${DOT}/w3m/config ${USER}/.w3m/config
