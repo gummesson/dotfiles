@@ -2,4 +2,4 @@
 
 # Usage: git-publish-version <version>
 
-git tag -a "v$1" -m "$1" && git push --follow-tags
+git tag -a "v${1}" -m "${1}" && git push --follow-tags

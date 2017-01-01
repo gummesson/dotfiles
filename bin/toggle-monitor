@@ -6,7 +6,7 @@ in="LVDS1"
 ext="VGA1"
 
 if (xrandr | grep "${ext} disconnected" > /dev/null); then
-  xrandr --output $ext --off --output $in --auto
+  xrandr --output "${ext}" --off --output "${in}" --auto
 else
-  xrandr --output $in --off --output $ext --auto
+  xrandr --output "${in}" --off --output "${ext}" --auto
 fi

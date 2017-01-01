@@ -1,5 +1,0 @@
-#!/usr/bin/env sh
-
-# define <word>
-
-wn "$1" -over | less

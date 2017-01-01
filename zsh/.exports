@@ -1,13 +1,13 @@
 # -- .exports ------------------------------------------------------ {{{
 #
 # -- Variables
-# -- Sources
 #
 # }}}
 
 # -- Variables ----------------------------------------------------- {{{
 
-PATH="$HOME/.local/bin:$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$HOME/.cabal/bin:$PATH"
+GOPATH="${HOME}/.golang"
+PATH="${PATH}:${HOME}/.local/bin:$(ruby -rubygems -e 'puts Gem.user_dir')/bin:${GOPATH}/bin"
 LANG="en_US.UTF-8"
 EDITOR="vim"
 PAGER="less"
@@ -17,18 +17,6 @@ KEYTIMEOUT=1
 
 GREP_OPTIONS="--color=auto"
 GREP_COLOR="1;32"
-
-# -- nvm --
-
-NVM_DIR="$HOME/.nvm"
-
-# }}}
-
-# -- Sources ------------------------------------------------------- {{{
-
-# -- nvm --
-
-source /usr/share/nvm/nvm.sh
 
 # }}}
 

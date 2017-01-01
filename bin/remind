@@ -1,5 +1,0 @@
-#!/usr/bin/env sh
-
-# remind <seconds> <message>
-
-(sleep "$1" && notify-send -u critical "$2" &) > /dev/null 2>&1

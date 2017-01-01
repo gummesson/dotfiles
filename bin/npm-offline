@@ -1,3 +1,4 @@
 #!/usr/bin/env sh
 
-npm --cache-min=Infinity "$@"
+# Usage: npm-offline <...arguments>
+npm --cache-min=Infinity "${@}"

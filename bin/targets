@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+# targets <extension>
+
+sift --targets --ext "${1}"

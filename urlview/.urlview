@@ -1,7 +1,0 @@
-# -- .urlview ------------------------------------------------------ {{{
-
-COMMAND google-chrome-stable %s
-
-# }}}
-
-# vim:foldmethod=marker

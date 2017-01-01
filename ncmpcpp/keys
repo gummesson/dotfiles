@@ -1,8 +1,0 @@
-# -- keys ---------------------------------------------------------- {{{
-
-key_pause = 'p'
-key_toggle_display_mode = 'P'
-
-# }}}
-
-# vim:foldmethod=marker

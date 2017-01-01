@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 
-# Usage: cd <directory> && git-project
+# Usage: cd <directory> && git-edit
 
 [[ -d .git ]] && vim $(git ls-files)

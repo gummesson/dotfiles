@@ -11,26 +11,17 @@
 
 # -- Sources ------------------------------------------------------- {{{
 
-for file in ~/.{aliases,exports,zprompt}; do
-  if [[ -r "$file" ]]; then
-    source "$file"
-  fi
-done; unset file
-
-if [[ -r ~/.dircolors ]]; then
-  eval "$(dircolors ~/.dircolors)"
-fi
+source ~/.aliases
+source ~/.exports
+source ~/.prompt
+source ~/.config/z/z.sh
 
 # }}}
 
 # -- Options ------------------------------------------------------- {{{
 
-# -- Unset --
-
 unsetopt menu_complete
 unsetopt flowcontrol
-
-# -- Set --
 
 setopt auto_menu
 setopt complete_aliases
@@ -82,6 +73,7 @@ zstyle ':completion:*:*:*:*:*' menu select
 zstyle ':completion:*' insert-tab pending
 zstyle ':completion:*:cd:*' tag-order local-directories directory-stack path-directories
 cdpath=(.)
+fpath=(~/.config/zsh-completions/src $fpath)
 
 autoload -Uz compinit && compinit
 

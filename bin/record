@@ -1,7 +1,0 @@
-#!/usr/bin/env sh
-
-# record <filename>
-
-filename="$1"
-resolution=$(xdpyinfo | awk '/dimensions:/ { print $2; }')
-ffmpeg -f x11grab -r 25 -s $resolution -i :0.0 $filename

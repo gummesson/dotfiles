@@ -1,8 +1,0 @@
-{
-  "extends": "standard",
-  "rules": {
-    "generator-star-spacing": [2, { "before": true, "after": false }],
-    "indent": [2, 2, { "SwitchCase": 0 }],
-    "space-before-function-paren": [2, "never"]
-  }
-}

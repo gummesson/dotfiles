@@ -1,13 +1,13 @@
 #!/usr/bin/env sh
 
-# Usage: cd <project> && gh-create
+# Usage: cd <project> && gh-setup
 
 user="gummesson"
 repo=$(basename $PWD)
 
 api="https://api.github.com/user/repos"
-ori="https://github.com/${user}/${repo}.git"
+org="https://github.com/${user}/${repo}.git"
 url="https://github.com/${user}/${repo}"
 
-curl -u $user $api -d '{"name":"'${repo}'"}'
-git remote add origin $ori
+curl -u "${user}" "${api}" -d '{"name":"'${repo}'"}'
+git remote add origin "${org}"

@@ -1,5 +1,0 @@
-#!/usr/bin/env sh
-
-# fuzzy <...arguments>
-
-sift --targets "$@"

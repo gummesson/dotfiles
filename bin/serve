@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 
-# serve <directory>
+# Usage: serve <directory>
 
-ruby -run -e httpd "$1" -p 8000
+ruby -run -e httpd "${1}" -p 8000

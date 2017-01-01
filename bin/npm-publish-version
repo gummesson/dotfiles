@@ -3,5 +3,5 @@
 # Usage: npm-publish-version <version>
 # <https://github.com/yoshuawuyts/dotfiles/blob/master/bin/npv>
 
-[[ ! "$1" ]] && exit 1
-npm version "$1" -m "$1" && npm publish && git push --follow-tags
+[[ ! "${1}" ]] && exit 1
+npm version "${1}" -m "${1}" && npm publish && git push --follow-tags

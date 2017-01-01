@@ -2,39 +2,19 @@
 
 Welcome to my `~/`.
 
-[![~/](screenshot.png)](screenshot.png)
+## System
 
-## Flavor
-
-[Manjaro Minimal Net Edition](http://manjaro.org/)
-
-## Prerequisites
-
-~~~ sh
-sudo pacman -S base-devel yaourt git
-git clone https://github.com/gummesson/dotfiles.git Git/dotfiles
-~~~
-
-### Keyboard
-
-If the `Fn` keys act up, run:
-
-~~~ sh
-sudo keyboardctl --set-layout se
-~~~
-
-## Installation
-
-`cd` into `Git/dotfiles`, take a look in the `Makefile` and execute at will.
+[Solus](https://solus-project.com/)
 
 ## Setup
 
-### Wifi
+``` sh
+sudo eopkg update-repo
+sudo eopkg upgrade
 
-~~~ sh
-nmtui
-~~~
+sudo eopkg install -c system.devel
+sudo eopkg install git
 
-### TLP
-
-See the [ArchWiki](https://wiki.archlinux.org/index.php/TLP#Installation).
+git clone https://github.com/gummesson/dotfiles.git ~/Code/dotfiles
+cd ~/Code/dotfiles && make
+```
