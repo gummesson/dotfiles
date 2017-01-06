@@ -39,6 +39,7 @@ system:
 	@sudo eopkg install htop
 	@sudo eopkg install ranger
 	@sudo eopkg install w3m
+	@sudo eopkg install mpv
 	@sudo eopkg install redshift
 	@sudo eopkg install nautilus-dropbox
 
