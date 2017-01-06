@@ -55,7 +55,7 @@ gem:
 	@gem install bundler --user-install
 
 go:
-	@go get github.com/svent/sift
+	@go get -u -v github.com/svent/sift
 
 packages: gem npm go
 
