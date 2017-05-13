@@ -54,6 +54,7 @@ npm:
 
 gem:
 	@gem install bundler --user-install
+	@gem install rubocop --user-install
 
 go:
 	@go get -u -v github.com/svent/sift
