@@ -26,3 +26,9 @@ mkdir -p ~/.fonts/truetype
 mv some-font ~/.fonts/truetype/
 fc-cache -fv
 ```
+
+### gnome-terminal
+
+``` sh
+gsettings set org.gnome.desktop.interface cursor-blink false
+```
