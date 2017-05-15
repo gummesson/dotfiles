@@ -2,6 +2,7 @@
 #
 # -- Setup
 # -- Install
+# -- Update
 # -- Link
 #
 # }}}
@@ -13,7 +14,9 @@ BASE = /home/${USER}
 CONF = ${BASE}/.config
 DOTS = ${BASE}/Code/dotfiles
 
-.PHONY: system npm gem go packages sources install shell folders files link
+.PHONY: system npm gem go packages sources install \
+        update-system update-sources update \
+        shell folders files link
 
 all: install link
 
@@ -68,6 +71,22 @@ sources:
 	@git clone https://github.com/rupa/z.git ${CONF}/z
 
 install: system packages sources
+
+# }}}
+
+# -- Update -------------------------------------------------------- {{{
+
+update-system:
+	@sudo eopkg update-repo
+	@sudo eopkg upgrade
+
+update-sources:
+	@cd ${CONF}/ctags-patterns-for-javascript && git pull
+	@cd ${CONF}/base16-gnome-terminal && git pull
+	@cd ${CONF}/zsh-completions && git pull
+	@cd ${CONF}/z && git pull
+
+update: update-system update-sources
 
 # }}}
 
