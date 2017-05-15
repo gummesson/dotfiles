@@ -2,10 +2,8 @@
 
 # Usage: tnew && tedit
 
-session=$(tmux display-message -p "#S")
-window="1"
-
 tmux split-window -h
+tmux split-window -v
 tmux select-pane -t 1
+tmux resize-pane -R 11
 tmux send-keys "vim" C-m
-tmux select-layout -t "${session}:${window}" main-vertical
