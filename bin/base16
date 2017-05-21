@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+# Usage: base16 <theme>
+
+theme=$1
+scripts="${HOME}/.config/base16-shell/scripts"
+file="${scripts}/base16-${theme}.sh"
+
+if [[ -r "${file}" ]]; then
+  source "${file}"
+else
+  ls "${scripts}"
+  exit 1
+fi
