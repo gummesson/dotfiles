@@ -66,7 +66,7 @@ packages: gem npm go
 
 sources:
 	@git clone https://github.com/romainl/ctags-patterns-for-javascript.git ${CONF}/ctags-patterns-for-javascript
-	@git clone https://github.com/chriskempson/base16-gnome-terminal.git ${CONF}/base16-gnome-terminal
+	@git clone https://github.com/chriskempson/base16-shell.git ${CONF}/base16-shell
 	@git clone https://github.com/zsh-users/zsh-completions.git ${CONF}/zsh-completions
 	@git clone https://github.com/rupa/z.git ${CONF}/z
 
@@ -82,7 +82,7 @@ update-system:
 
 update-sources:
 	@cd ${CONF}/ctags-patterns-for-javascript && git pull
-	@cd ${CONF}/base16-gnome-terminal && git pull
+	@cd ${CONF}/base16-shell && git pull
 	@cd ${CONF}/zsh-completions && git pull
 	@cd ${CONF}/z && git pull
 

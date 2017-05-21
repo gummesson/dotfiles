@@ -11,10 +11,11 @@
 
 # -- Sources ------------------------------------------------------- {{{
 
+source ~/.config/base16-shell/scripts/base16-ocean.sh
+source ~/.config/z/z.sh
 source ~/.aliases
 source ~/.exports
 source ~/.prompt
-source ~/.config/z/z.sh
 
 # }}}
 
