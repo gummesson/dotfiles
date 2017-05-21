@@ -69,6 +69,7 @@ alias duh="du -h -d 0 [^.]*"
 alias today="date +%Y-%m-%d"
 alias week="date +%V"
 alias e="vim"
+alias j="z"
 alias chrome="google-chrome-stable"
 mkcd() { mkdir -p "$1" && cd "$1" }
 
