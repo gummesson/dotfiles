@@ -14,6 +14,7 @@
 alias ls="ls --color=auto"
 alias ll="ls -l"
 alias la="ls -a"
+alias lg="ls --group-directories-first"
 
 # }}}
 
