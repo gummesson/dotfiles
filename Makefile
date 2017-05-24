@@ -41,6 +41,7 @@ system:
 	@sudo eopkg install xbacklight
 	@sudo eopkg install htop
 	@sudo eopkg install ranger
+	@sudo eopkg install scrot
 	@sudo eopkg install feh
 	@sudo eopkg install w3m
 	@sudo eopkg install redshift

@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+# Usage: screenshot
+
+scrot "/home/ellen/Pictures/Screenshots/%Y%m%d-%H%M%S.png" "${@}"
