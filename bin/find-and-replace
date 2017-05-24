@@ -4,4 +4,4 @@
 # <https://github.com/yoshuawuyts/dotfiles/blob/master/bin/fr>
 
 [[ $# -ne 2 ]] && exit 1
-ack -l "${1}" | xargs sed -i -E "s/${1}/${2}/g"
+sift -l "${1}" | xargs sed -i -E "s/${1}/${2}/g"
