@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+# Usage: cheat <topic>
+
+curl "cheat.sh/${1}"
