@@ -3,6 +3,7 @@
     "browser"
   ],
   "plugins": {
+    "es_modules": {},
     "node": {}
   }
 }
