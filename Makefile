@@ -109,8 +109,8 @@ files:
 	@ln -vsf ${DOTS}/git/.gitconfig ${BASE}/.gitconfig
 	@ln -vsf ${DOTS}/git/.gitexclude ${BASE}/.gitexclude
 	@ln -vsf ${DOTS}/nodejs/.tern-config ${BASE}/.tern-config
-	@ln -vsf ${DOTS}/ruby/.gemrc ${BASE}/.gemrc
 	@ln -vsf ${DOTS}/ruby/.bundle/config ${BASE}/.bundle/config
+	@ln -vsf ${DOTS}/ruby/.gemrc ${BASE}/.gemrc
 	@ln -vsf ${DOTS}/sift/.sift.conf ${BASE}/.sift.conf
 	@ln -vsf ${DOTS}/tmux/.tmux.conf ${BASE}/.tmux.conf
 	@ln -vsf ${DOTS}/w3m/config ${BASE}/.w3m/config
