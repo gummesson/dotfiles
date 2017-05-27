@@ -3,10 +3,10 @@
 # Usage: toggle-monitor
 
 in="LVDS1"
-ext="VGA1"
+out="VGA1"
 
-if (xrandr | grep "${ext} disconnected" > /dev/null); then
-  xrandr --output "${ext}" --off --output "${in}" --auto
+if (xrandr | grep "${out} disconnected" > /dev/null); then
+  xrandr --output "${out}" --off --output "${in}" --auto
 else
-  xrandr --output "${in}" --off --output "${ext}" --auto
+  xrandr --output "${in}" --off --output "${out}" --auto
 fi
