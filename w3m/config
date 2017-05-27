@@ -1,5 +1,6 @@
 # -- config -------------------------------------------------------- {{{
 
+display_image 0
 extbrowser sh -c 'printf %s "$0" | xclip'
 editor vim
 
