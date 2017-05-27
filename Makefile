@@ -45,6 +45,7 @@ system:
 	@sudo eopkg install feh
 	@sudo eopkg install w3m
 	@sudo eopkg install redshift
+	@sudo eopkg install albert
 	@sudo eopkg install nautilus-dropbox
 
 npm:
@@ -103,6 +104,8 @@ folders:
 
 files:
 	@ln -vsf ${DOTS}/ack/.ackrc ${BASE}/.ackrc
+	@ln -vsf ${DOTS}/albert/albert.conf ${CONF}/albert.conf
+	@ln -vsf /usr/share/applications/albert.desktop ${CONF}/autostart/albert.desktop
 	@ln -vsf ${DOTS}/bin/* ${BASE}/.local/bin
 	@ln -vsf ${DOTS}/ctags/.ctags ${BASE}/.ctags
 	@ln -vsf ${DOTS}/editorconfig/.editorconfig ${BASE}/.editorconfig
