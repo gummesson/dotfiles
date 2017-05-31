@@ -65,6 +65,7 @@ alias bi="bundle install"
 
 # -- Miscellaneous ------------------------------------------------- {{{
 
+alias up="cd .."
 alias ping="ping -c 5"
 alias untar="tar -xzvf"
 alias duh="du -h -d 0 [^.]*"
