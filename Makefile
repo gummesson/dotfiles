@@ -105,7 +105,6 @@ folders:
 files:
 	@ln -vsf ${DOTS}/ack/.ackrc ${BASE}/.ackrc
 	@ln -vsf ${DOTS}/albert/albert.conf ${CONF}/albert.conf
-	@ln -vsf /usr/share/applications/albert.desktop ${CONF}/autostart/albert.desktop
 	@ln -vsf ${DOTS}/bin/* ${BASE}/.local/bin
 	@ln -vsf ${DOTS}/ctags/.ctags ${BASE}/.ctags
 	@ln -vsf ${DOTS}/editorconfig/.editorconfig ${BASE}/.editorconfig
@@ -123,6 +122,7 @@ files:
 	@ln -vsf ${DOTS}/zsh/.exports ${BASE}/.exports
 	@ln -vsf ${DOTS}/zsh/.prompt ${BASE}/.prompt
 	@ln -vsf ${DOTS}/zsh/.zshrc ${BASE}/.zshrc
+	@ln -vsf /usr/share/applications/albert.desktop ${CONF}/autostart/albert.desktop
 
 link: shell folders files
 
