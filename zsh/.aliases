@@ -2,6 +2,7 @@
 #
 # -- Lists
 # -- Files
+# -- Applications
 # -- Git
 # -- npm
 # -- Bundler
@@ -26,7 +27,14 @@ alias rm="rm -i"
 
 # }}}
 
-# -- Git ----------------------------------------------------------- {{{
+# -- Applications -------------------------------------------------- {{{
+
+alias e="vim"
+alias j="z"
+alias chrome="google-chrome-stable"
+alias pdfview="zathura --fork"
+
+# -- Git --
 
 alias g="git"
 alias gi="git init"
@@ -47,16 +55,12 @@ alias gm="git merge"
 alias gf="git fetch"
 alias grh="git reset HEAD"
 
-# }}}
-
-# -- npm ----------------------------------------------------------- {{{
+# -- npm --
 
 alias npmls="npm ls --depth=0"
 alias npmx="npm run"
 
-# }}}
-
-# -- Bundler ------------------------------------------------------- {{{
+# -- Bundler --
 
 alias be="bundle exec"
 alias bi="bundle install"
@@ -71,9 +75,6 @@ alias untar="tar -xzvf"
 alias duh="du -h -d 0 [^.]*"
 alias today="date +%Y-%m-%d"
 alias week="date +%V"
-alias e="vim"
-alias j="z"
-alias chrome="google-chrome-stable"
 mkcd() { mkdir -p "${1}" && cd "${1}" }
 
 # }}}
