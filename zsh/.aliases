@@ -75,7 +75,6 @@ alias untar="tar -xzvf"
 alias duh="du -h -d 0 [^.]*"
 alias today="date +%Y-%m-%d"
 alias week="date +%V"
-mkcd() { mkdir -p "${1}" && cd "${1}" }
 
 # }}}
 

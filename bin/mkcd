@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+# Usage: mkcd <directory>
+
+mkdir -p "${1}" && cd "${1}"
