@@ -44,6 +44,7 @@ system:
 	@sudo eopkg install scrot
 	@sudo eopkg install feh
 	@sudo eopkg install w3m
+	@sudo eopkg install zathura
 	@sudo eopkg install redshift
 	@sudo eopkg install albert
 	@sudo eopkg install nautilus-dropbox
@@ -118,6 +119,7 @@ files:
 	@ln -vsf ${DOTS}/w3m/config ${BASE}/.w3m/config
 	@ln -vsf ${DOTS}/w3m/keymap ${BASE}/.w3m/keymap
 	@ln -vsf ${DOTS}/youtube-dl/youtube-dl.conf ${CONF}/youtube-dl.conf
+	@ln -vsf ${DOTS}/zathura/zathurarc ${CONF}/zathura/zathurarc
 	@ln -vsf ${DOTS}/zsh/.aliases ${BASE}/.aliases
 	@ln -vsf ${DOTS}/zsh/.exports ${BASE}/.exports
 	@ln -vsf ${DOTS}/zsh/.prompt ${BASE}/.prompt

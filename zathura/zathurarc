@@ -1,0 +1,9 @@
+# -- zathurarc ----------------------------------------------------- {{{
+
+# -- Font --
+
+set font "mononoki normal 12"
+
+# }}}
+
+# vim:foldmethod=marker:filetype=conf
