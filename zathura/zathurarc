@@ -3,6 +3,7 @@
 set font "mononoki normal 12"
 set statusbar-home-tilde true
 set window-title-home-tilde true
+set window-title-page true
 
 # }}}
 
