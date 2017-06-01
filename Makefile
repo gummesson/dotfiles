@@ -72,6 +72,7 @@ install-sources:
 	@git clone https://github.com/chriskempson/base16-shell.git ${CONF}/base16-shell
 	@git clone https://github.com/zsh-users/zsh-completions.git ${CONF}/zsh-completions
 	@git clone https://github.com/rupa/z.git ${CONF}/z
+	@git clone https://github.com/supercrabtree/k.git ${CONF}/k
 
 install: install-system install-packages install-sources
 
@@ -88,6 +89,7 @@ update-sources:
 	@cd ${CONF}/base16-shell && git pull
 	@cd ${CONF}/zsh-completions && git pull
 	@cd ${CONF}/z && git pull
+	@cd ${CONF}/k && git pull
 
 update-packages: install-packages
 
