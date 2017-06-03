@@ -23,7 +23,7 @@ cd ~/Code/dotfiles && make
 
 ``` sh
 mkdir -p ~/.fonts/truetype
-mv some-font ~/.fonts/truetype/
+mv <directory> ~/.fonts/truetype/
 fc-cache -fv
 ```
 
