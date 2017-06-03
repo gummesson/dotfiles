@@ -37,14 +37,14 @@ install-system:
 	@sudo eopkg install ctags
 	@sudo eopkg install ack
 	@sudo eopkg install jq
+	@sudo eopkg install scrot
 	@sudo eopkg install youtube-dl
 	@sudo eopkg install xbacklight
 	@sudo eopkg install htop
 	@sudo eopkg install ranger
-	@sudo eopkg install scrot
 	@sudo eopkg install feh
-	@sudo eopkg install w3m
 	@sudo eopkg install zathura
+	@sudo eopkg install w3m
 	@sudo eopkg install redshift
 	@sudo eopkg install albert
 	@sudo eopkg install nautilus-dropbox
@@ -103,8 +103,8 @@ link-shell:
 	@sudo usermod -s /bin/zsh ${USER}
 
 link-folders:
-	@mkdir -vp ${BASE}/.local/bin
 	@mkdir -vp ${BASE}/.bundle
+	@mkdir -vp ${BASE}/.local/bin
 	@mkdir -vp ${BASE}/.w3m
 
 link-files:
