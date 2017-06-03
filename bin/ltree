@@ -2,4 +2,5 @@
 
 # Usage: ltree <depth>
 
-tree --dirsfirst --sort=size -ChFL "${1}"
+depth=${1:-1}
+tree --dirsfirst --sort=size -ChFL "${depth}"
