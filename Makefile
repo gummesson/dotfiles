@@ -45,6 +45,7 @@ install-system:
 	@sudo eopkg install feh
 	@sudo eopkg install zathura
 	@sudo eopkg install w3m
+	@sudo eopkg install irssi
 	@sudo eopkg install albert
 	@sudo eopkg install nautilus-dropbox
 
