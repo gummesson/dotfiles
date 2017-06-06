@@ -75,6 +75,8 @@ alias untar="tar -xzvf"
 alias duh="du -h -d 0 [^.]*"
 alias today="date +%Y-%m-%d"
 alias week="date +%V"
+alias pbcopy="xclip -selection clipboard"
+alias pbpaste="xclip -selection clipboard -o"
 
 # }}}
 
