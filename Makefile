@@ -115,6 +115,7 @@ link-files:
 	@ln -vsf ${DOTS}/editorconfig/.editorconfig ${BASE}/.editorconfig
 	@ln -vsf ${DOTS}/git/.gitconfig ${BASE}/.gitconfig
 	@ln -vsf ${DOTS}/git/.gitexclude ${BASE}/.gitexclude
+	@ln -vsf ${DOTS}/irssi/default.theme ${BASE}/.irssi/default.theme
 	@ln -vsf ${DOTS}/nodejs/.tern-config ${BASE}/.tern-config
 	@ln -vsf ${DOTS}/ruby/.bundle/config ${BASE}/.bundle/config
 	@ln -vsf ${DOTS}/ruby/.gemrc ${BASE}/.gemrc
