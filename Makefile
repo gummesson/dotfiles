@@ -82,6 +82,7 @@ install-sources:
 
 install-builds:
 	@git clone https://github.com/OfflineIMAP/offlineimap.git ${BLDS}/offlineimap-git
+	@git clone https://github.com/jarun/googler ${BLDS}/googler-git
 
 install: install-system install-packages install-sources install-builds
 
@@ -104,6 +105,7 @@ update-sources:
 
 update-builds:
 	@cd ${BLDS}/offlineimap-git && git pull
+	@cd ${BLDS}/googler-git && git pull
 
 update: update-system update-packages update-sources update-builds
 
