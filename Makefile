@@ -12,10 +12,11 @@
 USER = ellen
 BASE = /home/${USER}
 CONF = ${BASE}/.config
+BLDS = ${BASE}/.builds
 DOTS = ${BASE}/Code/dotfiles
 
-.PHONY: install-system install-npm install-gem install-go install-packages install-sources install \
-        update-system update-packages update-sources update \
+.PHONY: install-system install-npm install-gem install-pip install-go install-packages install-sources install-builds install \
+        update-system update-packages update-sources update-builds update \
         link-shell link-folders link-files link
 
 all: install link
@@ -46,6 +47,8 @@ install-system:
 	@sudo eopkg install zathura
 	@sudo eopkg install w3m
 	@sudo eopkg install irssi
+	@sudo eopkg install msmtp
+	@sudo eopkg install mutt
 	@sudo eopkg install albert
 	@sudo eopkg install nautilus-dropbox
 
@@ -62,10 +65,13 @@ install-gem:
 	@gem install bundler --user-install
 	@gem install rubocop --user-install
 
+install-pip:
+	@pip install goobook --user
+
 install-go:
 	@go get -u -v github.com/svent/sift
 
-install-packages: install-npm install-gem install-go
+install-packages: install-npm install-gem install-pip install-go
 
 install-sources:
 	@git clone https://github.com/romainl/ctags-patterns-for-javascript.git ${CONF}/ctags-patterns-for-javascript
@@ -74,7 +80,10 @@ install-sources:
 	@git clone https://github.com/rupa/z.git ${CONF}/z
 	@git clone https://github.com/supercrabtree/k.git ${CONF}/k
 
-install: install-system install-packages install-sources
+install-builds:
+	@git clone https://github.com/OfflineIMAP/offlineimap.git ${BLDS}/offlineimap-git
+
+install: install-system install-packages install-sources install-builds
 
 # }}}
 
@@ -84,6 +93,8 @@ update-system:
 	@sudo eopkg update-repo
 	@sudo eopkg upgrade
 
+update-packages: install-packages
+
 update-sources:
 	@cd ${CONF}/ctags-patterns-for-javascript && git pull
 	@cd ${CONF}/base16-shell && git pull
@@ -91,9 +102,10 @@ update-sources:
 	@cd ${CONF}/z && git pull
 	@cd ${CONF}/k && git pull
 
-update-packages: install-packages
+update-builds:
+	@cd ${BLDS}/offlineimap-git && git pull
 
-update: update-system update-packages update-sources
+update: update-system update-packages update-sources update-builds
 
 # }}}
 
@@ -105,6 +117,7 @@ link-shell:
 link-folders:
 	@mkdir -vp ${BASE}/.bundle
 	@mkdir -vp ${BASE}/.local/bin
+	@mkdir -vp ${BASE}/.mail/Gmail
 	@mkdir -vp ${BASE}/.w3m
 
 link-files:
@@ -116,7 +129,14 @@ link-files:
 	@ln -vsf ${DOTS}/git/.gitconfig ${BASE}/.gitconfig
 	@ln -vsf ${DOTS}/git/.gitexclude ${BASE}/.gitexclude
 	@ln -vsf ${DOTS}/irssi/default.theme ${BASE}/.irssi/default.theme
+	@ln -vsf ${DOTS}/msmtp/.msmtprc ${BASE}/.msmtprc
+	@ln -vsf ${DOTS}/mutt/.muttrc ${BASE}/.muttrc
+	@ln -vsf ${DOTS}/mutt/colors ${BASE}/.mutt/colors
+	@ln -vsf ${DOTS}/mutt/gmail ${BASE}/.mutt/gmail
+	@ln -vsf ${DOTS}/mutt/mailcap ${BASE}/.mutt/mailcap
 	@ln -vsf ${DOTS}/nodejs/.tern-config ${BASE}/.tern-config
+	@ln -vsf ${DOTS}/offlineimap/.offlineimaprc ${BASE}/.offlineimaprc
+	@ln -vsf ${DOTS}/offlineimap/offlineimap.py ${BASE}/.mutt/offlineimap.py
 	@ln -vsf ${DOTS}/ruby/.bundle/config ${BASE}/.bundle/config
 	@ln -vsf ${DOTS}/ruby/.gemrc ${BASE}/.gemrc
 	@ln -vsf ${DOTS}/sift/.sift.conf ${BASE}/.sift.conf

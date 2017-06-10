@@ -1,0 +1,46 @@
+# -- gmail --------------------------------------------------------- {{{
+#
+# -- Base
+# -- Keybindings
+#
+# }}}
+
+# -- Base ---------------------------------------------------------- {{{
+
+set from = "Ellen Gummesson <ellengummesson@gmail.com>"
+set sendmail = "/usr/bin/msmtp -a gmail"
+set sendmail_wait = 0
+
+set mbox_type = Maildir
+set spoolfile = "+Gmail/INBOX"
+set postponed = "+Gmail/Utkast"
+set mbox = "+Gmail/Alla mail"
+
+mailboxes \
+  +Gmail/INBOX \
+  +Gmail/Viktigt \
+  +Gmail/Skickat \
+  +Gmail/Utkast \
+  +Gmail/Alla\ mail \
+  +Gmail/Papperskorgen
+
+# }}}
+
+# -- Keybindings --------------------------------------------------- {{{
+
+set query_command = "goobook query '%s'"
+bind editor <Tab> complete-query
+
+# -- Macros --
+
+macro index,pager gi "<change-folder>=Gmail/INBOX<enter>" "go to inbox"
+macro index,pager gp "<change-folder>=Gmail/Viktigt<enter>" "go to priority inbox"
+macro index,pager gs "<change-folder>=Gmail/Skickat<enter>" "go to sent mail"
+macro index,pager gd "<change-folder>=Gmail/Utkast<enter>" "go to drafts"
+macro index,pager ga "<change-folder>=Gmail/Alla mail<enter>" "go to all mail"
+macro index,pager gt "<change-folder>=Gmail/Papperskorgen<enter>" "go to thrash"
+macro index,pager gl "<change-folder>?<toggle-mailboxes>" "go to 'Label'"
+
+# }}}
+
+# vim:foldmethod=marker:filetype=muttrc

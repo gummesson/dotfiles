@@ -32,3 +32,16 @@ fc-cache -fv
 ``` sh
 gsettings set org.gnome.desktop.interface cursor-blink false
 ```
+
+### offlineimap
+
+``` sh
+make build
+sudo python setup.py install
+```
+
+### goobook
+
+``` sh
+goobook authenticate
+```

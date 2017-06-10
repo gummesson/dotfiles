@@ -1,0 +1,165 @@
+# -- .muttrc ------------------------------------------------------- {{{
+#
+# -- Base
+# -- Paths
+# -- Views
+# -- Keybindings
+#
+# }}}
+
+# -- Base ---------------------------------------------------------- {{{
+
+set realname = "Ellen Gummesson"
+set folder = "~/.mail"
+set mail_check = 60
+set use_from
+set pipe_decode
+set thorough_search
+set quit
+set delete
+unset wait_key
+unset move
+unset mark_old
+unset confirmappend
+unset record
+unset user_agent
+
+# -- Sources --
+
+source "/home/ellen/.mutt/gmail"
+source "/home/ellen/.mutt/colors"
+
+# }}}
+
+# -- Paths --------------------------------------------------------- {{{
+
+set alias_file = "~/.mutt/aliases"
+set mailcap_path = "~/.mutt/mailcap"
+set header_cache = "~/.mutt/cache/headers"
+set message_cachedir = "~/.mutt/cache/bodies"
+set certificate_file = "~/.mutt/cache/certificates"
+
+# }}}
+
+# -- Views --------------------------------------------------------- {{{
+
+# -- Statusbar --
+
+set status_chars = " *%A"
+set status_format = "[%f] %> [%m messages%?n? (%n new)?%?d? (%d deleted)?%?t? (%t tagged)?]%?p? [%p drafts]?"
+
+# -- Sidebar --
+
+set sidebar_visible
+set sidebar_width = 30
+set sidebar_divider_char = "│"
+set sidebar_short_path
+set sidebar_format = "%B (%?N?%N/?%S)"
+
+# -- Index --
+
+set index_format = "%4C %Z %{%b %d %Y %R} %-15.15L (%?l?%4l&%4c?) %s"
+set folder_format = "%4C %t %f"
+set sort = threads
+set sort_aux = reverse-last-date-received
+set uncollapse_jump
+set sort_re
+set reply_regexp = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
+
+# -- Pager --
+
+set pager_format = "[%F: %s] %> [%m messages]"
+set pager_index_lines = 6
+set pager_stop
+set menu_scroll
+set quote_regexp = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
+unset markers
+
+auto_view text/html
+alternative_order text/plain text/enriched text/html
+
+# -- Compose --
+
+set editor = "vim +/^$"
+set edit_headers
+set smart_wrap
+set envelope_from
+set fast_reply
+set askcc
+set fcc_attach
+set forward_format = "Fwd: %s"
+set forward_decode
+set forward_quote
+set attribution = "On %d, %n wrote:"
+set reply_to
+set reverse_name
+set include
+unset mime_forward
+
+# -- Headers --
+
+ignore *
+unignore from: to: cc: date: subject:
+unhdr_order *
+hdr_order from: to: cc: date: subject:
+
+# }}}
+
+# -- Keybindings --------------------------------------------------- {{{
+
+# -- Sidebar --
+
+bind index,pager \Cj sidebar-next
+bind index,pager \Ck sidebar-prev
+bind index,pager \Co sidebar-open
+
+macro index,pager \Cb "<enter-command>toggle sidebar_visible<enter><refresh>" "toggle sidebar"
+
+# -- Index --
+
+bind index c       mail
+bind index h       noop
+bind index l       display-message
+bind index gg      first-entry
+bind index G       last-entry
+bind index R       group-reply
+bind index <Space> select-entry
+bind index <Tab>   sync-mailbox
+
+macro index m "<save-message>?<toggle-mailboxes>" "move to..."
+macro index o "<shell-escape>offlineimap -o -u basic<enter>" "run offlineimap"
+
+# -- Pager --
+
+bind pager h  exit
+bind pager k  previous-line
+bind pager j  next-line
+bind pager gg top
+bind pager G  bottom
+bind pager R  group-reply
+
+# -- Browser --
+
+bind browser h  exit
+bind browser l  select-entry
+bind browser L  view-file
+bind browser gg first-entry
+bind browser G  last-entry
+
+# -- Compose --
+
+bind compose p postpone-message
+
+# -- Attach --
+
+bind attach h        exit
+bind attach l        view-attach
+bind attach <Return> view-mailcap
+
+# -- Editor --
+
+bind editor <Space> noop
+
+# }}}
+
+# vim:foldmethod=marker
