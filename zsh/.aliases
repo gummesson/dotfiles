@@ -54,6 +54,7 @@ alias ga="git add"
 alias gm="git merge"
 alias gf="git fetch"
 alias grh="git reset HEAD"
+alias glo="git log --oneline"
 
 # -- npm --
 
