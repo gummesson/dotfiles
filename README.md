@@ -45,3 +45,13 @@ sudo python setup.py install
 ``` sh
 goobook authenticate
 ```
+
+### surfraw
+
+```
+gzip -dc surfraw-2.2.9.tar.gz | tar xvvf -
+cd surfraw-2.2.9
+./configure
+make
+sudo make install
+```

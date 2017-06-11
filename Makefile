@@ -82,6 +82,7 @@ install-sources:
 
 install-builds:
 	@git clone https://github.com/OfflineIMAP/offlineimap.git ${BLDS}/offlineimap-git
+	@cd ${BLDS} && curl -fLO https://surfraw.alioth.debian.org/dist/surfraw-2.2.9.tar.gz
 
 install: install-system install-packages install-sources install-builds
 
@@ -140,6 +141,7 @@ link-files:
 	@ln -vsf ${DOTS}/ruby/.bundle/config ${BASE}/.bundle/config
 	@ln -vsf ${DOTS}/ruby/.gemrc ${BASE}/.gemrc
 	@ln -vsf ${DOTS}/sift/.sift.conf ${BASE}/.sift.conf
+	@ln -vsf ${DOTS}/surfraw/.surfraw.conf ${BASE}/.surfraw.conf
 	@ln -vsf ${DOTS}/tmux/.tmux.conf ${BASE}/.tmux.conf
 	@ln -vsf ${DOTS}/w3m/config ${BASE}/.w3m/config
 	@ln -vsf ${DOTS}/w3m/keymap ${BASE}/.w3m/keymap
