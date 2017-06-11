@@ -83,6 +83,7 @@ install-sources:
 install-builds:
 	@git clone https://github.com/OfflineIMAP/offlineimap.git ${BLDS}/offlineimap-git
 	@cd ${BLDS} && curl -fLO https://surfraw.alioth.debian.org/dist/surfraw-2.2.9.tar.gz
+	@cd ${BLDS} && curl -fLO http://entrproject.org/code/entr-3.7.tar.gz
 
 install: install-system install-packages install-sources install-builds
 

@@ -55,3 +55,13 @@ cd surfraw-2.2.9
 make
 sudo make install
 ```
+
+### entr
+
+```
+tar -xzvf entr-3.7.tar.gz
+cd entr-3.7
+./configure
+make test
+make install
+```
