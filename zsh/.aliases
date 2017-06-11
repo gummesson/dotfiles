@@ -31,8 +31,8 @@ alias rm="rm -i"
 
 alias e="vim"
 alias j="z"
+alias za="zathura --fork"
 alias chrome="google-chrome-stable"
-alias pdfview="zathura --fork"
 
 # -- Git --
 
