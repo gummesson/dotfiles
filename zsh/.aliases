@@ -32,6 +32,7 @@ alias rm="rm -i"
 alias e="vim"
 alias j="z"
 alias za="zathura --fork"
+alias wiki="surfraw wikipedia"
 alias chrome="google-chrome-stable"
 
 # -- Git --
