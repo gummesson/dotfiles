@@ -15,7 +15,7 @@ CONF = ${BASE}/.config
 BLDS = ${BASE}/.builds
 DOTS = ${BASE}/Code/dotfiles
 
-.PHONY: install-system install-npm install-gem install-pip install-go install-packages install-sources install-builds install \
+.PHONY: install-system install-extras install-npm install-gem install-pip install-go install-packages install-sources install-builds install \
         update-system update-packages update-sources update-builds update \
         link-shell link-folders link-files link
 
@@ -51,6 +51,11 @@ install-system:
 	@sudo eopkg install mutt
 	@sudo eopkg install nautilus-dropbox
 
+install-extras:
+	@sudo eopkg install pandoc
+	@sudo eopkg install texlive
+	@sudo eopkg install texlive-fonts-extra
+
 install-npm:
 	@npm config set prefix ~/.local
 	@npm install -g npm-check-updates
@@ -84,7 +89,7 @@ install-builds:
 	@cd ${BLDS} && curl -fLO https://surfraw.alioth.debian.org/dist/surfraw-2.2.9.tar.gz
 	@cd ${BLDS} && curl -fLO http://entrproject.org/code/entr-3.7.tar.gz
 
-install: install-system install-packages install-sources install-builds
+install: install-system install-extras install-packages install-sources install-builds
 
 # }}}
 
