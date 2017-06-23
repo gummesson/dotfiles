@@ -79,6 +79,7 @@ install-packages: install-npm install-gem install-pip install-go
 
 install-sources:
 	@git clone https://github.com/chriskempson/base16-shell.git ${CONF}/base16-shell
+	@ln -sf ${CONF}/base16-shell/scripts/base16-ocean.sh ${BASE}/.theme.sh
 	@git clone https://github.com/zsh-users/zsh-completions.git ${CONF}/zsh-completions
 	@git clone https://github.com/rupa/z.git ${CONF}/z
 	@git clone https://github.com/supercrabtree/k.git ${CONF}/k
