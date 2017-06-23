@@ -1,10 +1,10 @@
 # -- mailcap ------------------------------------------------------- {{{
 
 text/html; w3m -I %{charset} -T text/html; copiousoutput;
-application/pdf; /usr/bin/zathura %s; copiousoutput;
-image/*; /usr/bin/feh %s; copiousoutput;
-audio/*; /usr/bin/mpv %s; copiousoutput;
-video/*; /usr/bin/mpv %s; copiousoutput;
+application/pdf; zathura %s; copiousoutput;
+image/*; feh %s; copiousoutput;
+audio/*; mpv %s; copiousoutput;
+video/*; mpv %s; copiousoutput;
 
 # }}}
 
